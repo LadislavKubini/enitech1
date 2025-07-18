@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Block_OpenProjects.html</title>
+  <link rel="icon" href="favicona-enitech.png">
+
+  <link rel="stylesheet" href="kariera.css">
+
+  <script src="Language.js" defer></script>  <!-- funkcie js: prepinanie jazykov  SK / DE / EN -->
+  <script src="kariera.js" defer></script>
+</head>
+<body>
+  <div id="OpenProjects-div-src">
+    <div class="kariera-container">
+      <h2 lang-code="08011" id="id_karieraNadpis">Open projects</h2>
+
+      <div id="id_kariera-buttons" class="kariera-buttons">
+        <button id="id_btn-it" lang-code="08012" class="kariera-button active">.Information Technologies</button>
+        <button id="id_btn-eng" lang-code="08013" class="kariera-button inactive">.Engineering</button>
+      </div>
+
+      <div class="kariera-grid" id="id_listPonuky"></div>
+
+      <div class="kariera-detail" id="id_detailPonuka"></div>
+
+      <div class="kariera-pagination" id="id_pagination"></div>
+
+      <!-- 
+      <div class="kariera-grid-item">
+          <div class="kariera-inner-grid">
+              <div class="kariera-job-left">
+                  <div class="date">19. mája 2025</div>
+                  <h2>Technischer Support</h2>
+                  <p>Erfahrung in Betrieb und Weiterentwicklung einer DNS und Mail Gateway Umgebung. Erfahrung in Betrieb (incl. Aufbau, Realisierung, Betreuung, Wartung, Pflege) und Design von hochkritischen und höchst […]</p>
+              </div>
+              <div class="kariera-job-right">
+                  <button class="kariera-see-more">See more</button>
+              </div>
+          </div>
+      </div>
+      -->
+      <div class="kariera-footer" id="id_PonukyFooter">
+        <a lang-code="08014" href="#">.Nenašli ste vhodnú pozíciu pre Vás...</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
+      kariera_registerButtons();
+      await openProjects_fetchPosts();
+      await LoadTranslations('translations08-kar.txt');
+      await UpdateTexts();
+    });    
+  </script>
+</body>
+</html>

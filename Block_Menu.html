@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--klucove pre mobilne zariadenia-->
+  <title>Block_Menu.html</title>
+  <link rel="icon" href="favicona-enitech.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="root.css">
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="UvodHero.css">
+
+  <!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalosou DOMContentLoaded-->
+  <script src="menu.js" defer></script> <!-- funkcie js: ovladanie menu -->
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+</head>
+<body>
+  <div id="Menu-div-src">
+    <!-- Horná lišta -->
+    <div class="uvod-topbar">
+      <div class="uvod-topbar-left">
+        <img src="media/logo-biela-30px-enitech.png" alt="Logo Enitech">
+      </div>
+      <div class="uvod-topbar-left">
+        <span class="uvod-lang" onclick="setLang('sk')">🇸🇰</span>
+        <span class="uvod-lang" onclick="setLang('de')">🇩🇪</span>
+        <span class="uvod-lang" onclick="setLang('en')">🇬🇧</span>
+      </div>
+      <nav class="uvod-menu">
+        <a href="indexOnas.html#top" lang-code="00101">.O nás</a>
+        <a href="indexEngin.html#top" lang-code="00102">.Inžiniering</a>
+        <a href="indexIT.html#top" lang-code="00103">.IT služby</a>
+        <a href="indexManage.html#top" lang-code="00104">.Manažérske služby</a>
+        <a href="indexRef.html#top" lang-code="00105">.Referencie</a>
+        <a href="indexKariera.html#top" lang-code="00106">.Kariéra</a>
+        <a href="#" lang-code="00107">.Kontakt</a>
+      </nav>
+      <div class="uvod-hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Overlay pre modal -->
+    <div id="overlay" class="uvod-side-menu-overlay" onclick="closeMenu()"></div>
+
+    <!-- Bočné menu -->
+    <div id="sideMenu" class="uvod-side-menu">
+      <a href="indexOnas.html#top" lang-code="00101" onclick="closeMenu()">.O nás</a>
+      <a href="indexEngin.html#top" lang-code="00102" onclick="closeMenu()">.Inžiniering</a>
+      <a href="indexIT.html#top" lang-code="00103" onclick="closeMenu()">.IT služby</a>
+      <a href="indexManage.html#top" lang-code="00104" onclick="closeMenu()">.Manažérske služby</a>
+      <a href="indexRef.html#top" lang-code="00105" onclick="closeMenu()">.Referencie</a>
+      <a href="indexKariera.html#top" lang-code="00106" onclick="closeMenu()">.Kariéra</a>
+      <a href="#" lang-code="00107" onclick="closeMenu()">.Kontakt</a>
+    </div>
+
+    <!-- Úvodný podklad -->
+  </div>
+
+  <div id="UvodHero-body-src">
+    <section class="uvod-hero">
+      <video class="uvod-hero-video" autoplay muted loop playsinline>
+        <source src="media/HighTech_Engineers_ModraRobotickaRuka.mp4" type="video/mp4">
+        <img src="media/Enitech_VasTechnologickyPartner.avif" alt="Background for older browsers">
+      </video>
+      <div class="uvod-hero-content" id="uvod-hero_animate-id">
+        <h1 lang-code="00110">.Váš spoľahlivý  partner pre služby v oblasti inžinieringu a IT</h1>
+        <p lang-code="00111">.Spoľahlivá a efektívna podpora v oblasti riešení technických úloh doma aj v zahraničí.</p>
+      </div>
+    </section>
+  </div>
+
+  <div>
+    <section>
+      <h2>Testovaci nadpis</h2>
+      <p>Tu je hocijaky obsah kvoli testovaniu</p>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      // Načítanie prekladov po načítaní DOM
+      await LoadTranslations('translations00.txt');
+      await LoadTranslations('translations01.txt');
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame); // Môžeš počkať na ďalší repaint, ak chceš jemnejší prechod (voliteľné)
+      // Spustenie animácie
+      Animator.register("#uvod-hero_animate-id", "animate-slide-in-bounce");
+      document.body.style.visibility = "visible"; // zobraz stránku až teraz    
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block_Manage.html</title>
+  <link rel="icon" href="favicona-enitech.png">
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="manage.css">
+
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+  
+</head>
+<body>
+  <div id="Manage-div-src">
+    <div class="manage-grid-body">
+      <h3 lang-code="06011">.Manažérske služby</h3>
+      <div class="manage-line" id="id-Manag_animate-line"></div>
+      <h1 lang-code="06012">.Riadenie projektov</h1>
+      <div class="manage-grid">
+        <div class="manage-text">
+          <p lang-code="06013">.Poskytujeme odborníkov pre riadenie a koordináciu projektov:</p>
+          <ul class="manage-bullets">
+            <li lang-code="06014"><strong>.projektových manažérov</strong></li>
+            <li lang-code="06015"><strong>.manažérov požiadaviek</strong></li>
+            <li lang-code="06016"><strong>.manažérov riadenia kvality</strong> (Quality Assurance/Q.Management)</li>
+            <li lang-code="06017"><strong>.Scrum Master</strong> špecialistov</li>
+            <li lang-code="06018">.špecialistov na <strong>dátový manažment</strong></li>
+          </ul>
+          <div class="manage-link">
+            <a href="#"  lang-code="06019">.Viac informácií</a>
+          </div>
+        </div>
+        <div class="manage-image">
+          <img src="media/standard-quality-control-concept-m.avif" alt="Manažérsky obrázok">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await LoadTranslations('translations06-manag.txt');
+      await UpdateTexts();
+      Animator.register("#id-Manag_animate-line", "animate-width-grow"); // doprava rastuce ciary
+    })
+  </script>
+</body>
+</html>

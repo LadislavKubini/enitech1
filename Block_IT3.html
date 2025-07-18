@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block_IT3.html</title>
+  <link rel="icon" href="favicona-enitech.png" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500,700&display=swap" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="it3.css">
+
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+</head>
+<body>
+  <div id="IT3-div-src">
+    <div class="it3-grid-body" id="IT3-nearshoring" style="scroll-margin-top: 80px;"> <!-- aby menu nezakryvalo vrch stranky po doskoku -->
+      <div class="it3-grid-line"></div>
+      <div class="it3-heading-back-row">
+        <h3>NEARSHORING</h3>
+        <a href="#IT2-nearshoring-back" style="color: #AAF;">back</a>
+      </div>
+      <h1 lang-code="02031">.Výhody IT Nearshoring</h1>
+      <div class="it3-grid">
+        <div class="it3-grid-item-pic p1">
+          <img src="media/Krasavec-s-ucesom.avif" alt="Obrázok P1" />
+        </div>
+        <div class="it3-grid-item-txt t1">
+          <h2 lang-code="02032">.Na blízkosti záleží</h2>
+          <div class="it3-grid-item-line"></div>
+          <p lang-code="02033">.Zistite, prečo mať blízkeho partnera v Rakúsku a Nemecku prináša prevádzkové výhody. A prečo podniky môžu zarábať na vysokokvalifikovanej pracovnej sile v Rakúsku a Nemecku, podporovať inovácie a vysokokvalitnú realizáciu projektov. Toto strategické partnerstvo tiež zaisťuje, že kritické obchodné operácie bežia hladko 24 hodín denne, 7 dní v týždni, vďaka synchronizácii časových pásiem.</p>
+        </div>
+        <div class="it3-grid-item-txt t2">
+          <h2 lang-code="02034">.Kultúrna kompatibilita</h2>
+          <div class="it3-grid-item-line"></div>
+          <p lang-code="02035">.Preskúmajte, ako kultúrna príbuznosť nášho tímu so západnou Európou zaisťuje bezproblémovú komunikáciu a pochopenie vašich obchodných potrieb. Zdieľaná kultúrna príbuznosť medzi našim tímom a západnou Európou podporuje nielen efektívnu komunikáciu, ale aj porozumenie špecifikácií miestneho trhu, čo umožňuje aby sme naše služby prispôsobili vašim konkrétnym požiadavkám.</p>
+        </div>
+        <div class="it3-grid-item-pic p2">
+          <img src="media/PatSpojenychRuk.avif" alt="Obrázok P2" />
+        </div>
+        <div class="it3-grid-item-pic p3">
+          <img src="media/Gestikulacia-s-Fixkou.avif" alt="Obrázok P3" />
+        </div>
+        <div class="it3-grid-item-txt t3">
+          <h2 lang-code="02036">.Nákladová efektívnosť</h2>
+          <div class="it3-grid-item-line"></div>
+          <p lang-code="02037">.Zistite, ako môže nearshoring znížiť náklady na vývoj IT pri zachovaní štandardov vysokej kvality. Využitím výhod nearshoringu môžu spoločnosti dosiahnuť značné úspory a zároveň zabezpečiť dodávku špičkových softvérových riešení.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> 
+    async function loadAllTranslations() {
+      const p1 = await LoadTranslations('translations02-it.txt');
+      await Promise.all([p1]);
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadAllTranslations();
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      Animator.registerAll(".it3-grid-item-line", "animate-width-grow");
+      document.body.style.visibility = "visible";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+08001 || Budujte kariéru s nami 
+|| Machen Sie Karriere bei uns
+|| Build your career with us
+
+08002 || Staňte sa členom tímu špecialistov, ktorí denne spolupracujú na riešeniach pre svetoznáme značky.
+|| Werden Sie Teil eines Teams von Spezialisten, die jeden Tag zusammenarbeiten, um Lösungen für weltbekannte Marken zu entwickeln.
+|| Become part of a team of specialists who collaborate daily on solutions for world-renowned brands.
+
+08003 || Načítavam ponuky... 
+|| Ich lade die Angebote auf...
+|| Loading offers...
+
+08011 || Otvorené projekty
+|| Offene Projekte
+|| Open projects
+
+08012 || Informačné technológie
+|| Informationstechnologien
+|| Information Technologies
+
+08013 || Inžinierstvo
+|| Engineering
+|| Engineering
+
+08014 || Nenašli ste vhodnú pozíciu pre Vás...
+|| Sie haben keine passende Stelle gefunden...
+|| You have not found a suitable position for you...
+
+08015 || Zobraziť viac
+|| Siehe mehr
+|| See more
+
+08016 || Ďalšie
+|| Nächste
+|| Next
+
+

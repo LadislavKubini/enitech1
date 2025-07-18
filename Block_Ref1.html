@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="favicona-enitech.png">
+  <title>Block_Ref1.html</title>
+  <style> html { scroll-behavior: smooth; } </style>
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+
+  <link rel="stylesheet" href="root.css">
+  <link rel="stylesheet" href="ref1.css">
+
+  <script src="Language.js" defer></script>
+</head>
+<body>
+  <h1>Referencie</h1>
+  <div id="Ref1-div-src">
+    <div id="id-Block_Ref1"></div>
+    <div class="ref1-body">
+      <h1 class="ref1-popis" lang-code="07002">.Referencie hovoria za nás</h1>
+      <p class="ref1-popis" lang-code="07003">
+        .Od vzniku sa nám podarilo nadviazať dlhodobú spoluprácu s viac ako 30 zákazníkmi z rôznych krajín sveta.
+      </p>
+      <p class="ref1-popis" lang-code="07004">
+        .Nahliadnite na jednotlivé realizované služby pre našich klientov.
+      </p>
+
+      <div class="ref1-grid1">
+        
+        <!-- Prvy blok grid2 -->
+        <div class="ref1-grid2">
+          <div class="ref1-p1">
+            <img src="media/close-up-woman-electric-car.avif" alt="Automobilový priemysel" />
+            <div class="ref1-triangle"></div>
+          </div>
+          <div class="ref1-t2">
+            <div class="ref1-text">
+              <h2 lang-code="07011">.Letecký priemysel</h2>
+              <p lang-code="07012">.Vývoj a integrácia systémov pre letecký priemysel</p>
+            </div>
+            <a href="#id-Block_Ref" class="ref1-button" lang-code="07019">Viac</a>
+          </div>
+          <div class="ref1-t1">
+            <div class="ref1-text">
+              <h2 lang-code="07013">.Automobilový priemysel</h2>
+              <p lang-code="07014">.Plne automatizované bunky a linky pre automobilový priemysel</p>
+            </div>
+            <a href="#id-Block_Ref" class="ref1-button" lang-code="07019">Viac</a>
+          </div>
+          <div class="ref1-p2">
+            <img src="media/airplane-sky.avif" alt="Letecký priemysel" />
+            <div class="ref1-triangle"></div>
+          </div>
+        </div>
+
+        <!-- Druhy blok grid2 -->
+        <div class="ref1-grid2">
+          <div class="ref1-p1">
+            <img src="media/TriEskalatory.avif" alt="Všeobecné strojárstvo" />
+            <div class="ref1-triangle"></div>
+          </div>
+          <div class="ref1-t2">
+            <div class="ref1-text">
+              <h2 lang-code="07015">.IT oblasť</h2>
+              <p lang-code="07016">.Automatizácia procesov, monitoring, a správa dát</p>
+            </div>
+            <a href="#id-Block_Ref" class="ref1-button" lang-code="07019">Viac</a>
+          </div>
+          <div class="ref1-t1">
+            <div class="ref1-text">
+              <h2 lang-code="07017">.Všeobecné strojárstvo</h2>
+              <p lang-code="07018">.Jednoúčelové zariadenia a technologické celky na mieru</p>
+            </div>
+            <a href="#id-Block_Ref" class="ref1-button" lang-code="07019">Viac</a>
+          </div>
+          <div class="ref1-p2">
+            <img src="media/standard-quality-control-concept-m2.avif" alt="IT oblasť" />
+            <div class="ref1-triangle"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      // Načítanie prekladov po načítaní DOM
+      await LoadTranslations('translations07-ref.txt');
+      await UpdateTexts();
+    });
+  </script>
+</body>
+</html>

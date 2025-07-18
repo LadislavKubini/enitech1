@@ -1,0 +1,111 @@
+    .uvod-topbar {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 30px;
+      background: linear-gradient(to right, #1b2c5a, #2A4184 50%, #5a6bb0);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--menu-height);
+      z-index: 1001;
+    }
+
+    .uvod-topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .uvod-topbar img {
+      height: 30px;
+    }
+
+    .uvod-lang {
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .uvod-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .uvod-menu a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .uvod-hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .uvod-hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .uvod-side-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      display: none;
+      z-index: 1000;
+      /* border: 1px dashed blue; */
+    }
+
+    .uvod-side-menu {
+      position: fixed;
+      top: 0;
+      right: -150px;
+      width: 150px;
+      height: 100vh;
+      background-color: white;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s ease;
+      z-index: 1001;
+      /* border: 1px dashed red; */
+    }
+
+    .uvod-side-menu a {
+      padding: 15px;
+      color: #2a098f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .uvod-side-menu.open {
+      right: 0;
+    }
+
+    .uvod-side-menu-overlay.active {
+      display: block;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    @media (max-width: 1000px) {
+      .uvod-menu a:not(.uvod-lang), .uvod-menu span:not(.uvod-lang) {
+        display: none;
+      }
+      .uvod-hamburger {
+        display: flex;
+      }
+    }

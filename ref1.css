@@ -1,0 +1,169 @@
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Open Sans', Arial, Tahoma, sans-serif;
+    }
+
+    .ref1-popis {
+      text-align: center;
+      color: #777;
+/*      border: 1px dashed red; */
+    }
+
+    h1.ref1-popis {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p.ref1-popis {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 0.8;
+    }
+
+    p.ref1-popis:last-of-type {
+      margin-bottom: 4rem; /* alebo 4rem, podľa potreby */
+    }
+
+    .ref1-body {
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .ref1-grid1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .ref1-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "p1 t2"
+        "t1 p2";
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    }
+
+    .ref1-p1 { grid-area: p1; }
+    .ref1-p2 { grid-area: p2; }
+    .ref1-t1 { grid-area: t1; }
+    .ref1-t2 { grid-area: t2; }
+    
+    .ref1-p1, .ref1-p2,
+    .ref1-t1, .ref1-t2 {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ref1-p1 img,
+    .ref1-p2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ref1-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* Spoločné vlastnosti pre t1 a t2 */
+    .ref1-t1,
+    .ref1-t2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      color: white;
+      text-align: left;
+      font-size: calc(0.6rem + 0.3vw);
+    }
+
+    .ref1-t1 {
+      background-color: blue;
+    }
+
+    .ref1-t2 {
+      background-color: red;
+    }
+
+    .ref1-button {
+      background-color: white;
+      color: black;
+      border: 2px solid transparent;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    .ref1-button:hover {
+      background-color: black;
+      color: white;
+      border-color: white;
+      transform: scale(1.05);
+    }
+
+    /* Trojuholníky – viditeľné a proporčné */
+    .ref1-p1 .ref1-triangle {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 3em solid blue;
+      border-left: 3em solid transparent;
+    }
+
+    .ref1-p2 .ref1-triangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 3em solid red;
+      border-right: 3em solid transparent;
+    }
+
+    @media (max-width: 900px) {
+      .ref1-grid1 {
+        grid-template-columns: 1fr;
+      }
+      .ref1-t1,
+      .ref1-t2 {
+        font-size: calc(1rem + 0.2vw);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .ref1-grid2 {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+          "p1"
+          "t1"
+          "p2"
+          "t2";
+          aspect-ratio: unset;
+      }
+
+      /* Skryj trojuholníky na malých displejoch */
+      .ref1-triangle {
+          display: none;
+      }
+    }

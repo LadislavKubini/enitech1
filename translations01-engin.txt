@@ -1,0 +1,9 @@
+01001 || End-to-end inžinierstvo. 
+|| End-to-end Engineering. 
+|| End-to-end Engineering.
+
+01002 || Spoľahlivá a efektívna podpora v oblasti technických riešení doma aj v zahraničí. 
+|| Zuverlässige und effektive Unterstützung auf dem Gebiet der Lösung technischer Aufgaben zu Hause und im Ausland. 
+|| Reliable and efficient support in the field of technical solutions locally and abroad.
+
+

@@ -1,0 +1,12 @@
+09001 || Váš partner v inžinierstve a IT 
+|| Ihr Partner für Technik und IT
+|| Your partner in engineering and IT
+
+09002 || Kde sa inovácie stretávajú s odbornosťou 
+|| Wo Innovation auf Fachwissen trifft
+|| Where innovation meets expertise
+
+09003 || Načítavam ponuky... 
+|| Ich lade die Angebote auf...
+|| Loading offers...
+

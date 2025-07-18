@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--klucove pre mobilne zariadenia-->
+  <title>indexKariera.html</title>
+  <link rel="icon" href="favicona-enitech.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="root.css">
+  <style>
+    body { visibility: hidden; margin: 0; font-family: "Montserrat", Arial, Tahoma, sans-serif; } /*visibility sa vrati az po nacitani*/
+  </style>
+
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="UvodHero.css">
+  <link rel="stylesheet" href="kariera.css">
+  <link rel="stylesheet" href="footer.css">
+
+  <!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
+  <script src="Language.js" defer></script>  <!-- funkcie js: prepinanie jazykov  SK / DE / EN -->
+  <script src="animator.js" defer></script> <!-- funkcie js: animacie -->
+  <script src="menu.js" defer></script> <!-- funkcie js: ovladanie menu -->
+  <script src="wordpress_footer.js" defer></script> <!-- Nacitanie a spracovanie ponuk od WordPressu-->
+  <script src="kariera.js" defer></script>
+</head>
+
+<body>
+  <div id="top"></div>
+  <div id="Menu-div-dst">
+  </div>
+
+  <div>
+    <section class="uvod-hero" style="background-image: url('media/Kariera_PodanieSiRuk_uvodnyObrazok.avif');">
+      <div class="uvod-hero-content" id="kariera_animate-id">
+        <h1 lang-code="08001">.Budujte kariéru s nami</h1>
+        <p lang-code="08002">.Staňte sa členom tímu špecialistov, ktorí denne spolupracujú na riešeniach pre svetoznáme značky.</p>
+      </div>
+    </section>
+  </div>
+  
+  <div id="OpenProjects-div-dst">    
+  </div>
+
+  <div id="Footer-div-dst">
+  </div>
+
+  <script src="ImportBlock.js" type="text/javascript"></script>  <!-- funkcie js: importovanie blokov -->
+  <script src="scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
+  
+  <script> 
+    async function loadDivBlocks() {
+      const p1 = ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
+      const p2 = ImportDiv("Block_OpenProjects.html", "OpenProjects-div-src", "OpenProjects-div-dst");
+      const p3 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
+      await Promise.all([p1, p2, p3]); // vsetky ImportDiv mozu bezat paralelne
+    }
+   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
+      await loadDivBlocks();
+      kariera_registerButtons();
+
+      await new Promise(requestAnimationFrame); 
+      await openProjects_fetchPosts();
+      await Footer_fill_ponuky();
+      await LoadTranslations('translations00.txt');
+      // await LoadTranslations('translations01.txt');
+      await LoadTranslations('translations08-kar.txt');
+      await LoadTranslations('translations09-foot.txt');
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      Animator.register("#kariera_animate-id", "animate-slide-in-bounce");
+      Animator.register("#id-footer-hero-content", "animate-rotateFlipIn"); 
+      restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
+      document.body.style.visibility = "visible"; // zobraz stránku až teraz    
+    });    
+  </script>
+</body>
+</html>
+

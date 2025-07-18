@@ -1,0 +1,16 @@
+00101 || O nás || Über uns || About us
+00102 || Inžiniering || Maschinenbau || Engineering
+00103 || IT služby || IT Dienste || IT Services
+00104 || Manažérske služby || Managerdienste || Manager services
+00105 || Referencie || Referenzen || References
+00106 || Kariéra || Karriere || Career
+00107 || Kontakt || Kontakt || Contact
+
+00110 || Váš spoľahlivý  partner pre služby v oblasti inžinieringu a IT 
+|| Ihr zuverlässiger Partner für Engineering- und IT-Dienstleistungen
+|| Your reliable partner for engineering and IT services
+
+00111 || Spoľahlivá a efektívna podpora v oblasti technických riešení doma aj v zahraničí. 
+|| Zuverlässige und effektive Unterstützung auf dem Gebiet der Lösung technischer Aufgaben zu Hause und im Ausland. 
+|| Reliable and efficient support in the field of technical solutions at home and abroad.
+

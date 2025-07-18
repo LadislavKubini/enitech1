@@ -1,0 +1,40 @@
+07001 || Referencie || Referenzen || References
+
+07002 || Referencie hovoria za nás || Referenzen sprechen für uns|| References speak for us
+
+07003 || Od vzniku sa nám podarilo nadviazať dlhodobú spoluprácu s viac ako 30 zákazníkmi z rôznych krajín sveta. 
+|| Seit unserer Gründung ist es uns gelungen, eine langfristige Zusammenarbeit mit mehr als 30 Kunden aus verschiedenen Ländern der Welt aufzubauen.
+|| Since inception, we have managed to establish long-term cooperation with more than 30 customers from different countries around the world.
+
+07004 || Nahliadnite na jednotlivé realizované služby pre našich klientov. 
+|| Werfen Sie einen Blick auf die einzelnen Dienstleistungen, die wir für unsere Kunden umgesetzt haben.
+|| Take a look at the individual services implemented for our clients.
+
+07005 || Realizované služby: || Durchgeführte Dienste: || Services provided:
+
+// ref1 ***********************************************************************************
+07011 || Letecký priemysel || Luft- und Raumfahrtindustrie || Aerospace industry
+
+07012 || Vývoj a integrácia systémov pre letecký priemysel 
+|| Systementwicklung und -integration für die Luft- und Raumfahrtindustrie
+|| Systems development and integration for the aerospace industry
+
+07013 || Automobilový priemysel || Autoindustrie || Automotive industry
+
+07014 || Plne automatizované bunky a linky pre automobilový priemysel
+|| Vollautomatische Zellen und Linien für die Automobilindustrie 
+|| Fully automated cells and lines for the automotive industry
+
+07015 || IT oblasť || IT-Bereich || IT area
+
+07016 || Automatizácia procesov, monitoring, a správa dát 
+|| Prozessautomatisierung, Überwachung und Datenmanagement 
+|| Process automation, monitoring, and data management
+
+07017 || Všeobecné strojárstvo || Allgemeines Ingenieurwesen || General engineering
+
+07018 || Jednoúčelové zariadenia a technologické celky na mieru 
+|| Einzweckanlagen und maßgeschneiderte technologische Einheiten
+|| Single-purpose equipment and tailor-made technological units
+
+07019 || Viac || Mehr lesen || See more
