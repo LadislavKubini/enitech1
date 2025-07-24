@@ -27,6 +27,7 @@
 
       <div class="kariera-pagination" id="id_pagination"></div>
 
+      <!-- Priklad jednej ponuky. (Vsetky ponuky sa naplnaju dynamicky v js) ) -->
       <!-- 
       <div class="kariera-grid-item">
           <div class="kariera-inner-grid">
@@ -42,14 +43,14 @@
       </div>
       -->
       <div class="kariera-footer" id="id_PonukyFooter">
-        <a lang-code="08014" href="#">.Nenašli ste vhodnú pozíciu pre Vás...</a>
+        <a lang-code="08014" href="indexKontakt.html#top">.Nenašli ste vhodnú pozíciu pre Vás...</a>
       </div>
     </div>
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
       kariera_registerButtons();
-      await openProjects_fetchPosts();
+      await openProjects_fetchPosts(); // naplni kariera-grid, kariera-detail, kariera-pagination
       await LoadTranslations('translations08-kar.txt');
       await UpdateTexts();
     });    

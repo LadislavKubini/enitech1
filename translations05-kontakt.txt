@@ -1,0 +1,34 @@
+// Block_Kontakt1.html
+05001 || Kontaktujte nás || Kontaktieren Sie uns || Contact us
+
+05002 || NAPÍŠTE NÁM V PRÍPADE OTÁZOK ALEBO NÁM DAJTE SPÄTNÚ VÄZBU NA NAŠE PRODUKTY. 
+         VYPLŇTE FORMULÁR A MY VÁM ODPOVIEME ČO NAJSKÔR.
+|| SCHREIBEN SIE UNS BEI FRAGEN ODER GEBEN SIE UNS FEEDBACK ZU UNSEREN PRODUKTEN. 
+   FÜLLEN SIE DAS FORMULAR AUS UND WIR WERDEN IHNEN SO SCHNELL WIE MÖGLICH ANTWORTEN.
+|| WRITE TO US IF YOU HAVE ANY QUESTIONS OR FEEDBACK ABOUT OUR PRODUCTS. 
+   FILL OUT THE FORM AND WE WILL RESPOND AS SOON AS POSSIBLE.
+
+05011 || Krstné meno * || Vorname * || First name *
+05012 || Priezvisko * || Nachname * || Last name *
+05013 || Telefónne číslo * || Telefonnummer * || Phone number *
+05014 || Email * || E-Mail * || Email *
+05015 || Predmet správy || Gegenstand der Mitteilung || Subject of the report
+05016 || Správa || Bericht || Report
+
+05017 || Súhlasím so spracovaním mojich osobných údajov
+|| Ich stimme der Verarbeitung meiner personenbezogenen Daten zu.
+|| I agree to the processing of my personal data
+
+05018 || Nie som robot || Ich bin kein Roboter || I am not a robot
+05019 || POSLAŤ SPRÁVU || NACHRICHT SENDEN || SEND MESSAGE
+
+05020 || Správa bola úspešne odoslaná 
+|| Die Nachricht wurde erfolgreich versendet. 
+|| The message has been successfully sent
+
+// Block_Kontakt3.html
+05051 || Kontakt || Kontakt || Contact
+05052 || Všeobecný kontakt: || Allgemeiner Kontakt: || General contact:
+05053 || Interná konštrukcia: || Interne Konstruktion: || Internal construction:
+05054 || Externá konštrukcia a IT služby: || Externe Konstruktion und IT-Dienstleistungen: || External construction and IT services:
+05055 || Personálne oddelenie: || Personalabteilung: || Human Resources Department:

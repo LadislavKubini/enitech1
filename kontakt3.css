@@ -1,0 +1,71 @@
+    .kontakt3-body {
+      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+      padding: 20px;
+    }
+
+    .kontakt3-title {
+      margin-bottom: 20px;
+    }
+
+    .kontakt3-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 200px);
+      gap: 10px;
+      max-width: 850px;
+      padding: 10px;
+    }
+
+    .kontakt3-grid-img {
+      display: grid;
+      grid-template-columns: 200px 3fr;
+      gap: 10px;
+      max-width: 850px;
+      padding: 10px;
+    }
+
+    .kontakt3-cell {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* rozdelí horný a dolný blok */
+      border: 1px solid #ccc;
+      padding: 6px;
+      box-sizing: border-box;
+      width: 200px;
+    }
+
+    .kontakt3-cell p {
+      margin: 3px;
+    }
+
+    .align-top {
+      align-items: top;
+    }
+
+    .align-bottom {
+      align-items: bottom;
+    }
+
+    .kontakt3-cell-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      /* border: 1px dashed red; */
+    }
+
+    .kontakt3-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* zobrazí celý obrázok, bez orezania */
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .kontakt3-grid {
+        grid-template-columns: repeat(3, 200px);
+      }
+    }
+    @media (max-width: 600px) {
+      .kontakt3-grid {
+        grid-template-columns: repeat(2, 200px);
+      }
+    }
