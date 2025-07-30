@@ -26,6 +26,13 @@
 || Die Nachricht wurde erfolgreich versendet. 
 || The message has been successfully sent
 
+// Block_Kontakt2.html
+05041 || Kontaktujte nás || Kontaktieren Sie uns || Contact us
+05042 || Kde nás nájdete || Wo Sie uns finden || Where you will find us
+05044 || Kancelária Komárno || Büro Komárno || Office Komárno
+05045 || Kancelária Martin || Büro Martin || Office Martin
+05046 || Kancelária Buzica || Büro Buzica || Office Buzica
+
 // Block_Kontakt3.html
 05051 || Kontakt || Kontakt || Contact
 05052 || Všeobecný kontakt: || Allgemeiner Kontakt: || General contact:

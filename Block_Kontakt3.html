@@ -10,6 +10,8 @@
 
   <link rel="stylesheet" href="root.css">
   <link rel="stylesheet" href="kontakt3.css">
+
+  <script src="Language.js" defer></script>
 </head>
 <body>
   <div id="Kontakt3-div-src">
@@ -78,5 +80,15 @@
       </div>
     </div>
   </div>
+  <script src="scrolly_save.js" type="text/javascript" defer></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await LoadTranslations('translations05-kontakt.txt');
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
+      document.body.style.visibility = "visible"; // zobraz stránku až teraz    
+    });
+  </script>
 </body>
 </html>

@@ -27,7 +27,9 @@
       <!-- Horná čierna časť -->
       <div class="kontakt1-top">
         <div class="kontakt1-top-left">
-          <h1 lang-code="05001">Kontaktujte nás</h1>
+          <div id="id-kontakt1-animate-content"> <!-- style="transform-style: preserve-3d; transform: rotateX(-90deg) rotateY(10deg);"> -->
+            <h1 lang-code="05001">Kontaktujte nás</h1>
+          </div>
           <p lang-code="05002">
             NAPÍŠTE NÁM V PRÍPADE OTÁZOK ALEBO NÁM DAJTE SPÄTNÚ VÄZBU NA NAŠE PRODUKTY. 
             VYPLŇTE FORMULÁR A MY VÁM ODPOVIEME ČO NAJSKÔR.
@@ -117,6 +119,7 @@
       await new Promise(requestAnimationFrame);
 
       await kontakt1_addEventListeners();
+      Animator.register("#id-kontakt1-animate-content", "animate-slide-in-bounce"); // "animate-rotateFlipIn");
       document.body.style.visibility = "visible"; // zobraz stránku až teraz    
     });
   </script>

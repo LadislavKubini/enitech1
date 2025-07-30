@@ -51,9 +51,9 @@ let translations = {};
     }
 
     async function UpdateTexts() {
-      // console.log("UpdateTexts");
       document.querySelectorAll('[lang-code]').forEach(el => {
         const code = el.getAttribute('lang-code');
+        // console.log("UpdateTexts: ", code);
         let defaultHTML = el.innerHTML;
         el.innerHTML = getTranslation(code, defaultHTML);
       });
