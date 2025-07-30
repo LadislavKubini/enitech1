@@ -59,12 +59,12 @@
       object-fit: contain; /* zobrazí celý obrázok, bez orezania */
       display: block;
     }
-    @media (max-width: 900px) {
+    /* @media (max-width: 900px) {
       .kontakt3-grid {
         grid-template-columns: repeat(3, 200px);
       }
-    }
-    @media (max-width: 600px) {
+    } */
+    @media (max-width: 900px) { /* 600px */
       .kontakt3-grid {
         grid-template-columns: repeat(2, 200px);
       }
