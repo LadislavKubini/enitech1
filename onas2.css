@@ -1,0 +1,107 @@
+    .onas2-body {
+      background-color: white;
+      color: black;
+      /* font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif; */
+      font-weight: 400;
+      font-size: clamp(18px, 1.8vw, 30px);
+      display: flex;
+      flex-direction: column;
+      /* min-height: 100vh; */
+      padding: 4vw 4vw; /* vertikalne horizontalne*/
+      box-sizing: border-box;
+      /* border: 1px dashed red; */
+    }
+    .onas2-header-line {
+      width: 100%;
+      height: 1px;
+      background-color: #00C;
+    }
+    .onas2-content {
+      flex: 1; /* vztahuje sa k rodicovi (onas1-body{display: flex; flex-direction: column;}) */
+      display: flex;
+      padding-top: 20px;
+      /* border: 1px dashed red;     */
+    }
+    .onas2-left {
+        flex: 7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertikálne centrovanie */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .onas2-left strong {
+      font-weight: bold;
+    }
+    .onas2-left-last {
+        display: flex;
+        align-items: center;       /* vertikálne zarovnanie textu s obrázkom */
+        gap: 20px;                 /* medzera medzi textom a obrázkom */
+        flex-wrap: nowrap;
+    }
+    .onas2-last p {
+        margin: 0; /* odstrániť defaultné odsadenie */
+    }
+    /* Pečiatka s fixnými rozmermi a pridaným marginom vpravo */
+    .onas2-official-stamp {
+        display: block;
+        /* fixná výška približne 4.5 riadku: počítané ako 1em * riadky * line-height */
+        height: calc(1em * 4.5 * 1.2); /* ak potrebuješ presnejšie, uprav 4.5 alebo 1.2 */
+        width: auto;                  /* zachovať pomer strán */
+        margin-right: 20px;           /* margin vpravo od obrázka */
+        object-fit: contain;
+    }
+    .onas2-divider {
+      width: 1px;
+      background-color: #00C;
+      margin: 0 10px;
+    }
+    .onas2-right {
+      flex: 6; /* vztahuje sa k rodicovi (.onas2-content {display: flex;} ) */
+      display: flex;
+      align-items: center; /* vedlajsia os (zvisla) , lebo flex-direction: row (default) */
+      justify-content: center; /* hlavna os (vodorovna, lebo flex-direction: row (default)) */
+      /* border: 1px dashed green; */
+      box-sizing: border-box;
+    }
+    .onas2-right-inner {
+      /* max-width: 300px; */
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      /* border: 1px dashed blue; */
+    }
+    .onas2-right-inner img {
+      max-width: 100%;
+      height: auto;
+      /* border: 1px dashed red; */
+    }
+
+    @media (max-width: 762px) {
+        .onas2-body {
+            min-height: auto;
+        }
+        .onas2-content {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0;
+        }
+      .onas2-right {
+          padding: 0 0;
+          width: 100%;
+          justify-content: center;
+      }
+      .onas2-divider {
+          width: 95%;
+          height: 1px;
+          /* background-color: black; */
+          margin: 0 0;
+      }
+      .onas2-left {
+          width: 100%;
+          padding: 15px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+    }

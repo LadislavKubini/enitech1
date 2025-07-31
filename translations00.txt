@@ -1,3 +1,4 @@
+// Block_Menu.html
 00101 || O nás || Über uns || About us
 00102 || Inžiniering || Maschinenbau || Engineering
 00103 || IT služby || IT Dienste || IT Services
@@ -14,3 +15,47 @@
 || Zuverlässige und effektive Unterstützung auf dem Gebiet der Lösung technischer Aufgaben zu Hause und im Ausland. 
 || Reliable and efficient support in the field of technical solutions at home and abroad.
 
+// Block_Uvod1.html
+00121 || Hľadáte skúseného a spoľahlivého partnera?
+|| Suchen Sie einen erfahrenen und zuverlässigen Partner?
+|| Are you looking for an experienced and reliable partner?
+
+00122 || Zistite, ako môžu naše IT a inžinierske služby podporovať inovácie a efektivitu vo vašej organizácii. Neváhajte osloviť náš predajný tím a zavolajte na preskúmanie možností
+|| Erfahren Sie, wie unsere IT- und Ingenieursdienstleistungen Innovation und Effizienz in Ihrem Unternehmen fördern können. Zögern Sie nicht, unser Vertriebsteam zu kontaktieren und rufen Sie uns an, um die Möglichkeiten zu besprechen.
+|| Find out how our IT and engineering services can support innovation and efficiency in your organization. Don't hesitate to contact our sales team and call us to explore the possibilities.
+
+00123 || Kontaktujte nás || Kontaktieren Sie uns || Contact us
+
+// Block_Onas1.html
+00201 ||<strong>Spoločnosť ENITECH bola založená v roku 2010</strong> a od svojho vzniku podniká v oblasti <strong>konštrukcie a IT služieb</strong>.
+|| <strong>Das Unternehmen ENITECH wurde 2010 gegründet</strong> und ist seit seiner Gründung im Bereich <strong>Konstruktion und IT-Dienstleistungen</strong> tätig.
+|| <strong>ENITECH was founded in 2010</strong> and has been operating in the field of <strong>construction and IT services</strong> since its inception.
+
+00202 || Patríme medzi najväčšie inžinierske kancelárie na Slovensku s viac ako 80 špecialistami
+|| Wir gehören zu den größten Ingenieurbüros in der Slowakei mit mehr als 80 Spezialisten.
+|| We are one of the largest engineering firms in Slovakia with more than 80 specialists.
+
+00203 || Svoju činnosť sme začali konštrukčnými prácami v leteckom priemysle. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a všeobecné strojárstvo.
+|| Wir haben unsere Tätigkeit mit Konstruktionsarbeiten in der Luftfahrtindustrie begonnen. Im Laufe der Jahre haben wir unsere Aktivitäten auch auf die Automobilindustrie und den allgemeinen Maschinenbau ausgeweitet.
+|| We started our business with design work in the aviation industry. Over the years, we have expanded our activities to include the automotive industry and general engineering.
+
+00204 || V oblasti IT poskytujeme komplexné IT služby pre zákazníkov z Nemecka, Rakúska a Českej republiky v oblastiach ako telekomunikácie, bankovníctva/poisťovníctva, verejnej správy a tiež v oblasti priemyslu.
+|| Im IT-Bereich bieten wir umfassende IT-Dienstleistungen für Kunden aus Deutschland, Österreich und der Tschechischen Republik in Bereichen wie Telekommunikation, Bankwesen/Versicherungswesen, öffentliche Verwaltung und Industrie.
+|| In the field of IT, we provide comprehensive IT services for customers from Germany, Austria, and the Czech Republic in areas such as telecommunications, banking/insurance, public administration, and industry.
+
+// Block_Onas2.html
+00211 || <strong>Naša vízia:</strong><br>Stať sa významným poskytovateľom inžinierskych služieb v strednej Európe a uznávaným partnerom na globálnom trhu.
+|| <strong>Unsere Vision:</strong><br> Ein bedeutender Anbieter von Ingenieurdienstleistungen in Mitteleuropa und ein anerkannter Partner auf dem globalen Markt zu werden.
+|| <strong>Our vision:</strong><br> To become a major provider of engineering services in Central Europe and a recognized partner in the global market.
+
+00212 || <strong>Naša výhoda</strong> spočíva v dlhodobej odbornosti a schopnosti flexibilne reagovať na dynamiku požiadaviek trhu, čo nám umožňuje poskytovať vynikajúce riešenia pre našich partnerov.
+|| <strong>Unser Vorteil</strong> liegt in unserer langjährigen Fachkompetenz und unserer Fähigkeit, flexibel auf die Dynamik der Marktanforderungen zu reagieren, wodurch wir unseren Partnern hervorragende Lösungen anbieten können.
+|| <strong>Our advantage</strong> lies in our long-term expertise and ability to respond flexibly to the dynamics of market demands, enabling us to provide excellent solutions for our partners.
+
+00213 || V práci používame systém manažérstva bezpečnosti informácií <br><strong>STN EN ISO/IEC <br>27001:2022</strong>
+|| Bei unserer Arbeit verwenden wir das Informationssicherheits-Managementsystem <br><strong>STN EN ISO/IEC <br>27001:2022</strong>.
+|| At work, we use the <br><strong>STN EN ISO/IEC <br>27001:2022</strong><br> information security management system.
+
+// Block_Klienti.html
+00301 || SPOLUPRÁCA || ZUSAMMENARBEIT || COOPERATION
+00302 || Vybraní zákazníci || Ausgewählte Kunden || Selected customers

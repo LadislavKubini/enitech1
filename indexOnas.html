@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--klucove pre mobilne zariadenia-->
   <title>indexOnas.html</title>
   <link rel="icon" href="favicona-enitech.png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
   <link rel="stylesheet" href="root.css">
   <style>
-    body { visibility: hidden; margin: 0; font-family: "Montserrat", Arial, Tahoma, sans-serif; } /*visibility sa vrati az po nacitani*/
+    body { visibility: hidden; margin: 0; font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif; } /*visibility sa vrati az po nacitani*/
   </style>
 
   <link rel="stylesheet" href="animator.css">
   <link rel="stylesheet" href="menu.css">
   <link rel="stylesheet" href="UvodHero.css">
   <link rel="stylesheet" href="uvod1.css">
+  <link rel="stylesheet" href="onas1.css">
+  <link rel="stylesheet" href="onas2.css">
   <link rel="stylesheet" href="klienti.css">
   <link rel="stylesheet" href="footer.css">
 
@@ -36,6 +39,12 @@
   <div id="Uvod1-div-dst">    
   </div>
 
+  <div id="Onas1-div-dst">    
+  </div>
+
+  <div id="Onas2-div-dst">    
+  </div>
+
   <div id="Klienti-div-dst">    
   </div>
 
@@ -50,9 +59,11 @@
       const p1 = ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
       const p2 = ImportDiv("Block_Menu.html", "UvodHero-body-src", "UvodHero-div-dst");
       const p3 = ImportDiv("Block_Uvod1.html", "Uvod1-div-src", "Uvod1-div-dst");
-      const p4 = ImportDiv("Block_Klienti.html", "Klienti-div-src", "Klienti-div-dst");
-      const p5 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
-      await Promise.all([p1, p2, p3, p4, p5]); // vsetky ImportDiv mozu bezat paralelne
+      const p4 = ImportDiv("Block_Onas1.html", "Onas1-div-src", "Onas1-div-dst");
+      const p5 = ImportDiv("Block_Onas2.html", "Onas2-div-src", "Onas2-div-dst");
+      const p6 = ImportDiv("Block_Klienti.html", "Klienti-div-src", "Klienti-div-dst");
+      const p7 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
+      await Promise.all([p1, p2, p3, p4, p5, p6, p7]); // vsetky ImportDiv mozu bezat paralelne
     }
    </script>
 
@@ -67,8 +78,10 @@
       await LoadTranslations('translations09-foot.txt');
       await UpdateTexts();
       await new Promise(requestAnimationFrame);
-      Animator.register("#engineering_animate-id", "animate-slide-in-bounce");
+      Animator.register("#uvod-hero_animate-id", "animate-slide-in-bounce");
       Animator.register("#id-footer-hero-content", "animate-rotateFlipIn"); 
+      Animator.register("#id-klienti-animate", "animate-rotateFlipIn"); 
+      Animator.registerAll(".onas1-header-line", "animate-width-grow");
       restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
       document.body.style.visibility = "visible"; // zobraz stránku až teraz    
     });    

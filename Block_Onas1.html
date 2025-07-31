@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block_Onas1.html</title>
+  <link rel="icon" href="favicona-enitech.png" />
+
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="onas1.css">
+
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+  <style>
+    body {
+      visibility: hidden; 
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="Onas1-div-src">
+    <div class="onas1-body">
+      <div class="onas1-header-line"></div>
+
+      <div class="onas1-content">
+        <div class="onas1-left">
+          <div class="onas1-left-inner">
+            <img src="media/enitech-logo-modre.avif" alt="ENITECH logo" />
+          </div>
+        </div>
+
+        <div class="onas1-divider"></div>
+
+        <div class="onas1-right">
+          <p lang-code="00201"><strong>.Spoločnosť ENITECH bola založená v roku 2010</strong> a od svojho vzniku podniká v oblasti <strong>konštrukcie a IT služieb</strong>.</p>
+          <p lang-code="00202">.Patríme medzi najväčšie inžinierske kancelárie na Slovensku s viac ako 80 špecialistami.</p>
+          <p lang-code="00203">.Svoju činnosť sme začali konštrukčnými prácami v leteckom priemysle. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a všeobecné strojárstvo.</p>
+          <p lang-code="00204">.V oblasti IT poskytujeme komplexné IT služby pre zákazníkov z Nemecka, Rakúska a Českej republiky v oblastiach ako telekomunikácie, bankovníctva/poisťovníctva, verejnej správy a tiež v oblasti priemyslu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> 
+    async function loadAllTranslations() {
+      const p1 = await LoadTranslations('translations00.txt');
+      await Promise.all([p1]);
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadAllTranslations();
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      Animator.registerAll(".onas1-header-line", "animate-width-grow");
+      document.body.style.visibility = "visible";
+    });
+  </script>
+</body>
+</html>
