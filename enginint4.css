@@ -111,6 +111,7 @@
       max-width: 600px;
       justify-self: center;
       align-self: center;
+      /* background-color: #CCFFCC; */
     }
     .enginint4-img1 {
         position: absolute;
@@ -126,6 +127,9 @@
     }   
     /**************************************************************************/
     @media (max-width: 762px) {
+        .enginint4-left {
+          flex: 3;
+        }
         .enginint4-content {
            flex-direction: column-reverse;
            height: auto;
@@ -136,12 +140,13 @@
             margin: 0 0;
         }
         .enginint4-img1 {
-          width: 80%;
-          left:10%;
+          width: 100%;
+          left:0%;
         }
         .enginint4-img2 {
-          /* width: 45%; */
-          left:10%;
-          /* top: 39%; */
+          width: 40%;
+          top: 55%;
+          left:30%;
+          /* border: 1px dashed red; */
         }
     }    
