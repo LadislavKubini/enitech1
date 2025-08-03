@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block_EnginInt4.html</title>
+  <link rel="icon" href="favicona-enitech.png" />
+
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="enginint4.css">
+
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+<style>
+    body {
+      visibility: hidden; 
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    }
+</style>
+<style>
+  </style>
+</head>
+<body>
+  <div id="EnginInt4-div-src">
+    <div class="enginint4-body">
+      <div class="enginint4-header-line"></div>
+
+      <div class="enginint4-content">
+        <div class="enginint4-left">
+          <div class="enginint4-left-group ">
+            <img src="media/TriEskalatory.avif" class="enginint4-img1" />
+            <img src="media/JedenEskalator.png" class="enginint4-img2" />
+          </div>
+        </div>
+
+        <div class="enginint4-divider"></div>
+
+        <div class="enginint4-right">
+            <div class="enginint4-empty-line-with-img">
+              <img src="media/InonaObrabaciehoStroja.jpeg" alt="Ikona obrabacieho stroja">
+            </div>
+              <h3 lang-code="01401">Interná konštrukcia</h3>
+              <p>
+                <strong lang-code="01402">Návrh eskalátorov:</strong> 
+              </p>
+              <ul class="custom-list">
+                    <li lang-code="01403">tvorba 3D dielov a 2D výkresovej dokumentácie podľa požiadaviek zákazníka</li>
+                    <li lang-code="01404">tvorba kusovníkov</li>
+                    <li lang-code="01405">modifikácia existujúcich dielov a zostáv</li>
+                    <li lang-code="01406">návrhy pre  nové riešenia</li>
+                    <li lang-code="01407">vývoj a parametrizácia dát v softvéri 3D EXPERIENCE</li>
+              </ul>
+            <div class="enginint4-more-info-container">
+              <a href="indexKontakt.html#id-kontakt3-Deak" class="animate-text-underline" lang-code="01408">Viac informácií</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> 
+    async function loadAllTranslations() {
+      const p1 = await LoadTranslations('translations00.txt');
+      await Promise.all([p1]);
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadAllTranslations();
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      Animator.registerAll(".enginint4-header-line", "animate-width-grow");
+      document.body.style.visibility = "visible";
+    });
+  </script>
+</body>
+</html>
+

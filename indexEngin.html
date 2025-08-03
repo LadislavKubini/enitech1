@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="enginint1.css">
   <link rel="stylesheet" href="enginint2.css">
   <link rel="stylesheet" href="enginint3.css">
+  <link rel="stylesheet" href="enginint4.css">
   <link rel="stylesheet" href="footer.css">
 
   <!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
@@ -45,6 +46,9 @@
   <div id="EnginInt3-div-dst">
   </div>
 
+  <div id="EnginInt4-div-dst">
+  </div>
+
   <div id="Footer-div-dst">
   </div>
 
@@ -58,8 +62,9 @@
       const p3 = ImportDiv("Block_EnginInt1.html", "EnginInt1-div-src", "EnginInt1-div-dst");
       const p4 = ImportDiv("Block_EnginInt2.html", "EnginInt2-div-src", "EnginInt2-div-dst");
       const p5 = ImportDiv("Block_EnginInt3.html", "EnginInt3-div-src", "EnginInt3-div-dst");
-      const p6 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
-      await Promise.all([p1, p2, p3, p4, p5, p6]); // vsetky ImportDiv mozu bezat paralelne
+      const p6 = ImportDiv("Block_EnginInt4.html", "EnginInt4-div-src", "EnginInt4-div-dst");
+      const p7 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
+      await Promise.all([p1, p2, p3, p4, p5, p6, p7]); // vsetky ImportDiv mozu bezat paralelne
     }
    </script>
 
@@ -82,6 +87,8 @@
       Animator.register("#id-footer-hero-content", "animate-rotateFlipIn"); 
       Animator.registerAll(".enginint1-header-line", "animate-width-grow");
       Animator.registerAll(".enginint2-header-line", "animate-width-grow");
+      Animator.registerAll(".enginint3-header-line", "animate-width-grow");
+      Animator.registerAll(".enginint4-header-line", "animate-width-grow");
       restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
       document.body.style.visibility = "visible"; // zobraz stránku až teraz    
     });    
