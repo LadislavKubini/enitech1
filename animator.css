@@ -19,7 +19,7 @@
     .animate-slide-in-bounce {
       animation: slide-in-bounce 0.6s ease-out;
     }
-/* Text sa pred zobrazenim pretaca */
+/* Text sa pred zobrazenim pretaca *******************************************************/
 /* Toto treba dat prvku, aby sa maz z coho pretacat: style="transform-style: preserve-3d; transform: rotateX(-90deg) rotateY(10deg);" */
     @keyframes rotateFlipIn {
       to {
@@ -44,4 +44,43 @@
 
     .animate-width-grow {
       animation: width-grow 2s ease-out forwards;
+    }
+
+    /*** Text sa pri hover plynulo podciarkne, typicky text v <a> *********************/
+    .animate-text-underline {
+      color: #0056b3;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      display: inline-block; /* dôležité: aby dekorácia šla len pod text */
+      transition: color 0.2s ease;
+    }
+    .animate-text-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px; /* vzdialenosť linky od textu */
+      width: 100%;  /* dĺžka len podľa textu */
+      height: 2px;
+      background: #0056b3;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+    }
+    .animate-text-underline:hover {
+      color: #003974;
+    }
+    .animate-text-underline:hover::after {
+      transform: scaleX(1);
+    }
+
+    /*** Odkaz v url, na ktory sa skocilo, 3x zablika ************************************/
+    /*** napr. indexKontakt.html#id-kontakt3-Deak, tak zablika element <div id="id-kontakt3-Deak"> */
+    @keyframes contact-highlight {
+      0%   { background-color: #fff9d6; }
+      50%  { background-color: #fff; }
+      100% { background-color: #fff9d6; }
+    }
+    .highlight-once {
+      animation: contact-highlight 1s ease-in-out 0s 3;
     }

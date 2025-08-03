@@ -10,8 +10,11 @@
 
   <link rel="stylesheet" href="root.css">
   <link rel="stylesheet" href="kontakt3.css">
+  <link rel="stylesheet" href="animator.css">
 
   <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+
 </head>
 <body>
   <div id="Kontakt3-div-src">
@@ -29,7 +32,7 @@
             <p>info@enitech.sk</p>
           </div>
         </div>
-        <div class="kontakt3-cell align-top">
+        <div class="kontakt3-cell align-top" id="id-kontakt3-Deak">
           <div class="align-top">
             <p lang-code="05053">.Interná konštrukcia:</p>
             <p>&nbsp;</p>
@@ -87,6 +90,7 @@
       await UpdateTexts();
       await new Promise(requestAnimationFrame);
       restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
+      highlightContact('id-kontakt3-Deak');
       document.body.style.visibility = "visible"; // zobraz stránku až teraz    
     });
   </script>

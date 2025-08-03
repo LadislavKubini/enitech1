@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>test-position2.html</title>
+  <link rel="icon" href="favicona-enitech.png" />
+
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="enginint2.css">
+
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+<style>
+    body {
+      visibility: hidden; 
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    }
+</style>
+<style>
+  </style>
+</head>
+<body>
+  <div id="EnginInt2-div-src">
+    <div class="enginint2-body">
+      <div class="enginint2-header-line"></div>
+
+      <div class="enginint2-content">
+        <div class="enginint2-left">
+            <div class="enginint2-empty-line-with-img">
+              <img src="media/Lietadielko.png" alt="Ikona lietadielka">
+            </div>
+              <h3 lang-code="01201">Interná konštrukcia</h3>
+              <p>
+                <strong lang-code="01202">Projekty montážnych plošín</strong> 
+                <span lang-code="01202">pre vonkajšie časti lietadiel</span>
+              </p>
+              <ul class="custom-list">
+                    <li lang-code="01203">tvorba 3D dielov podľa požiadaviek zákazníka </li>
+                    <li lang-code="01204">tvorba zostáv z vymodelovaných dielov, metódou skeletonu</li>
+                    <li lang-code="01205">vyplňovanie atribútov dielov a zostáv </li>
+                    <li lang-code="01206">tvorba kusovníkov</li>
+                    <li lang-code="01207">modifikácia existujúcich dielov a zostáv</li>
+              </ul>
+            <div class="enginint2-more-info-container">
+              <a href="indexKontakt.html#id-kontakt3-Deak" class="animate-text-underline">Viac informácií</a>
+            </div>
+        </div>
+
+        <div class="enginint2-divider"></div>
+
+        <div class="enginint2-right">
+          <div class="enginint2-right-group ">
+            <img src="media/MontaznaPlosina1.png" class="enginint2-img1" />
+            <img src="media/MontaznaPlosina2.png" class="enginint2-img2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> 
+    async function loadAllTranslations() {
+      const p1 = await LoadTranslations('translations00.txt');
+      await Promise.all([p1]);
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadAllTranslations();
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      Animator.registerAll(".enginint2-header-line", "animate-width-grow");
+      document.body.style.visibility = "visible";
+    });
+  </script>
+</body>
+</html>
+

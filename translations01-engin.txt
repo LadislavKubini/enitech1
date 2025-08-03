@@ -1,3 +1,4 @@
+// Block_Engin.html
 01001 || End-to-end inžinierstvo. 
 || End-to-end Engineering. 
 || End-to-end Engineering.
@@ -6,4 +7,25 @@
 || Zuverlässige und effektive Unterstützung auf dem Gebiet der Lösung technischer Aufgaben zu Hause und im Ausland. 
 || Reliable and efficient support in the field of technical solutions locally and abroad.
 
+// Block_EnginInt1.html
+01101 || Spoľahlivá a efektívna podpora v oblasti konštrukčných prác doma aj v zahraničí.
+|| Zuverlässige und effektive Unterstützung bei Konstruktionsarbeiten im In- und Ausland.
+|| Reliable and effective support in the field of construction work at home and abroad.
 
+01102 || Interná konštrukcia || Interne Konstruktion || Internal construction
+
+01104 || Naši špecialisti pracujú na projektoch so systémami:
+|| Unsere Spezialisten arbeiten an Projekten mit folgenden Systemen:
+|| Our specialists work on projects with the following systems:
+
+01105 || Poskytujeme komplexné riešenia a individuálny prístup vo všetkých etapách vývoja
+|| Wir bieten umfassende Lösungen und einen individuellen Ansatz in allen Entwicklungsphasen.
+|| We provide comprehensive solutions and an individual approach at all stages of development.
+
+01106 ||  - od konštrukčného návrhu, jeho doladenia a úprav, až po vypracovanie kompletnej výkresovej dokumentácie.
+|| - vom Konstruktionsentwurf über dessen Feinabstimmung und Anpassung bis hin zur Erstellung der vollständigen Zeichnungsdokumentation.
+|| - from the design, its fine-tuning and modifications, to the preparation of complete drawing documentation.
+
+01107 || Spolupracujeme najmä s firmami z leteckého priemyslu, automobilového priemyslu a všeobecného strojárstva.
+|| Wir arbeiten vor allem mit Unternehmen aus der Luftfahrtindustrie, der Automobilindustrie und dem allgemeinen Maschinenbau zusammen.
+|| We mainly cooperate with companies from the aviation industry, automotive industry and general engineering.

@@ -1,7 +1,6 @@
     .onas1-body {
       background-color: white;
       color: black;
-      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
       font-weight: 400;
       font-size: clamp(18px, 1.8vw, 30px);
       display: flex;

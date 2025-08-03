@@ -19,7 +19,7 @@ Animator.initObserver = function () {
   }, { threshold: 0.3 });
 };
 
-// Registruje jeden konkrétny prvok
+// Registruje jeden konkrétny prvok (typicky podla id)
 Animator.register = function (selector, animationClassName) {
   const el = document.querySelector(selector);
   if (!el) {
@@ -37,7 +37,7 @@ Animator.register = function (selector, animationClassName) {
   Animator.observer.observe(el);
 };
 
-// Registruje viacero prvkov podľa selektora
+// Registruje viacero prvkov podľa selektora (typicky class name)
 Animator.registerAll = function (selector, animationClassName) {
   const elements = document.querySelectorAll(selector);
   if (!elements.length) {
@@ -58,3 +58,24 @@ Animator.registerAll = function (selector, animationClassName) {
     Animator.observer.observe(el);
   });
 };
+
+//***************************************************************************************
+// Ked sa "skoci" na stranku s target id v url, napr. indexKontakt.html#id-kontakt3-Deak,
+// tak sa vykona animacia css na prvku <div id="id-kontakt3-Deak">
+function highlightContact(targetId, options) {
+  options = options || {};
+  var animationClass = options.animationClass || 'highlight-once';
+  var delayMs = typeof options.delayMs === 'number' ? options.delayMs : 100;
+
+  if (window.location.hash !== '#' + targetId) return;
+  var el = document.getElementById(targetId);
+  if (!el) return;
+
+  // reštart animácie
+  setTimeout(function() {
+    el.classList.remove(animationClass);
+    void el.offsetWidth; // force reflow na reset animácie
+    el.classList.add(animationClass);
+  }, delayMs);
+}
+
