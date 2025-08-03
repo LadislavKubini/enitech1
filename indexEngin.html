@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="UvodHero.css">
   <link rel="stylesheet" href="enginint1.css">
   <link rel="stylesheet" href="enginint2.css">
+  <link rel="stylesheet" href="enginint3.css">
   <link rel="stylesheet" href="footer.css">
 
   <!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
@@ -41,6 +42,9 @@
   <div id="EnginInt2-div-dst">
   </div>
 
+  <div id="EnginInt3-div-dst">
+  </div>
+
   <div id="Footer-div-dst">
   </div>
 
@@ -53,8 +57,9 @@
       const p2 = ImportDiv("Block_Engin.html", "Engin-div-src", "Engin-div-dst");
       const p3 = ImportDiv("Block_EnginInt1.html", "EnginInt1-div-src", "EnginInt1-div-dst");
       const p4 = ImportDiv("Block_EnginInt2.html", "EnginInt2-div-src", "EnginInt2-div-dst");
-      const p5 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
-      await Promise.all([p1, p2, p3, p4, p5]); // vsetky ImportDiv mozu bezat paralelne
+      const p5 = ImportDiv("Block_EnginInt3.html", "EnginInt3-div-src", "EnginInt3-div-dst");
+      const p6 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
+      await Promise.all([p1, p2, p3, p4, p5, p6]); // vsetky ImportDiv mozu bezat paralelne
     }
    </script>
 

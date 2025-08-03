@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block_EnginInt3.html</title>
+  <link rel="icon" href="favicona-enitech.png" />
+
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="enginint3.css">
+
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+<style>
+    body {
+      visibility: hidden; 
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    }
+</style>
+<style>
+  </style>
+</head>
+<body>
+  <div id="EnginInt3-div-src">
+    <div class="enginint3-body">
+      <div class="enginint3-header-line"></div>
+
+      <div class="enginint3-content">
+        <div class="enginint3-left">
+          <div class="enginint3-left-group ">
+            <img src="media/InternaKonstrukcia1.png" class="enginint3-img1" />
+          </div>
+        </div>
+
+        <div class="enginint3-divider"></div>
+
+        <div class="enginint3-right">
+            <div class="enginint3-empty-line-with-img">
+              <img src="media/Auticko.png" alt="Ikona auticka">
+            </div>
+              <h3 lang-code="01301">Interná konštrukcia</h3>
+              <p>
+                <strong lang-code="01302">Komplexné návrhy</strong> 
+              </p>
+              <ul class="custom-list">
+                    <li lang-code="01303">upínacích prípravkov </li>
+                    <li lang-code="01304">montážnych a manipulačných prípravkov</li>
+                    <li lang-code="01305">meracích a kontrolných prípravkov</li>
+                    <li lang-code="01306">testovacích prípravkov</li>
+              </ul>
+            <div class="enginint3-more-info-container">
+              <a href="indexKontakt.html#id-kontakt3-Deak" class="animate-text-underline" lang-code="01307">Viac informácií</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> 
+    async function loadAllTranslations() {
+      const p1 = await LoadTranslations('translations00.txt');
+      await Promise.all([p1]);
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadAllTranslations();
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      Animator.registerAll(".enginint3-header-line", "animate-width-grow");
+      document.body.style.visibility = "visible";
+    });
+  </script>
+</body>
+</html>
+

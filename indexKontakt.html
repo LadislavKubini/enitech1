@@ -79,19 +79,16 @@
       Animator.register("#id-kontakt1-animate-content", "animate-slide-in-bounce");
       Animator.register("#id-kontakt2-animate-content", "animate-rotateFlipIn");
       Animator.register("#id-footer-hero-content", "animate-rotateFlipIn"); 
-  // *** nový blok: oprava scrollu podľa hashu (ak je) ***
-  if (window.location.hash) {
-    const targetEl = document.querySelector(window.location.hash);
-    if (targetEl) {
-      // počkaj ešte jeden frame, aby bol element úplne "zabudovaný"
-      await new Promise(requestAnimationFrame);
-      targetEl.scrollIntoView({ behavior: 'auto', block: 'start' });
-    // Posun o vysku menu (110px)
-      window.scrollBy(0, -parseInt(getComputedStyle(document.documentElement).getPropertyValue('--menu-height')) || 110);
-    }
-  }
-
-
+      // *** nový blok: oprava scrollu podľa hashu (ak je) ***
+      if (window.location.hash) {
+        const targetEl = document.querySelector(window.location.hash);
+        if (targetEl) {
+          await new Promise(requestAnimationFrame);
+          targetEl.scrollIntoView({ behavior: 'auto', block: 'start' });
+        // Posun o vysku menu (110px)
+          window.scrollBy(0, -parseInt(getComputedStyle(document.documentElement).getPropertyValue('--menu-height')) || 110);
+        }
+      }
       highlightContact('id-kontakt3-Deak'); // aby prislusny <div id=""> zablikal
       restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
       document.body.style.visibility = "visible";  
