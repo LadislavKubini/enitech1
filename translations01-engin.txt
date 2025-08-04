@@ -106,3 +106,17 @@
 || Here we work with systems according to customer requirements.
 
 01508 || Viac informácií || Weitere Informationen || More information
+
+//Block_EnginElekt1.html
+01601 || Elektro projekcia || Elektroprojektion || Electrical projection
+
+01602 || V oblasti elektro Vás vieme podporiť v systéme <strong>EPLAN P8</strong> pri návrhu, plánovaní a optimalizácii elektrotechniky do Vašich strojov a zariadení
+|| Im Bereich Elektrotechnik unterstützen wir Sie mit dem System <strong>EPLAN P8</strong> bei der Konzeption, Planung und Optimierung der Elektrotechnik für Ihre Maschinen und Anlagen.
+|| In the field of electrical engineering, we can support you in the <strong>EPLAN P8</strong> system in the design, planning, and optimization of electrical engineering for your machines and equipment.
+
+01603 || Disponujeme tiež skúsenosťami pre návrh dosiek plošných spojov(
+|| Wir verfügen auch über Erfahrung in der Entwicklung von Leiterplatten(
+|| We also have experience in designing printed circuit boards(
+
+01604 || PCB  dizajn || PCB-Design || PCB design
+01605 || Viac informácií || Weitere Informationen || More information
