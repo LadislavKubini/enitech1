@@ -1,5 +1,5 @@
-    .enginelekt1-body {
-      background-color: white;
+    .enginautom1-body {
+      background-color: #F8FCFF;
       color: black;
       height: auto;
       min-height: 100%;
@@ -7,13 +7,13 @@
       padding: 4vw 4vw; /* vertikalne horizontalne*/
       box-sizing: border-box;
     }
-    .enginelekt1-header-line {
+    .enginautom1-header-line {
       width: 100%;
       height: 1px;
       background-color: #00C;
     }
 
-    .enginelekt1-content {
+    .enginautom1-content {
       display: flex;
       flex-direction: row;
       /* width: 100vw; */
@@ -23,7 +23,7 @@
       gap: 1vw;
     }
     /**************************************************************************/
-    .enginelekt1-left {
+    .enginautom1-left {
       flex: 5;
       overflow: hidden;
       padding: 1vw;
@@ -32,19 +32,18 @@
       /* border: 1px dashed red; */
 
       display: flex;
+      flex-direction: column;
       justify-content: center; /* horizontálne centrovanie */
       align-items: center;     /* vertikálne, ak potrebuješ */
     }
-    .enginelekt1-img1 {
+    .enginautom1-img1 {
          max-height: 70%;
          max-width: 70%;
-         transform: rotate(90deg);
-         transform-origin: center;
          display: block;
     }
 
 /**************************************************************************/
-    .enginelekt1-right {
+    .enginautom1-right {
       flex: 4;
       /* background: #eef; */
       display: flex;
@@ -53,36 +52,36 @@
       padding: 20px;
       box-sizing: border-box;
     }
-    .enginelekt1-empty-line-with-img {
+    .enginautom1-empty-line-with-img {
       display: flex;
       justify-content: flex-end; /* obrázok vpravo */
       align-items: center;       /* vertikálne zarovnanie */
       height: 1.5em;              /* výška „riadku“ */
     }
-    .enginelekt1-empty-line-with-img img {
+    .enginautom1-empty-line-with-img img {
       height: 60px;               /* malý obrázok */
       width: auto;                 /* zachovať pomer strán */
     }
-    .enginelekt1-right strong {
+    .enginautom1-right strong {
       font-weight: bold;
     }
-    .enginelekt1-right-last {
+    .enginautom1-right-last {
         display: flex;
         align-items: center;       /* vertikálne zarovnanie textu s obrázkom */
         gap: 20px;                 /* medzera medzi textom a obrázkom */
         flex-wrap: nowrap;
     }
-    .enginelekt1-last p {
+    .enginautom1-last p {
         margin: 0; /* odstrániť defaultné odsadenie */
     }
 
     /**************************************************************************/
-    .enginelekt1-more-info-container {
+    .enginautom1-more-info-container {
       text-align: right; /* zarovnanie obsahu doprava */
     }
 
     /**************************************************************************/
-    .enginelekt1-divider {
+    .enginautom1-divider {
       width: 1px;
       background-color: #00C;
       /* margin: 0 10px; */
@@ -90,15 +89,15 @@
 
     /**************************************************************************/
     @media (max-width: 762px) {
-        .enginelekt1-content {
-           flex-direction: column-reverse;
+        .enginautom1-content {
+           flex-direction: column;
            height: auto;
         }
-        .enginelekt1-divider {
+        .enginautom1-divider {
             width: 100%;
             height: 1px;
             margin: 0 0;
         }
-        .enginelekt1-img1 {
+        .enginautom1-img1 {
           transform: rotate(0deg);        }
     }    

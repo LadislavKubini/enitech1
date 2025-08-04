@@ -68,8 +68,7 @@
 01401 || Interná konštrukcia || Interne Konstruktion || Internal construction 
 01402 || Návrh eskalátorov: || Entwurf der Rolltreppen: || Escalator design:
 
-01403 
-|| tvorba 3D dielov a 2D výkresovej dokumentácie podľa požiadaviek zákazníka 
+01403 || tvorba 3D dielov a 2D výkresovej dokumentácie podľa požiadaviek zákazníka 
 || Erstellung von 3D-Teilen und 2D-Zeichnungsdokumentation gemäß den Anforderungen des Kunden 
 || creation of 3D parts and 2D drawing documentation according to customer requirements
 
@@ -107,7 +106,7 @@
 
 01508 || Viac informácií || Weitere Informationen || More information
 
-//Block_EnginElekt1.html
+// Block_EnginElekt1.html *******************************************************************
 01601 || Elektro projekcia || Elektroprojektion || Electrical projection
 
 01602 || V oblasti elektro Vás vieme podporiť v systéme <strong>EPLAN P8</strong> pri návrhu, plánovaní a optimalizácii elektrotechniky do Vašich strojov a zariadení
@@ -120,3 +119,38 @@
 
 01604 || PCB  dizajn || PCB-Design || PCB design
 01605 || Viac informácií || Weitere Informationen || More information
+
+// Block_EnginAutom1.html ********************************************************************
+01701 || Automatizácia v priemysle || Automatisierung in der Industrie || Automation in industry 
+
+01702 || Vieme podporiť Vaše potreby v oblasti automatizácie s 
+         <strong>programovaním automatizovaných liniek</strong> a systémov alebo 
+         s programovaním robotov alebo robotických pracovísk.
+|| Wir können Ihre Anforderungen im Bereich der Automatisierung mit 
+   <strong>der Programmierung automatisierter Linien</strong> und Systeme oder 
+   mit der Programmierung von Robotern oder Roboterarbeitsplätzen unterstützen.
+|| We can support your automation needs with 
+   <strong>programming of automated lines</strong> and systems or 
+   programming of robots or robotic workstations.
+
+01703 ||Naši PLC špecialisti pracujú v systémoch ako 
+                 <strong>SIEMENS a ROCKWELL (AllenBradley)</strong>, ale 
+                 vieme Vám pomôcť aj v PLC systémoch ako 
+                 <strong>B&R, Beckhoff, OMRON</strong>, či <strong>Schneider</strong>.
+|| Unsere PLC-Spezialisten arbeiten mit Systemen wie 
+   <strong>SIEMENS und ROCKWELL (AllenBradley)</strong>, aber 
+   wir können Ihnen auch bei PLC-Systemen wie 
+   <strong>B&R, Beckhoff, OMRON</strong> oder <strong>Schneider</strong> helfen.
+|| Our PLC specialists work with systems such as 
+   <strong>SIEMENS and ROCKWELL (AllenBradley)</strong>, but 
+   we can also help you with PLC systems such as 
+   <strong>B&R, Beckhoff, OMRON</strong>, and <strong>Schneider</strong>.
+
+01704 || Máme skúsenosti s robotmi od <strong>ABB, KUKA, 
+         FANUC</strong>, ale aj <strong>STAUBLI</strong>, či <strong>YASKAWA</strong>
+|| Wir haben Erfahrung mit Robotern von <strong>ABB, KUKA, 
+   FANUC</strong>, aber auch <strong>STAUBLI</strong> und <strong>YASKAWA</strong>.
+|| We have experience with robots from <strong>ABB, KUKA, 
+   FANUC</strong>, but also <strong>STAUBLI</strong> and <strong>YASKAWA</strong>.
+
+01705 || Viac informácií || Weitere Informationen || More information
