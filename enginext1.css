@@ -1,0 +1,136 @@
+    .enginext1-body {
+      background-color: #F8FCFF;
+      color: black;
+      height: auto;
+      min-height: 100%;
+      font-size: clamp(18px, 1.8vw, 30px);
+      padding: 4vw 4vw; /* vertikalne horizontalne*/
+      box-sizing: border-box;
+    }
+    .enginext1-header-line {
+      width: 100%;
+      height: 1px;
+      background-color: #00C;
+    }
+
+    .enginext1-content {
+      display: flex;
+      flex-direction: row;
+      /* width: 100vw; */
+      width: auto;
+      box-sizing: border-box;
+      padding: 1vw;
+      gap: 1vw;
+    }
+
+/**************************************************************************/
+    .enginext1-right {
+      flex: 4;
+      /* background: #eef; */
+      display: flex;
+      flex-direction: column;
+      justify-content: top; /* center; */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .enginext1-empty-line-with-img {
+      display: flex;
+      justify-content: flex-end; /* obrázok vpravo */
+      align-items: center;       /* vertikálne zarovnanie */
+      height: 1.5em;              /* výška „riadku“ */
+    }
+    .enginext1-empty-line-with-img img {
+      height: 50px;               /* malý obrázok */
+      width: auto;                 /* zachovať pomer strán */
+    }
+    .enginext1-right strong {
+      font-weight: bold;
+    }
+    .enginext1-right-last {
+        display: flex;
+        align-items: center;       /* vertikálne zarovnanie textu s obrázkom */
+        gap: 20px;                 /* medzera medzi textom a obrázkom */
+        flex-wrap: nowrap;
+    }
+    .enginext1-last p {
+        margin: 0; /* odstrániť defaultné odsadenie */
+    }
+/* Základ pre zoznam: odstránime defaultné odsadenie a medzery */
+    .enginext1-custom-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .enginext1-custom-list li {
+      /* Žiadne zbytočné vertikálne medzery medzi riadkami */
+      margin: 0;
+      padding: 0;
+      line-height: 1.4; /* môže sa upraviť podľa potreby */
+      position: relative;
+    }
+
+    /* Vlastná odrážka: plná guľka, vertikálne centrovaná */
+    .enginext1-custom-list li::before {
+      content: "●";
+      /* Veľkosť a umiestnenie */
+      display: inline-block;
+      width: 1em; /* rezerva pre odrážku */
+      margin-right: 2ch; /* odsadenie textu od gulky ~ šírka dvoch písmen */
+      /* Vertikálne centrovanie s textom */
+      font-size: 0.9em; /* prípadne doladiť podľa vizuálu */
+      line-height: 1; 
+      vertical-align: middle;
+      color: currentColor; /* dedí farbu textu */
+    }
+
+    /**************************************************************************/
+    .enginext1-more-info-container {
+      text-align: right; /* zarovnanie obsahu doprava */
+    }
+
+    /**************************************************************************/
+    .enginext1-divider {
+      width: 1px;
+      background-color: #00C;
+      /* margin: 0 10px; */
+    }
+
+    /**************************************************************************/
+    .enginext1-left {
+      flex: 5;
+      overflow: hidden;
+      padding: 1vw;
+      box-sizing: border-box;
+      /* background: #efe; */
+    }
+    .enginext1-left-group  {
+      position: relative;
+      aspect-ratio: 1 / 1; 
+      width: 100%;
+      max-width: 600px;
+      justify-self: center;
+      align-self: center;
+    }
+    .enginext1-img1 {
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    /**************************************************************************/
+    @media (max-width: 762px) {
+        .enginext1-content {
+           flex-direction: column-reverse;
+           height: auto;
+        }
+        .enginext1-divider {
+            width: 100%;
+            height: 1px;
+            margin: 0 0;
+        }
+        .enginext1-img1 {
+          width: 80%;
+          left:10%;
+        }
+    }    

@@ -89,7 +89,10 @@
           window.scrollBy(0, -parseInt(getComputedStyle(document.documentElement).getPropertyValue('--menu-height')) || 110);
         }
       }
-      highlightContact('id-kontakt3-Deak'); // aby prislusny <div id=""> zablikal
+      highlightContactsFromHash();
+      // highlightContact('id-kontakt-Deak'); // aby prislusny <div id=""> zablikal
+      // highlightContact('id-kontakt-Kracala'); // aby prislusny <div id=""> zablikal
+      // highlightContact('id-kontakt-Ivaska'); // aby prislusny <div id=""> zablikal
       restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
       document.body.style.visibility = "visible";  
     });

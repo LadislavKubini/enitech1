@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block_EnginExt1.html</title>
+  <link rel="icon" href="favicona-enitech.png" />
+
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
+  <link rel="stylesheet" href="animator.css">
+  <link rel="stylesheet" href="enginext1.css">
+
+  <script src="Language.js" defer></script>
+  <script src="animator.js" defer></script>
+<style>
+    body {
+      visibility: hidden; 
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    }
+</style>
+<style>
+  </style>
+</head>
+<body>
+  <div id="EnginExt1-div-src">
+    <div class="enginext1-body">
+      <div class="enginext1-header-line"></div>
+
+      <div class="enginext1-content">
+        <div class="enginext1-left">
+          <div class="enginext1-left-group ">
+            <img src="media/modern-robotic-manual-manufacturing-assembly.png" class="enginext1-img1" />
+          </div>
+        </div>
+
+        <div class="enginext1-divider"></div>
+
+        <div class="enginext1-right">
+            <div class="enginext1-empty-line-with-img">
+              <img src="media/air-conditioning-outdoor-unit-icon.png" alt="Ikona klimatizacnej jednotky">
+            </div>
+              <h3 lang-code="01501">Externá konštrukcia:</h3>
+              <p lang-code="01502">U našich zákazníkov realizujeme projekty:</p>
+              <ul class="custom-list">
+                <li><strong lang-code="01503">klimatizačných jednotiek</strong></li>
+                <li><strong lang-code="01504">turbodúchadiel</strong></li>
+                <li><strong lang-code="01505">automatizovaných liniek</strong></li>
+                <li><strong lang-code="01506">interiérových a exteriérových dielov automobilov</strong></li>
+              </ul>
+              <p lang-code="01506">Tu pracujeme so systémami podľa požiadaviek zákazníka.</p>
+            <div class="enginext1-more-info-container">
+              <a href="indexKontakt.html#id-kontakt-Kracala,id-kontakt-Ivaska" class="animate-text-underline" lang-code="01508">Viac informácií</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> 
+    async function loadAllTranslations() {
+      const p1 = await LoadTranslations('translations00.txt');
+      await Promise.all([p1]);
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadAllTranslations();
+      await UpdateTexts();
+      await new Promise(requestAnimationFrame);
+      Animator.registerAll(".enginext1-header-line", "animate-width-grow");
+      document.body.style.visibility = "visible";
+    });
+  </script>
+</body>
+</html>
+

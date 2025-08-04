@@ -86,3 +86,23 @@
 
 01408 || Viac informácií || Weitere Informationen || More information
 
+// Block_EnginExt1.html *********************************************************************
+01501 || Externá konštrukcia: || Externe Konstruktion: || External construction:
+
+01502 || U našich zákazníkov realizujeme projekty: 
+|| Wir führen Projekte für unsere Kunden durch: 
+|| We carry out projects for our customers:
+
+01503 || klimatizačných jednotiek || Klimaanlagen || air conditioning units
+01504 || turbodúchadiel || Turbolader || turbochargers
+01505 || automatizovaných liniek || automatisierte Anlagen || automated lines
+
+01506 || interiérových a exteriérových dielov automobilov 
+|| Kfz-Innen- und Außenteile 
+|| interior and exterior automotive parts
+
+01507 || Tu pracujeme so systémami podľa požiadaviek zákazníka. 
+|| Hier arbeiten wir mit Systemen nach Kundenwünschen. 
+|| Here we work with systems according to customer requirements.
+
+01508 || Viac informácií || Weitere Informationen || More information
