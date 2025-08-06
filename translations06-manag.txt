@@ -28,7 +28,7 @@
 || <strong>quality managers</strong> (Quality Assurance/Q.Management)
 
 06017 || <strong>Scrum Master</strong> špecialistov 
-|| strong>Scrum Master</strong> Spezialisten 
+|| <strong>Scrum Master</strong> Spezialisten 
 || <strong>Scrum Master</strong> specialists
 
 06018 || špecialistov na <strong>dátový manažment</strong> 
