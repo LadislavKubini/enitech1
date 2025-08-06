@@ -23,7 +23,7 @@
       <h1 class="kontakt3-title" lang-code="05051">.Kontakt</h1>
 
       <div class="kontakt3-grid">
-        <div class="kontakt3-cell align-top">
+        <div class="kontakt3-cell align-top" id="id-kontakt-Info">
           <div class="align-top">
             <p lang-code="05052">.Všeobecný kontakt:</p>
           </div>
@@ -66,7 +66,7 @@
       </div>
 
       <div class="kontakt3-grid-img">
-        <div class="kontakt3-cell align-top" style="grid-row: 1;"> <!-- umiestni sa do riadku 2 -->
+        <div class="kontakt3-cell align-top"  id="id-kontakt-Holla" style="grid-row: 1;"> <!-- umiestni sa do riadku 2 -->
           <div class="align-top">
             <p lang-code="05055">.Personálne oddelenie:</p>
             <p>&nbsp;</p>
@@ -90,7 +90,10 @@
       await UpdateTexts();
       await new Promise(requestAnimationFrame);
       restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
-      highlightContact('id-kontakt3-Deak');
+      highlightContact('id-kontakt-Info');
+      highlightContact('id-kontakt-Deak');
+      highlightContact('id-kontakt-Kracala');
+      highlightContact('id-kontakt-Ivaska');
       document.body.style.visibility = "visible"; // zobraz stránku až teraz    
     });
   </script>

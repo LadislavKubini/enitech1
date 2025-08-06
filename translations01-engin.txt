@@ -73,6 +73,7 @@
 || creation of 3D parts and 2D drawing documentation according to customer requirements
 
 01404 || tvorba kusovníkov || Erstellung von Stücklisten || creation of parts lists
+
 01405 || modifikácia existujúcich dielov a zostáv 
 || Erstellung von StücklistenModifizierung bestehender Teile und Baugruppen 
 || creation of bills of materials modification of existing parts and assemblies

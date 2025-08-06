@@ -1,7 +1,7 @@
     .footer-hero-header {
       text-align: left;
       padding: 40px 20px 40px 20px;
-      background-color: #F8FFF8;
+      background-color: #fff7ea;
     }
 
     .footer-hero-content {
@@ -26,7 +26,7 @@
     }
 
     .footer {
-      background-color: #F8FFF8;
+      background-color: #fff7ea; /*#F8FFF8;*/
       padding: 70px 20px 30px 20px;
     }
 
