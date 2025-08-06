@@ -99,9 +99,9 @@
     }
 
     .manage-link a {
-      color: #AAF;
+      color: #ACF;
       text-decoration: none;
-      font-size: 1.2vw;
+      font-size: 1.6vw;
     }
 
     @media (max-width: 600px) {
