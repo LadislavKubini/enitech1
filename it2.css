@@ -99,7 +99,12 @@
       transform-origin: center center;
     }
 
-    .it2-arrow-link:hover .arrow {
+    /* .it2-arrow-link:hover .id-it2-arrow {
       transform: rotate(-45deg) scale(1.2);
     }
+ */
+    .it2-arrow:hover {
+      transform: rotate(45deg) scale(1.2);
+    }
+
 

@@ -86,6 +86,7 @@
         div1.appendChild(div2);
         container.appendChild(div1);
       });
+      UpdateTexts();
     }
 
     function buildPagination() {
