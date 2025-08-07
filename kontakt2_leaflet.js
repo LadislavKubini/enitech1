@@ -3,7 +3,7 @@
         {
           coords: [48.97083, 18.18861],
           title: "Dubnica nad Váhom",
-          image: "media/EnitechDubnica.png",
+          image: "media/EnitechDubnica.avif",
           ulica: "Dukelská štvrť 1404/613",
           mesto: "SK-018 41 Dubnica nad Váhom",
           email: "office@enitech.sk",
