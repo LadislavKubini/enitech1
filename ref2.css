@@ -5,10 +5,10 @@
   color: #333;
 }
 
-.ref2-body p {
+.ref2-header p {
   font-size: larger;
 }
-.ref2-body h2 {
+.ref2-header h2 {
   font-size: xx-large;
 }
 
@@ -16,7 +16,29 @@
   height: 1px;
   background-color: #00C;
   width: 100%; 
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
+}
+
+.ref2-line-with-img {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.5em;
+}
+
+.ref2-line-with-img img {
+	height: 60px;
+	width: auto;
+}
+
+@media (max-width: 762px) {
+  .ref2-header p {
+    font-size: medium;   /* alebo 1rem, podľa toho čo chcete */
+  }
+
+  .ref2-header h2 {
+    font-size: large;    /* alebo 1.5rem, prípadne konkrétne px */
+  }
 }
 
 
