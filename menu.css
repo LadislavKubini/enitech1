@@ -1,37 +1,56 @@
     .uvod-topbar {
       box-sizing: border-box;
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       align-items: center;
-      padding: 30px 30px;
+      padding: 10px 20px;
       background: linear-gradient(to right, #1b2c5a, #2A4184 50%, #5a6bb0);
       color: white;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
+      /* gap: 10px; */
       height: var(--menu-height);
       z-index: 1001;
     }
 
-    .uvod-topbar-left {
+    .uvod-topbar-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
+      /* gap: 10px; */
     }
 
-    .uvod-topbar img {
+    .uvod-topbar-logo img {
       height: 30px;
     }
 
+    .uvod-topbar-langs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: min(24px, 2vw);    /* medzera od loga */
+      margin-right: auto;             /* posunie zvyšok (menu) doprava */
+    }
+
     .uvod-lang {
-      font-size: 16px;
+      font-size: 12px;
       cursor: pointer;
+    }
+    .uvod-lang img {
+      height: 12px;
+      width: 16px;
+      object-fit: cover;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 2px; /* voliteľné – zaoblenie rohov ako emoji */
     }
 
     .uvod-menu {
       display: flex;
       align-items: center;
+      font-size: 16px;
+      gap: 0;
     }
 
     .uvod-menu a {
@@ -101,7 +120,19 @@
       padding: 60px 20px;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1250px) {
+      .uvod-topbar-logo img {
+        height: 25px;
+      }
+      /* .uvod-lang img {
+        height: 15px;
+      } */
+      .uvod-menu {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 1050px) {
       .uvod-menu a:not(.uvod-lang), .uvod-menu span:not(.uvod-lang) {
         display: none;
       }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_Ref2.html</title>
+	<link rel="icon" href="favicona-enitech.png">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Poppins', 'Open Sans', Arial, Tahoma, sans-serif;
+		}
+	</style>
+
+	<link rel="stylesheet" href="root.css">
+	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="ref2.css">
+	<link rel="stylesheet" href="ref-ovl.css">
+
+	<script src="Language.js" defer></script>
+	<script src="animator.js" defer></script>
+</head>
+
+<body>
+	<div id="Ref2-div-src">
+		<div id="id-Block_Ref2" style="scroll-margin-top: 80px;"></div>
+		<div class="ref2-body">
+			<div class="ref2-animate-line"></div>
+			<h2 lang-code="07011">.Letecký priemysel</h2>
+			<p lang-code="07012">.Vývoj a integrácia systémov pre letecký priemysel</p>
+			<div class="ref-ovl-grid">
+				<!-- 1. stvorica -->
+				<div class="ref-ovl-item-wrap">
+					<div class="ref-ovl-item">
+						<img src="media/klienti/airbus-logo-enitech.png" alt="Airbus logo" class="ref-ovl-image" />
+						<div class="ref-ovl-overlay">
+							<p><strong lang-code="07005">Realizované služby:</strong></p>
+							<p>interiérové komponenty lietadiel</p>
+						</div>
+					</div>
+					<div class="ref-ovl-company-item">
+						<div class="ref-ovl-company">AIRBUS</div>
+					</div>
+				</div>
+
+				<div class="ref-ovl-item-wrap">
+					<div class="ref-ovl-item">
+						<img src="media/klienti/siemens-logo-enitech.png" alt="SIEMENS logo" class="ref-ovl-image" />
+						<div class="ref-ovl-overlay">
+							<p><strong lang-code="07005">Realizované služby:</strong></p>
+							<p>software pre letecký a kozmický priemysel </p>
+						</div>
+					</div>
+					<div class="ref-ovl-company-item">
+						<div class="ref-ovl-company">SIEMENS</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			// Načítanie prekladov po načítaní DOM
+			await LoadTranslations('translations07-ref.txt');
+			await UpdateTexts();
+			Animator.registerAll(".ref2-animate-line", "animate-width-grow");
+		});
+	</script>
+
+</body>
+
+</html>

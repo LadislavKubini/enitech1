@@ -43,7 +43,7 @@
         const container = document.getElementById("id_kariera-ponuky");
 
       } catch (err) {
-        document.getElementById("ponuky").textContent = "Chyba pri načítaní ponúk.";
+        document.getElementById("id_listPonuky").textContent = "Chyba pri načítaní ponúk.";
         console.error("Chyba:", err);
       }
     }

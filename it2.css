@@ -87,9 +87,14 @@
 
     /* pre sipku svg */
     .it2-arrow-link {
-      display: inline-block;
+      display: inline-flex; /* Flex pre horizontálne zarovnanie text + šípka */
+      /* align-items: center; */
+      align-items: flex-end; /* <--- dôležité zarovnanie na spodok */      
+      gap: 0.5rem;
       cursor: pointer;
-      margin-bottom : 2rem;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      color: inherit;
     }
 
     .it2-arrow {
@@ -99,12 +104,21 @@
       transform-origin: center center;
     }
 
-    /* .it2-arrow-link:hover .id-it2-arrow {
-      transform: rotate(-45deg) scale(1.2);
+    .it2-arrow-text {
+      font-size: 1rem;
+      font-weight: 500;
     }
- */
-    .it2-arrow:hover {
+    
+    .it2-arrow-link:hover .it2-arrow {
       transform: rotate(45deg) scale(1.2);
     }
 
+    /* !!! kľúčová zmena: aktivátor je .it2-arrow-link:hover */
+    .it2-arrow-link:hover .animate-text-underline::after {
+      transform: scaleX(1);
+    }
+
+    /* .it2-arrow:hover {
+      transform: rotate(45deg) scale(1.2);
+    } */
 

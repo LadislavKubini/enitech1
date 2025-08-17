@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--klucove pre mobilne zariadenia-->
   <title>Block_Menu.html</title>
   <link rel="icon" href="favicona-enitech.png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="fonts-poppins.css" />
+  <link rel="stylesheet" href="fonts-open-sans.css">
   <style>
     body, html {
       margin: 0;
       padding: 0;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
     }
   </style>
   <link rel="stylesheet" href="root.css">
@@ -27,13 +29,22 @@
   <div id="Menu-div-src">
     <!-- Horná lišta -->
     <div class="uvod-topbar">
-      <div class="uvod-topbar-left">
+      <div class="uvod-topbar-logo">
         <img src="media/logo-biela-30px-enitech.png" alt="Logo Enitech">
       </div>
-      <div class="uvod-topbar-left">
-        <span class="uvod-lang" onclick="setLang('sk')">🇸🇰</span>
+      <div class="uvod-topbar-langs">
+        <!-- <span class="uvod-lang" onclick="setLang('sk')">🇸🇰</span>
         <span class="uvod-lang" onclick="setLang('de')">🇩🇪</span>
-        <span class="uvod-lang" onclick="setLang('en')">🇬🇧</span>
+        <span class="uvod-lang" onclick="setLang('en')">🇬🇧</span> -->
+        <span class="uvod-lang" onclick="setLang('sk')">
+          <img src="media/Flag_SK.svg" alt="SK" />
+        </span>
+        <span class="uvod-lang" onclick="setLang('de')">
+          <img src="media/Flag_DE.svg" alt="DE" />
+        </span>
+        <span class="uvod-lang" onclick="setLang('en')">
+          <img src="media/Flag_EN.svg" alt="EN" />
+        </span>
       </div>
       <nav class="uvod-menu">
         <a href="indexOnas.html#top" lang-code="00101">.O nás</a>
@@ -92,7 +103,6 @@
     document.addEventListener("DOMContentLoaded", async () => {
       // Načítanie prekladov po načítaní DOM
       await LoadTranslations('translations00.txt');
-      await LoadTranslations('translations01.txt');
       await UpdateTexts();
       await new Promise(requestAnimationFrame); // Môžeš počkať na ďalší repaint, ak chceš jemnejší prechod (voliteľné)
       // Spustenie animácie

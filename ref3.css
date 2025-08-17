@@ -1,18 +1,18 @@
-.ref1-body {
+.ref3-body {
   margin: 0;
   padding: 2rem;
   background-color: #E8F4FF;;
   color: #333;
 }
 
-.ref1-body p {
+.ref3-body p {
   font-size: larger;
 }
-.ref1-body h2 {
+.ref3-body h2 {
   font-size: xx-large;
 }
 
-.ref1-animate-line {
+.ref3-animate-line {
   height: 1px;
   background-color: #00C;
   width: 100%; 

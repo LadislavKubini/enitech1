@@ -37,7 +37,7 @@
       align-items: baseline;
       margin-bottom: 3vw;
     }
-
+/*****************************************************************************************************************/
     .it3-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -98,6 +98,10 @@
       /* color: #000; */
       line-height: 1.8;
     }
+/*******************************************************************************************************/
+    .it3-more-info-container {
+      text-align: right; /* zarovnanie obsahu doprava */
+    }
 
     /* Grid area assignment */
     .p1 { grid-area: p1; }
@@ -107,7 +111,7 @@
     .t2 { grid-area: t2; }
     .t3 { grid-area: t3; }
 
-    /* Responsívny režim */
+    /* Responsívny režim ******************************************************************************/
     @media (max-width: 600px) {
       .it3-grid {
         grid-template-columns: 1fr;

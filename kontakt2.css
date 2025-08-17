@@ -1,119 +1,192 @@
     .kontakt2-grid-body {
-      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
-      font-weight: 200;
-      background-color: white;
-      color: black;
-      padding: 4vw 6vw;
-      width: 100%;
-      box-sizing: border-box;
-      /* border: 1px dashed blue; */
+    	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    	font-weight: 200;
+    	background-color: white;
+    	color: black;
+    	padding: 4vw 6vw;
+    	width: 100%;
+    	box-sizing: border-box;
+    	/* border: 1px dashed blue; */
     }
 
     .kontakt2-grid-line {
-      height: 1px;
-      background-color: #999;
-      width: 100%; 
-      margin: 0 0 3vw 0;
+    	height: 1px;
+    	background-color: #999;
+    	width: 100%;
+    	margin: 0 0 3vw 0;
     }
 
     .kontakt2-grid-body h3 {
-      font-size: 2.2vw;
-      font-weight: 300;
-      margin: 0 0 3vw 0;
-      text-align: left;
+    	font-size: 2.2vw;
+    	font-weight: 300;
+    	margin: 0 0 3vw 0;
+    	text-align: left;
     }
 
     .kontakt2-grid-body h1 {
-      font-size: 4.5vw;
-      font-weight: 300;
-      margin: 0 0 3vw 0;
-      text-align: left;
-      /* border: 1px dashed blue; */
+    	font-size: 4.5vw;
+    	font-weight: 300;
+    	margin: 0 0 3vw 0;
+    	text-align: left;
+    	/* border: 1px dashed blue; */
     }
 
     .kontakt2-wrapper {
-      display: flex; /* flex sa roztahuje len sirku, lebo ma definovanu presnu height */
-      flex-direction: row; /* row je default hodnota, je uvedena pre nazornost */
-      height: 600px;
-      width: 100%;
-      border: 1px solid #ccc; /* len na vizualizáciu */
-      box-sizing: border-box;
+    	display: flex;
+    	/* flex sa roztahuje len sirku, lebo ma definovanu presnu height */
+    	flex-direction: row;
+    	/* row je default hodnota, je uvedena pre nazornost */
+    	height: 600px;
+    	width: 100%;
+    	border: 1px solid #ccc;
+    	/* len na vizualizáciu */
+    	box-sizing: border-box;
     }
 
     .kontakt2-left {
-      flex: 1; /* zaberie celu zvysnu sirku */
-      background-color: #f0f0f0; /* len na ukážku */
-      border: 1px dashed blue;
+    	flex: 1;
+    	/* zaberie celu zvysnu sirku */
+    	background-color: #f0f0f0;
+    	/* len na ukážku */
+    	border: 1px dashed blue;
     }
+
     .kontakt2-map {
-      height: 100%; /* 100vh; */
-      width: 100%;
-      /* border: 1px dashed red; */
+    	height: 100%;
+    	/* 100vh; */
+    	width: 100%;
+    	/* border: 1px dashed red; */
     }
 
     .kontakt2-right {
-      width: 250px;
-      overflow-y: auto;
-      background-color: #fff;
-      border-left: 1px solid #ddd;
+    	width: 250px;
+    	overflow-y: auto;
+    	background-color: #fff;
+    	border-left: 1px solid #ddd;
     }
 
     .kontakt2-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      row-gap: 10px;
-      padding: 10px;
+    	display: grid;
+    	grid-template-columns: 1fr;
+    	row-gap: 10px;
+    	padding: 10px;
     }
 
-    .kontakt2-cell {
-      width: 100%;
-      aspect-ratio: 1 / 1; /* štvorcový tvar */
-      background-color: #e6e6e6;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: smaller;
-      border-radius: 6px;
-      box-sizing: border-box;
-      padding: 5px;
-      margin: 5px;
+    /* .kontakt2-cell {
+    	width: 100%;
+    	aspect-ratio: 1 / 1;
+    	background-color: #e6e6e6;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	font-size: smaller;
+    	border-radius: 6px;
+    	box-sizing: border-box;
+    	padding: 5px;
+    	margin: 5px;
     }
+
+    .kontakt2-cell img {
+    	width: 100%;
+    	height: 100%;
+    	object-fit: cover;
+    	border-radius: 4px;
+    } */
+.kontakt2-cell {
+  width: 100%;
+  /* aspect-ratio: 1 / 1;  odstrániť! */
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column; /* aby text bol pod obrázkom */
+  align-items: stretch;
+  font-size: smaller;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+}
+
+.kontakt2-cell img {
+  width: 100%;
+  height: 120px;   /* rovnaká výška pre všetky obrázky */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
     .kontakt2-cell.active {
-      outline: 3px solid orange;
-      background: #ffe6cc;
+    	outline: 3px solid orange;
+    	background: #ffe6cc;
     }
+
     .leaflet-marker-icon.selected {
-      filter: hue-rotate(180deg) saturate(3);
+    	filter: hue-rotate(180deg) saturate(3);
     }
+
     .leaflet-popup-content {
-      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    }
+
+    /* Trieda, ked nie je pristupny leaflet */
+    .kontakt2-map-error {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	height: 100%;
+    	width: 100%;
+    	background: #f5f5f5;
+    	border: 1px solid #ddd;
+    	border-radius: 8px;
+    	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    	font-family: sans-serif;
+    	text-align: center;
+    	padding: 20px;
+    	box-sizing: border-box;
+    	color: #555;
+    }
+
+    .kontakt2-map-error h2 {
+    	margin: 0 0 10px 0;
+    	font-size: 18px;
+    	color: #333;
+    }
+
+    .kontakt2-map-error p {
+    	margin: 0;
+    	font-size: 14px;
+    	color: #666;
     }
 
     @media (max-width: 768px) {
-      .kontakt2-wrapper {
-        flex-direction: column;
-        height: 80vh;
-      }
+    	.kontakt2-wrapper {
+    		flex-direction: column;
+    		height: 80vh;
+    	}
 
-      .kontakt2-left {
-        height: 300px; /* napr. fixná výška mapy */
-      }
+    	.kontakt2-left {
+    		height: 300px;
+    		/* napr. fixná výška mapy */
+    	}
 
-      .kontakt2-right {
-        width: 100%;
-        height: auto;
-        border-left: none;
-        border-top: 1px solid #ddd;
-        overflow-x: auto; /* ⚠️ vodorovný posuvník */
-      }
+    	.kontakt2-right {
+    		width: 100%;
+    		height: auto;
+    		border-left: none;
+    		border-top: 1px solid #ddd;
+    		overflow-x: auto;
+    		/* ⚠️ vodorovný posuvník */
+    	}
 
-      .kontakt2-grid {
-        display: grid;
-        grid-auto-flow: column; /* ⚠️ zoradiť do 1 riadku */
-        grid-auto-columns: 200px; /* šírka jednotlivých položiek */
-        overflow-x: auto; /* bezpečne zdediť scroll z .kontakt2-right */
-        column-gap: 10px;
-        padding: 10px;
-        width: max-content; /* zabezpečí, že obsah sa nevtesná */
-      }
+    	.kontakt2-grid {
+    		display: grid;
+    		grid-auto-flow: column;
+    		/* ⚠️ zoradiť do 1 riadku */
+    		grid-auto-columns: 200px;
+    		/* šírka jednotlivých položiek */
+    		overflow-x: auto;
+    		/* bezpečne zdediť scroll z .kontakt2-right */
+    		column-gap: 10px;
+    		padding: 10px;
+    		width: max-content;
+    		/* zabezpečí, že obsah sa nevtesná */
+    	}
     }

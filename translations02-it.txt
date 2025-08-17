@@ -57,7 +57,7 @@ Wir bieten strategische Planung, Teamkoordination und effiziente Ausführung fü
 || Our expertise in IT project management ensures that technology projects are properly managed. 
 We provide strategic planning, team coordination, and efficient execution for successful IT projects.
 
-
+// Block_IT3.html ***************************************************************************************
 02031 || Výhody IT Nearshoring || Vorteile von IT Nearshoring || Benefits of IT Nearshoring
 
 02032 || Na blízkosti záleží || Auf die Nähe kommt es an || Proximity matters
@@ -104,7 +104,9 @@ modernster Softwarelösungen gewährleisten.
 By taking advantage of nearshoring, companies can achieve significant savings while ensuring the delivery 
 of cutting-edge software solutions.
 
+02039 || Viac informácií || Mehr Informationen || More information
 
+// Block_IT4.html ***************************************************************************************
 02041 || ODBORNOSŤ || FACHWISSEN || EXPERTISE 
 
 02042 || Naša odbornosť || Unser Fachwissen || Our expertise
@@ -139,8 +141,9 @@ dass unser Engagement für die Einhaltung der höchsten Datenschutzstandards Ihn
 und zuverlässige Partnerschaft benötigen.
 || Understand our commitment to data security and compliance to ensure your sensitive information is protected. Rest assured that our dedication 
 to upholding the highest standards of data protection will provide you with the security you need for a successful and reliable partnership.
+02049 || Viac informácií || Mehr Informationen || More information
 
-
+// Block_IT5.html ***************************************************************************************
 02051 || IT RIEŠENIA || IT-LÖSUNGEN || IT SOLUTIONS
 
 02052 || IT riešenia na mieru || Kundenspezifische IT-Lösungen || Customised IT solutions
@@ -172,3 +175,5 @@ bieten können. Wenn Sie sich für uns entscheiden, tätigen Sie eine strategisc
 die nachhaltiges Wachstum und Erfolg unterstützt.
 || Find out how our nearshoring services can adapt to your business growth and provide scalable IT solutions. When you choose us, 
 you're making a strategic investment in a long-term partnership that supports sustainable growth and success.
+
+02059 || Viac informácií || Mehr Informationen || More information

@@ -1,120 +1,169 @@
     body {
       margin: 0;
+      font-family: 'Poppins', 'Open Sans', Arial, Tahoma, sans-serif;
     }
 
-    .referencie-body {
-      margin: 0;
+    .ref-popis {
+      text-align: center;
+      color: #777;
+/*      border: 1px dashed red; */
+    }
+
+    h1.ref-popis {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p.ref-popis {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 0.8;
+    }
+
+    p.ref-popis:last-of-type {
+      margin-bottom: 4rem; /* alebo 4rem, podľa potreby */
+    }
+
+    .ref-body {
       padding: 2rem;
-      background-color: #f8f8f8;
-      font-family: 'Montserrat', 'Open Sans', Arial, Tahoma, sans-serif;
-      color: #333;
+      background-color: #f0f0f0;
     }
 
-    .referencie-grid {
+    h1 {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .ref-grid1 {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: auto;
-      gap: clamp(6px, 2vw, 20px);
-      justify-content: center;
-      align-items: start;
-      max-width: 1200px;
-      margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
     }
 
-    .referencie-item-wrap {
-      cursor: pointer;
+    .ref-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "p1 t2"
+        "t1 p2";
+    width: 100%;
+    aspect-ratio: 1 / 1;
     }
 
-    .referencie-item {
-      width: 100%;
-      aspect-ratio: 250 / 136;
+    .ref-p1 { grid-area: p1; }
+    .ref-p2 { grid-area: p2; }
+    .ref-t1 { grid-area: t1; }
+    .ref-t2 { grid-area: t2; }
+    
+    .ref-p1, .ref-p2,
+    .ref-t1, .ref-t2 {
       position: relative;
       overflow: hidden;
-      border: 2px solid #ccc;
-      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .referencie-image {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      transition: transform 0.5s ease; /* tu sa bude posuvat o vysku prvku transform: translateY(-100%); */
-    }
-
-    .referencie-overlay {
-      position: absolute;
-      bottom: -100%; /* posun (dolu) o -100% vysky rodica. Aj animacia bude preto typu "bottom" (transition: bottom 0.5s ease;) */
-      left: 0;
+    .ref-p1 img,
+    .ref-p2 img {
       width: 100%;
       height: 100%;
-      background-color: #000;
-      color: #fff;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ref-text {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      font-size: 1rem;
-      font-weight: 500;
-      text-align: center;
-      transition: bottom 0.25s ease;
-      z-index: 2;
-      padding: 0 10px;
-      box-sizing: border-box;
-    }
-    
-    .referencie-overlay p {
-      margin: 2px 0;
+      width: 100%;
     }
 
-    .referencie-company-item {
-      width: 100%;
-      height: 40px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .referencie-company {
-      position: absolute;
-      bottom: -200%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #f5f5f5;
-      color: #000;
-      font-weight: 700;
+    /* Spoločné vlastnosti pre t1 a t2 */
+    .ref-t1,
+    .ref-t2 {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      transition: bottom 0.5s ease;
-      z-index: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      color: white;
+      text-align: left;
+      font-size: calc(0.6rem + 0.3vw);
     }
 
-    .referencie-item-wrap:hover .referencie-image {
-      transform: translateY(-100%); /* posun o vysku image. Treba davat pozor, aby image pokryval celeho rodica, inak celkom nezmizne */
+    .ref-t1 {
+      background-color: blue;
     }
 
-    .referencie-item-wrap:hover .referencie-overlay {
+    .ref-t2 {
+      background-color: red;
+    }
+
+    .ref-button {
+      background-color: white;
+      color: black;
+      border: 2px solid transparent;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    .ref-button:hover {
+      background-color: black;
+      color: white;
+      border-color: white;
+      transform: scale(1.05);
+    }
+
+    /* Trojuholníky – viditeľné a proporčné */
+    .ref-p1 .ref-triangle {
+      position: absolute;
       bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 3em solid blue;
+      border-left: 3em solid transparent;
     }
 
-    .referencie-item-wrap:hover .referencie-company {
-      bottom: 0;
+    .ref-p2 .ref-triangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 3em solid red;
+      border-right: 3em solid transparent;
     }
 
-    /* Responsive: zníž počet stĺpcov zo 4 na 2 */
-      @media (max-width: 768px) {
-      h1.referencie-popis {
-        font-size: 1.6rem;
+    @media (max-width: 900px) {
+      .ref-grid1 {
+        grid-template-columns: 1fr;
       }
-      p.referencie-popis {
-        font-size: 0.8rem;
+      .ref-t1,
+      .ref-t2 {
+        font-size: calc(1rem + 0.2vw);
       }
-      .referencie-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: clamp(4px, 1.5vw, 12px);
+    }
+
+    @media (max-width: 600px) {
+      .ref-grid2 {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+          "p1"
+          "t1"
+          "p2"
+          "t2";
+          aspect-ratio: unset;
       }
-      .referencie-company {
-         font-size: 0.7rem;
+
+      /* Skryj trojuholníky na malých displejoch */
+      .ref-triangle {
+          display: none;
       }
     }
