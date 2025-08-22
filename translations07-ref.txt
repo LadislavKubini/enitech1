@@ -38,3 +38,4 @@
 || Single-purpose equipment and tailor-made technological units
 
 07019 || Viac || Mehr lesen || See more
+07020 || Späť k menu || Zurück zum Menü || Back to menu

@@ -121,7 +121,7 @@
       background-color: white;
       color: #1a3a6e;
     }
-
+/************************************************************************************/
     .kariera-detail {
       text-align: left;
       padding-top: 100px;
@@ -137,7 +137,7 @@
       text-decoration: underline;
       font-size: 1rem;
     }
-
+/*************************************************************************************/
     @media (max-width: 900px) {
       .kariera-buttons {
         flex-direction: column;

@@ -6,24 +6,26 @@
 }
 
 .ref2-header p {
-  font-size: larger;
+	font-size: larger;
+	margin: 0;
 }
+
 .ref2-header h2 {
-  font-size: xx-large;
+	font-size: xx-large;
+	margin: 0;
 }
 
 .ref2-animate-line {
-  height: 1px;
-  background-color: #00C;
-  width: 100%; 
-  margin-bottom: 5vw;
+	height: 1px;
+	background-color: #00C;
+	width: 100%;
+	margin: 1vw 0;
 }
 
 .ref2-line-with-img {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	height: 1.5em;
+	align-items: flex-end;
 }
 
 .ref2-line-with-img img {
@@ -31,14 +33,78 @@
 	width: auto;
 }
 
-@media (max-width: 762px) {
-  .ref2-header p {
-    font-size: medium;   /* alebo 1rem, podľa toho čo chcete */
-  }
-
-  .ref2-header h2 {
-    font-size: large;    /* alebo 1.5rem, prípadne konkrétne px */
-  }
+/**************************************************************************/
+.ref2-content-flex {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	box-sizing: border-box;
+	padding: 1vw;
+	gap: 1vw;
+	color: #333;
 }
 
+/**********************************************/
+.ref2-left {
+	flex: 4;
+	overflow: hidden;
+	padding: 1vw;
+	box-sizing: border-box;
+}
 
+.ref2-left-group {
+	position: relative;
+	aspect-ratio: 2 / 1;
+	width: 100%;
+	max-width: 600px;
+	justify-self: center;
+	align-self: center;
+}
+
+.ref2-img1 {
+	position: absolute;
+	width:100%;
+	top: 0%;
+	left: 0%;
+}
+
+.ref2-img2 {
+	position: absolute;
+	width: 60%;
+	top: 55%;
+	left: 40%;
+}
+
+/**********************************************/
+.ref2-divider {
+	width: 1px;
+	background-color: #00C;
+}
+
+.ref2-right {
+	flex: 4;
+	padding: 1vw;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+/**************************************************************************/
+@media (max-width: 762px) {
+	.ref2-header p {
+		font-size: medium;
+	}
+
+	.ref2-header h2 {
+		font-size: large;
+	}
+
+	.ref2-content-flex {
+		flex-direction: column;
+	}
+
+	.ref2-divider {
+		width: 100%;
+		height: 1px;
+		margin: 0 0;
+	}
+}
