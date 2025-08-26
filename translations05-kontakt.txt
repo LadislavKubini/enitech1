@@ -15,16 +15,18 @@
 05015 || Predmet správy || Gegenstand der Mitteilung || Subject of the report
 05016 || Správa || Bericht || Report
 
-05017 || Súhlasím so spracovaním mojich osobných údajov za účelom spätnej väzby na Vašu správu.
-|| Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zweck der Rückmeldung auf Ihre Nachricht zu.
-|| I agree to the processing of my personal data for the purpose of providing feedback on your message.
+05017 || Súhlasím so spracovaním mojich osobných údajov za účelom spätnej väzby na moju správu.
+|| Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zweck der Rückmeldung zu meiner Nachricht zu.
+|| I agree to the processing of my personal data for the purpose of feedback on my message.
 
 05018 || Nie som robot || Ich bin kein Roboter || I am not a robot
 05019 || POSLAŤ SPRÁVU || NACHRICHT SENDEN || SEND MESSAGE
 
-05020 || Správa bola úspešne odoslaná 
-|| Die Nachricht wurde erfolgreich versendet. 
-|| The message has been successfully sent
+05020 || Správa by bola úspešne odoslaná 
+|| Die Nachricht wäre erfolgreich versendet worden.
+|| The message would have been successfully sent.
+
+05021 || POSLAŤ CV || CV SENDEN || SEND CV
 
 // Block_Kontakt2.html
 05041 || Kontaktujte nás || Kontaktieren Sie uns || Contact us

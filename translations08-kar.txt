@@ -34,4 +34,39 @@
 || Nächste
 || Next
 
+// Formular CV **************************************************************
+08018 || Zaujala vás uvedená pracovná ponuka? || Sind Sie an diesem Stellenangebot interessiert? || Are you interested in this job offer?
 
+08019 || Pošlite nám viac informácií o vás spolu so štrukturovaným životopisom.
+|| Senden Sie uns weitere Informationen über sich zusammen mit einem strukturierten Lebenslauf.
+|| Send us more information about yourself along with a structured resume.
+
+08021 || Krstné meno * || Vorname * || First name *
+08022 || Priezvisko * || Nachname * || Last name *
+08023 || Telefónne číslo * || Telefonnummer * || Phone number *
+08024 || Email * || E-Mail * || Email *
+08025 || Vaša správa || Ihr Bericht || Your report
+08026 || Vybrať súbor || Datei auswählen || Select a file
+
+08030 || Maximálna veľkosť prílohy je 8 MB. Môžete priložiť najviac 4 súbory. Podporované typy súborov: .pdf, .doc, .docx, .odt, .jpg a .png.
+|| Die maximale Größe des Anhangs beträgt 8 MB. Sie können maximal 4 Dateien anhängen. Unterstützte Dateitypen: .pdf, .doc, .docx, .odt, .jpg und .png.
+|| The maximum attachment size is 8 MB. You can attach up to 4 files. Supported file types: .pdf, .doc, .docx, .odt, .jpg, and .png.
+
+08031 || Súhlasím so spracovaním osobných údajov za účelom výberu vhodného kandidáta na obsadzované pracovné pozície.
+|| Ich stimme der Verarbeitung personenbezogener Daten zum Zweck der Auswahl geeigneter Bewerber für offene Stellen zu.
+|| I agree to the processing of my personal data for the purpose of selecting a suitable candidate for the vacant position.
+
+08032 || Nie som robot || Ich bin kein Roboter || I am not a robot
+08033 || POSLAŤ SPRÁVU || NACHRICHT SENDEN || SEND MESSAGE
+
+08034 || Formulár by sa odoslal s nasledovnym počtom príloh: 
+|| Das Formular würde mit der folgenden Anzahl von Anhängen versendet werden:
+|| The form would be sent with the following number of attachments:
+
+08036 || Maximálny počet príloh je 4 
+|| Die maximale Anzahl der Anhänge beträgt 4. 
+|| The maximum number of attachments is 4.
+
+08037 || Celková veľkosť príloh nesmie prekročiť 8 MB.
+|| Die Gesamtgröße der Anhänge darf 8 MB nicht überschreiten.
+|| The total size of attachments must not exceed 8 MB.

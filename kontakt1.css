@@ -27,7 +27,7 @@
     }
     
     .kontakt1-top-left h1 {
-      font-size: clamp(2rem, 1.8rem + 3vw, 4rem);
+      font-size: clamp(2rem, 1.3rem + 2.4vw, 3.2rem);
       font-weight: 600; /*h1 má predvolený prehliadačový štýl s font-weight: bold (700), preto sa musi natvrdo prepisat (<p> nema predvoleny font-weight)*/
       margin-top: 1rem;
       margin-bottom: 1rem;
@@ -47,134 +47,9 @@
       align-items: center;
     }
 
-    /* Formulár *******************************************************************************************************************/
-    .kontakt1-form-wrapper {
-      width: 50%;
-      max-width: 600px;
-      max-height: 100%;
-      min-width: 400px;
-      background-color: #4466BBC0;
-      color: white;
-      padding: 2vw;
-      margin: 5vw;
-      /* border: 1px dashed red; */
-    }
-
-    .kontakt1-form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 2vw;
-      row-gap: 1rem;
-      font-size: 1rem;
-      padding: 1vw;
-    }
-
-    .kontakt1-form-group {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-    }
-
-    .kontakt1-form-group.span2 {
-      grid-column: span 2;
-    }
-
-    .kontakt1-form label {
-      margin-bottom: 0.5vw;
-    }
-
-    .kontakt1-form input,
-    .kontakt1-form textarea {
-      background-color: white;
-      border-radius: 6px;
-      box-sizing: border-box;
-      font-size: 1rem;
-      color: black;
-      width: 100%;
-      height: 2rem;
-    }
-
-    .kontakt1-form textarea {
-      height: 6rem;
-      resize: vertical;
-    }
-
-    .kontakt1-form a {
-      color: white;
-      text-decoration: underline;
-    }
-
-    .kontakt1-form-checkbox {
-      display: flex;
-      box-sizing: border-box;
-      align-items: center;
-      gap: 1.5vw;
-      font-size: 1rem;
-      width: 100%;
-      padding: 1vw;
-    }
-
-    .kontakt1-submit-btn {
-      margin-top: 1.5vw;
-      background-color: black;
-      color: white;
-      border: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border-radius: 9999px;
-      cursor: pointer;
-      grid-column: span 2;
-      width: fit-content;
-    }
-    /* spinner for captcha */
-    .kontakt1-spinner {
-      display: none;
-      width: 20px;
-      height: 20px;
-      border: 2px solid #ccc;
-      border-top: 2px solid black;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    input[type="checkbox"]:disabled { /* for captcha */
-      cursor: not-allowed;
-    }
-    /* Dialogove okno */
-    .kontakt1-overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    .kontakt1-dialog {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .kontakt1-dialog button {
-      margin-top: 1rem;
-      padding: 0.5rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      background-color: black;
-      color: white;
-      border-radius: 999px;
-      cursor: pointer;
-    }
+	.kontakt1-form-wrapper {
+    	width: 50%;
+	}
 
     /* Responzívnosť */
     @media (max-width: 900px) {
@@ -183,13 +58,5 @@
       }
       .kontakt1-top-left {
         width: 100%;
-      }
-      .kontakt1-form {
-        grid-template-columns: 1fr;
-      }
-    }
-    @media (max-width: 500px) {
-     .kontakt1-form-group.span2 {
-      grid-column: span 1;
       }
     }

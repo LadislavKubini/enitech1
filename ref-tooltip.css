@@ -1,0 +1,54 @@
+  .ref-tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .ref-tooltip .ref-tooltip-bubble {
+    position: absolute;
+    bottom: 100%;         /* nad textom */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0b3d91;  /* stredne modrá */
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+  }
+
+  .ref-tooltip .ref-tooltip-bubble::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #0b3d91; /* šípka */
+  }
+
+  .ref-tooltip:hover .ref-tooltip-bubble {
+    opacity: 1;
+    visibility: visible;
+  }
+
+      .ref-tooltip-item {
+    	width: 100%;
+    	/* aspect-ratio: 250 / 136; */
+    	aspect-ratio: 167 / 91;
+    	position: relative;
+    	overflow: hidden;
+    	border: 1px solid #00C;
+    	background-color: transparent;
+    	container-type: inline-size; /* uplne nova vlastnost css */
+    }
+
+	.ref-tooltip-image {
+    	position: absolute;
+    	bottom: 0;
+    	width: 100%;
+    }
+
+
