@@ -99,7 +99,7 @@
 	}
 
 	.ref2-content-flex {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	.ref2-divider {
