@@ -61,23 +61,6 @@
 		padding: 0.5rem;
 	}
 
-	.input-wrapper {
-		background-color: transparent;
-		/* box-sizing: border-box; */
-		/* border: 1px dashed blue; */
-	}
-
-	/* .input-wrapper input {
-		background-color: white !important;
-		color: black !important;
-		border: none;
-		width: 100%;
-		height: 1.5rem;
-		box-sizing: border-box;
-		box-shadow: none !important;
-		outline: none !important;
-	}
- */
 	.formular-wrapper textarea {
 		height: 6rem;
 		resize: vertical;
@@ -228,7 +211,6 @@
 		color: darkblue;
 		/* min-width: 30px; */
 	}
-
 
 	.formular-remove-btn {
 		color: red;
