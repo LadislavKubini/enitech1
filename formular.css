@@ -5,13 +5,26 @@
 	/* prebitie systemoveho fontu (u input, textarea, select treba font nechat tak, rozhadzuje to formulare) */
 
 	.formular-wrapper {
+		/* width: 90%;
+		max-width: 600px;
+		margin: 5vw auto;
+		padding: 1.5rem;
+
+		background-color: #4466BBC0;
+		color: white;
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+		text-align: left; */
+
 		max-width: 600px;
 		max-height: 100%;
 		min-width: 400px;
 		background-color: #4466BBC0;
 		color: white;
 		padding: 2vw;
-		margin: 5vw;
+		margin: 2vw;
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 		text-align: left;
 		/* border: 1px dashed red; */
 	}
@@ -126,6 +139,10 @@
 	}
 
 	@media (max-width: 500px) {
+		.formular-wrapper {
+			min-width: 290px;
+		}
+
 		.formular-grid {
 			grid-template-columns: 1fr;
 		}
