@@ -138,6 +138,14 @@
     	color: #666;
     }
 
+    /* #id-kontakt2-map {
+    	pointer-events: none;
+    }
+
+    #id-kontakt2-map.active {
+    	pointer-events: auto;
+    } */
+
     @media (max-width: 768px) {
     	.kontakt2-wrapper {
     		flex-direction: column;

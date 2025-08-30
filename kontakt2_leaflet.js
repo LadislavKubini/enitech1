@@ -51,10 +51,50 @@ async function kontakt2_leaflet_init_map_pobocky() {
     `;
 	} else {
 
-		const kontakt2_map = L.map('id-kontakt2-map').setView([48.7, 19.7], 7);
+		// const kontakt2_map = L.map('id-kontakt2-map').setView([48.7, 19.7], 7);
+		const kontakt2_map = L.map('id-kontakt2-map', {
+			zoomControl: true,
+			dragging: false,        // mapa sa nedá posúvať pred klikom
+			scrollWheelZoom: false  // scroll kolečkom nepohne mapou
+		}).setView([48.7, 19.7], 7);
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '© OpenStreetMap'
 		}).addTo(kontakt2_map);
+
+		kontakt2_map.on('click', function () {
+			this.dragging.enable();
+			this.scrollWheelZoom.enable();
+			const btn = document.querySelector('.leaflet-control-toggle');
+			if (btn) btn.style.display = "block";
+		});
+
+		
+		// Vlastný control pre prepínanie interaktivity
+		const toggleControl = L.Control.extend({
+			options: { position: 'topleft' },
+			onAdd: function (map) {
+				const container = L.DomUtil.create('div', 'leaflet-control-toggle');
+				container.style.backgroundColor = 'white';
+				container.style.padding = '4px';
+				container.style.cursor = 'pointer';
+				container.innerHTML = 'Deaktivovať mapu';
+				container.style.display = "none";
+
+				container.onclick = function () {
+					map.dragging.disable();
+					map.scrollWheelZoom.disable();
+					container.style.display = "none";
+				};
+
+				// Zabránime zachytávaniu udalostí mapou
+				L.DomEvent.disableClickPropagation(container);
+				L.DomEvent.disableScrollPropagation(container);
+
+				return container;
+			}
+		});
+		// Pridanie controlu do mapy
+		kontakt2_map.addControl(new toggleControl());
 
 		const grid = document.getElementById('kontakt2-grid');
 		let selectedMarker = null;
@@ -74,7 +114,6 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			const cell = document.querySelector(`.kontakt2-cell[data-index='${index}']`);
 			if (cell) {
 				cell.classList.add('active');
-				// cell.scrollIntoView({ behavior: 'smooth', block: 'center' });
 				cell.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
 			}
 		}
