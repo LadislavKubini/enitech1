@@ -1,4 +1,4 @@
-    .kontakt2-grid-body {
+    .kontakt2-body {
     	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
     	font-weight: 200;
     	background-color: white;
@@ -9,21 +9,21 @@
     	/* border: 1px dashed blue; */
     }
 
-    .kontakt2-grid-line {
+    .kontakt2-line {
     	height: 1px;
     	background-color: #999;
     	width: 100%;
     	margin: 0 0 3vw 0;
     }
 
-    .kontakt2-grid-body h3 {
+    .kontakt2-body h3 {
     	font-size: 2.2vw;
     	font-weight: 300;
     	margin: 0 0 3vw 0;
     	text-align: left;
     }
 
-    .kontakt2-grid-body h1 {
+    .kontakt2-body h1 {
     	font-size: 4.5vw;
     	font-weight: 300;
     	margin: 0 0 3vw 0;

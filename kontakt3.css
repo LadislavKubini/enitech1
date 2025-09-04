@@ -2,10 +2,19 @@
     	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
     	padding: 1vw;
     	font-size: 1rem;
+    	width: 100%;
+    	box-sizing: border-box;
     }
 
     .kontakt3-title {
-    	margin-bottom: 20px;
+		margin-left: 1vw;
+    	margin-bottom: 1vw;
+    }
+
+    .kontakt3-line {
+    	height: 1px;
+    	background-color: #999;
+		width: 100%;
     }
 
     .kontakt3-grid {
