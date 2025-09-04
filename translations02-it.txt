@@ -29,7 +29,7 @@ That's where we come in. At Enitech, we specialize in providing superior IT serv
 and cultural connectivity. 
 Find out how our nearshoring services can elevate your business in Austria and Germany.
 
-
+// Block_IT2.html ***************************************************************************************
 02022 || Naša odbornosť || Unser Fachwissen || Our expertise
 
 02023 || Naše služby testovania softvéru zaisťujú bezchybný výkon. Poskytujeme komplexné zabezpečenie kvality, automatizované testovanie 
@@ -56,6 +56,8 @@ Poskytujeme strategické plánovanie, tímovú koordináciu a efektívnu realiz�
 Wir bieten strategische Planung, Teamkoordination und effiziente Ausführung für erfolgreiche IT-Projekte.
 || Our expertise in IT project management ensures that technology projects are properly managed. 
 We provide strategic planning, team coordination, and efficient execution for successful IT projects.
+
+02028 || Čítať ďalej || Weiterlesen || Read more
 
 // Block_IT3.html ***************************************************************************************
 02031 || Výhody IT Nearshoring || Vorteile von IT Nearshoring || Benefits of IT Nearshoring
@@ -177,3 +179,5 @@ die nachhaltiges Wachstum und Erfolg unterstützt.
 you're making a strategic investment in a long-term partnership that supports sustainable growth and success.
 
 02059 || Viac informácií || Mehr Informationen || More information
+
+02060 || Späť k menu || Zurück zum Menü || Back to menu

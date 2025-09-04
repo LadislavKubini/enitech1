@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Block_IT2.html</title>
-  <link rel="icon" href="favicona-enitech.png" />
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500,700&display=swap" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="fonts-poppins.css" />
-  <link rel="stylesheet" href="fonts-open-sans.css">
-  <!-- <link rel="stylesheet" href="fonts-quicksand.css"> -->
-  <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="it2.css">
-  <!-- <link rel="stylesheet" href="it3.css"> -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_IT2.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500,700&display=swap" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+	<!-- <link rel="stylesheet" href="fonts-quicksand.css"> -->
+	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="it2.css">
+	<!-- <link rel="stylesheet" href="it3.css"> -->
 
-  <script src="Language.js" defer></script>
-  <script src="animator.js" defer></script>
+	<script src="Language.js" defer></script>
+	<script src="animator.js" defer></script>
 </head>
+
 <body>
-  <div id="IT2-div-src">
-    <!-- Definícia šípky - raz -->
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="id-it2-arrow" viewBox="0 0 40 40"> <!-- 0,0 je lavy horny okraj virt.platna, 40,40 je sirka, vyska  -->
-        <line x1="10" y1="30" x2="30" y2="30" stroke="black" stroke-width="4" stroke-linecap="round" />
-        <line x1="10" y1="10" x2="30" y2="30" stroke="black" stroke-width="4" stroke-linecap="round" />
-        <line x1="30" y1="10" x2="30" y2="30" stroke="black" stroke-width="4" stroke-linecap="round" />
-      </symbol>
-    </svg>
+	<div id="IT2-div-src">
+		<!-- Definícia šípky - raz -->
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+			<symbol id="id-it2-arrow" viewBox="0 0 40 40"> <!-- 0,0 je lavy horny okraj virt.platna, 40,40 je sirka, vyska  -->
+				<line x1="10" y1="30" x2="30" y2="30" stroke="black" stroke-width="4" stroke-linecap="round" />
+				<line x1="10" y1="10" x2="30" y2="30" stroke="black" stroke-width="4" stroke-linecap="round" />
+				<line x1="30" y1="10" x2="30" y2="30" stroke="black" stroke-width="4" stroke-linecap="round" />
+			</symbol>
+		</svg>
 
-    <div class="it2-grid-body">
-      <div class="it2-grid">
-        <div class="it2-grid-item-pic p1" id="id-IT2-odbornost-back" style="scroll-margin-top: 80px;">
-          <img src="media/BlokovyGrafVRuke.avif" alt="Obrázok P1" />          
-        </div>
-        <div class="it2-grid-item-txt t2">
-          <h2 lang-code="02022">.Naša odbornosť</h2>
-          <p lang-code="02023">.Naše služby testovania softvéru zaisťujú bezchybný výkon. Poskytujeme komplexné zabezpečenie kvality, automatizované testovanie a testovanie výkonu, čo zaručuje, že váš softvér bude fungovať bez problémov a prekročí vaše očakávania.</p>
-          <a href="#id-IT4-odbornost" class="it2-arrow-link">
-            <span class="it2-arrow-text animate-text-underline">Čítať ďalej</span>
-            <svg class="it2-arrow" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <use href="#id-it2-arrow" />
-            </svg>
-          </a>
-        </div>
+		<div class="it2-body">
+			<h2>IT menu</h2>
+			<div class="it2-line"></div>
+			<div class="it2-grid">
+				<div class="it2-grid-item-pic p1" id="id-IT2-odbornost-back" style="scroll-margin-top: 80px;">
+					<img src="media/BlokovyGrafVRuke.avif" alt="Obrázok P1" />
+				</div>
+				<div class="it2-grid-item-txt t2">
+					<h2 lang-code="02022">.Naša odbornosť</h2>
+					<p lang-code="02023">.Naše služby testovania softvéru zaisťujú bezchybný výkon. Poskytujeme komplexné zabezpečenie kvality, automatizované testovanie a testovanie výkonu, čo
+						zaručuje, že váš softvér bude fungovať bez problémov a prekročí vaše očakávania.</p>
+					<a href="#id-IT4-odbornost" class="it2-arrow-link">
+						<span class="it2-arrow-text animate-text-underline" lang-code="02028">Čítať ďalej</span>
+						<svg class="it2-arrow" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+							<use href="#id-it2-arrow" />
+						</svg>
+					</a>
+				</div>
 
-        <div class="it2-grid-item-pic p3">
-          <img src="media/Gestikulacia_Kriz.avif" alt="Obrázok P2" />
-        </div>
-        <div class="it2-grid-item-txt t1" id="id-IT2-nearshoring-back" style="scroll-margin-top: 80px;">
-          <h2 lang-code="02024">.Výhody IT Nearshoring</h2>
-          <p lang-code="02025">.Pozdvihnite svoje podnikanie pomocou našich služieb vývoja softvéru. Ponúkame riešenia na mieru, vývoj webu a aplikácií a robustné softvérové inžinierstvo na podporu inovácií a rastu.</p>
-          <a href="#id-IT3-nearshoring" class="it2-arrow-link">
-            <span class="it2-arrow-text animate-text-underline">Čítať ďalej</span>
-            <svg class="it2-arrow" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <use href="#id-it2-arrow" />
-            </svg>
-          </a>
-        </div>
+				<div class="it2-grid-item-pic p3">
+					<img src="media/Gestikulacia_Kriz.avif" alt="Obrázok P2" />
+				</div>
+				<div class="it2-grid-item-txt t1" id="id-IT2-nearshoring-back" style="scroll-margin-top: 80px;">
+					<h2 lang-code="02024">.Výhody IT Nearshoring</h2>
+					<p lang-code="02025">.Pozdvihnite svoje podnikanie pomocou našich služieb vývoja softvéru. Ponúkame riešenia na mieru, vývoj webu a aplikácií a robustné softvérové inžinierstvo na
+						podporu inovácií a rastu.</p>
+					<a href="#id-IT3-nearshoring" class="it2-arrow-link">
+						<span class="it2-arrow-text animate-text-underline" lang-code="02028">Čítať ďalej</span>
+						<svg class="it2-arrow" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+							<use href="#id-it2-arrow" />
+						</svg>
+					</a>
+				</div>
 
-        <div class="it2-grid-item-pic p2">
-          <img src="media/DvajaPriNotebookoch.avif" alt="Obrázok P3" />
-        </div>
-        <div class="it2-grid-item-txt t3" id="id-IT2-it-riesenia-back" style="scroll-margin-top: 80px;">
-          <h2 lang-code="02026">.IT riešenia na mieru</h2>
-          <p lang-code="02027">.Naša odbornosť v oblasti riadenia IT projektov zaisťuje, že technologické projekty sú správne riadené. Poskytujeme strategické plánovanie, tímovú koordináciu a efektívnu realizáciu pre úspešné IT projekty.</p>
-          <a href="#id-IT5-it-riesenia" class="it2-arrow-link">
-            <span class="it2-arrow-text animate-text-underline">Čítať ďalej</span>
-            <svg class="it2-arrow" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <use href="#id-it2-arrow" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div class="it2-grid-item-pic p2">
+					<img src="media/DvajaPriNotebookoch.avif" alt="Obrázok P3" />
+				</div>
+				<div class="it2-grid-item-txt t3" id="id-IT2-it-riesenia-back" style="scroll-margin-top: 80px;">
+					<h2 lang-code="02026">.IT riešenia na mieru</h2>
+					<p lang-code="02027">.Naša odbornosť v oblasti riadenia IT projektov zaisťuje, že technologické projekty sú správne riadené. Poskytujeme strategické plánovanie, tímovú koordináciu
+						a efektívnu realizáciu pre úspešné IT projekty.</p>
+					<a href="#id-IT5-it-riesenia" class="it2-arrow-link">
+						<span class="it2-arrow-text animate-text-underline" lang-code="02028">Čítať ďalej</span>
+						<svg class="it2-arrow" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+							<use href="#id-it2-arrow" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <script> 
-    async function loadAllTranslations() {
-      const p1 = await LoadTranslations('translations02-it.txt');
-      await Promise.all([p1]);
-    }
-  </script>
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('translations02-it.txt');
+			await Promise.all([p1]);
+		}
+	</script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", async () => {
-      await loadAllTranslations();
-      await UpdateTexts();
-      document.body.style.visibility = "visible";
-    });
-  </script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			Animator.registerAll(".it2-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
 </body>
+
 </html>

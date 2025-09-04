@@ -1,116 +1,124 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--klucove pre mobilne zariadenia-->
-  <title>indexEngin.html</title>
-  <link rel="icon" href="favicona-enitech.png">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="fonts-poppins.css" />
-  <link rel="stylesheet" href="fonts-open-sans.css">
-  <link rel="stylesheet" href="root.css">
-  <style>
-    body { visibility: hidden; margin: 0; font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif; } /*visibility sa vrati az po nacitani*/
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--klucove pre mobilne zariadenia-->
+	<title>indexEngin.html</title>
+	<link rel="icon" href="favicona-enitech.png">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+	<link rel="stylesheet" href="root.css">
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
 
-  <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="UvodHero.css">
-  <link rel="stylesheet" href="enginint1.css">
-  <link rel="stylesheet" href="enginint2.css">
-  <link rel="stylesheet" href="enginint3.css">
-  <link rel="stylesheet" href="enginint4.css">
-  <link rel="stylesheet" href="enginext1.css">
-  <link rel="stylesheet" href="enginelekt1.css">
-  <link rel="stylesheet" href="enginautom1.css">
-  <link rel="stylesheet" href="footer.css">
+		/*visibility sa vrati az po nacitani*/
+	</style>
 
-  <!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
-  <script src="Language.js" defer></script>  <!-- funkcie js: prepinanie jazykov  SK / DE / EN -->
-  <script src="animator.js" defer></script> <!-- funkcie js: animacie -->
-  <script src="menu.js" defer></script> <!-- funkcie js: ovladanie menu -->
-  <script src="wordpress_footer.js" defer></script> <!-- Nacitanie a spracovanie ponuk od WordPressu-->
+	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="UvodHero.css">
+	<link rel="stylesheet" href="enginint1.css">
+	<link rel="stylesheet" href="enginint2.css">
+	<link rel="stylesheet" href="enginint3.css">
+	<link rel="stylesheet" href="enginint4.css">
+	<link rel="stylesheet" href="enginext1.css">
+	<link rel="stylesheet" href="enginelekt1.css">
+	<link rel="stylesheet" href="enginautom1.css">
+	<link rel="stylesheet" href="footer.css">
+
+	<!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
+	<script src="Language.js" defer></script> <!-- funkcie js: prepinanie jazykov  SK / DE / EN -->
+	<script src="animator.js" defer></script> <!-- funkcie js: animacie -->
+	<script src="menu.js" defer></script> <!-- funkcie js: ovladanie menu -->
+	<script src="wordpress_footer.js" defer></script> <!-- Nacitanie a spracovanie ponuk od WordPressu-->
 </head>
 
 <body>
-  <div id="top"></div>
-  <div id="Menu-div-dst">
-  </div>
+	<div id="top"></div>
+	<div id="Menu-div-dst">
+	</div>
 
-  <div id="Engin-div-dst">
-  </div>
+	<div id="Engin-div-dst">
+	</div>
 
-  <div id="EnginInt1-div-dst">
-  </div>
+	<div id="EnginInt1-div-dst">
+	</div>
 
-  <div id="EnginInt2-div-dst">
-  </div>
+	<div id="EnginInt2-div-dst">
+	</div>
 
-  <div id="EnginInt3-div-dst">
-  </div>
+	<div id="EnginInt3-div-dst">
+	</div>
 
-  <div id="EnginInt4-div-dst">
-  </div>
+	<div id="EnginInt4-div-dst">
+	</div>
 
-  <div id="EnginExt1-div-dst">
-  </div>
+	<div id="EnginExt1-div-dst">
+	</div>
 
-  <div id="EnginElekt1-div-dst">
-  </div>
+	<div id="EnginElekt1-div-dst">
+	</div>
 
-  <div id="EnginAutom1-div-dst">
-  </div>
+	<div id="EnginAutom1-div-dst">
+	</div>
 
-  <div id="Footer-div-dst">
-  </div>
+	<div id="Footer-div-dst">
+	</div>
 
-  <script src="ImportBlock.js" type="text/javascript"></script>  <!-- funkcie js: importovanie blokov -->
-  <script src="scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
-  
-  <script> 
-    async function loadDivBlocks() {
-      const p1 = ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
-      const p2 = ImportDiv("Block_Engin.html", "Engin-div-src", "Engin-div-dst");
-      const p3 = ImportDiv("Block_EnginInt1.html", "EnginInt1-div-src", "EnginInt1-div-dst");
-      const p4 = ImportDiv("Block_EnginInt2.html", "EnginInt2-div-src", "EnginInt2-div-dst");
-      const p5 = ImportDiv("Block_EnginInt3.html", "EnginInt3-div-src", "EnginInt3-div-dst");
-      const p6 = ImportDiv("Block_EnginInt4.html", "EnginInt4-div-src", "EnginInt4-div-dst");
-      const p7 = ImportDiv("Block_EnginExt1.html", "EnginExt1-div-src", "EnginExt1-div-dst");
-      const p8 = ImportDiv("Block_EnginElekt1.html", "EnginElekt1-div-src", "EnginElekt1-div-dst");
-      const p9 = ImportDiv("Block_EnginAutom1.html", "EnginAutom1-div-src", "EnginAutom1-div-dst");
-      const p10 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
-      await Promise.all([p1, p2, p3, p4, p5, p6, p7, p8, p9, p10]); // vsetky ImportDiv mozu bezat paralelne
-    }
-   </script>
+	<script src="ImportBlock.js" type="text/javascript"></script> <!-- funkcie js: importovanie blokov -->
+	<script src="scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
 
-  <script>
-    document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
-      await loadDivBlocks();
+	<script>
+		async function loadDivBlocks() {
+			const p1 = ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
+			const p2 = ImportDiv("Block_Engin.html", "Engin-div-src", "Engin-div-dst");
+			const p3 = ImportDiv("Block_EnginInt1.html", "EnginInt1-div-src", "EnginInt1-div-dst");
+			const p4 = ImportDiv("Block_EnginInt2.html", "EnginInt2-div-src", "EnginInt2-div-dst");
+			const p5 = ImportDiv("Block_EnginInt3.html", "EnginInt3-div-src", "EnginInt3-div-dst");
+			const p6 = ImportDiv("Block_EnginInt4.html", "EnginInt4-div-src", "EnginInt4-div-dst");
+			const p7 = ImportDiv("Block_EnginExt1.html", "EnginExt1-div-src", "EnginExt1-div-dst");
+			const p8 = ImportDiv("Block_EnginElekt1.html", "EnginElekt1-div-src", "EnginElekt1-div-dst");
+			const p9 = ImportDiv("Block_EnginAutom1.html", "EnginAutom1-div-src", "EnginAutom1-div-dst");
+			const p10 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
+			await Promise.all([p1, p2, p3, p4, p5, p6, p7, p8, p9, p10]); // vsetky ImportDiv mozu bezat paralelne
+		}
+	</script>
 
-      await new Promise(requestAnimationFrame); // Spracovanie scriptu sa prerusi pri najblizsom frame cykle a prehliadac zacne "refreshovat" DOM, lebo toto vlakno ma vyssiu prioritu.
-      // Ked je DOM kompletny (a obsahuje zmeny, ktore urobil doterajsi script), riadenie sa vrati scriptu, tam kde sa prerusil.
-      // await new Promise(requestAnimationFrame); "preskočí" všetky frame pokusy, ktoré sa nestihli kvôli JS, a čaká na najbližší VOĽNÝ frame po ukončení JS.
-      // frame cyklus trva kazdych 16ms a az ked je vsetko dokoncene (DOM + predchadzajuca cast js), tak nastane "await new Promise(requestAnimationFrame);"
-      // A vtedy mozem spustit dalsi script. Je to tzv. kooperativny multitasking
-      await Footer_fill_ponuky();
-      await LoadTranslations('translations00.txt');
-      await LoadTranslations('translations01-engin.txt');
-      await LoadTranslations('translations09-foot.txt');
-      await UpdateTexts();
-      await new Promise(requestAnimationFrame);
-      Animator.register("#engin_animate-id", "animate-slide-in-bounce");
-      Animator.register("#id-footer-hero-content", "animate-rotateFlipIn"); 
-      Animator.registerAll(".enginint1-header-line", "animate-width-grow");
-      Animator.registerAll(".enginint2-header-line", "animate-width-grow");
-      Animator.registerAll(".enginint3-header-line", "animate-width-grow");
-      Animator.registerAll(".enginint4-header-line", "animate-width-grow");
-      Animator.registerAll(".enginext1-header-line", "animate-width-grow");
-      Animator.registerAll(".enginelekt1-header-line", "animate-width-grow");
-      Animator.registerAll(".enginautom1-header-line", "animate-width-grow");
-      restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
-      document.body.style.visibility = "visible"; // zobraz stránku až teraz    
-    });    
-  </script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
+			await loadDivBlocks();
+
+			await new Promise(requestAnimationFrame); // Spracovanie scriptu sa prerusi pri najblizsom frame cykle a prehliadac zacne "refreshovat" DOM, lebo toto vlakno ma vyssiu prioritu.
+			// Ked je DOM kompletny (a obsahuje zmeny, ktore urobil doterajsi script), riadenie sa vrati scriptu, tam kde sa prerusil.
+			// await new Promise(requestAnimationFrame); "preskočí" všetky frame pokusy, ktoré sa nestihli kvôli JS, a čaká na najbližší VOĽNÝ frame po ukončení JS.
+			// frame cyklus trva kazdych 16ms a az ked je vsetko dokoncene (DOM + predchadzajuca cast js), tak nastane "await new Promise(requestAnimationFrame);"
+			// A vtedy mozem spustit dalsi script. Je to tzv. kooperativny multitasking
+			await Footer_fill_ponuky();
+			await LoadTranslations('translations00.txt');
+			await LoadTranslations('translations01-engin.txt');
+			await LoadTranslations('translations09-foot.txt');
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.register("#engin_animate-id", "animate-slide-in-bounce");
+			Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
+			Animator.registerAll(".footer-line", "animate-width-grow");
+			Animator.registerAll(".enginint1-header-line", "animate-width-grow");
+			Animator.registerAll(".enginint2-header-line", "animate-width-grow");
+			Animator.registerAll(".enginint3-header-line", "animate-width-grow");
+			Animator.registerAll(".enginint4-header-line", "animate-width-grow");
+			Animator.registerAll(".enginext1-header-line", "animate-width-grow");
+			Animator.registerAll(".enginelekt1-header-line", "animate-width-grow");
+			Animator.registerAll(".enginautom1-header-line", "animate-width-grow");
+			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
+			document.body.style.visibility = "visible"; // zobraz stránku až teraz    
+		});    
+	</script>
 </body>
-</html>
 
+</html>

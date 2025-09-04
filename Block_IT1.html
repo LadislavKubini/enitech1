@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Block_IT1.html</title>
-  <link rel="icon" href="favicona-enitech.png">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="fonts-poppins.css" />
-  <link rel="stylesheet" href="fonts-open-sans.css">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
-    }
-  </style>
-  <link rel="stylesheet" href="it1.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_IT1.html</title>
+	<link rel="icon" href="favicona-enitech.png">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="it1.css">
 
-  <!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalosou DOMConentLoaded-->
-  <script src="Language.js" defer></script>
+	<!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalosou DOMConentLoaded-->
+	<script src="Language.js" defer></script>
+	<script src="animator.js" defer></script>
 </head>
+
 <body>
-  <div id="IT1-div-src">
-    <div class="it1-body">
-      <div class="it1-inner">
-        <div class="it1-line"></div>
-        <h3 lang-code="02011">.INFORMAČNÉ TECHNOLÓGIE</h3>
-        <h1 lang-code="02012">.IT Nearshoring v Rakúsku a Nemecku: Vaša brána k technologickej dokonalosti</h1>
-        <p lang-code="02013">
-            .Zažite novú éru IT excelentnosti s našimi nearshoringovými službami v Rakúsku a Nemecku. 
-            Keďže technológie naďalej formujú obchodné prostredie, dopyt po špičkových IT riešeniach 
-            nebol nikdy väčší. Tu prichádzame na scénu. V spoločnosti Enitech sa špecializujeme na poskytovanie 
-            špičkových IT služieb so zameraním na blízkosť a kultúrne prepojenie. Zistite, ako môžu naše nearshoringové 
-            služby pozdvihnúť vaše podnikanie v Rakúsku a Nemecku.
-        </p>
-      </div>
-    </div>
-  </div>
+	<div id="IT1-div-src">
+		<div class="it1-body">
+			<div class="it1-inner">
+				<div class="it1-line"></div>
+				<!-- <h3 lang-code="02011">.INFORMAČNÉ TECHNOLÓGIE</h3> -->
+				<h1 lang-code="02012">.IT Nearshoring v Rakúsku a Nemecku: Vaša brána k technologickej dokonalosti</h1>
+				<p lang-code="02013">
+					.Zažite novú éru IT excelentnosti s našimi nearshoringovými službami v Rakúsku a Nemecku.
+					Keďže technológie naďalej formujú obchodné prostredie, dopyt po špičkových IT riešeniach
+					nebol nikdy väčší. Tu prichádzame na scénu. V spoločnosti Enitech sa špecializujeme na poskytovanie
+					špičkových IT služieb so zameraním na blízkosť a kultúrne prepojenie. Zistite, ako môžu naše nearshoringové
+					služby pozdvihnúť vaše podnikanie v Rakúsku a Nemecku.
+				</p>
+			</div>
+		</div>
+	</div>
 
-  <script> 
-    async function loadAllTranslations() {
-      const p2 = await LoadTranslations('translations02-it.txt');
-      await Promise.all([p2]);
-    }
-   </script>
+	<script>
+		async function loadAllTranslations() {
+			const p2 = await LoadTranslations('translations02-it.txt');
+			await Promise.all([p2]);
+		}
+	</script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", async () => {
-      await loadAllTranslations();
-      await UpdateTexts();
-      await new Promise(requestAnimationFrame);
-      document.body.style.visibility = "visible"; // zobraz stránku až teraz    
-    })
-  </script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".it1-line", "animate-width-grow");
+			document.body.style.visibility = "visible"; // zobraz stránku až teraz    
+		})
+	</script>
 </body>
+
 </html>

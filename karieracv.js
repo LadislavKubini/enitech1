@@ -25,19 +25,37 @@ function do_cv_captcha(e) {
 }
 
 // submit ********************************************************************************************
-function do_cv_submit(e) {
+async function do_cv_submit(e) {
 	e.preventDefault();
 	const form = document.getElementById("id-cv-form");
-	const meno = document.getElementById("id-cv-meno");
-	const priezvisko = document.getElementById("id-cv-priezvisko");
-	const telefon = document.getElementById("id-cv-telefon");
-	const email = document.getElementById("id-cv-email");
-	const sprava = document.getElementById("id-cv-sprava");
-	const suhlas = document.getElementById("id-cv-suhlas");
-	const catpcha = document.getElementById("id-cv-captcha");
-
-	document.getElementById("id-cv-files-count").textContent = " " + cv_files.length;
 	const overlayDialog = document.getElementById("id-cv-submit-dialog");
+	const overlayDialog_p = document.getElementById("id-cv-submit-dialog-p");
+	document.getElementById("id-cv-files-count").textContent = " " + cv_files.length;
+
+	const formData = new FormData(form);
+
+	try {
+		const response = await fetch(form.action, {
+			method: "POST",
+			body: formData
+		});
+
+		if (!response.ok) throw new Error("Server správu neprijal");
+
+		const htmlString = await response.text();;
+		const tempDiv = document.createElement("div");
+		tempDiv.innerHTML = htmlString;
+		const plainText = tempDiv.textContent || tempDiv.innerText; // sposob odstranenia html tagov
+		console.log(plainText);
+
+		overlayDialog_p.innerHTML = plainText;
+		overlayDialog.style.display = "flex";
+		form.reset();
+	} catch (err) {
+		overlayDialog_p.innerHTML = "Chyba pri odosielaní správy: " + err.message;
+		overlayDialog.style.display = "flex";
+	}
+
 	overlayDialog.style.display = "flex"; // zobrazí dialóg
 }
 
