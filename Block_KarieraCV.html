@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="menu.css">
 	<link rel="stylesheet" href="formular.css">
 
-	<!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalosou DOMContentLoaded-->
 	<script src="menu.js" defer></script>
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -39,37 +38,38 @@
 	<div id="Menu-div-dst">
 	</div>
 
-	<div class="karieracv-form-wrapper" style="margin-top: 110px;">
+	<div class="karieracv-form-wrapper">
 
 		<div id="KarieraCV-div-src">
 			<div class="formular-wrapper">
 				<h3 lang-code="08018">Zaujala vás uvedená pracovná ponuka?</h3>
 				<p lang-code="08019">Pošlite nám viac informácií o vás spolu so štrukturovaným životopisom.</p>
 				<div class="formular-animate-line"></div>
-				<form id="id-cv-form" onsubmit="do_cv_submit(event)">
+				<form id="id-cv-form"  method="POST" action="Form_KarieraCV.php" onsubmit="do_cv_submit(event)">
 					<div class="formular-grid">
 						<div class="formular-group">
 							<label for="id-cv-meno">Krstné meno *</label>
-							<input type="text" id="id-cv-meno" required />
+							<input type="text" id="id-cv-meno" name="meno" autocomplete="given-name" required />
 						</div>
 						<div class="formular-group">
 							<label for="id-cv-priezvisko" lang-code="08022">Priezvisko *</label>
-							<input type="text" id="id-cv-priezvisko" required />
+							<input type="text" id="id-cv-priezvisko" name="priezvisko" autocomplete="family-name" required />
 						</div>
 
 						<div class="formular-group">
 							<label for="id-cv-telefon" lang-code="08023">Telefónne číslo *</label>
-							<input type="tel" id="id-cv-telefon" required pattern="^(\+421|0)\s?\d{3}\s?\d{3}\s?\d{3}$" title="Tel.cislo v tvare: +421 911 123 456 alebo 0911 123 456" />
+							<input type="tel" id="id-cv-telefon" name="telefon" autocomplete="tel" required 
+							pattern="^(\+421|0)\s?\d{3}\s?\d{3}\s?\d{3}$" title="Tel.cislo v tvare: +421 911 123 456 alebo 0911 123 456" />
 						</div>
 
 						<div class="formular-group span2">
 							<label for="id-cv-email" lang-code="08024">Email *</label>
-							<input type="email" id="id-cv-email" required />
+							<input type="email" id="id-cv-email" name="email" autocomplete="email" required />
 						</div>
 
 						<div class="formular-group span2">
 							<label for="id-cv-sprava" lang-code="08025">Vaša správa</label>
-							<textarea id="id-cv-sprava"></textarea>
+							<textarea id="id-cv-sprava" name="sprava"></textarea>
 						</div>
 					</div>
 
@@ -101,7 +101,7 @@
 					</p>
 
 					<div class="formular-checkbox">
-						<input type="checkbox" id="id-cv-suhlas" required autocomplete="off" />
+						<input type="checkbox" id="id-cv-suhlas" name="suhlas" required autocomplete="off" />
 						<label for="id-cv-suhlas">
 							<span class="formular-text-underline" lang-code="08031">Súhlasím so spracovaním mojich osobných údajov a údajov v priloženom CV za účelom sprostredkovania pracovnej
 								pozície.</span>
@@ -119,14 +119,14 @@
 					</div>
 				</form>
 			</div>
-			<!-- Dialogove okna -->
+			<!-- Dialogove okno submit -->
 			<div class="formular-dialog-overlay" id="id-cv-submit-dialog" style="display: none;">
 				<div class="formular-dialog">
-					<p><span lang-code="08034">Formulár by sa odoslal s počtom príloh: </span><span id="id-cv-files-count"></span></p>
+					<p id="id-cv-submit-dialog-p"> <span lang-code="08034">Formulár by sa odoslal s počtom príloh: </span><span id="id-cv-files-count"></span></p>
 					<button onclick="do_cv_closeSubmitDialog()">OK</button>
 				</div>
 			</div>
-
+			<!-- Dialogove okno pre alerty -->
 			<div class="formular-dialog-overlay" id="id-cv-alert-dialog" style="display: none;">
 				<div class="formular-dialog">
 					<p id="id-cv-alert-text-max4" lang-code="08036" style="display: none;">Maximálny počet príloh je 4</p>
@@ -143,14 +143,12 @@
 		document.addEventListener("DOMContentLoaded", async () => {
 			await ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
 			await new Promise(requestAnimationFrame);
-			// Načítanie prekladov po načítaní DOM
 			await LoadTranslations('translations00.txt');
 			await LoadTranslations('translations08-kar.txt');
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
 
 			// await KarieraCV_addEventListeners();
-			// Animator.register("#id-cv-animate-content", "animate-slide-in-bounce"); // "animate-rotateFlipIn");
 			Animator.registerAll(".formular-animate-line", "animate-width-grow");
 			document.body.style.visibility = "visible";
 		});

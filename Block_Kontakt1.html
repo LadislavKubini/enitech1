@@ -45,40 +45,41 @@
 			<div class="kontakt1-bottom" style="background-image: url('media/close-up-person-working-call-center.avif');">
 				<div class="kontakt1-form-wrapper">
 					<div class="formular-wrapper">
-						<form id="id-kontakt1-form">
+						<form id="id-kontakt1-form" method="POST" action="Form_Kontakt1.php">
 							<div class="formular-grid">
 								<div class="formular-group">
 									<label for="id-kontakt1-meno" lang-code="05011">Krstné meno *</label>
-									<input type="text" id="id-kontakt1-meno" required />
+									<input type="text" id="id-kontakt1-meno" name="meno" required autocomplete="given-name"/>
 								</div>
 
 								<div class="formular-group">
 									<label for="id-kontakt1-priezvisko" lang-code="05012">Priezvisko *</label>
-									<input type="text" id="id-kontakt1-priezvisko" required />
+									<input type="text" id="id-kontakt1-priezvisko" name="priezvisko" required autocomplete="family-name"/>
 								</div>
 
 								<div class="formular-group">
 									<label for="id-kontakt1-telefon" lang-code="05013">Telefónne číslo *</label>
-									<input type="tel" id="id-kontakt1-telefon" required pattern="^(\+421|0)\s?\d{3}\s?\d{3}\s?\d{3}$" title="Tel.cislo v tvare: +421 911 123 456 alebo 0911 123 456" />
+									<input type="tel" id="id-kontakt1-telefon" name="telefon" required autocomplete="tel"
+									pattern="^(\+421|0)\s?\d{3}\s?\d{3}\s?\d{3}$" title="Tel.cislo v tvare: +421 911 123 456 alebo 0911 123 456" />
 								</div>
 
 								<div class="formular-group span2">
 									<label for="id-kontakt1-email" lang-code="05014">Email *</label>
-									<input type="email" id="id-kontakt1-email" required />
+									<input type="email" id="id-kontakt1-email" name="email" autocomplete="email" required />
 								</div>
 
 								<div class="formular-group span2">
 									<label for="id-kontakt1-predmet" lang-code="05015">Predmet správy</label>
-									<input type="text" id="id-kontakt1-predmet" />
+									<input type="text" id="id-kontakt1-predmet" name="predmet"/>
 								</div>
 
 								<div class="formular-group span2">
 									<label for="id-kontakt1-sprava" lang-code="05016">Správa</label>
-									<textarea id="id-kontakt1-sprava"></textarea>
+									<textarea id="id-kontakt1-sprava" name="sprava"></textarea>
 								</div>
 							</div>
 							<div class="formular-checkbox">
-								<input type="checkbox" id="id-kontakt1-suhlas" required />
+								<input type="checkbox" id="id-kontakt1-suhlas" name="suhlas" required />
 								<label for="id-kontakt1-suhlas">
 									<span class="formular-text-underline" lang-code="05017">Súhlasím so spracovaním mojich osobných údajov za účelom spätnej väzby na moju správu.</span>
 								</label>
@@ -101,7 +102,7 @@
 		<!-- Dialogové okno -->
 		<div class="formular-dialog-overlay" id="id-kontakt1-overlay">
 			<div class="formular-dialog" id="id-kontakt1-dialog">
-				<p lang-code="05020">Správa by bola úspešne odoslaná</p>
+				<p id="id-kontakt1-dialog-p" lang-code="05020">Správa by bola úspešne odoslaná</p>
 				<button onclick="kontakt1_closeDialog()">OK</button>
 			</div>
 		</div>
