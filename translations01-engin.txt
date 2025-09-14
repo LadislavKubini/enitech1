@@ -1,11 +1,11 @@
 // Block_Engin.html ***************************************************************************
-01001 || End-to-end inžinierstvo. 
-|| End-to-end Engineering. 
-|| End-to-end Engineering.
+01001 || Komplexné inžinierske riešenia 
+|| Komplexe technische Lösungen 
+|| Comprehensive engineering solutions
 
-01002 || Spoľahlivá a efektívna podpora v oblasti technických riešení doma aj v zahraničí. 
-|| Zuverlässige und effektive Unterstützung auf dem Gebiet der Lösung technischer Aufgaben zu Hause und im Ausland. 
-|| Reliable and efficient support in the field of technical solutions locally and abroad.
+01002 || Spoľahlivá a flexibilná podpora v oblasti technických riešení doma aj v zahraničí.
+|| Zuverlässiger und flexibler Support im Bereich technischer Lösungen im In- und Ausland.
+|| Reliable and flexible support in the field of technical solutions at home and abroad.
 
 // Block_EnginInt1.html ***********************************************************************
 01101 || Spoľahlivá a efektívna podpora v oblasti konštrukčných prác doma aj v zahraničí.
