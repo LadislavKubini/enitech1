@@ -25,7 +25,9 @@
 	<link rel="stylesheet" href="uvod1.css">
 	<link rel="stylesheet" href="onas1.css">
 	<link rel="stylesheet" href="onas2.css">
+	<link rel="stylesheet" href="onas3ref.css">
 	<link rel="stylesheet" href="klienti.css">
+	<link rel="stylesheet" href="ref.css">
 	<link rel="stylesheet" href="footer.css">
 
 	<!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
@@ -52,7 +54,13 @@
 	<div id="Onas2-div-dst">
 	</div>
 
-	<div id="Klienti-div-dst">
+	<!-- <div id="Klienti-div-dst">
+	</div> -->
+
+	<div id="Onas3Ref-div-dst">
+	</div>
+
+	<div id="Ref-div-dst">
 	</div>
 
 	<div id="Footer-div-dst">
@@ -68,14 +76,16 @@
 			const p3 = ImportDiv("Block_Uvod1.html", "Uvod1-div-src", "Uvod1-div-dst");
 			const p4 = ImportDiv("Block_Onas1.html", "Onas1-div-src", "Onas1-div-dst");
 			const p5 = ImportDiv("Block_Onas2.html", "Onas2-div-src", "Onas2-div-dst");
-			const p6 = ImportDiv("Block_Klienti.html", "Klienti-div-src", "Klienti-div-dst");
-			const p7 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
-			await Promise.all([p1, p2, p3, p4, p5, p6, p7]); // vsetky ImportDiv mozu bezat paralelne
+			// const p6 = ImportDiv("Block_Klienti.html", "Klienti-div-src", "Klienti-div-dst");
+			const p6 = ImportDiv("Block_Onas3Ref.html", "Onas3Ref-div-src", "Onas3Ref-div-dst");
+			const p7 = ImportDiv("Block_Ref.html", "Ref-div-src", "Ref-div-dst");
+			const p8 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
+			await Promise.all([p1, p2, p3, p4, p5, p7, p8]); // vsetky ImportDiv mozu bezat paralelne
 		}
 	</script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
+		document.addEventListener("DOMContentLoaded", async () => {
 			await loadDivBlocks();
 
 			await new Promise(requestAnimationFrame);
@@ -86,12 +96,15 @@
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
 			Animator.register("#uvod-hero_animate-id", "animate-slide-in-bounce");
-			Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
+			// Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
 			Animator.register("#id-klienti-animate", "animate-rotateFlipIn");
+			Animator.register("#id-onas3ref-animate", "animate-rotateFlipIn");
 			Animator.registerAll(".onas1-header-line", "animate-width-grow");
+			Animator.registerAll(".onas2-header-line", "animate-width-grow");
+			Animator.registerAll(".onas3ref-header-line", "animate-width-grow");
 			Animator.registerAll(".footer-line", "animate-width-grow");
 			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
-			document.body.style.visibility = "visible"; // zobraz stránku až teraz    
+			document.body.style.visibility = "visible";
 		});    
 	</script>
 </body>

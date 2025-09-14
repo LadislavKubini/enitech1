@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_Onas3Ref.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="onas3ref.css">
+
+	<script src="Language.js" defer></script>
+	<script src="animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="Onas3Ref-div-src">
+		<div class="onas3ref-body">
+			<div class="onas3ref-header-line"></div>
+			<div id="id-onas3ref-animate" class="onas3ref-nadpis" style="transform-style: preserve-3d; transform: rotateX(-90deg) rotateY(10deg);">
+				<h2 lang-code="00304">Referencie:</h2>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('translations00.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".onas3ref-header-line", "animate-width-grow");
+			Animator.register("#id-onas3ref-animate", "animate-rotateFlipIn");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>

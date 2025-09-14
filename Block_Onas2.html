@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Block_Onas2.html</title>
-  <link rel="icon" href="favicona-enitech.png" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_Onas2.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
 
-  <link rel="stylesheet" href="fonts-poppins.css" />
-  <link rel="stylesheet" href="fonts-open-sans.css">
-  <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="onas2.css">
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="onas2.css">
 
-  <script src="Language.js" defer></script>
-  <script src="animator.js" defer></script>
-  <style>
-    body {
-      visibility: hidden; 
-      margin: 0;
-      padding: 0;
-      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
-    }
-  </style>
+	<script src="Language.js" defer></script>
+	<script src="animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
 </head>
+
 <body>
-  <div id="Onas2-div-src">
-    <div class="onas2-body">
-      <div class="onas2-header-line"></div>
+	<div id="Onas2-div-src">
+		<div class="onas2-body">
+			<div class="onas2-header-line"></div>
 
-      <div class="onas2-content">
-        <div class="onas2-left">
-          <p lang-code="00211">.<strong>Naša vízia:</strong>
-              <br>Stať sa významným poskytovateľom inžinierskych služieb v strednej Európe a uznávaným partnerom na globálnom trhu.
-          </p>
-          <p lang-code="00212">.<strong>Naša výhoda</strong> spočíva v dlhodobej odbornosti a schopnosti flexibilne reagovať na dynamiku požiadaviek trhu, čo nám umožňuje poskytovať vynikajúce riešenia pre našich partnerov.
-          </p>
-          <!-- nový flex kontajner pre posledný odstavec + obrázok -->
-          <div class="onas2-left-last">
-            <p lang-code="00213">
-                .V práci používame systém manažérstva bezpečnosti informácií<br>
-                <strong>STN EN ISO/IEC<br>27001:2022</strong>
-            </p>
-            <img src="media/CertificatedPQM.png" alt="Certificate PQM" class="onas2-official-stamp">
-          </div>
-        </div>
+			<div class="onas2-flex-container ">
+				<div class="onas2-left">
+					<p><strong lang-code="00211">Naša vízia:</strong><br>
+						<span lang-code="00212">Stať sa významným poskytovateľom inžinierskych služieb v strednej Európe a uznávaným partnerom na globálnom trhu.</span>
+					</p>
+					<p><strong lang-code="00213">Naša výhoda</strong>
+						<span lang-code="00214">spočíva v dlhodobej odbornosti a schopnosti flexibilne reagovať na dynamiku požiadaviek trhu,
+							čo nám umožňuje poskytovať vynikajúce riešenia pre našich partnerov.</span>
+					</p>
+					<!-- nový flex kontajner pre posledný odstavec + obrázok -->
+					<div class="onas2-left-last">
+						<p><span lang-code="00215">.V práci používame systém manažérstva bezpečnosti informácií</span><br>
+							<strong>STN EN ISO/IEC<br>27001:2022</strong>
+						</p>
+						<img src="media/CertificatedPQM.png" alt="Certificate PQM" class="onas2-official-stamp">
+					</div>
+				</div>
 
-        <div class="onas2-divider"></div>
+				<div class="onas2-right">
+					<div class="onas2-img-wrapper">
+						<div class="onas2-img">
+							<img src="media/Globus-Lock-modraSiet.avif" alt="Obrazok 2" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <div class="onas2-right">
-          <div class="onas2-right-inner">
-            <img src="media/two-successful-male-colleague-giving-high-five-office.avif" alt="Obrazok 2" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script> 
-    async function loadAllTranslations() {
-      const p1 = await LoadTranslations('translations00.txt');
-      await Promise.all([p1]);
-    }
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", async () => {
-      await loadAllTranslations();
-      await UpdateTexts();
-      await new Promise(requestAnimationFrame);
-      Animator.registerAll(".onas2-header-line", "animate-width-grow");
-      document.body.style.visibility = "visible";
-    });
-  </script>
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('translations00.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".onas2-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
 </body>
+
 </html>

@@ -48,13 +48,20 @@
 	<div id="top"></div>
 	<div id="Menu-div-dst">
 	</div>
-
 	<div">
 		<section class="uvod-hero" style="background-image: url('media/flat-lay-business-concept.avif');">
 			<div class="uvod-hero-content" id="referencie_animate-id">
 				<h1 lang-code="07001">.Referencie</h1>
 			</div>
 		</section>
+		<div class="ref-body">
+			<h1 class="ref-popis" id="id_refMenu" style="scroll-margin-top: 80px;" lang-code="07002">.Referencie hovoria za nás</h1>
+			<p class="ref-popis" lang-code="07003">
+				.Od vzniku sa nám podarilo nadviazať dlhodobú spoluprácu s viac ako 30 zákazníkmi z rôznych krajín sveta.
+			</p>
+			<p class="ref-popis" lang-code="07004">
+				.Nahliadnite na jednotlivé realizované služby pre našich klientov.
+			</p>
 		</div>
 
 		<div id="Ref-div-dst">
@@ -109,8 +116,16 @@
 				Animator.registerAll(".ref3-animate-line", "animate-width-grow");
 				Animator.registerAll(".ref4-animate-line", "animate-width-grow");
 				Animator.registerAll(".footer-line", "animate-width-grow");
-				Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
-				//   refShowCompany('schindler');
+				// Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
+
+				const rawHash = window.location.hash.substring(1); // "id-Block_Ref1?x=5&y=6"
+				const targetId = rawHash.split(/[?&]/)[0];         // "id-Block_Ref1"
+				if (targetId) {
+					const targetEl = document.getElementById(targetId);
+					if (targetEl) {
+						targetEl.scrollIntoView({ behavior: "smooth" });
+					}
+				}
 				restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
 				document.body.style.visibility = "visible"; // zobraz stránku až teraz    
 			});    

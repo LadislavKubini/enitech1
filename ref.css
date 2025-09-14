@@ -3,15 +3,21 @@
       font-family: 'Poppins', 'Open Sans', Arial, Tahoma, sans-serif;
     }
 
+    .ref-body {
+      padding: 2rem;
+	  /* padding-bottom: 0; */
+      background-color: #E8F4FF;
+    }
+
     .ref-popis {
       text-align: center;
-      color: #777;
-/*      border: 1px dashed red; */
+      /* color: #777; */
+      color: black;
     }
 
     h1.ref-popis {
       font-size: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     p.ref-popis {
@@ -21,12 +27,7 @@
     }
 
     p.ref-popis:last-of-type {
-      margin-bottom: 4rem; /* alebo 4rem, podľa potreby */
-    }
-
-    .ref-body {
-      padding: 2rem;
-      background-color: #f0f0f0;
+      margin-bottom: 0; /* alebo 4rem, podľa potreby */
     }
 
     h1 {
@@ -34,136 +35,166 @@
       margin-bottom: 2rem;
     }
 
+    /**********************************************************************/
     .ref-grid1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    	display: grid;
+    	grid-template-columns: 1fr 1fr 1fr 1fr;
+    	gap: 0.5rem;
+    	align-items: stretch;
     }
 
-    .ref-grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "p1 t2"
-        "t1 p2";
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    .ref-col {
+    	flex: 1;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: stretch;
     }
 
-    .ref-p1 { grid-area: p1; }
-    .ref-p2 { grid-area: p2; }
-    .ref-t1 { grid-area: t1; }
-    .ref-t2 { grid-area: t2; }
-    
-    .ref-p1, .ref-p2,
-    .ref-t1, .ref-t2 {
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* obrázky ostanú štvorce */
+    .ref-p1,
+    .ref-p2 {
+    	position: relative;
+    	width: 100%;
+    	aspect-ratio: 3 / 2;
+    	overflow: hidden;
     }
 
     .ref-p1 img,
     .ref-p2 img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	object-fit: cover;
+    	display: block;
     }
 
-    .ref-text {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-    }
-
-    /* Spoločné vlastnosti pre t1 a t2 */
+    /* textové bloky – rovnaká výška v oboch stĺpcoch */
     .ref-t1,
     .ref-t2 {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem;
-      color: white;
-      text-align: left;
-      font-size: calc(0.6rem + 0.3vw);
+    	flex: 1;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: flex-start;
+    	padding: clamp(0.2rem, 0.4vw, 0.4rem) clamp(0.5rem, 1vw, 1rem);
+    	color: white;
+    	font-size: clamp(0.6rem, 0.9vw, 1.2rem);
     }
 
     .ref-t1 {
-      background-color: blue;
+    	background-color: blue;
     }
 
     .ref-t2 {
-      background-color: red;
+    	background-color: red;
+    }
+
+    .ref-text {
+    	width: 100%;
+    }
+
+    .ref-text h2 {
+    	margin: 0;
+    	margin-bottom: 0.2rem;
+    }
+
+    .ref-text p {
+    	margin: 0;
     }
 
     .ref-button {
-      background-color: white;
-      color: black;
-      border: 2px solid transparent;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      align-self: flex-start;
-      margin-top: auto;
+    	background-color: white;
+    	color: black;
+    	border: 2px solid transparent;
+    	padding: 0 0.4rem;
+    	cursor: pointer;
+    	font-weight: bold;
+    	transition: all 0.3s ease;
+    	align-self: flex-end;
+    	margin-top: auto;
     }
 
     .ref-button:hover {
-      background-color: black;
-      color: white;
-      border-color: white;
-      transform: scale(1.05);
+    	background-color: black;
+    	color: white;
+    	border-color: white;
+    	transform: scale(1.05);
     }
 
-    /* Trojuholníky – viditeľné a proporčné */
+    /* Trojuholníky ********************************************/
     .ref-p1 .ref-triangle {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      border-bottom: 3em solid blue;
-      border-left: 3em solid transparent;
+    	position: absolute;
+    	bottom: 0;
+    	right: 0;
+    	width: 0;
+    	height: 0;
+    	border-bottom: 3em solid blue;
+    	border-left: 3em solid transparent;
     }
 
     .ref-p2 .ref-triangle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-top: 3em solid red;
-      border-right: 3em solid transparent;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 0;
+    	height: 0;
+    	border-top: 3em solid red;
+    	border-right: 3em solid transparent;
     }
 
+    /* Responzívne *********************************************/
     @media (max-width: 900px) {
-      .ref-grid1 {
-        grid-template-columns: 1fr;
-      }
-      .ref-t1,
-      .ref-t2 {
-        font-size: calc(1rem + 0.2vw);
-      }
+    	.ref-grid1 {
+    		grid-template-columns: 1fr 1fr;
+    	}
+
+    	.ref-t1,
+    	.ref-t2 {
+    		font-size: clamp(0.6rem, 1.8vw, 1.2rem);
+    	}
+    	.ref-p1,
+    	.ref-p2 {
+			aspect-ratio: 2/1;    	
+		}
     }
 
     @media (max-width: 600px) {
-      .ref-grid2 {
-          grid-template-columns: 1fr;
-          grid-template-rows: auto;
-          grid-template-areas:
-          "p1"
-          "t1"
-          "p2"
-          "t2";
-          aspect-ratio: unset;
-      }
+    	.ref-grid1 {
+    		grid-template-columns: 1fr;
+    	}
 
-      /* Skryj trojuholníky na malých displejoch */
-      .ref-triangle {
-          display: none;
-      }
+    	.ref-t1,
+    	.ref-t2 {
+    		font-size: clamp(0.6rem, 3.6vw, 1.2rem);
+    	}
+
+    	.ref-p1 {
+    		order: 1;
+    	}
+
+    	.ref-t1 {
+    		order: 2;
+    	}
+
+    	.ref-p2 {
+    		order: 3;
+    	}
+
+    	.ref-t2 {
+    		order: 4;
+    	}
+
+    	.ref-p2 .ref-triangle {
+    		top: auto;
+    		left: auto;
+    		bottom: 0;
+    		right: 0;
+    		width: 0;
+    		height: 0;
+    		border-top: none;
+    		border-right: none;
+    		border-bottom: 3em solid red;
+    		border-left: 3em solid transparent;
+    	}
     }
