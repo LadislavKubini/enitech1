@@ -1,129 +1,171 @@
     .enginint1-body {
-      background-color: #F8FCFF;
-      color: black;
-      font-weight: 400;
-      font-size: clamp(18px, 1.8vw, 30px);
-      display: flex;
-      flex-direction: column;
-      padding: 4vw 4vw; /* vertikalne horizontalne*/
-      box-sizing: border-box;
-      /* border: 1px dashed red; */
+    	background-color: #F8FCFF;
+    	color: black;
+    	font-weight: 400;
+    	font-size: clamp(16px, 1.6vw, 30px);
+    	display: flex;
+    	flex-direction: column;
+    	padding: 1vw 1vw;
+    	box-sizing: border-box;
     }
+
+    .enginint1-body h2 {
+    	margin-bottom: 0.3em;
+    }
+
+    p.enginint1-big {
+    	font-size: 105%;
+    }
+
+    strong.enginint1-big {
+    	font-size: 110%;
+    }
+
+    .enginint1-body p {
+    	margin-top: 0.5em;
+    	margin-bottom: 0.4em;
+    }
+
     .enginint1-header-line {
-      width: 100%;
-      height: 1px;
-      background-color: #00C;
+    	width: 100%;
+    	height: 1px;
+    	background-color: #00C;
     }
+
     .enginint1-content {
-      flex: 1; /* vztahuje sa k rodicovi (onas1-body{display: flex; flex-direction: column;}) */
-      display: flex;
-      padding-top: 20px;
-      /* border: 1px dashed red;     */
+    	flex: 1;
+    	display: flex;
+    	padding-top: 20px;
     }
+
+    /******************************************************************/
     .enginint1-left {
-      flex: 6; /* vztahuje sa k rodicovi (.enginint1-content {display: flex;} ) */
-      display: flex;
-      align-items: center; /* vedlajsia os (zvisla) , lebo flex-direction: row (default) */
-      justify-content: center; /* hlavna os (vodorovna, lebo flex-direction: row (default)) */
-      /* border: 1px dashed green; */
-      box-sizing: border-box;
+    	flex: 1;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	box-sizing: border-box;
     }
-    .enginint1-left-inner {
-      /* max-width: 300px; */
+
+    /* .enginint1-left-inner {
       width: 100%;
       margin: 0 auto;
       text-align: center;
-      /* border: 1px dashed blue; */
     }
     .enginint1-left-inner h2 {
         text-align: left;
-    }
-    .enginint1-divider {
-      width: 1px;
-      background-color: #00C;
-      margin: 0 10px;
-    }
-    .enginint1-right {
-        flex: 7;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* vertikálne centrovanie */
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .enginint1-right strong {
-      font-weight: bold;
-    }
-    .enginint1-icon-row {
-        display: flex;
-        justify-content: center; /* horizontálne centrovanie celej skupiny */
-        align-items: center;     /* vertikálne zarovnanie (tu všetky majú rovnakú výšku) */
-        gap: 8px;                /* medzera medzi obrázkami */
-        /* margin: 1em 0; */
-    }
-
-    /* všetky obrázky dostanú jednotnú výšku, šírka sa prispôsobí proporčne */
-    /* .enginint1-icon-row img {
-        display: block;        
-        height: 60px;          
-        width: auto;           
-        object-fit: contain;   
     } */
 
+    .enginint1-img-wrapper {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	width: 100%;
+    	height: 100%;
+    }
+
+    .enginint1-img-wrapper img {
+    	max-width: 100%;
+    	max-height: 100%;
+    	object-fit: contain;
+    }
+
+    .enginint1-divider {
+    	width: 1px;
+    	background-color: #00C;
+    	margin: 0 10px;
+    }
+
+    /******************************************************************/
+    .enginint1-right {
+    	flex: 1;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	padding: 1vw;
+    	padding-top: 0;
+    	box-sizing: border-box;
+    }
+
+    .enginint1-right strong {
+    	font-weight: bold;
+    }
+
+    .enginint1-right h3 {
+    	margin: 0;
+    }
+
+    .enginint1-icon-row {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	gap: 1vw;
+    }
+
+    /******************************************************************/
     .enginint1-hexagon {
-        position: relative;
-        width: clamp(120px, 12vw, 200px); /* 120px; */
-        aspect-ratio: 1 / 0.866;
-        background: inherit;
-        padding: 10px;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: visible;
+    	position: relative;
+    	width: clamp(100px, 14vw, 220px);
+    	/* aspect-ratio: 1 / 0.866; */
+    	/* pre pravidelny hexagon */
+    	aspect-ratio: 56 / 39;
+    	background: inherit;
+    	padding: 0.3vw;
+    	box-sizing: border-box;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	overflow: visible;
     }
+
     .enginint1-hexagon::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 86.6"><polygon points="25,0 75,0 100,43.3 75,86.6 25,86.6 0,43.3" fill="none" stroke="black" stroke-width="1"/></svg>');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+    	content: "";
+    	position: absolute;
+    	inset: 0;
+    	pointer-events: none;
+    	/* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 86.6"><polygon points="25,0 75,0 100,43.3 75,86.6 25,86.6 0,43.3" fill="none" stroke="black" stroke-width="1"/></svg>'); */
+    	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 86.6"><polygon points="12.5,0 87.5,0 112.5,43.3 87.5,86.6 12.5,86.6 -12.5,43.3" fill="none" stroke="black" stroke-width="1"/></svg>');
+    	background-repeat: no-repeat;
+    	background-size: 100% 100%;
+    	background-position: center;
     }
-    /* obrázok vo vnútri: celý viditeľný, zachová proporcie */
+
     .enginint1-hexagon img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        display: block;
+    	max-width: 100%;
+    	max-height: 100%;
+    	object-fit: contain;
+    	display: block;
     }
-    
+
     @media (max-width: 762px) {
-        .enginint1-body {
-            min-height: auto;
-        }
-        .enginint1-content {
-          flex-direction: column;
-          align-items: center;
-          padding-top: 0;
-      }
-      .enginint1-left {
-          padding: 0 0;
-          width: 100%;
-          justify-content: center;
-      }
-      .enginint1-divider {
-          width: 95%;
-          height: 1px;
-          /* background-color: black; */
-          margin: 0 0;
-      }
-      .enginint1-right {
-          width: 100%;
-          padding: 15px 20px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-      }
+    	.enginint1-body {
+    		min-height: auto;
+    	}
+
+    	.enginint1-content {
+    		flex-direction: column;
+    		align-items: center;
+    		padding-top: 0;
+    	}
+
+    	.enginint1-left {
+    		padding: 0 0;
+    		width: 100%;
+    		justify-content: center;
+    	}
+
+    	.enginint1-divider {
+    		width: 95%;
+    		height: 1px;
+    		margin: 0 0;
+    	}
+
+    	.enginint1-right {
+    		width: 100%;
+    		padding: 15px 20px;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    	}
     }

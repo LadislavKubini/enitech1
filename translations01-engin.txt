@@ -14,19 +14,23 @@
 
 01102 || Interná konštrukcia || Interne Konstruktion || Internal construction
 
-01104 || Naši špecialisti pracujú na projektoch so systémami:
-|| Unsere Spezialisten arbeiten an Projekten mit folgenden Systemen:
-|| Our specialists work on projects with the following systems:
+01104 || Naši špecialisti pracujú s rôznymi systémami:
+|| Unsere Spezialisten arbeiten mit verschiedenen Systemen:
+|| Our specialists work with various systems::
 
-01105 || Poskytujeme komplexné riešenia a individuálny prístup vo všetkých etapách vývoja
+01105 || interné projekty: || Interne Projekte: || internal projects:
+01106 || externé projekty: || Externe Projekte: || external projects:
+01107 || podľa požiadavky napr.: || je nach Bedarf, z. B.: || as required, e.g.:
+
+01108 || Poskytujeme komplexné riešenia a individuálny prístup vo všetkých etapách vývoja
 || Wir bieten umfassende Lösungen und einen individuellen Ansatz in allen Entwicklungsphasen.
 || We provide comprehensive solutions and an individual approach at all stages of development.
 
-01106 ||  - od konštrukčného návrhu, jeho doladenia a úprav, až po vypracovanie kompletnej výkresovej dokumentácie.
+01109 ||  - od konštrukčného návrhu, jeho doladenia a úprav, až po vypracovanie kompletnej výkresovej dokumentácie.
 || - vom Konstruktionsentwurf über dessen Feinabstimmung und Anpassung bis hin zur Erstellung der vollständigen Zeichnungsdokumentation.
 || - from the design, its fine-tuning and modifications, to the preparation of complete drawing documentation.
 
-01107 || Spolupracujeme najmä s firmami z leteckého priemyslu, automobilového priemyslu a všeobecného strojárstva.
+01110 || Spolupracujeme najmä s firmami z leteckého priemyslu, automobilového priemyslu a všeobecného strojárstva.
 || Wir arbeiten vor allem mit Unternehmen aus der Luftfahrtindustrie, der Automobilindustrie und dem allgemeinen Maschinenbau zusammen.
 || We mainly cooperate with companies from the aviation industry, automotive industry and general engineering.
 
