@@ -1,103 +1,125 @@
     .enginautom1-body {
-      background-color: #F8FCFF;
-      color: black;
-      height: auto;
-      min-height: 100%;
-      font-size: clamp(18px, 1.8vw, 30px);
-      padding: 4vw 4vw; /* vertikalne horizontalne*/
-      box-sizing: border-box;
+    	/* background-color: #F8FCFF; */
+    	color: white;
+    	height: auto;
+    	min-height: 100%;
+    	font-size: clamp(16px, 1.6vw, 30px);
+    	padding: 1vw 2vw;
+    	box-sizing: border-box;
+    	background:
+    		linear-gradient(to bottom, #1848A0 0%, #040411 100%),
+    		linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    	background-blend-mode: multiply;
     }
+
     .enginautom1-header-line {
-      width: 100%;
-      height: 1px;
-      background-color: #00C;
+    	width: 100%;
+    	height: 1px;
+    	background-color: #999;
     }
 
     .enginautom1-content {
-      display: flex;
-      flex-direction: row;
-      /* width: 100vw; */
-      width: auto;
-      box-sizing: border-box;
-      padding: 1vw;
-      gap: 1vw;
+    	display: flex;
+    	flex-direction: row;
+    	width: auto;
+    	box-sizing: border-box;
+    	padding: 1vw;
+    	gap: 1vw;
     }
+
     /**************************************************************************/
     .enginautom1-left {
-      flex: 5;
-      overflow: hidden;
-      padding: 1vw;
-      box-sizing: border-box;
-      position: relative;
-      /* border: 1px dashed red; */
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* horizontálne centrovanie */
-      align-items: center;     /* vertikálne, ak potrebuješ */
-    }
-    .enginautom1-img1 {
-         max-height: 70%;
-         max-width: 70%;
-         display: block;
+    	flex: 5;
+    	overflow: hidden;
+    	padding: 1vw;
+    	box-sizing: border-box;
     }
 
-/**************************************************************************/
+    .enginautom1-img-wrapper {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	width: 100%;
+    	height: 100%;
+    	overflow: hidden;
+    }
+
+    .enginautom1-img-wrapper img {
+    	max-width: 100%;
+    	max-height: 100%;
+    	object-fit: contain;
+    }
+
+    /**************************************************************************/
     .enginautom1-right {
-      flex: 4;
-      /* background: #eef; */
-      display: flex;
-      flex-direction: column;
-      justify-content: top; /* center; */
-      padding: 20px;
-      box-sizing: border-box;
+    	flex: 5;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: top;
+    	padding: 1vw;
+    	box-sizing: border-box;
     }
-    .enginautom1-empty-line-with-img {
-      display: flex;
-      justify-content: flex-end; /* obrázok vpravo */
-      align-items: center;       /* vertikálne zarovnanie */
-      height: 1.5em;              /* výška „riadku“ */
+
+    .enginautom1-line-with-img {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: flex-end;
+    	padding-bottom: 1vw;
+    	box-sizing: border-box;
     }
-    .enginautom1-empty-line-with-img img {
-      height: 60px;               /* malý obrázok */
-      width: auto;                 /* zachovať pomer strán */
+
+    .enginautom1-line-with-img h3 {
+    	margin: 0;
     }
+
+    .enginautom1-line-with-img img {
+    	height: 5vw;
+    	width: auto;
+    	filter: invert(1) brightness(0.8);
+    }
+
+
     .enginautom1-right strong {
-      font-weight: bold;
+    	font-weight: bold;
     }
+
     .enginautom1-right-last {
-        display: flex;
-        align-items: center;       /* vertikálne zarovnanie textu s obrázkom */
-        gap: 20px;                 /* medzera medzi textom a obrázkom */
-        flex-wrap: nowrap;
+    	display: flex;
+    	align-items: center;
+    	gap: 20px;
+    	flex-wrap: nowrap;
     }
+
     .enginautom1-last p {
-        margin: 0; /* odstrániť defaultné odsadenie */
+    	margin: 0;
     }
 
     /**************************************************************************/
     .enginautom1-more-info-container {
-      text-align: right; /* zarovnanie obsahu doprava */
+    	text-align: right;
     }
 
     /**************************************************************************/
     .enginautom1-divider {
-      width: 1px;
-      background-color: #00C;
-      /* margin: 0 10px; */
+    	width: 1px;
+    	background-color: #999;
     }
 
     /**************************************************************************/
     @media (max-width: 762px) {
-        .enginautom1-content {
-           flex-direction: column;
-           height: auto;
-        }
-        .enginautom1-divider {
-            width: 100%;
-            height: 1px;
-            margin: 0 0;
-        }
-        .enginautom1-img1 {
-          transform: rotate(0deg);        }
-    }    
+    	.enginautom1-content {
+    		flex-direction: column-reverse;
+    		height: auto;
+    	}
+
+    	.enginautom1-divider {
+    		width: 100%;
+    		height: 1px;
+    		margin: 0 0;
+    		display: none;
+    	}
+
+    	.enginautom1-img1 {
+    		transform: rotate(0deg);
+    	}
+    }

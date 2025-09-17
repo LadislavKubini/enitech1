@@ -112,7 +112,7 @@
 01508 || Viac informácií || Weitere Informationen || More information
 
 // Block_EnginElekt1.html *******************************************************************
-01601 || Elektro projekcia || Elektroprojektion || Electrical projection
+01601 || Elektro-konštrukcia || Elektrokonstruktion || Electrical engineering
 
 01602 || V oblasti elektro Vás vieme podporiť v systéme <strong>EPLAN P8</strong> pri návrhu, plánovaní a optimalizácii elektrotechniky do Vašich strojov a zariadení
 || Im Bereich Elektrotechnik unterstützen wir Sie mit dem System <strong>EPLAN P8</strong> bei der Konzeption, Planung und Optimierung der Elektrotechnik für Ihre Maschinen und Anlagen.
@@ -126,7 +126,7 @@
 01605 || Viac informácií || Weitere Informationen || More information
 
 // Block_EnginAutom1.html ********************************************************************
-01701 || Automatizácia v priemysle || Automatisierung in der Industrie || Automation in industry 
+01701 || Automatizácia || Automatisierung || Automation 
 
 01702 || Vieme podporiť Vaše potreby v oblasti automatizácie s 
          <strong>programovaním automatizovaných liniek</strong> a systémov alebo 
