@@ -132,7 +132,7 @@
     /**************************************************************************/
     @media (max-width: 762px) {
     	.enginext1-content {
-    		flex-direction: column-reverse;
+    		flex-direction: column;
     		height: auto;
     	}
 
