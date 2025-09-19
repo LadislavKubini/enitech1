@@ -128,22 +128,6 @@
     	max-height: 100%;
     	object-fit: contain;
     }
-    /* .enginint3-left-group {
-    	position: relative;
-    	aspect-ratio: 1 / 1;
-    	width: 100%;
-    	max-width: 600px;
-    	justify-self: center;
-    	align-self: center;
-    }
-
-    .enginint3-img1 {
-    	position: absolute;
-    	width: 100%;
-    	top: 0%;
-    	left: 0%;
-    } */
-
     /**************************************************************************/
     @media (max-width: 762px) {
     	.enginint3-content {
@@ -160,10 +144,5 @@
     		height: 1px;
     		margin: 0 0;
     		display: none;
-    	}
-
-    	.enginint3-img1 {
-    		width: 80%;
-    		left: 10%;
     	}
     }
