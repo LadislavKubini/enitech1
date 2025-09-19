@@ -136,7 +136,7 @@
     	}
 
     	.enginint4-content {
-    		flex-direction: column-reverse;
+    		flex-direction: column;
     		height: auto;
     	}
 
