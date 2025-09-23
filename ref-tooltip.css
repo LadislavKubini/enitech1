@@ -1,54 +1,84 @@
-  .ref-tooltip {
-    position: relative;
-    display: inline-block;
-  }
-
-  .ref-tooltip .ref-tooltip-bubble {
-    position: absolute;
-    bottom: 100%;         /* nad textom */
-    left: 50%;
-    transform: translateX(-50%);
-    background: #0b3d91;  /* stredne modrá */
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease;
-  }
-
-  .ref-tooltip .ref-tooltip-bubble::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: #0b3d91; /* šípka */
-  }
-
-  .ref-tooltip:hover .ref-tooltip-bubble {
-    opacity: 1;
-    visibility: visible;
-  }
-
-      .ref-tooltip-item {
-    	width: 100%;
-    	/* aspect-ratio: 250 / 136; */
-    	aspect-ratio: 167 / 91;
-    	position: relative;
-    	overflow: hidden;
-    	border: 1px solid #00C;
-    	background-color: transparent;
-    	container-type: inline-size; /* uplne nova vlastnost css */
+    .ref-tooltip-grid {
+    	display: grid;
+    	grid-template-columns: repeat(6, 1fr);
+    	grid-auto-rows: auto;
+    	gap: calc(0.5vw + 40px) 2vw;
+    	justify-content: center;
+    	align-items: start;
+    	max-width: 1200px;
+    	margin: 0 auto;
+    	margin-bottom: 2vw;
     }
 
-	.ref-tooltip-image {
+    .ref-tooltip-grid.columns-3 {
+    	grid-template-columns: repeat(3, 1fr);
+    	max-width: 600px;
+    }
+
+    .ref-tooltip-container { /* =ref-ovl-item*/
+    	width: 100%;
+    	aspect-ratio: 167 / 91;
+    	position: relative;
+    	border: 1px solid #00C;
+    	background-color: transparent;
+    	container-type: inline-size;
+    	box-sizing: border-box;
+    }
+
+    .ref-tooltip-text {
+    	visibility: hidden;
+    	opacity: 0;
+    	position: absolute;
+    	background-color: rgba(230, 165, 126, 0.95);
+    	color: black;
+    	padding: 0.6vw;
+		padding-top: 0;
+    	border-radius: 0.8vw;
+    	transition: opacity 0.3s ease;
+    	font-size: clamp(12px, 1.2vw, 24px);
+    	z-index: 10;
+    	width: 135%;
+    	max-width: 500px;
+    	white-space: normal;
+    	text-align: left;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    	pointer-events: none;
+		cursor: pointer;
+    	border: 1px solid rgb(200, 140, 106);
+    	box-sizing: border-box;
+    }
+
+    .ref-tooltip-container:hover .ref-tooltip-text {
+    	visibility: visible;
+    	opacity: 1;
+    }
+
+    .ref-tooltip-image {
     	position: absolute;
     	bottom: 0;
     	width: 100%;
     }
 
+	.ref-tooltip-company {
+		text-align: left;
+		font-weight: bold;
+	}
 
+    /************************************************************************************************************/
+    @media (max-width: 762px) {
+    	.ref-tooltip-grid {
+    		grid-template-columns: repeat(3, 1fr);
+    		gap: clamp(24px, calc(20px + 1.5vw), 36px) clamp(4px, 1.5vw, 12px);
+    	}
+
+    	.ref-tooltip-text p,
+    	.ref-tooltip-text p strong {
+    		font-size: clamp(0.6rem, 2.4vw, 18rem);
+    	}
+
+    	.ref-tooltip-company {
+    		font-size: clamp(0.6rem, 2.4vw, 18rem);
+    	}
+    }
