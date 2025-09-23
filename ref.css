@@ -79,7 +79,8 @@
     	align-items: flex-start;
     	padding: clamp(0.2rem, 0.4vw, 0.4rem) clamp(0.5rem, 1vw, 1rem);
     	color: white;
-    	font-size: clamp(0.6rem, 0.9vw, 1.2rem);
+    	font-size: clamp(0.8rem, 1.1vw, 1.4rem);
+    	/* font-size: clamp(0.7rem, 1vw, 1.3rem); */
     }
 
     .ref-t1 {
@@ -97,6 +98,7 @@
     .ref-text h2 {
     	margin: 0;
     	margin-bottom: 0.2rem;
+		font-size: 1.35em;
     }
 
     .ref-text p {
@@ -111,8 +113,8 @@
     	cursor: pointer;
     	font-weight: bold;
     	transition: all 0.3s ease;
-    	align-self: flex-end;
-    	margin-top: auto;
+		margin-left: 1rem;
+		float: right;
     }
 
     .ref-button:hover {
@@ -140,7 +142,7 @@
     	width: 0;
     	height: 0;
     	border-top: 3em solid red;
-    	border-right: 3em solid transparent;
+		border-right: 3em solid transparent;
     }
 
     /* Responzívne *********************************************/

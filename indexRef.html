@@ -34,9 +34,9 @@
 	<link rel="stylesheet" href="ref3.css">
 	<link rel="stylesheet" href="ref4.css">
 	<link rel="stylesheet" href="ref-ovl.css">
+	<link rel="stylesheet" href="ref-tooltip.css">
 	<link rel="stylesheet" href="footer.css">
 
-	<!-- <script src="ref1.js"></script> -->
 	<!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
 	<script src="Language.js" defer></script> <!-- funkcie js: prepinanie jazykov  SK / DE / EN -->
 	<script src="animator.js" defer></script> <!-- funkcie js: animacie -->
@@ -48,88 +48,87 @@
 	<div id="top"></div>
 	<div id="Menu-div-dst">
 	</div>
-	<div">
-		<section class="uvod-hero" style="background-image: url('media/flat-lay-business-concept.avif');">
-			<div class="uvod-hero-content" id="referencie_animate-id">
-				<h1 lang-code="07001">.Referencie</h1>
-			</div>
-		</section>
-		<div class="ref-body">
-			<h1 class="ref-popis" id="id_refMenu" style="scroll-margin-top: 80px;" lang-code="07002">.Referencie hovoria za nás</h1>
-			<p class="ref-popis" lang-code="07003">
-				.Od vzniku sa nám podarilo nadviazať dlhodobú spoluprácu s viac ako 30 zákazníkmi z rôznych krajín sveta.
-			</p>
-			<p class="ref-popis" lang-code="07004">
-				.Nahliadnite na jednotlivé realizované služby pre našich klientov.
-			</p>
+	<section class="uvod-hero" style="background-image: url('media/flat-lay-business-concept.avif');">
+		<div class="uvod-hero-content" id="referencie_animate-id">
+			<h1 lang-code="07001">.Referencie</h1>
 		</div>
+	</section>
+	<div class="ref-body">
+		<h1 class="ref-popis" id="id_refMenu" style="scroll-margin-top: 80px;" lang-code="07002">.Referencie hovoria za nás</h1>
+		<p class="ref-popis" lang-code="07003">
+			.Od vzniku sa nám podarilo nadviazať dlhodobú spoluprácu s viac ako 30 zákazníkmi z rôznych krajín sveta.
+		</p>
+		<p class="ref-popis" lang-code="07004">
+			.Nahliadnite na jednotlivé realizované služby pre našich klientov.
+		</p>
+	</div>
 
-		<div id="Ref-div-dst">
-		</div>
+	<div id="Ref-div-dst">
+	</div>
 
-		<div id="Ref1-div-dst">
-		</div>
+	<div id="Ref1-div-dst">
+	</div>
 
-		<div id="Ref2-div-dst">
-		</div>
+	<div id="Ref2-div-dst">
+	</div>
 
-		<div id="Ref3-div-dst">
-		</div>
+	<div id="Ref3-div-dst">
+	</div>
 
-		<div id="Ref4-div-dst">
-		</div>
+	<div id="Ref4-div-dst">
+	</div>
 
-		<div id="Footer-div-dst">
-		</div>
+	<div id="Footer-div-dst">
+	</div>
 
-		<script src="ImportBlock.js" type="text/javascript"></script> <!-- funkcie js: importovanie blokov -->
-		<script src="scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
+	<script src="ImportBlock.js" type="text/javascript"></script> <!-- funkcie js: importovanie blokov -->
+	<script src="scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
 
-		<script>
-			async function loadDivBlocks() {
-				const p1 = ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
-				const p2 = ImportDiv("Block_Ref.html", "Ref-div-src", "Ref-div-dst");
-				const p3 = ImportDiv("Block_Ref1.html", "Ref1-div-src", "Ref1-div-dst");
-				const p4 = ImportDiv("Block_Ref2.html", "Ref2-div-src", "Ref2-div-dst");
-				const p5 = ImportDiv("Block_Ref3.html", "Ref3-div-src", "Ref3-div-dst");
-				const p6 = ImportDiv("Block_Ref4.html", "Ref4-div-src", "Ref4-div-dst");
-				const p7 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
-				await Promise.all([p1, p2, p3, p4, p5, p6, p7]);
-			}
-		</script>
+	<script>
+		async function loadDivBlocks() {
+			const p1 = ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
+			const p2 = ImportDiv("Block_Ref.html", "Ref-div-src", "Ref-div-dst");
+			const p3 = ImportDiv("Block_Ref1.html", "Ref1-div-src", "Ref1-div-dst");
+			const p4 = ImportDiv("Block_Ref2.html", "Ref2-div-src", "Ref2-div-dst");
+			const p5 = ImportDiv("Block_Ref3.html", "Ref3-div-src", "Ref3-div-dst");
+			const p6 = ImportDiv("Block_Ref4.html", "Ref4-div-src", "Ref4-div-dst");
+			const p7 = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
+			await Promise.all([p1, p2, p3, p4, p5, p6, p7]);
+		}
+	</script>
 
-		<script>
-			document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
-				await loadDivBlocks();
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
+			await loadDivBlocks();
 
-				await new Promise(requestAnimationFrame);
-				await Footer_fill_ponuky();
-				await LoadTranslations('translations00.txt');
-				await LoadTranslations('translations01-engin.txt');
-				await LoadTranslations('translations07-ref.txt');
-				await LoadTranslations('translations09-foot.txt');
-				await UpdateTexts();
-				await new Promise(requestAnimationFrame);
-				Animator.register("#referencie_animate-id", "animate-slide-in-bounce");
-				Animator.registerAll(".ref1-animate-line", "animate-width-grow");
-				Animator.registerAll(".ref2-animate-line", "animate-width-grow");
-				Animator.registerAll(".ref3-animate-line", "animate-width-grow");
-				Animator.registerAll(".ref4-animate-line", "animate-width-grow");
-				Animator.registerAll(".footer-line", "animate-width-grow");
-				// Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
+			await new Promise(requestAnimationFrame);
+			await Footer_fill_ponuky();
+			await LoadTranslations('translations00.txt');
+			await LoadTranslations('translations01-engin.txt');
+			await LoadTranslations('translations07-ref.txt');
+			await LoadTranslations('translations09-foot.txt');
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.register("#referencie_animate-id", "animate-slide-in-bounce");
+			Animator.registerAll(".ref1-animate-line", "animate-width-grow");
+			Animator.registerAll(".ref2-animate-line", "animate-width-grow");
+			Animator.registerAll(".ref3-animate-line", "animate-width-grow");
+			Animator.registerAll(".ref4-animate-line", "animate-width-grow");
+			Animator.registerAll(".footer-line", "animate-width-grow");
+			// Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
 
-				const rawHash = window.location.hash.substring(1); // "id-Block_Ref1?x=5&y=6"
-				const targetId = rawHash.split(/[?&]/)[0];         // "id-Block_Ref1"
-				if (targetId) {
-					const targetEl = document.getElementById(targetId);
-					if (targetEl) {
-						targetEl.scrollIntoView({ behavior: "smooth" });
-					}
+			const rawHash = window.location.hash.substring(1); // "id-Block_Ref1?x=5&y=6"
+			const targetId = rawHash.split(/[?&]/)[0];         // "id-Block_Ref1"
+			if (targetId) {
+				const targetEl = document.getElementById(targetId);
+				if (targetEl) {
+					targetEl.scrollIntoView({ behavior: "smooth" });
 				}
-				restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
-				document.body.style.visibility = "visible"; // zobraz stránku až teraz    
-			});    
-		</script>
+			}
+			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
+			document.body.style.visibility = "visible"; // zobraz stránku až teraz    
+		});    
+	</script>
 </body>
 
 </html>
