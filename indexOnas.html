@@ -35,6 +35,7 @@
 	<script src="animator.js" defer></script> <!-- funkcie js: animacie -->
 	<script src="menu.js" defer></script> <!-- funkcie js: ovladanie menu -->
 	<script src="wordpress_footer.js" defer></script> <!-- Nacitanie a spracovanie ponuk od WordPressu-->
+	<script src="onas2.js" defer></script> <!-- modalne okno s certifikatom -->
 </head>
 
 <body>
@@ -104,6 +105,7 @@
 			Animator.registerAll(".onas2-header-line", "animate-width-grow");
 			Animator.registerAll(".onas3ref-header-line", "animate-width-grow");
 			Animator.registerAll(".footer-line", "animate-width-grow");
+			onas2_initModal();
 			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
 			document.body.style.visibility = "visible";
 		});    

@@ -14,6 +14,7 @@
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
+	<script src="onas2.js" defer></script>
 	<style>
 		body {
 			visibility: hidden;
@@ -43,7 +44,7 @@
 						<p><span lang-code="00215">.V práci používame systém manažérstva bezpečnosti informácií</span>
 							<strong><span style="white-space: nowrap;">STN EN ISO/IEC 27001:2022</span></strong>
 						</p>
-						<img src="media/CertificatedPQM.png" alt="Certificate PQM" class="onas2-official-stamp">
+						<img src="media/CertificatedPQM.png" alt="Certificate PQM" class="onas2-official-stamp" id="idCertificateBtn">
 					</div>
 				</div>
 
@@ -55,6 +56,17 @@
 					</div>
 				</div>
 			</div>
+<!-- Certifikat - modalne okno -->
+			<div class="onas2-certif-modal-overlay" id="id_onas2_modalOverlay"></div> <!-- zvysok html sa zakryje polopriehladnym overlay -->
+			<div class="onas2-certif-wrapper" id="id_onas2_wrapper">
+				<div class="onas2-certif-header">
+					<button style="color: red;" id="id_onas2_btnClose">✖</button>
+				</div>
+				<div class="onas2-certif">
+					<img src="media/ISO_27001_Enitech_certificate_EN.avif" alt="Certifikát">
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -70,6 +82,7 @@
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
 			Animator.registerAll(".onas2-header-line", "animate-width-grow");
+			onas2_initModal();
 			document.body.style.visibility = "visible";
 		});
 	</script>
