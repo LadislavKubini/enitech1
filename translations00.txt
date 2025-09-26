@@ -2,7 +2,7 @@
 00101 || O nás || Über uns || About us
 00102 || Inžiniering || Maschinenbau || Engineering
 00103 || IT služby || IT Dienste || IT Services
-00104 || Manažérske služby || Managerdienste || Manager services
+00104 || Manažérske služby || Managerdienste || Management sevices
 00105 || Referencie || Referenzen || References
 00106 || Kariéra || Karriere || Career
 00107 || Kontakt || Kontakt || Contact

@@ -55,7 +55,8 @@
 
     .uvod-menu a {
       color: white;
-      margin: 0 clamp(0.625rem, 0.8vw, 1.25rem);
+      margin: 0 clamp(0.55rem, 0.8vw, 1.25rem);
+      /* margin: 0 clamp(0.625rem, 0.8vw, 1.25rem); */
       text-decoration: none;
       cursor: pointer;
     }

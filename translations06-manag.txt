@@ -5,9 +5,9 @@
 
 06002 || Spoľahlivá a efektívna podpora v oblasti riadenia projektov doma aj v zahraničí.
 || Zuverlässige und effiziente Unterstützung im Projektmanagement im In- und Ausland.
-|| Reliable and efficient project management support at home and abroad.
+|| Reliable and efficient project management support both in-house and abroad.
 
-06011 || Manažérske služby || Management-Dienstleistungen || Manažérske služby
+06011 || Manažérske služby || Management-Dienstleistungen || Management sevices
 
 06012 || Riadenie projektov || Projektleitung || Project management
 

@@ -84,8 +84,9 @@
 .ref2-right {
 	flex: 4;
 	padding: 1vw;
-	overflow: hidden;
+	/* overflow: hidden; */
 	box-sizing: border-box;
+	min-width: 0;
 }
 
 /**************************************************************************/

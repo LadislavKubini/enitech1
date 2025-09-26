@@ -20,7 +20,7 @@
 
 01105 || interné projekty: || Interne Projekte: || internal projects:
 01106 || externé projekty: || Externe Projekte: || external projects:
-01107 || podľa požiadavky napr.: || je nach Bedarf, z. B.: || as required, e.g.:
+01107 || podľa požiadavky. || je nach Bedarf. || as required.
 
 01108 || Poskytujeme komplexné riešenia a individuálny prístup vo všetkých etapách vývoja
 || Wir bieten umfassende Lösungen und einen individuellen Ansatz in allen Entwicklungsphasen.
