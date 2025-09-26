@@ -39,5 +39,23 @@
 05051 || Kontakt || Kontakt || Contact
 05052 || Všeobecný kontakt: || Allgemeiner Kontakt: || General contact:
 05053 || Interná konštrukcia: || Interne Konstruktion: || Internal construction:
-05054 || Externá konštrukcia a IT služby: || Externe Konstruktion und IT-Dienstleistungen: || External construction and IT services:
-05055 || Personálne oddelenie: || Personalabteilung: || Human Resources Department:
+
+05054 || Externá konštrukcia, automatizácia, robotika a IT služby:
+|| Externe Konstruktion, Automatisierung, Robotik und IT-Dienstleistungen:
+|| External construction, automation, robotics, and IT services:
+
+05055 || Externá konštrukcia a IT služby: || Externe Konstruktion und IT-Dienstleistungen: || External construction and IT services:
+05056 || Personálne oddelenie: || Personalabteilung: || Human Resources Department:
+
+// Fakturacne udaje
+05061 || Fakturačné údaje || Rechnungsdaten || Billing information
+05062 || IČO: || ID-Nr.:|| Company ID No.:
+05063 || IČ DPH: || Umsatzsteuer-Identifikationsnummer: || VAT ID: 
+05064 || Bankové spojenie: || Bankverbindung: || Bank details:
+05065 || Slovenská sporiteľňa, a. s., Nová Dubnica || Slovenská sporiteľňa, a. s., Nová Dubnica || Slovenská sporiteľňa, a. s., Nová Dubnica
+05066 || Číslo účtu: || Kontonummer: || Account number:
+05067 || Registrácia: || Registrierung: || Registration:
+
+05068 || Zapísaný v Obchodnom registri Okresného súdu v Trenčíne, oddiel: Sro, vložka 22788/R
+|| Eingetragen im Handelsregister des Bezirksgerichts in Trenčín, Abteilung: Sro, Einlage 22788/R
+|| Registered in the Commercial Register of the District Court in Trenčín, section: Sro, file 22788/R

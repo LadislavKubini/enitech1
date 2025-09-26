@@ -32,7 +32,7 @@
 || <strong>Scrum Master</strong> specialists
 
 06018 || špecialistov na <strong>dátový manažment</strong> 
-|| specialists in <strong>data management</strong>
 || Spezialisten für <strong>Datenmanagement</strong>
+|| specialists in <strong>data management</strong>
 
 06019 || Viac informácií || Mehr Informationen || More information

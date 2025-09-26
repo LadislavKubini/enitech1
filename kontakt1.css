@@ -1,62 +1,71 @@
-    body, html {
-      height: 100%;
-      margin: 0;
-      font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+    body,
+    html {
+    	height: 100%;
+    	margin: 0;
+    	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
     }
 
     .kontakt1-body {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      height: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	box-sizing: border-box;
+    	height: 100%;
     }
 
-    /* Horná čierna časť */
     .kontakt1-top {
-      background-color: black;
-      min-height: 30%;
-      display: flex;
-      color: white;
-      padding-top: var(--menu-height);
+    	/* background-color: black; */
+    	min-height: 30%;
+    	display: flex;
+    	color: white;
+    	padding-top: var(--menu-height);
+    	background: linear-gradient(to left,
+    			#101A36,
+    			#1B2952 50%,
+    			#3A4677),
+    		linear-gradient(to bottom,
+    			rgba(0, 0, 0, 0) 0%,
+    			rgba(0, 0, 0, 0.3) 100%);
     }
 
     .kontakt1-top-left {
-      width: 50%;
-      padding: 1.5rem;
-      font-weight: 300;
+    	width: 50%;
+    	padding: 1.5rem;
+    	font-weight: 300;
     }
-    
+
     .kontakt1-top-left h1 {
-      font-size: clamp(2rem, 1.3rem + 2.4vw, 3.2rem);
-      font-weight: 600; /*h1 má predvolený prehliadačový štýl s font-weight: bold (700), preto sa musi natvrdo prepisat (<p> nema predvoleny font-weight)*/
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+    	font-size: clamp(2rem, 1.3rem + 2.4vw, 3.2rem);
+    	font-weight: 600;
+    	/*h1 má predvolený prehliadačový štýl s font-weight: bold (700), preto sa musi natvrdo prepisat (<p> nema predvoleny font-weight)*/
+    	margin-top: 1rem;
+    	margin-bottom: 1rem;
     }
 
     .kontakt1-top-left p {
-      font-size: calc(0.5rem + 1.5vw);
-      font-size: clamp(0.8rem, 0.5rem + 1.2vw, 1.4rem);
+    	font-size: calc(0.5rem + 1.5vw);
+    	font-size: clamp(0.8rem, 0.5rem + 1.2vw, 1.4rem);
     }
 
     /* Spodná časť s pozadím */
     .kontakt1-bottom {
-      flex: 1;
-      background-size: cover;
-      position: relative;
-      display: flex;
-      align-items: center;
+    	flex: 1;
+    	background-size: cover;
+    	position: relative;
+    	display: flex;
+    	align-items: center;
     }
 
-	.kontakt1-form-wrapper {
+    .kontakt1-form-wrapper {
     	width: 50%;
-	}
+    }
 
     /* Responzívnosť */
     @media (max-width: 900px) {
-      .kontakt1-top {
-        min-height: 30%;
-      }
-      .kontakt1-top-left {
-        width: 100%;
-      }
+    	.kontakt1-top {
+    		min-height: 30%;
+    	}
+
+    	.kontakt1-top-left {
+    		width: 100%;
+    	}
     }
