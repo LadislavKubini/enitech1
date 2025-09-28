@@ -13,29 +13,35 @@
 07005 || Realizované služby: || Durchgeführte Dienste: || Services provided:
 
 // ref1 ***********************************************************************************
-07011 || Letecký priemysel || Luft- und Raumfahrtindustrie || Aerospace industry
+07011 || Letecký priemysel || Luft- und Raumfahrtindustrie || Avionics/Aerospace
 
 07012 || Vývoj a integrácia systémov pre letecký priemysel 
 || Systementwicklung und -integration für die Luft- und Raumfahrtindustrie
-|| Systems development and integration for the aerospace industry
+|| Systems Development and Integration for Aerospace
 
-07013 || Automobilový priemysel || Autoindustrie || Automotive industry
+07013 || Automobilový priemysel || Autoindustrie || Automotive
 
 07014 || Plne automatizované bunky a linky pre automobilový priemysel
 || Vollautomatische Zellen und Linien für die Automobilindustrie 
-|| Fully automated cells and lines for the automotive industry
+|| Fully automated production lines and cells for Automotive
 
-07015 || IT oblasť || IT-Bereich || IT area
+07015 || IT oblasť || IT-Bereich || IT
 
 07016 || Automatizácia procesov, monitoring, a správa dát 
 || Prozessautomatisierung, Überwachung und Datenmanagement 
-|| Process automation, monitoring, and data management
+|| Process Automation, Monitoring, Data Management, Development
 
-07017 || Všeobecné strojárstvo || Allgemeines Ingenieurwesen || General engineering
+07017 || Všeobecné strojárstvo || Allgemeines Ingenieurwesen || General Engineering
 
 07018 || Jednoúčelové zariadenia a technologické celky na mieru 
 || Einzweckanlagen und maßgeschneiderte technologische Einheiten
-|| Single-purpose equipment and tailor-made technological units
+|| Single-purpose devices/equipment and tailor-made technological units
 
-07019 || Viac || Mehr lesen || See more
-07020 || Hore k menu || Nach oben zum Menü || Up to menu
+07019 || Elektro || Elektro || Electrical
+
+07020 || Automatizácia, robotika, simulácie, elektrický dizajn
+|| Automatisierung, Robotik, Simulationen, Elektrotechnik
+|| Automation, Robotics, Simulations, Electrical design
+
+07021 || Viac || Mehr lesen || See more
+07022 || Hore k menu || Nach oben zum Menü || Up to menu

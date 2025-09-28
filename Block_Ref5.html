@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_Ref5.html</title>
+	<link rel="icon" href="favicona-enitech.png">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Poppins', 'Open Sans', Arial, Tahoma, sans-serif;
+		}
+	</style>
+
+	<link rel="stylesheet" href="root.css">
+	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="ref5.css">
+	<link rel="stylesheet" href="ref-tooltip.css">
+
+	<script src="Language.js" defer></script>
+	<script src="animator.js" defer></script>
+</head>
+
+<body>
+	<div id="Ref5-div-src">
+		<div id="id-Block_Ref5" style="scroll-margin-top: 80px;"></div>
+		<div class="ref5-body">
+			<div class="ref5-header">
+				<div class="ref5-line-with-img">
+					<div>
+						<h2 lang-code="07019">.Všeobecné strojárstvo</h2>
+						<p lang-code="07020">.Jednoúčelové zariadenia a technologické celky na mieru</p>
+					</div>
+					<img src="media/robot-icon.png" alt="Ikona robota">
+				</div>
+			</div>
+			<div class="ref5-animate-line"></div>
+
+			<div class="ref5-content-flex">
+				<div class="ref5-left">
+					<div class="ref5-left-group ">
+						<img src="media/industrial-robotic-arm-precision-engineering-automation-removebg.avif" class="ref5-img1" />
+					</div>
+				</div>
+
+				<div class="ref5-divider"></div>
+
+				<!-- ************************************************************************ -->
+				<div class="ref5-right">
+					<div class="ref-tooltip-grid columns-3">
+
+						<div class="ref-tooltip-container">
+								<img src="media/klienti/kuka-logo-enitech.png" alt="KUKA logo" class="ref-tooltip-image" />
+								<div class="ref-tooltip-text">
+									<p><strong lang-code="07005">Realizované služby:</strong></p>
+									<p>robotické systémy</p>
+								<div class="ref-tooltip-company">KUKA</div>
+								</div>
+						</div>
+						
+					</div>
+					<div style="text-align: right;">
+						<a href="#id_refMenu" lang-code="07022">Hore k menu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await LoadTranslations('translations07-ref.txt');
+			await UpdateTexts();
+			Animator.registerAll(".ref5-animate-line", "animate-width-grow");
+		});
+	</script>
+
+</body>
+
+</html>

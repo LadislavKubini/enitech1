@@ -4,6 +4,7 @@
     	height: auto;
     	min-height: 100%;
     	font-size: clamp(16px, 1.6vw, 30px);
+		font-weight: 200;
     	padding: 1vw 2vw;
     	box-sizing: border-box;
     	background:

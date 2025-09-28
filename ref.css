@@ -30,15 +30,15 @@
       margin-bottom: 0; /* alebo 4rem, podľa potreby */
     }
 
-    h1 {
+    /* h1 {
       text-align: left;
       margin-bottom: 2rem;
     }
-
+ */
     /**********************************************************************/
     .ref-grid1 {
     	display: grid;
-    	grid-template-columns: 1fr 1fr 1fr 1fr;
+    	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     	gap: 0.5rem;
     	align-items: stretch;
     }
@@ -148,7 +148,7 @@
     /* Responzívne *********************************************/
     @media (max-width: 900px) {
     	.ref-grid1 {
-    		grid-template-columns: 1fr 1fr;
+    		grid-template-columns: 1fr 1fr 1fr;
     	}
 
     	.ref-t1,

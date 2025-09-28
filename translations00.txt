@@ -13,7 +13,7 @@
 
 00111 || Spoľahlivá a efektívna podpora v oblasti technických riešení doma aj v zahraničí. 
 || Zuverlässige und effektive Unterstützung auf dem Gebiet der Lösung technischer Aufgaben zu Hause und im Ausland. 
-|| Reliable and efficient support in the field of technical solutions at home and abroad.
+|| Reliable and efficient support in the field of technical solutions both domestic ones and abroad.
 
 // Block_Uvod1.html
 00121 || Hľadáte skúseného, spoľahlivého a flexibilného partnera?
@@ -28,7 +28,7 @@
 || Vereinbaren Sie einen unverbindlichen Beratungstermin mit uns und erfahren Sie, welche Lösungen wir für Sie vorbereiten können.
 || Arrange a non-binding consultation with us and find out what solutions we can prepare for you.
 
-00124 || Napíšte, alebo zavolajte nám ešte dnes. || Schreiben Sie uns oder rufen Sie uns noch heute an. || Write or call us today.
+00124 || Napíšte nám ešte dnes. || Schreiben Sie uns noch heute an. || Write us today..
 
 00125 || Radi preskúmame možnosti spolupráce priamo pre vašu firmu. 
 || Wir prüfen gerne die Möglichkeiten einer Zusammenarbeit speziell für Ihr Unternehmen.
@@ -46,9 +46,9 @@
 || Wir gehören zu den größten Ingenieurbüros in der Slowakei mit mehr als 80 Spezialisten.
 || We are one of the largest engineering firms in Slovakia with more than 80 specialists.
 
-00203 || Svoju činnosť sme začali konštrukčnými prácami v leteckom priemysle. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a všeobecné strojárstvo.
-|| Wir haben unsere Tätigkeit mit Konstruktionsarbeiten in der Luftfahrtindustrie begonnen. Im Laufe der Jahre haben wir unsere Aktivitäten auch auf die Automobilindustrie und den allgemeinen Maschinenbau ausgeweitet.
-|| We started our business with design work in the aviation industry. Over the years, we have expanded our activities to include the automotive industry and general engineering.
+00203 || Naše podnikanie sme začali v oblasti strojárstva v leteckom priemysle. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a všeobecné strojárstvo.
+|| Wir haben unser Unternehmen mit Maschinenbau in der Luftfahrtindustrie gegründet. Im Laufe der Jahre haben wir unsere Aktivitäten auch auf die Automobilindustrie und den allgemeinen Maschinenbau ausgeweitet.
+|| We started our business with Mechanical Engineering in the aviation industry. Over the years, we have expanded our activities to include the automotive industry and general engineering.
 
 00204 || V oblasti IT poskytujeme komplexné IT služby pre zákazníkov z Nemecka, Rakúska a Českej republiky v oblastiach ako telekomunikácie, bankovníctva/poisťovníctva, verejnej správy a tiež v oblasti priemyslu.
 || Im IT-Bereich bieten wir umfassende IT-Dienstleistungen für Kunden aus Deutschland, Österreich und der Tschechischen Republik in Bereichen wie Telekommunikation, Bankwesen/Versicherungswesen, öffentliche Verwaltung und Industrie.

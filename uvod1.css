@@ -68,7 +68,8 @@
 .uvod1-contact-button-wrapper {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	/* justify-content: space-between; */
 	padding-inline: 2vw 6vw;
 	width: 100%;
 	box-sizing: border-box;

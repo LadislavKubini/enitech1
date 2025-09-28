@@ -4,6 +4,7 @@
     	height: auto;
     	min-height: 100%;
     	font-size: clamp(16px, 1.6vw, 30px);
+		font-weight: 200;
     	padding: 1vw 2vw;
     	/* vertikalne horizontalne*/
     	box-sizing: border-box;
@@ -44,6 +45,7 @@
     }
 
     .enginint2-line-with-img h2 {
+		font-weight: bold;
     	margin: 0;
     }
 
@@ -53,7 +55,7 @@
     }
 
     .enginint2-left strong {
-    	font-weight: bold;
+    	font-weight: 500;
     }
 
     .enginint2-left-last {

@@ -8,11 +8,11 @@
 || Reliable and flexible support in the field of technical solutions at home and abroad.
 
 // Block_EnginInt1.html ***********************************************************************
-01101 || Spoľahlivá a efektívna podpora v oblasti konštrukčných prác doma aj v zahraničí.
-|| Zuverlässige und effektive Unterstützung bei Konstruktionsarbeiten im In- und Ausland.
-|| Reliable and effective support in the field of construction work at home and abroad.
+01101 || Spoľahlivá a efektívna podpora v oblasti strojárstva doma i v zahraničí.
+|| Zuverlässige und effektive Unterstützung im Maschinenbau im In- und Ausland.
+|| Reliable and effective support in Mechanical Engineering both domestic and abroad.
 
-01102 || Interná konštrukcia || Interne Konstruktion || Internal construction
+01102 || Interný CAD dizajn || Internes CAD-Design || Internal CAD design
 
 01104 || Naši špecialisti pracujú s rôznymi systémami:
 || Unsere Spezialisten arbeiten mit verschiedenen Systemen:
@@ -114,9 +114,9 @@
 // Block_EnginElekt1.html *******************************************************************
 01601 || Elektro-konštrukcia || Elektrokonstruktion || Electrical engineering
 
-01602 || V oblasti elektro Vás vieme podporiť v systéme <strong>EPLAN P8</strong> pri návrhu, plánovaní a optimalizácii elektrotechniky do Vašich strojov a zariadení
+01602 || V oblasti elektrotechniky vám môžeme pomôcť so systémom <strong>EPLAN P8</strong> pri návrhu, plánovaní a optimalizácii elektrotechniky pre vaše stroje a zariadenia.
 || Im Bereich Elektrotechnik unterstützen wir Sie mit dem System <strong>EPLAN P8</strong> bei der Konzeption, Planung und Optimierung der Elektrotechnik für Ihre Maschinen und Anlagen.
-|| In the field of electrical engineering, we can support you in the <strong>EPLAN P8</strong> system in the design, planning, and optimization of electrical engineering for your machines and equipment.
+|| In the field of electrical engineering, we can support you with <strong>EPLAN P8</strong> system in the design, planning, and optimization of electrical engineering for your machines and equipment.
 
 01603 || Disponujeme tiež skúsenosťami pre návrh dosiek plošných spojov(
 || Wir verfügen auch über Erfahrung in der Entwicklung von Leiterplatten(
@@ -134,9 +134,9 @@
 || Wir können Ihre Anforderungen im Bereich der Automatisierung mit 
    <strong>der Programmierung automatisierter Linien</strong> und Systeme oder 
    mit der Programmierung von Robotern oder Roboterarbeitsplätzen unterstützen.
-|| We can support your automation needs with 
-   <strong>programming of automated lines</strong> and systems or 
-   programming of robots or robotic workstations.
+|| We can support your automation needs with
+   <strong>programming automated lines</strong> and systems or 
+   with programming robots or robotic workstations.
 
 01703 ||Naši PLC špecialisti pracujú v systémoch ako 
                  <strong>SIEMENS a ROCKWELL (AllenBradley)</strong>, ale 

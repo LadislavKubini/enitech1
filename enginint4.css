@@ -4,7 +4,8 @@
     	height: auto;
     	min-height: 100%;
     	font-size: clamp(16px, 1.6vw, 30px);
-    	padding: 1vw 2vw;
+		font-weight: 200;
+		padding: 1vw 2vw;
     	box-sizing: border-box;
     	background:
     		linear-gradient(to right,

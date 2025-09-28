@@ -46,7 +46,7 @@
     /*******************************************************************************/
     .onas1-right {
     	display: flex;
-    	flex-direction: column-reverse;
+    	flex-direction: column;
     	justify-content: center;
     }
 

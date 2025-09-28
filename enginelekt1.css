@@ -3,6 +3,7 @@
     	height: auto;
     	min-height: 100%;
     	font-size: clamp(16px, 1.6vw, 30px);
+		font-weight: 200;
     	padding: 1vw 2vw;
     	box-sizing: border-box;
 		/* background: linear-gradient(to bottom, #1848A0 0%, #040411 100%); */
@@ -85,7 +86,7 @@
     }
 
     .enginelekt1-right strong {
-    	font-weight: bold;
+    	font-weight: 500;
     }
 
     .enginelekt1-right-last {

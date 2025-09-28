@@ -1,8 +1,9 @@
     .enginint1-body {
     	background-color: #F8FCFF;
     	color: black;
-    	font-weight: 400;
+    	/* font-weight: 400; */
     	font-size: clamp(16px, 1.6vw, 30px);
+		font-weight: 200;
     	display: flex;
     	flex-direction: column;
     	padding: 1vw 2vw;
@@ -95,7 +96,7 @@
     }
 
     .enginint1-right strong {
-    	font-weight: bold;
+    	font-weight: 500;
     }
 
     .enginint1-right h3 {
