@@ -5,6 +5,7 @@
     .kariera-container {
     	margin: 0;
     	font-size: 1.1rem;
+		font-weight: 200;
     	color: white;
     	background: linear-gradient(to right, #1a3a6e, #3f6db0);
     	text-align: center;
