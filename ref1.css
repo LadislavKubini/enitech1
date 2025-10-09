@@ -80,9 +80,7 @@
 
 /**********************************************/
 .ref1-divider {
-	flex: 0.01;
 	width: 1px;
-	min-width: 0;
 	background-color: #00C;
 }
 

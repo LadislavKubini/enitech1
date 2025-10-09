@@ -48,10 +48,8 @@
 			<div class="ref1-content-flex">
 				<div class="ref1-left">
 					<div class="ref1-left-group ">
-						<!-- <img src="media/CarProductionAutomation.avif" class="ref1-img1" /> -->
 						<img src="media/view-three-dimensional-car.avif" class="ref1-img1" />
 						<img src="media/gps-system-smart-car.avif" class="ref1-img2" />
-						<!-- <img src="media/SestKonstrukcii-removebg-preview.png" class="ref1-img2" /> -->
 					</div>
 				</div>
 
@@ -169,6 +167,48 @@
 								<div class="ref-tooltip-company">Volkswagen</div>
 							</div>
 						</div>
+						<div class="ref-tooltip-container">
+							<img src="media/klienti/Logo_PSAGroup_blue.png" alt="PSA CITROEN TRNAVA logo" class="ref-tooltip-image" />
+							<div class="ref-tooltip-text">
+								<p><strong lang-code="07005">Realizované služby:</strong></p>
+								<p>Automatizácia uťahovania</p>
+								<div class="ref-tooltip-company">PSA CITROEN TRNAVA</div>
+							</div>
+						</div>
+
+						<div class="ref-tooltip-container">
+							<div class="ref-tooltip-img-wrapper" role="img" aria-label="Skoda logo" 
+								style="background: url('media/klienti/SKODA_LOGO.png') center/cover no-repeat;" >
+								<!-- <img src="media/klienti/SKODA_LOGO.png" alt="Skoda logo" class="ref-tooltip-image" /> -->
+							</div>
+							<div class="ref-tooltip-text">
+								<p><strong lang-code="07005">Realizované služby:</strong></p>
+								<p>automatizačné výrobné linky</p>
+								<div class="ref-tooltip-company">Škoda Auto</div>
+							</div>
+						</div>
+
+						<div class="ref-tooltip-container">
+							<div class="ref-tooltip-img-wrapper" role="img" aria-label="CMS logo" 
+								style="background: url('media/klienti/CMS_logo_mini.png') center/cover no-repeat;" >
+								<!-- <img src="media/klienti/CMS_logo_mini.png" alt="CMS logo" class="ref-tooltip-image"/> -->
+							</div>
+							<div class="ref-tooltip-text">
+								<p><strong lang-code="07005">Realizované služby:</strong></p>
+								<p>Automatizované výrobné linky pre automobilky</p>
+								<div class="ref-tooltip-company">CMS</div>
+							</div>
+						</div>
+
+						<div class="ref-tooltip-container">
+							<img src="media/klienti/OTHUA_LOGO.png" alt="Othua logo" class="ref-tooltip-image"/>
+							<div class="ref-tooltip-text">
+								<p><strong lang-code="07005">Realizované služby:</strong></p>
+								<p>Automatizované výrobné linky pre automobilky</p>
+								<div class="ref-tooltip-company">Othua</div>
+							</div>
+						</div>
+
 					</div>
 					<div style="text-align: right;">
 						<a href="#id_refMenu" lang-code="07022">Hore k menu</a>
@@ -180,7 +220,6 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", async () => {
-			// Načítanie prekladov po načítaní DOM
 			await LoadTranslations('translations07-ref.txt');
 			await UpdateTexts();
 			Animator.registerAll(".ref3-animate-line", "animate-width-grow");

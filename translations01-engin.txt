@@ -5,14 +5,14 @@
 
 01002 || Spoľahlivá a flexibilná podpora v oblasti technických riešení doma aj v zahraničí.
 || Zuverlässiger und flexibler Support im Bereich technischer Lösungen im In- und Ausland.
-|| Reliable and flexible support in the field of technical solutions at home and abroad.
+|| Reliable and flexible support in the field of technical solutions domestic and abroad.
 
 // Block_EnginInt1.html ***********************************************************************
 01101 || Spoľahlivá a efektívna podpora v oblasti strojárstva doma i v zahraničí.
 || Zuverlässige und effektive Unterstützung im Maschinenbau im In- und Ausland.
 || Reliable and effective support in Mechanical Engineering both domestic and abroad.
 
-01102 || Interný CAD dizajn || Internes CAD-Design || Internal CAD design
+01102 || Interný CAD dizajn || Internes CAD-Design || In-house CAD Design
 
 01104 || Naši špecialisti pracujú s rôznymi systémami:
 || Unsere Spezialisten arbeiten mit verschiedenen Systemen:
@@ -35,9 +35,9 @@
 || We mainly cooperate with companies from the aviation industry, automotive industry and general engineering.
 
 // Block_EnginInt2.html *********************************************************************
-01201 || Interná konštrukcia || Interne Konstruktion || Internal construction
+01201 ||  Interný CAD dizajn || Internes CAD-Design || In-house CAD Design
 01202 || Projekty montážnych plošín || Projekte für Montageplattformen || Assembly platform projects
-01203 || pre vonkajšie časti lietadiel || für Außenbereiche von Flugzeugen || for exterior parts of aircraft
+01203 || pre vonkajšie časti lietadiel || für Außenbereiche von Flugzeugen || for aircrafts’ exterior parts
 
 01204 || tvorba 3D dielov podľa požiadaviek zákazníka
 || Erstellung von 3D-Teilen nach Kundenwunsch
@@ -74,13 +74,13 @@
 
 01403 || tvorba 3D dielov a 2D výkresovej dokumentácie podľa požiadaviek zákazníka 
 || Erstellung von 3D-Teilen und 2D-Zeichnungsdokumentation gemäß den Anforderungen des Kunden 
-|| creation of 3D parts and 2D drawing documentation according to customer requirements
+|| Creating 3D parts and 2D drawing documentation according to customer requirements
 
-01404 || tvorba kusovníkov || Erstellung von Stücklisten || creation of parts lists
+01404 || tvorba kusovníkov || Erstellung von Stücklisten || Creating parts lists
 
-01405 || modifikácia existujúcich dielov a zostáv 
+01405 || Vytváranie kusovníkov upravujúcich existujúce diely a zostavy 
 || Erstellung von StücklistenModifizierung bestehender Teile und Baugruppen 
-|| creation of bills of materials modification of existing parts and assemblies
+|| Creating bills of materials modifying existing parts and assemblies
 
 01406 || návrhy pre  nové riešenia || Vorschläge für neue Lösungen || proposals for new solutions
 
@@ -91,15 +91,15 @@
 01408 || Viac informácií || Weitere Informationen || More information
 
 // Block_EnginExt1.html *********************************************************************
-01501 || Externá konštrukcia: || Externe Konstruktion: || External construction:
+01501 || Externá CAD konštrukcia: || Externe CAD-Konstruktion: || External CAD Design:
 
 01502 || U našich zákazníkov realizujeme projekty: 
 || Wir führen Projekte für unsere Kunden durch: 
 || We carry out projects for our customers:
 
-01503 || klimatizačných jednotiek || Klimaanlagen || air conditioning units
+01503 || HVAC jednotky (kúrenie, ventilácia, klimatizácia atď.) || HLK-Anlagen (Heizung, Lüftung, Klimatisierung usw.) || HVAC units (Heatings, Ventilation, Air-condition, etc.)
 01504 || turbodúchadiel || Turbolader || turbochargers
-01505 || automatizovaných liniek || automatisierte Anlagen || automated lines
+01505 || automatizovaných výrobných liniek || automatisierte Fertigungslinien || automated production lines
 
 01506 || interiérových a exteriérových dielov automobilov 
 || Kfz-Innen- und Außenteile 
@@ -118,11 +118,11 @@
 || Im Bereich Elektrotechnik unterstützen wir Sie mit dem System <strong>EPLAN P8</strong> bei der Konzeption, Planung und Optimierung der Elektrotechnik für Ihre Maschinen und Anlagen.
 || In the field of electrical engineering, we can support you with <strong>EPLAN P8</strong> system in the design, planning, and optimization of electrical engineering for your machines and equipment.
 
-01603 || Disponujeme tiež skúsenosťami pre návrh dosiek plošných spojov(
-|| Wir verfügen auch über Erfahrung in der Entwicklung von Leiterplatten(
-|| We also have experience in designing printed circuit boards(
+01603 || Disponujeme tiež skúsenosťami pre návrh dosiek plošných spojov (
+|| Wir verfügen auch über Erfahrung in der Entwicklung von Leiterplatten (
+|| We also have experience in designing printed circuit boards (
 
-01604 || PCB  dizajn || PCB-Design || PCB design
+01604 ||PCB  dizajn||PCB-Design||PCB design
 01605 || Viac informácií || Weitere Informationen || More information
 
 // Block_EnginAutom1.html ********************************************************************

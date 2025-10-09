@@ -38,7 +38,7 @@
     /**********************************************************************/
     .ref-grid1 {
     	display: grid;
-    	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    	grid-template-columns: 1fr 1fr 1fr 1fr;
     	gap: 0.5rem;
     	align-items: stretch;
     }
@@ -88,7 +88,7 @@
     }
 
     .ref-t2 {
-    	background-color: red;
+    	background-color: darkblue;
     }
 
     .ref-text {
@@ -141,14 +141,14 @@
     	left: 0;
     	width: 0;
     	height: 0;
-    	border-top: 3em solid red;
+    	border-top: 3em solid darkblue;
 		border-right: 3em solid transparent;
     }
 
     /* Responzívne *********************************************/
     @media (max-width: 900px) {
     	.ref-grid1 {
-    		grid-template-columns: 1fr 1fr 1fr;
+    		grid-template-columns: 1fr 1fr;
     	}
 
     	.ref-t1,
@@ -196,7 +196,7 @@
     		height: 0;
     		border-top: none;
     		border-right: none;
-    		border-bottom: 3em solid red;
+    		border-bottom: 3em solid darkblue;
     		border-left: 3em solid transparent;
     	}
     }

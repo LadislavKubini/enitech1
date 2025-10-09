@@ -19,3 +19,10 @@
    	margin: 0 0 2vw 0;
    	text-align: left;
    }
+
+   /* Responsívny režim ******************************************************************************/
+   @media (max-width: 600px) {
+	.it4-body h1 {
+		font-size: 6vw;
+	}
+	}

@@ -40,11 +40,11 @@
 // Block_Onas1.html
 00201 ||<strong>Spoločnosť ENITECH bola založená v roku 2010</strong> a od svojho vzniku podniká v oblasti <strong>konštrukcie a IT služieb</strong>.
 || <strong>Das Unternehmen ENITECH wurde 2010 gegründet</strong> und ist seit seiner Gründung im Bereich <strong>Konstruktion und IT-Dienstleistungen</strong> tätig.
-|| <strong>ENITECH was founded in 2010</strong> and has been operating in the field of <strong>construction and IT services</strong> since its inception.
+|| <strong>ENITECH was founded in 2010</strong> and has been operating in the field of <strong>Mechanical Engineering and IT services</strong> since its inception.
 
 00202 || Patríme medzi najväčšie inžinierske kancelárie na Slovensku s viac ako 80 špecialistami
 || Wir gehören zu den größten Ingenieurbüros in der Slowakei mit mehr als 80 Spezialisten.
-|| We are one of the largest engineering firms in Slovakia with more than 80 specialists.
+|| We are one of the largest engineering houses/companies in Slovakia with more than 80 specialists.
 
 00203 || Naše podnikanie sme začali v oblasti strojárstva v leteckom priemysle. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a všeobecné strojárstvo.
 || Wir haben unser Unternehmen mit Maschinenbau in der Luftfahrtindustrie gegründet. Im Laufe der Jahre haben wir unsere Aktivitäten auch auf die Automobilindustrie und den allgemeinen Maschinenbau ausgeweitet.
@@ -70,6 +70,8 @@
 00215 || V práci používame systém manažérstva bezpečnosti informácií
 || Bei unserer Arbeit verwenden wir das Informationssicherheits-Managementsystem
 || At work, we use the information security management system
+
+00216 || Certifikát || Zertifikat || Certificate
 
 // Block_Klienti.html
 00301 || SPOLUPRÁCA || ZUSAMMENARBEIT || COOPERATION

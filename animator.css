@@ -1,3 +1,4 @@
+/*************************************************************************************/
 /* Text sa zlava nasunie a zastavi sa akoby narazom */
     @keyframes slide-in-bounce {
       0% {
@@ -31,8 +32,8 @@
     .animate-rotateFlipIn {
       animation: rotateFlipIn 1.2s ease forwards;
     }
-    
-/* Element pomaly rastie (od 0 do 100% (obycajne ciara) */
+	/*************************************************************************************/
+	/* Element pomaly rastie (od 0 do 100% (obycajne ciara) */
     @keyframes width-grow {
       from {
         width: 0;
@@ -84,10 +85,24 @@
     /*** Odkaz v url, na ktory sa skocilo, 3x zablika ************************************/
     /*** napr. indexKontakt.html#id-kontakt3-Deak, tak zablika element <div id="id-kontakt3-Deak"> */
     @keyframes contact-highlight {
-      0%   { background-color: #fde663; }
+      0%   { background-color: #8cc6fd; } /* #fde663; } */
       50%  { background-color: #fff; }
-      100% { background-color: #fde663; }
+      100% { background-color: #8cc6fd; } /* #fde663; } */
     }
     .highlight-once {
       animation: contact-highlight 1s ease-in-out 0s 3;
     }
+
+	/*** animácia zatrasenia ****************************************************************/
+    @keyframes animate-shake {
+      0% { transform: rotate(0deg); }
+      20% { transform: rotate(15deg); }
+      40% { transform: rotate(-15deg); }
+      60% { transform: rotate(10deg); }
+      80% { transform: rotate(-10deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .animate-shake {
+      animation: animate-shake 0.6s ease;
+    }
+

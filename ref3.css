@@ -56,7 +56,7 @@
 	position: relative;
 	aspect-ratio: 5 / 5;
 	width: 100%;
-	max-width: 600px;
+	/* max-width: 600px; */
 	justify-self: center;
 	align-self: center;
 }
@@ -71,7 +71,7 @@
 .ref3-img2 {
 	position: absolute;
 	width: 100%;
-	top: 60%;
+	top: 68%;
 	left: 0%;
 }
 .ref3-img3 {

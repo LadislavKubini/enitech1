@@ -52,7 +52,7 @@
 05062 || IČO: || ID-Nr.:|| Company ID No.:
 05063 || IČ DPH: || Umsatzsteuer-Identifikationsnummer: || VAT ID: 
 05064 || Bankové spojenie: || Bankverbindung: || Bank details:
-05065 || Slovenská sporiteľňa, a. s., Nová Dubnica || Slovenská sporiteľňa, a. s., Nová Dubnica || Slovenská sporiteľňa, a. s., Nová Dubnica
+05065 || Slovenská sporiteľňa, a. s. || Slovenská sporiteľňa, a. s. || Slovenská sporiteľňa, a. s.
 05066 || Číslo účtu: || Kontonummer: || Account number:
 05067 || Registrácia: || Registrierung: || Registration:
 

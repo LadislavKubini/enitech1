@@ -69,8 +69,22 @@
     }
 
     .onas2-official-stamp:hover {
-    	transform: scale(1.05);
+    	transform: scale(1.1);
     }
+
+	.onas2-left p.onas2-official-stamp-info {
+		font-size: calc(0.5rem + 0.4vw);
+		text-align: right;
+		margin-top: 0;
+		margin-right: calc(20px + calc(1em * 4.5 * 1.2 / 2));
+	}
+
+	.onas2-left p.onas2-official-stamp-info::after {
+		content: " ↑";   /* medzera + šípka */
+  		font-size: calc(0.6rem + 2vw);
+  		color: inherit;
+	}
+
 
     /*************************************************************************************/
     .onas2-certif-modal-overlay {

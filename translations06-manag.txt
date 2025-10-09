@@ -15,17 +15,17 @@
 || Wir stellen Experten für Projektmanagement und Koordination zur Verfügung:
 || We provide experts for project management and coordination:
 
-06014 || <strong>projektových manažérov</strong> 
-|| <strong>Projektmanager</strong> 
-|| <strong>project managers</strong>
+06014 || projektových manažérov 
+|| Projektmanager 
+|| Project Managers
 
-06015 || <strong>manažérov požiadaviek</strong> 
-|| <strong>Anforderungsmanager</strong>
-|| <strong>requirements managers</strong>
+06015 || manažérov požiadaviek
+|| Anforderungsmanager
+|| Requirements Managers
 
 06016 || <strong>manažérov riadenia kvality</strong> (Quality Assurance/Q.Management) 
 || <strong>Qualitätsmanagement-Manager</strong> (Qualitätssicherung/Q.Management) 
-|| <strong>quality managers</strong> (Quality Assurance/Q.Management)
+|| <strong>Quality Managers</strong> (Quality Assurance/Q.Management)
 
 06017 || <strong>Scrum Master</strong> špecialistov 
 || <strong>Scrum Master</strong> Spezialisten 
@@ -33,6 +33,14 @@
 
 06018 || špecialistov na <strong>dátový manažment</strong> 
 || Spezialisten für <strong>Datenmanagement</strong>
-|| specialists in <strong>data management</strong>
+|| Specialists in <strong>Data Management</strong>
 
-06019 || Viac informácií || Mehr Informationen || More information
+06019 || Procesní manažéri/audítori
+|| Prozessmanager/Auditoren
+|| Process Managers/Auditors
+
+06020 || Interní audítori
+|| Interne Revisoren
+|| Internal Auditors
+
+06029 || Viac informácií || Mehr Informationen || More information

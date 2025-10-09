@@ -27,9 +27,9 @@
 
 07015 || IT oblasť || IT-Bereich || IT
 
-07016 || Automatizácia procesov, monitoring, a správa dát 
-|| Prozessautomatisierung, Überwachung und Datenmanagement 
-|| Process Automation, Monitoring, Data Management, Development
+07016 || Vývoj HW, SW a aplikácií, testovanie, DB programovanie, atď. 
+|| Entwicklung von HW, SW und Anwendungen, Testen, DB-Programmierung usw. 
+|| HW & SW Development, Applications Development, Testing, DB/ERP, etc.
 
 07017 || Všeobecné strojárstvo || Allgemeines Ingenieurwesen || General Engineering
 
