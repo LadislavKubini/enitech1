@@ -55,15 +55,6 @@
     	box-sizing: border-box;
     }
 
-    /* .enginint1-left-inner {
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .enginint1-left-inner h2 {
-        text-align: left;
-    } */
-
     .enginint1-img-wrapper {
     	display: flex;
     	justify-content: center;
@@ -80,7 +71,7 @@
 
     .enginint1-divider {
     	width: 1px;
-    	background-color: #00C;
+    	background-color: transparent;
     	margin: 0 10px;
     }
 

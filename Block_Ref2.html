@@ -23,7 +23,8 @@
 
 	<link rel="stylesheet" href="root.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="ref2.css">
+	<!-- <link rel="stylesheet" href="ref2.css"> -->
+	<link rel="stylesheet" href="ref-flex.css">
 	<link rel="stylesheet" href="ref-tooltip.css">
 
 	<script src="Language.js" defer></script>
@@ -33,9 +34,9 @@
 <body>
 	<div id="Ref2-div-src">
 		<div id="id-Block_Ref2" style="scroll-margin-top: 80px;"></div>
-		<div class="ref2-body">
-			<div class="ref2-header">
-				<div class="ref2-line-with-img">
+		<div class="ref-flex-body" style="background-color: #E8F4FF;">
+			<div class="ref-flex-header">
+				<div class="ref-flex-line-with-img">
 					<div>
 						<h2 lang-code="07011">.Letecký priemysel</h2>
 						<p lang-code="07012">.Vývoj a integrácia systémov pre letecký priemysel</p>
@@ -43,12 +44,12 @@
 					<img src="media/Lietadielko.png" alt="Ikona lietadla">
 				</div>
 			</div>
-			<div class="ref2-animate-line"></div>
+			<div class="ref-flex-animate-line"></div>
 
-			<div class="ref2-content-flex">
+			<div class="ref-flex-content-flex column-reverse">
 				<!-- ************************************************************************ -->
-				<div class="ref2-right">
-					<div class="ref-tooltip-grid columns-3">
+				<div class="ref-flex-grid-wrapper">
+					<div class="ref-tooltip-grid">
 
 						<div class="ref-tooltip-container">
 							<img src="media/klienti/airbus-logo-enitech.png" alt="Airbus logo" class="ref-tooltip-image" />
@@ -89,19 +90,13 @@
 						</div>
 
 					</div>
-					<div style="text-align: right;">
+					<div class="ref-flex-link-to-menu">
 						<a href="#id_refMenu" lang-code="07022">Hore k menu</a>
 					</div>
 				</div>
 
-				<div class="ref2-divider"></div>
-
-				<div class="ref2-left">
-					<div class="ref2-left-group ">
-						<img src="media/Copilot_ModreLietadlo3D_future.avif" class="ref2-img1" />
-						<!-- <img src="media/Aeroplan-spredu.avif" class="ref2-img1" /> -->
-						<!-- <img src="media/ai-generated-commercial-airplane-flying-through-the-clouds.avif" class="ref2-img1" /> -->
-					</div>
+				<div class="ref-flex-img-wrapper">
+						<img src="media/Copilot_ModreLietadlo3D_future.avif" class="ref-flex-img1" />
 				</div>
 
 			</div>
@@ -110,10 +105,9 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", async () => {
-			// Načítanie prekladov po načítaní DOM
 			await LoadTranslations('translations07-ref.txt');
 			await UpdateTexts();
-			Animator.registerAll(".ref2-animate-line", "animate-width-grow");
+			Animator.registerAll(".ref-flex-animate-line", "animate-width-grow");
 		});
 	</script>
 

@@ -1,29 +1,23 @@
     .ref-tooltip-grid {
     	display: grid;
-    	grid-template-columns: repeat(6, 1fr);
+    	grid-template-columns: repeat(auto-fit, minmax(clamp(120px, 30%, 160px), 1fr));
     	grid-auto-rows: auto;
-    	gap: 2.5vw 2vw;
-    	/* gap: calc(0.5vw + 40px) 2vw; */
-    	justify-content: center;
+    	gap: 1.5vw clamp(1vw, 1vw, 2rem);
+    	justify-content: start;
     	align-items: start;
-    	max-width: 1200px;
+		width: 100%;
     	margin: 0 auto;
     	margin-bottom: 2vw;
     }
 
-    .ref-tooltip-grid.columns-3 {
-    	grid-template-columns: repeat(3, 1fr);
-    	max-width: 600px;
-    }
-
     .ref-tooltip-container { /* =ref-ovl-item*/
     	width: 100%;
+		max-width: 200px;
     	aspect-ratio: 167 / 91;
     	position: relative;
     	border: 1px solid #00C;
     	background-color: transparent;
     	container-type: inline-size;
-		/* overflow: hidden; */
     	box-sizing: border-box;
     }
 
@@ -31,7 +25,6 @@
     	visibility: hidden;
     	opacity: 0;
     	position: absolute;
-    	/* background-color: rgba(230, 165, 126, 0.95); */
 		background-color: rgba(220, 240, 255, 0.95);
     	color: black;
     	padding: 0.6vw;
@@ -58,13 +51,6 @@
     	opacity: 1;
     }
 	/**********************************************************************************************************/
-    /* .ref-tooltip-image {
-    	position: absolute;
-    	bottom: 0;
-    	max-width: 100%;
-    	max-height: 100%;
-		object-fit: contain;
-    } */
 	.ref-tooltip-image {
 		position: absolute;
 		top: 50%;
@@ -84,16 +70,6 @@
 		padding: 0;
 	}
 
-	/* .ref-tooltip-img-wrapper .ref-tooltip-image {
-		width: 100%;
-		height: 101%;
-		max-height: 101;
-		object-fit: cover;
-		object-position: center;
-		margin: 0;
-		display: block;
-	}
- */
 	.ref-tooltip-company {
 		text-align: left;
 		font-weight: bold;
@@ -103,9 +79,8 @@
     @media (max-width: 762px) {
     	.ref-tooltip-grid {
     		grid-template-columns: repeat(3, 1fr);
-    		gap: clamp(24px, calc(20px + 1.5vw), 36px) clamp(4px, 1.5vw, 12px);
     	}
-
+ 
     	.ref-tooltip-text p,
     	.ref-tooltip-text p strong {
     		font-size: clamp(0.6rem, 2.4vw, 18rem);

@@ -18,7 +18,6 @@
 .uvod1-left-column,
 .uvod1-right-column {
 	box-sizing: border-box;
-	padding-inline: 1vw;
 	flex: 0 0 49%;
 }
 
@@ -27,6 +26,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-start;
+	padding: 1vw;
 }
 
 .uvod1-left-column h2 {
@@ -43,24 +43,18 @@
 
 /*****************************************************************************/
 .uvod1-right-column {
-	padding: 0;
+	padding: 1vw 4vw;
 }
 
 .uvod1-right-img-wrapper {
 	width: 100%;
-	aspect-ratio: 1 / 1;
+	aspect-ratio: 5 / 4;
 	overflow: hidden;
 }
 
-.uvod1-right-img {
-  width: 100%;
-  height: 100%;
-}
-
-.uvod1-right-img img {
+.uvod1-right-img-wrapper img {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	display: block;
 }
 
@@ -102,11 +96,11 @@
 		gap: 1rem;
 	}
 
-	.uvod1-right-img-wrapper {
+	/* .uvod1-right-img-wrapper {
 		aspect-ratio: 4 / 3;
 	}
-
-	.uvod1-right-img img {
+ */
+	.uvod1-right-img-wrapper img {
 		object-fit: cover;
 	}
 

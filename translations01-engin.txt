@@ -3,9 +3,9 @@
 || Komplexe technische Lösungen 
 || Comprehensive engineering solutions
 
-01002 || Spoľahlivá a flexibilná podpora v oblasti technických riešení doma aj v zahraničí.
-|| Zuverlässiger und flexibler Support im Bereich technischer Lösungen im In- und Ausland.
-|| Reliable and flexible support in the field of technical solutions domestic and abroad.
+01002 || Flexibilné a inovatívne riešenia od konceptu po realizáciu.
+|| Flexible und innovative Lösungen vom Konzept bis zur Umsetzung.
+|| Flexible and innovative solutions from concept to implementation.
 
 // Block_EnginInt1.html ***********************************************************************
 01101 || Spoľahlivá a efektívna podpora v oblasti strojárstva doma i v zahraničí.

@@ -11,9 +11,9 @@
 || Ihr zuverlässiger Partner für Engineering- und IT-Dienstleistungen
 || Your reliable partner for engineering and IT services
 
-00111 || Spoľahlivá a efektívna podpora v oblasti technických riešení doma aj v zahraničí. 
-|| Zuverlässige und effektive Unterstützung auf dem Gebiet der Lösung technischer Aufgaben zu Hause und im Ausland. 
-|| Reliable and efficient support in the field of technical solutions both domestic ones and abroad.
+00111 || Inžinierske a IT riešenia postavené na skúsenostiach a inováciách. 
+|| Ingenieur- und IT-Lösungen, die auf Erfahrung und Innovation basieren. 
+|| Engineering and IT solutions based on experience and innovation.
 
 // Block_Uvod1.html
 00121 || Hľadáte skúseného, spoľahlivého a flexibilného partnera?

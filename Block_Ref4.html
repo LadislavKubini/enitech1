@@ -23,7 +23,8 @@
 
 	<link rel="stylesheet" href="root.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="ref4.css">
+	<!-- <link rel="stylesheet" href="ref4.css"> -->
+	<link rel="stylesheet" href="ref-flex.css">
 	<link rel="stylesheet" href="ref-tooltip.css">
 
 	<script src="Language.js" defer></script>
@@ -33,9 +34,9 @@
 <body>
 	<div id="Ref4-div-src">
 		<div id="id-Block_Ref4" style="scroll-margin-top: 80px;"></div>
-		<div class="ref4-body">
-			<div class="ref4-header">
-				<div class="ref4-line-with-img">
+		<div class="ref-flex-body" style="background-color: #E8F4FF;">
+			<div class="ref-flex-header">
+				<div class="ref-flex-line-with-img">
 					<div>
 						<h2 lang-code="07015">.IT oblasť</h2>
 						<p lang-code="07016">.Automatizácia procesov, monitoring, a správa dát</p>
@@ -43,12 +44,12 @@
 					<img src="media/computer-icon.png" alt="Ikona pocitaca">
 				</div>
 			</div>
-			<div class="ref4-animate-line"></div>
+			<div class="ref-flex-animate-line"></div>
 
-			<div class="ref4-content-flex">
+			<div class="ref-flex-content-flex column-reverse">
 				<!-- ************************************************************************ -->
-				<div class="ref4-right">
-					<div class="ref-tooltip-grid columns-3">
+				<div class="ref-flex-grid-wrapper">
+					<div class="ref-tooltip-grid">
 
 						<div class="ref-tooltip-container">
 							<img src="media/klienti/active-solution-logo-enitech.png" alt="Active Solution logo" class="ref-tooltip-image" />
@@ -160,17 +161,15 @@
 						</div>
 
 					</div>
-					<div style="text-align: right;">
+					<div class="ref-flex-link-to-menu">
 						<a href="#id_refMenu" lang-code="07022">Hore k menu</a>
 					</div>
 				</div>
 
-				<div class="ref4-divider"></div>
+				<div class="ref-flex-divider"></div>
 
-				<div class="ref4-left">
-					<div class="ref4-left-group ">
-						<img src="media/quantum-computer-technologies-illustration.avif" class="ref4-img1" />
-					</div>
+				<div class="ref-flex-img-wrapper">
+					<img src="media/quantum-computer-technologies-illustration.avif" class="ref-flex-img1"/>
 				</div>
 
 			</div>
@@ -181,7 +180,7 @@
 		document.addEventListener("DOMContentLoaded", async () => {
 			await LoadTranslations('translations07-ref.txt');
 			await UpdateTexts();
-			Animator.registerAll(".ref4-animate-line", "animate-width-grow");
+			Animator.registerAll(".ref-flex-animate-line", "animate-width-grow");
 		});
 	</script>
 

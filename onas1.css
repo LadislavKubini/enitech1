@@ -26,10 +26,13 @@
 
     .onas1-left,
     .onas1-right {
-    	padding-inline: 1vw;
     	flex: 0 0 49%;
     	box-sizing: border-box;
     }
+
+	.onas1-left {
+		padding: 4vw;
+	}
 
     .onas1-img-wrapper {
     	width: 100%;
@@ -48,6 +51,7 @@
     	display: flex;
     	flex-direction: column;
     	justify-content: center;
+    	padding: 1vw;
     }
 
     .onas1-right p {
@@ -73,12 +77,11 @@
     	}
 
     	.onas1-left {
-    		padding: 0 0;
+    		flex: 0 0 100%;
     		width: 100%;
     		justify-content: center;
     	}
 
-    	.onas1-left,
     	.onas1-right {
     		flex: 0 0 100%;
     	}

@@ -1,10 +1,10 @@
-02001 || Informačné technológie. 
-|| Informationstechnologie. 
-|| Information Technology.
+02001 || Informačné technológie 
+|| Informationstechnologie
+|| Information Technology
 
-02002 || Spoľahlivá a efektívna podpora v oblasti riešení informačných technológií doma aj v zahraničí. 
-|| Zuverlässige und effiziente Unterstützung im Bereich der Informationstechnologie-Lösungen im In- und Ausland. 
-|| Reliable and efficient support in the field of information technology solutions domestic/in-house and abroad.
+02002 || Efektívna IT podpora, ktorá rozširuje vaše možnosti. 
+|| Effektiver IT-Support, der Ihre Möglichkeiten erweitert.
+|| Effective IT support that expands your possibilities.
 
 
 02011 || INFORMAČNÉ TECHNOLÓGIE || INFORMATIONSTECHNOLOGIEN || INFORMATION TECHNOLOGY

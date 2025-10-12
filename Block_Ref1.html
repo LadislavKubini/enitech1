@@ -23,7 +23,8 @@
 
 	<link rel="stylesheet" href="root.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="ref1.css">
+	<!-- <link rel="stylesheet" href="ref1.css"> -->
+	<link rel="stylesheet" href="ref-flex.css">
 	<link rel="stylesheet" href="ref-tooltip.css">
 
 	<script src="Language.js" defer></script>
@@ -33,9 +34,9 @@
 <body>
 	<div id="Ref1-div-src">
 		<div id="id-Block_Ref1" style="scroll-margin-top: 80px;"></div>
-		<div class="ref1-body">
-			<div class="ref1-header">
-				<div class="ref1-line-with-img">
+		<div class="ref-flex-body" style="background-color: #f8f8f8;">
+			<div class="ref-flex-header">
+				<div class="ref-flex-line-with-img">
 					<div>
 						<h2 lang-code="07013">.Automobilový priemysel</h2>
 						<p lang-code="07014">.Plne automatizované bunky a linky pre automobilový priemysel</p>
@@ -43,22 +44,17 @@
 					<img src="media/car-icon.png" alt="Ikona auta">
 				</div>
 			</div>
-			<div class="ref1-animate-line"></div>
+			<div class="ref-flex-animate-line"></div>
 			<!-- **************************************************************************************** -->
-			<div class="ref1-content-flex">
-				<div class="ref1-left">
-					<div class="ref1-left-group ">
-						<img src="media/view-three-dimensional-car.avif" class="ref1-img1" />
-						<img src="media/gps-system-smart-car.avif" class="ref1-img2" />
-					</div>
+			<div class="ref-flex-content-flex">
+				<div class="ref-flex-img-wrapper">
+					<img src="media/view-three-dimensional-car.avif" class="ref-flex-img1" />
 				</div>
 
-				<div class="ref1-divider"></div>
-
 				<!-- ************************************************************************ -->
-				<div class="ref1-right">
+				<div class="ref-flex-grid-wrapper">
 					
-					<div class="ref-tooltip-grid columns-3">
+					<div class="ref-tooltip-grid">
 
 						<div class="ref-tooltip-container">
 							<img src="media/klienti/audi-logo-enitech.png" alt="Audi logo" class="ref-tooltip-image" />
@@ -96,7 +92,7 @@
 							</div>
 						</div>
 
-						<div class="ref-tooltip-container">
+						 <div class="ref-tooltip-container">
 							<img src="media/klienti/tms-logo-enitech.png" alt="TMS logo" class="ref-tooltip-image" />
 							<div class="ref-tooltip-text">
 								<p><strong lang-code="07005">Realizované služby:</strong></p>
@@ -104,7 +100,6 @@
 								<div class="ref-tooltip-company">TMS - Turnkey manufacturing systems</div>
 							</div>
 						</div>
-
 						<div class="ref-tooltip-container">
 							<img src="media/klienti/ford-logo-transp.png" alt="Ford logo" class="ref-tooltip-image" />
 							<div class="ref-tooltip-text">
@@ -179,7 +174,6 @@
 						<div class="ref-tooltip-container">
 							<div class="ref-tooltip-img-wrapper" role="img" aria-label="Skoda logo" 
 								style="background: url('media/klienti/SKODA_LOGO.png') center/cover no-repeat;" >
-								<!-- <img src="media/klienti/SKODA_LOGO.png" alt="Skoda logo" class="ref-tooltip-image" /> -->
 							</div>
 							<div class="ref-tooltip-text">
 								<p><strong lang-code="07005">Realizované služby:</strong></p>
@@ -191,7 +185,6 @@
 						<div class="ref-tooltip-container">
 							<div class="ref-tooltip-img-wrapper" role="img" aria-label="CMS logo" 
 								style="background: url('media/klienti/CMS_logo_mini.png') center/cover no-repeat;" >
-								<!-- <img src="media/klienti/CMS_logo_mini.png" alt="CMS logo" class="ref-tooltip-image"/> -->
 							</div>
 							<div class="ref-tooltip-text">
 								<p><strong lang-code="07005">Realizované služby:</strong></p>
@@ -210,7 +203,7 @@
 						</div>
 
 					</div>
-					<div style="text-align: right;">
+					<div class="ref-flex-link-to-menu">
 						<a href="#id_refMenu" lang-code="07022">Hore k menu</a>
 					</div>
 				</div>
