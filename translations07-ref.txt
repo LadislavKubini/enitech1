@@ -45,3 +45,6 @@
 
 07021 || Viac || Mehr lesen || See more
 07022 || Hore k menu || Nach oben zum Menü || Up to menu
+
+// Block_Onas3Ref.html - zrusene a presunute
+07304 || Referencie: || Referenzen: || References:

@@ -77,5 +77,3 @@
 00301 || SPOLUPRÁCA || ZUSAMMENARBEIT || COOPERATION
 00302 || Vybraní zákazníci || Ausgewählte Kunden || Selected customers
 
-// Block_Onas3Ref.html
-00304 || Referencie: || Referenzen: || References:
