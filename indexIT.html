@@ -35,11 +35,10 @@
 	<link rel="stylesheet" href="it5.css">
 	<link rel="stylesheet" href="footer.css">
 
-	<!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalostou DOMConentLoaded-->
-	<script src="Language.js" defer></script> <!-- funkcie js: prepinanie jazykov  SK / DE / EN -->
-	<script src="animator.js" defer></script> <!-- funkcie js: animacie -->
-	<script src="menu.js" defer></script> <!-- funkcie js: ovladanie menu -->
-	<script src="wordpress_footer.js" defer></script> <!-- Nacitanie a spracovanie ponuk od WordPressu-->
+	<script src="Language.js" defer></script>
+	<script src="animator.js" defer></script>
+	<script src="menu.js" defer></script>
+	<!-- <script src="wordpress_footer.js" defer></script>  -->
 </head>
 
 <body>
@@ -95,7 +94,7 @@
 		document.addEventListener("DOMContentLoaded", async () => { // zabalene do anonymnej async () => {} funkcie, aby bolo mozne volat "await"
 			await loadDivBlocks();
 			await new Promise(requestAnimationFrame);
-			await Footer_fill_ponuky();
+			// await Footer_fill_ponuky();
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
@@ -105,7 +104,7 @@
 			Animator.registerAll(".it2-line", "animate-width-grow");
 			Animator.registerAll(".it3-line", "animate-width-grow");
 			Animator.registerAll(".it3-grid-item-line", "animate-width-grow"); // doprava rastuce ciary
-			Animator.registerAll(".footer-line", "animate-width-grow");
+			// Animator.registerAll(".footer-line", "animate-width-grow");
 			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
 			document.body.style.visibility = "visible"; // zobraz stránku až teraz    
 		});    

@@ -44,7 +44,6 @@
 || Externe Konstruktion, Automatisierung, Robotik und IT-Dienstleistungen:
 || External construction, automation, robotics, and IT services:
 
-05055 || Externá konštrukcia a IT služby: || Externe Konstruktion und IT-Dienstleistungen: || External construction and IT services:
 05056 || Personálne oddelenie: || Personalabteilung: || Human Resources Department:
 
 // Fakturacne udaje

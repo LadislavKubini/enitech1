@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Block_EnginExt1.html</title>
+  <title>test_EnginExt1.html</title>
   <link rel="icon" href="favicona-enitech.png" />
 
   <link rel="stylesheet" href="fonts-poppins.css" />
   <link rel="stylesheet" href="fonts-open-sans.css">
   <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="enginext1.css">
+  <!-- <link rel="stylesheet" href="enginext1.css"> -->
+  <link rel="stylesheet" href="engin.css">
 
   <script src="Language.js" defer></script>
   <script src="animator.js" defer></script>
@@ -27,24 +28,24 @@
 </head>
 <body>
   <div id="EnginExt1-div-src">
-    <div class="enginext1-body">
-      <div class="enginext1-header-line"></div>
-      <div class="enginext1-content">
+    <div class="engin-body color-variant-enginext1">
+      <div class="engin-header-line"></div>
+      <div class="engin-content-flex">
 
-        <div class="enginext1-right">
-            <div class="enginext1-line-with-img">
+        <div class="engin-text-wrapper">
+            <div class="engin-line-with-img">
               <h2 lang-code="01501">Externá konštrukcia:</h2>
-              <img src="media/air-conditioning-outdoor-unit-icon.png" alt="Ikona klimatizacnej jednotky">
+              <img src="media/air-conditioning-outdoor-unit-icon.png" alt="Ikona klimatizacnej jednotky" class="img-invert">
             </div>
               <p lang-code="01502">U našich zákazníkov realizujeme projekty:</p>
               <ul class="custom-list">
-                <li><strong lang-code="01503">klimatizačných jednotiek</strong></li>
-                <li><strong lang-code="01504">turbodúchadiel</strong></li>
-                <li><strong lang-code="01505">automatizovaných liniek</strong></li>
-                <li><strong lang-code="01506">interiérových a exteriérových dielov automobilov</strong></li>
+                <li><strong-500 lang-code="01503">klimatizačných jednotiek</strong-500></li>
+                <li><strong-500 lang-code="01504">turbodúchadiel</strong-500></li>
+                <li><strong-500 lang-code="01505">automatizovaných liniek</strong-500></li>
+                <li><strong-500 lang-code="01506">interiérových a exteriérových dielov automobilov</strong-500></li>
               </ul>
               <p lang-code="01507">Tu pracujeme so systémami podľa požiadaviek zákazníka.</p>
-            <div class="enginext1-more-info-container">
+            <div class="engin-more-info-container">
               <a href="indexKontakt.html#id-kontakt-Kracala,id-kontakt-Ivaska" class="animate-text-underline" lang-code="01508" style="
                 --text-color: #a8cfff;
                 --hover-color: #ffffff;
@@ -53,10 +54,8 @@
             </div>
         </div>
 
-		<div class="enginext1-divider"></div>
-
-        <div class="enginext1-left">
-          <div class="enginext1-img-wrapper">
+        <div class="engin-img-wrapper">
+          <div class="engin-img-wrapper-inner">
             <img src="media/TurboDuchadlo-automobil.avif"/>
           </div>
         </div>
@@ -67,7 +66,7 @@
 
   <script> 
     async function loadAllTranslations() {
-      const p1 = await LoadTranslations('translations00.txt');
+      const p1 = await LoadTranslations('translations01-engin.txt');
       await Promise.all([p1]);
     }
   </script>
@@ -76,7 +75,7 @@
       await loadAllTranslations();
       await UpdateTexts();
       await new Promise(requestAnimationFrame);
-      Animator.registerAll(".enginext1-header-line", "animate-width-grow");
+      Animator.registerAll(".engin-header-line", "animate-width-grow");
       document.body.style.visibility = "visible";
     });
   </script>

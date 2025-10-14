@@ -4,13 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Block_EnginInt4.html</title>
+	<title>test_EnginInt4.html</title>
 	<link rel="icon" href="favicona-enitech.png" />
 
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="enginint4.css">
+	<!-- <link rel="stylesheet" href="enginint4.css"> -->
+	<link rel="stylesheet" href="engin.css">
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -29,20 +30,16 @@
 
 <body>
 	<div id="EnginInt4-div-src">
-		<div class="enginint4-body">
-			<div class="enginint4-header-line"></div>
+		<div class="engin-body color-variant-enginint4">
+			<div class="engin-header-line"></div>
 
-			<div class="enginint4-content">
+			<div class="engin-content-flex">
 
-				<div class="enginint4-right">
-					<div class="enginint4-line-with-img">
-						<!-- <h3 lang-code="01401">Interná konštrukcia</h3> -->
+				<div class="engin-text-wrapper">
+					<div class="engin-line-with-img">
 						<strong lang-code="01402">Návrh eskalátorov:</strong>
 						<img src="media/IkonaObrabaciehoStroja.png" alt="Ikona obrabacieho stroja">
 					</div>
-					<!-- <p>
-						<strong lang-code="01402">Návrh eskalátorov:</strong>
-					</p> -->
 					<ul class="custom-list">
 						<li lang-code="01403">tvorba 3D dielov a 2D výkresovej dokumentácie podľa požiadaviek zákazníka</li>
 						<li lang-code="01404">tvorba kusovníkov</li>
@@ -50,18 +47,14 @@
 						<li lang-code="01406">návrhy pre nové riešenia</li>
 						<li lang-code="01407">vývoj a parametrizácia dát v softvéri 3D EXPERIENCE</li>
 					</ul>
-					<div class="enginint4-more-info-container">
+					<div class="engin-more-info-container">
 						<a href="indexKontakt.html#id-kontakt-Deak" class="animate-text-underline" lang-code="01408">Viac informácií</a>
 					</div>
 				</div>
 
-				<div class="enginint4-divider"></div>
-
-				<div class="enginint4-left">
-					<div class="enginint4-img-wrapper ">
+				<div class="engin-img-wrapper">
+					<div class="engin-img-wrapper-inner">
 						<img src="media/Eskalator-DigitalneDvojca.avif" alt="Obrazok" />
-						<!-- <img src="media/TriEskalatory.avif" class="enginint4-img1" />
-						<img src="media/JedenEskalator.png" class="enginint4-img2" /> -->
 					</div>
 				</div>
 
@@ -71,7 +64,7 @@
 
 	<script>
 		async function loadAllTranslations() {
-			const p1 = await LoadTranslations('translations00.txt');
+			const p1 = await LoadTranslations('translations01-engin.txt');
 			await Promise.all([p1]);
 		}
 	</script>
@@ -80,7 +73,7 @@
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.registerAll(".enginint4-header-line", "animate-width-grow");
+			Animator.registerAll(".engin-header-line", "animate-width-grow");
 			document.body.style.visibility = "visible";
 		});
 	</script>

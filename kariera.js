@@ -13,6 +13,18 @@ let activeCategory = categories.it;
 // Globálna premená pre ponuky
 let dataPonuky = [];
 
+// Nastaví kategóriu podľa url parametra
+function setCategoryExtern(newCategory) {
+    if (newCategory && categories[newCategory]) {
+        activeCategory = categories[newCategory];
+        currentPage = 1;
+        updateCategoryButtons(newCategory);
+        console.log("Category set to:", newCategory);
+    } else {
+        console.warn("Neznáma kategória:", newCategory, "- zostáva default:", activeCategory);
+    }
+}
+
 // Pomocná funkcia: odstráni HTML značky z excerptu
 function stripHTML(html) {
 	return html.replace(/<[^>]*>?/gm, '').trim();

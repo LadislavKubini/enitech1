@@ -3,6 +3,7 @@
 	background-color: white;
 	color: black;
 	margin-top: 2vw;
+    font-size: clamp(16px, 1.6vw, 30px);
 	box-sizing: border-box;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .uvod1-left-column h2 {
-	font-size: calc(0.6rem + 2.2vw);
+	/* font-size: calc(0.6rem + 2.2vw); */
 	line-height: 1.4;
 	margin: 0;
 }

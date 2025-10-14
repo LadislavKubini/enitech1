@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="enginint2.css">
+	<link rel="stylesheet" href="engin.css">
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -29,18 +29,18 @@
 
 <body>
 	<div id="EnginInt2-div-src">
-		<div class="enginint2-body">
-			<div class="enginint2-header-line"></div>
+		<div class="engin-body color-variant-enginint2">
+			<div class="engin-header-line"></div>
 
-			<div class="enginint2-content">
-				<div class="enginint2-left">
-					<div class="enginint2-line-with-img">
-						<h2 lang-code="01201">Interná konštrukcia</h2>
+			<div class="engin-content-flex">
+				<div class="engin-text-wrapper">
+					<div class="engin-line-with-img">
+						<h2 lang-code="01201">Interný CAD dizajn</h2>
 						<!-- <img src="media/Lietadielko.png" alt="Ikona lietadielka"> -->
 						<img src="media/Lietadielko.png" alt="Ikona obrabacieho stroja">
 					</div>
 					<p>
-						<strong lang-code="01202">Projekty montážnych plošín</strong>
+						<strong-500 lang-code="01202">Projekty montážnych plošín</strong-500>
 						<span lang-code="01203">pre vonkajšie časti lietadiel</span>
 					</p>
 					<ul class="custom-list">
@@ -50,22 +50,15 @@
 						<li lang-code="01207">tvorba kusovníkov</li>
 						<li lang-code="01208">modifikácia existujúcich dielov a zostáv</li>
 					</ul>
-					<div class="enginint2-more-info-container">
+					<div class="engin-more-info-container">
 						<a href="indexKontakt.html#id-kontakt-Deak" class="animate-text-underline" lang-code="01209">Viac informácií</a>
 					</div>
 				</div>
 
-				<div class="enginint2-divider"></div>
-
-				<div class="enginint2-right">
-					<div class="enginint2-img-wrapper">
+				<div class="engin-img-wrapper">
+					<div class="engin-img-wrapper-inner">
 						<img src="media/DvojitaPlosina_Huebsch.avif" alt="Obrazok" />
 					</div>
-
-					<!-- <div class="enginint2-right-group ">
-            <img src="media/MontaznaPlosina1.png" class="enginint2-img1" />
-            <img src="media/MontaznaPlosina2.png" class="enginint2-img2" />
-          </div> -->
 				</div>
 			</div>
 		</div>
@@ -73,7 +66,7 @@
 
 	<script>
 		async function loadAllTranslations() {
-			const p1 = await LoadTranslations('translations00.txt');
+			const p1 = await LoadTranslations('translations01-engin.txt');
 			await Promise.all([p1]);
 		}
 	</script>
@@ -82,7 +75,7 @@
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.registerAll(".enginint2-header-line", "animate-width-grow");
+			Animator.registerAll(".engin-header-line", "animate-width-grow");
 			document.body.style.visibility = "visible";
 		});
 	</script>

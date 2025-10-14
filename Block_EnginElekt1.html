@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Block_EnginElekt1.html</title>
+  <title>test_EnginElekt1.html</title>
   <link rel="icon" href="favicona-enitech.png" />
 
   <link rel="stylesheet" href="fonts-poppins.css" />
   <link rel="stylesheet" href="fonts-open-sans.css">
   <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="enginelekt1.css">
+  <!-- <link rel="stylesheet" href="enginelekt1.css"> -->
+  <link rel="stylesheet" href="engin.css">
 
   <script src="Language.js" defer></script>
   <script src="animator.js" defer></script>
@@ -27,30 +28,30 @@
 </head>
 <body>
   <div id="EnginElekt1-div-src">
-    <div class="enginelekt1-body">
-      <div class="enginelekt1-header-line"></div>
+    <div class="engin-body color-variant-enginelekt1">
+      <div class="engin-header-line"></div>
 
-      <div class="enginelekt1-content">
-        <div class="enginelekt1-left">
-          <div class="enginelekt1-img-wrapper ">
+      <div class="engin-content-flex column-reverse">
+        <div class="engin-img-wrapper">
+          <div class="engin-img-wrapper-inner">
             <img src="media/Plosny-spoj-s-vykresom.avif"/>
           </div>
         </div>
 
-        <div class="enginelekt1-divider"></div>
+        <div class="engin-divider"></div>
 
-        <div class="enginelekt1-right">
-            <div class="enginelekt1-line-with-img">
+        <div class="engin-text-wrapper">
+            <div class="engin-line-with-img">
               <h3 lang-code="01601">Elektro-konštrukcia</h3>
-              <img src="media/plosny-spoj-icon.png" alt="Ikona plosneho spoja">
+              <img src="media/plosny-spoj-icon.png" alt="Ikona plosneho spoja"  class="img-invert">
             </div>
               <p lang-code="01602">V oblasti elektro Vás vieme podporiť v systéme 
                 <strong>EPLAN P8</strong> pri návrhu, plánovaní a optimalizácii 
                 elektrotechniky do Vašich strojov a zariadení </p>
               <p><span lang-code="01603">Disponujeme tiež skúsenosťami pre návrh dosiek
-                 plošných spojov(</span><strong lang-code="01604">PCB  dizajn</strong><span>).</span>
+                 plošných spojov(</span><strong-500 lang-code="01604">PCB  dizajn</strong-500><span>).</span>
 			  </p>
-            <div class="enginelekt1-more-info-container">
+            <div class="engin-more-info-container">
               <a href="indexKontakt.html#id-kontakt-Kracala,id-kontakt-Ivaska" class="animate-text-underline" lang-code="01605" style="
                 --text-color: #a8cfff;
                 --hover-color: #ffffff;
@@ -64,7 +65,7 @@
 
   <script> 
     async function loadAllTranslations() {
-      const p1 = await LoadTranslations('translations00.txt');
+      const p1 = await LoadTranslations('translations01-engin.txt');
       await Promise.all([p1]);
     }
   </script>
@@ -73,7 +74,7 @@
       await loadAllTranslations();
       await UpdateTexts();
       await new Promise(requestAnimationFrame);
-      Animator.registerAll(".enginelekt1-header-line", "animate-width-grow");
+      Animator.registerAll(".engin-header-line", "animate-width-grow");
       document.body.style.visibility = "visible";
     });
   </script>

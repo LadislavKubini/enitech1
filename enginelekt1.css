@@ -89,6 +89,11 @@
     	font-weight: 500;
     }
 
+	.enginelekt1-right strong-500 {
+		font-weight: 500;
+		display: inline;
+	}
+
     .enginelekt1-right-last {
     	display: flex;
     	align-items: center;

@@ -30,7 +30,7 @@
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
 	<script src="menu.js" defer></script>
-	<script src="wordpress_footer.js" defer></script> <!-- Nacitanie a spracovanie ponuk od WordPressu-->
+	<!-- <script src="wordpress_footer.js" defer></script> -->
 	<script src="onas2.js" defer></script> <!-- modalne okno s certifikatom -->
 </head>
 
@@ -83,7 +83,7 @@
 			await loadDivBlocks();
 
 			await new Promise(requestAnimationFrame);
-			await Footer_fill_ponuky();
+			// await Footer_fill_ponuky();
 			await LoadTranslations('translations00.txt');
 			await LoadTranslations('translations01-engin.txt');
 			await LoadTranslations('translations07-ref.txt');

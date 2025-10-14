@@ -4,13 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Block_EnginElekt1.html</title>
+	<title>test_EnginAutom1.html</title>
 	<link rel="icon" href="favicona-enitech.png" />
 
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="enginautom1.css">
+	<!-- <link rel="stylesheet" href="enginautom1.css"> -->
+	<link rel="stylesheet" href="engin.css">
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -29,36 +30,36 @@
 
 <body>
 	<div id="EnginAutom1-div-src">
-		<div class="enginautom1-body">
-			<div class="enginautom1-header-line"></div>
+		<div class="engin-body color-variant-enginautom1">
+			<div class="engin-header-line"></div>
 
-			<div class="enginautom1-content">
-				<div class="enginautom1-left">
-					<div class="enginautom1-img-wrapper">
-						<img src="media/robotic-automation-in-industrial-manufacturing.avif" class="enginautom1-img1" />
+			<div class="engin-content-flex column-reverse">
+				<div class="engin-img-wrapper">
+					<div class="engin-img-wrapper-inner">
+						<img src="media/robotic-automation-in-industrial-manufacturing.avif" class="engin-img1" />
 					</div>
 				</div>
 
-				<div class="enginautom1-divider"></div>
+				<div class="engin-divider"></div>
 
-				<div class="enginautom1-right">
-					<div class="enginautom1-line-with-img">
+				<div class="engin-text-wrapper">
+					<div class="engin-line-with-img">
 						<h3 lang-code="01701">Automatizácia</h3>
-						<img src="media/robot-icon.png" alt="Ikona robota">
+						<img src="media/robot-icon.png" alt="Ikona robota" class="img-invert">
 					</div>
 					<p lang-code="01702">Vieme podporiť Vaše potreby v oblasti automatizácie s
-						<strong>programovaním automatizovaných liniek</strong> a systémov alebo
+						<strong-500>programovaním automatizovaných liniek</strong-500> a systémov alebo
 						s programovaním robotov alebo robotických pracovísk.
 					</p>
 					<p lang-code="01703">Naši PLC špecialisti pracujú v systémoch ako
-						<strong>SIEMENS a ROCKWELL (AllenBradley)</strong>, ale
+						<strong-500>SIEMENS a ROCKWELL (AllenBradley)</strong-500>, ale
 						vieme Vám pomôcť aj v PLC systémoch ako
-						<strong>B&R, Beckhoff, OMRON</strong>, či <strong>Schneider</strong>.
+						<strong-500>B&R, Beckhoff, OMRON</strong-500>, či <strong-500>Schneider</strong-500>.
 					</p>
-					<p lang-code="01704">Máme skúsenosti s robotmi od <strong>ABB, KUKA,
-							FANUC</strong>, ale aj <strong>STAUBLI</strong>, či <strong>YASKAWA</strong>
+					<p lang-code="01704">Máme skúsenosti s robotmi od <strong-500>ABB, KUKA,
+							FANUC</strong-500>, ale aj <strong-500>STAUBLI</strong-500>, či <strong-500>YASKAWA</strong-500>
 					</p>
-					<div class="enginautom1-more-info-container">
+					<div class="engin-more-info-container">
 						<a href="indexKontakt.html#id-kontakt-Kracala,id-kontakt-Ivaska" class="animate-text-underline" lang-code="01705" style="
 							--text-color: #a8cfff;
 							--hover-color: #ffffff;
@@ -81,7 +82,7 @@
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.registerAll(".enginautom1-header-line", "animate-width-grow");
+			Animator.registerAll(".engin-header-line", "animate-width-grow");
 			document.body.style.visibility = "visible";
 		});
 	</script>

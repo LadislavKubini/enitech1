@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="enginint1.css">
+	<link rel="stylesheet" href="engin.css">
+	<!-- <link rel="stylesheet" href="enginint1.css"> -->
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -26,56 +27,37 @@
 
 <body>
 	<div id="EnginInt1-div-src">
-		<div class="enginint1-body">
-			<div class="enginint1-header-line"></div>
-			<!-- <p class="enginint1-great-p" lang-code="01101">Spoľahlivá a efektívna podpora v oblasti konštrukčných prác doma aj v zahraničí.</p> -->
+		<div class="engin-body color-variant-enginint1">
+			<div class="engin-header-line"></div>
+			<!-- <p class="engin-great-p" lang-code="01101">Spoľahlivá a efektívna podpora v oblasti konštrukčných prác doma aj v zahraničí.</p> -->
 
-			<div class="enginint1-content">
-				<div class="enginint1-left">
-					<div class="enginint1-img-wrapper">
+			<div class="engin-content-flex" style="padding: 0; padding-top: 1vw;  gap: 2vw;">
+				<div class="engin-img-wrapper">
+					<div class="engin-img-wrapper-inner">
 						<img src="media/InternaKonstr-traja-monitor.avif" alt="Obrazok" />
 					</div>
 				</div>
 
-				<div class="enginint1-divider"></div>
-
-				<div class="enginint1-right">
-					<h3 lang-code="01104">.Naši špecialisti pracujú s rôznymi systémami:</h3>
-					<p class="enginint1-big "><strong lang-code="01105">interné projekty:</strong></p>
-					<div class="enginint1-icon-row" aria-label="Two logos" role="img">
-						<!-- <div class="enginint1-hexagon">
+				<div class="engin-text-wrapper" style="padding-top: 0; padding-bottom: 0; margin: 0;">
+					<h3 lang-code="01104"  style="padding: 0; margin: 0;">.Naši špecialisti pracujú s rôznymi systémami:</h3>
+					<p class="margin-small"><strong  class="engin-big" lang-code="01105">interné projekty:</strong></p>
+					<div class="engin-icon-row" aria-label="Two logos" role="img">
+						<div class="engin-logo-wrapper">
 							<img src="media/Logo_Catia.png" alt="Catia logo" />
 						</div>
-						<div class="enginint1-hexagon">
-							<img src="media/Logo_3Dexperience.png" alt="SolidWorks logo" />
-						</div> -->
-						<div class="enginint1-logo-wrapper">
-							<img src="media/Logo_Catia.png" alt="Catia logo" />
-						</div>
-						<div class="enginint1-logo-wrapper">
+						<div class="engin-logo-wrapper">
 							<img src="media/Logo_3Dexperience.png" alt="SolidWorks logo" />
 						</div>
 					</div>
-					<p>
-						<strong class="enginint1-big " lang-code="01106">externé projekty:</strong>
+					<p class="margin-small">
+						<strong class="engin-big" lang-code="01106">externé projekty:</strong>
 						<span lang-code="01107">podľa požiadavky.</span>
 					</p>
-					<!-- <div class="enginint1-icon-row" aria-label="Three logos" role="img">
-						<div class="enginint1-hexagon">
-							<img src="media/Logo_SolidWorksColor.png" alt="Catia logo" />
-						</div>
-						<div class="enginint1-hexagon">
-							<img src="media/Logo_SiemensNX.png" alt="SolidWorks logo" />
-						</div>
-						<div class="enginint1-hexagon">
-							<img src="media/Logo_AutodeskInventor.png" alt="AutodeskInventor logo" />
-						</div>
-					</div> -->
-					<p>
+					<p class="margin-small">
 						<strong lang-code="01108">.Poskytujeme komplexné riešenia a individuálny prístup vo všetkých etapách vývoja</strong>
 						<span lang-code="01109"> - od konštrukčného návrhu, jeho doladenia a úprav, až po vypracovanie kompletnej výkresovej dokumentácie.</span>
 					</p>
-					<p lang-code="01110">.Spolupracujeme najmä s firmami z leteckého priemyslu, automobilového priemyslu a všeobecného strojárstva.</p>
+					<p  class="margin-small" lang-code="01110">.Spolupracujeme najmä s firmami z leteckého priemyslu, automobilového priemyslu a všeobecného strojárstva.</p>
 				</div>
 			</div>
 		</div>
@@ -92,7 +74,7 @@
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.registerAll(".enginint1-header-line", "animate-width-grow");
+			Animator.registerAll(".engin-header-line", "animate-width-grow");
 			document.body.style.visibility = "visible";
 		});
 	</script>

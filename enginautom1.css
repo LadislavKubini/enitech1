@@ -90,6 +90,11 @@
     	font-weight: 500;
     }
 
+	.enginautom1-right strong-500 {
+		font-weight: 500;
+		display: inline;
+	}
+
     .enginautom1-right-last {
     	display: flex;
     	align-items: center;
