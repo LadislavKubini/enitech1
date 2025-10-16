@@ -49,7 +49,7 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			title: "DCA Hungary Kft.",
 			image: "media/DCAKomarom.jpg",
 			ulica: "Laktanya köz 3/A 1",
-			mesto: "H - 2921 Komárom",
+			mesto: "H - 2900 Komárom",
 			email: "office@dcahungary.hu",
 			homepage: "www.dcahungary.hu",
 			color: "green",

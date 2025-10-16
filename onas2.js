@@ -12,11 +12,22 @@ function onas2_initModal() {
     function onas2_openModal() {
         onas2_wrapper.style.display = 'block';
         onas2_overlay.style.display = 'block';
+    	document.addEventListener('keydown', onas2_handleEsc);
     }
 
     function onas2_closeModal() {
         onas2_wrapper.style.display = 'none';
         onas2_overlay.style.display = 'none';
+    	document.removeEventListener('keydown', onas2_handleEsc);
+    }
+
+    function onas2_handleEsc(e) {
+        if (e.key === 'Escape' || e.key === 'Esc') {
+            const isVisible = onas2_overlay.style.display === 'block';
+            if (isVisible) {
+                onas2_closeModal();
+            }
+        }
     }
 
     onas2_btnCertif.addEventListener('click', onas2_openModal);
