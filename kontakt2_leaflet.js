@@ -56,6 +56,7 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			lang_code: "05047"
 		}
 	];
+//****************************************************************************** */	
 	if (typeof L === "undefined") {
 		// Leaflet sa nenačítal → vložíme neutrálnu kartičku
 		const mapDiv = document.getElementById('id-kontakt2-map');
@@ -63,19 +64,20 @@ async function kontakt2_leaflet_init_map_pobocky() {
         <div class="kontakt2-map-error">
             <div>
                 <h2>Mapa nie je dostupná</h2>
-                <p>Nepodarilo sa načítať knižnicu <strong>Leaflet</strong>.<br>
-                Skontrolujte pripojenie na internet alebo nastavenia siete.</p>
+                <p>Nepodarilo sa načítať knižnicu <strong>Leaflet</strong>.<br></p>
             </div>
-        </div>
-    `;
-	} else {
-		const initialZoom = window.innerWidth > 1300 ? 8 : 7;
+        </div>`;
+		return;
+	}
+	// } else {
 
+		const initialZoom = window.innerWidth > 1300 ? 8 : 7;
 		const kontakt2_map = L.map('id-kontakt2-map', {
 			zoomControl: true,
 			dragging: false,        // mapa sa nedá posúvať pred klikom
 			scrollWheelZoom: false  // scroll kolečkom nepohne mapou
 		}).setView([48.7, 19.7], initialZoom);
+
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '© OpenStreetMap'
 		}).addTo(kontakt2_map);
@@ -117,7 +119,7 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			if (btn) btn.style.display = "block";
 		});
 
-		// Vlastný control pre prepínanie interaktivity
+//*** Vlastný control pre prepínanie interaktivity *************************************** */
 		const toggleControl = L.Control.extend({
 			options: { position: 'topleft' },
 			onAdd: function (map) {
@@ -144,12 +146,12 @@ async function kontakt2_leaflet_init_map_pobocky() {
 		// Pridanie controlu do mapy
 		kontakt2_map.addControl(new toggleControl());
 
+//******************************************************************************************* */		
 		const grid = document.getElementById('kontakt2-grid');
 		let selectedMarker = null;
 		let markerRefs = [];
 
 		function activateMarker(marker, index) {
-			// Zrušíme predchádzajúci výber
 			if (selectedMarker) {
 				selectedMarker._icon.classList.remove('selected');
 				document.querySelector('.kontakt2-cell.active')?.classList.remove('active');
@@ -158,16 +160,18 @@ async function kontakt2_leaflet_init_map_pobocky() {
 					p.coords[0] === selectedMarker.getLatLng().lat &&
 					p.coords[1] === selectedMarker.getLatLng().lng
 				);
-				if (originalP.color === "green") {
-					selectedMarker.setIcon(greenIcon);
+				if (originalP) {
+					if (originalP.color === "green") {
+						selectedMarker.setIcon(greenIcon);
+					} else {
+						selectedMarker.setIcon(blueIcon);
+					}
 				} else {
-					selectedMarker.setIcon(blueIcon);
+					selectedMarker.setIcon(greenIcon);
 				}
 			}
 			document.querySelector('.kontakt2-cell.active')?.classList.remove('active');
 
-			// Nastavíme nový výber
-			// marker._icon.classList.add('selected');
 			marker.setIcon(orangeIcon);
 			selectedMarker = marker;
 
@@ -178,6 +182,13 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			}
 		}
 
+//*** markery **************************************************************************************** */
+		// Presunutý zelený marker s čiarou
+		let offsetMarker = null;
+		let offsetLine = null;
+		let offsetCoords_orig = null;
+		const offsetKoef = -0.007; // cca 1 km optický posun
+
 		const isMobile = window.matchMedia("(max-width: 768px)").matches;
 		pobocky.forEach((p, index) => {
 			const popupContent = isMobile
@@ -187,16 +198,24 @@ async function kontakt2_leaflet_init_map_pobocky() {
               <a href="mailto:${p.email}" style="text-decoration: none; color: inherit;">${p.email}</a>
             </div>`;
 
-			let marker;
-			if (p.color == "blue") {
-				marker = L.marker(p.coords, { icon: blueIcon }).addTo(kontakt2_map).bindPopup(popupContent);
-			} else {
-				marker = L.marker(p.coords, { icon: greenIcon }).addTo(kontakt2_map).bindPopup(popupContent);
+			let coords = p.coords;
+			// console.log("p.title: ", p.title);
+			if (p.color === "green") {
+				// console.log("p.title inside ", p.title);
+				offsetCoords_orig = [p.coords[0], p.coords[1]];
+			}
+
+			const icon = p.color === "green" ? greenIcon : blueIcon;
+			const marker = L.marker(coords, { icon }).addTo(kontakt2_map).bindPopup(popupContent);
+
+			if (p.color === "green") {
+				offsetMarker = marker;
 			}
 
 			marker.on('click', () => {
 				marker.openPopup();
-				activateMarker(marker, index)
+				activateMarker(marker, index);
+				// console.log("marker.on click")
 			});
 			marker.on('mouseover', () => {
 				marker.openPopup();
@@ -208,6 +227,8 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			});
 
 			markerRefs.push(marker);
+
+//*** dolny grid pobociek **************************************************************************** */			
 			const emailIcon = `
 			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
 				fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 4px;">
@@ -223,7 +244,6 @@ async function kontakt2_leaflet_init_map_pobocky() {
 
 			let homepageHTML = "";
 			if (p.homepage && p.homepage.trim() !== "") {
-				// pridaj https:// ak tam chýba
 				const url = p.homepage.startsWith("http") ? p.homepage : `https://${p.homepage}`;
 				homepageHTML = `<br><strong><a href="${url}" target="_blank" style="text-decoration: none; color: blue;">${url}</a></strong>`;
 			}
@@ -249,14 +269,54 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			});
 			grid.appendChild(cell);
 		});
+
+		function updateOffsetMarker() {
+			const zoom = kontakt2_map.getZoom();
+			// console.log("updateOffsetMarker() → zoom:", zoom);
+
+			if (offsetMarker && offsetCoords_orig) {
+				if (zoom >= 11) {
+					// pri veľkom priblížení – vráť marker na reálnu pozíciu a skry čiaru
+					offsetMarker.setLatLng([offsetCoords_orig[0], offsetCoords_orig[1]]);
+					if (offsetLine) {
+						kontakt2_map.removeLayer(offsetLine);
+					}
+				} else {
+					// pri oddialení – posuň marker a zobraz čiaru
+					const offset = offsetKoef * (2**(11 - zoom));
+
+					const coords0 = [offsetCoords_orig[0], offsetCoords_orig[1]]
+					const coords1 = [offsetCoords_orig[0] + offset, offsetCoords_orig[1] + (1.5*offset)]
+					// console.log("zoom, offset:", zoom, offset);
+					offsetMarker.setLatLng([coords1[0], coords1[1]]);
+					if (offsetLine) {
+						if (kontakt2_map.hasLayer(offsetLine)) {
+							kontakt2_map.removeLayer(offsetLine);
+						}
+					}
+					offsetLine = L.polyline([coords0, coords1], {
+						color: "green",
+						weight: 1.5,
+						dashArray: "4,3",
+						opacity: 0.8});
+					offsetLine.addTo(kontakt2_map);
+				}
+			}
+
+			if (zoom >= 9) {
+				kontakt2_map.closePopup();
+			}
+		}
+
+		kontakt2_map.on('zoomend', () => {
+			updateOffsetMarker();
+		});
+
+		updateOffsetMarker();
+
 		setTimeout(() => {
 			kontakt2_map.invalidateSize();
 		}, 300);
 
-		kontakt2_map.on('zoomend', () => {
-			if (kontakt2_map.getZoom() >= 9) {
-				kontakt2_map.closePopup();
-			}
-		});
-	}
+	// }
 }
