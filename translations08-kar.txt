@@ -18,7 +18,7 @@
 || Informationstechnologien
 || Information Technologies
 
-08013 || Inžinierstvo
+08013 || Inžiniering
 || Engineering
 || Engineering
 
@@ -59,10 +59,6 @@
 08032 || Nie som robot || Ich bin kein Roboter || I am not a robot
 08033 || POSLAŤ SPRÁVU || NACHRICHT SENDEN || SEND MESSAGE
 
-08034 || Formulár by sa odoslal s nasledovnym počtom príloh: 
-|| Das Formular würde mit der folgenden Anzahl von Anhängen versendet werden:
-|| The form would be sent with the following number of attachments:
-
 08036 || Maximálny počet príloh je 4 
 || Die maximale Anzahl der Anhänge beträgt 4. 
 || The maximum number of attachments is 4.
@@ -70,3 +66,7 @@
 08037 || Celková veľkosť príloh nesmie prekročiť 8 MB.
 || Die Gesamtgröße der Anhänge darf 8 MB nicht überschreiten.
 || The total size of attachments must not exceed 8 MB.
+
+08038 || Maximálna veľkosť jednej prílohy je 2 MB.
+|| Die maximale Größe eines Anhangs beträgt 2 MB.
+|| The maximum size of a single attachment is 2 MB.
