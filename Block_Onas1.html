@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="onas1.css">
+	<!-- <link rel="stylesheet" href="onas1.css"> -->
+	<link rel="stylesheet" href="onas.css">
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -26,22 +27,22 @@
 
 <body>
 	<div id="Onas1-div-src">
-		<div class="onas1-body">
-			<div class="onas1-header-line"></div>
+		<div class="onas-body color-variant-onas1">
+			<div class="onas-header-line"></div>
 
-			<div class="onas1-flex-container">
-				<div class="onas1-left">
-					<div class="onas1-img-wrapper">
-						<div class="onas1-img">
+			<div class="onas-flex-container column-reverse">
+				<div class="onas-img-wrapper">
+					<div class="onas-img-wrapper-inner">
+						<div class="onas-img">
 							<img src="media/InzinierCAD-Cloud.avif" alt="Obrazok 1" />
 						</div>
 					</div>
 				</div>
 
-				<div class="onas1-right">
+				<div class="onas-text-wrapper">
 					<p lang-code="00201"><strong>.Spoločnosť ENITECH bola založená v roku 2010</strong> a od svojho vzniku podniká v oblasti <strong>konštrukcie a IT služieb</strong>.</p>
 					<p lang-code="00202">.Patríme medzi najväčšie inžinierske kancelárie na Slovensku s viac ako 80 špecialistami.</p>
-					<p lang-code="00203">.Svoju činnosť sme začali konštrukčnými prácami v leteckom priemysle. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a
+					<p lang-code="00203">.Naše podnikanie sme začali v oblasti leteckého priemyslu. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a
 						všeobecné strojárstvo.</p>
 					<p lang-code="00204">.V oblasti IT poskytujeme komplexné IT služby pre zákazníkov z Nemecka, Rakúska a Českej republiky v oblastiach ako telekomunikácie,
 						bankovníctva/poisťovníctva, verejnej správy a tiež v oblasti priemyslu.</p>
@@ -61,7 +62,7 @@
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.registerAll(".onas1-header-line", "animate-width-grow");
+			Animator.registerAll(".onas-header-line", "animate-width-grow");
 			document.body.style.visibility = "visible";
 		});
 	</script>

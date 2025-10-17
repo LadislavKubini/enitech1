@@ -3,7 +3,7 @@
 	background-color: white;
 	color: black;
 	margin-top: 2vw;
-    font-size: clamp(16px, 1.6vw, 30px);
+    font-size: clamp(1.2rem, 1.6vw, 30px);
 	box-sizing: border-box;
 }
 
@@ -37,8 +37,8 @@
 }
 
 .uvod1-left-column p {
-	font-size: calc(0.6rem + 0.7vw);
-	color: black;
+	/* font-size: calc(0.6rem + 0.7vw); */
+	/* color: black; */
 	line-height: 1.2;
 }
 
@@ -112,9 +112,9 @@
 		aspect-ratio: auto;
 	}
 
-	.uvod1-left-column h2 {
+	/* .uvod1-left-column h2 {
 		font-size: 2.2rem;
-	}
+	} */
 
 	.uvod1-left-column p {
 		font-size: 1.2rem;
@@ -139,11 +139,11 @@
 		padding: 1rem;
 	}
 
-	.uvod1-left-column h2 {
+	/* .uvod1-left-column h2 {
 		font-size: 1.8rem;
 	}
 
 	.uvod1-left-column p {
 		font-size: 0.9rem;
-	}
+	} */
 }

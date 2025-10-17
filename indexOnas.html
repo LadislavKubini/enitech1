@@ -22,8 +22,9 @@
 	<link rel="stylesheet" href="menu.css">
 	<link rel="stylesheet" href="UvodHero.css">
 	<link rel="stylesheet" href="uvod1.css">
-	<link rel="stylesheet" href="onas1.css">
-	<link rel="stylesheet" href="onas2.css">
+	<!-- <link rel="stylesheet" href="onas1.css"> -->
+	<!-- <link rel="stylesheet" href="onas2.css"> -->
+	<link rel="stylesheet" href="onas.css">
 	<link rel="stylesheet" href="ref.css">
 	<link rel="stylesheet" href="footer.css">
 
@@ -92,8 +93,9 @@
 			await new Promise(requestAnimationFrame);
 			Animator.register("#uvod-hero_animate-id", "animate-slide-in-bounce");
 			Animator.register("#id-ref-onas3-animate", "animate-rotateFlipIn");
-			Animator.registerAll(".onas1-header-line", "animate-width-grow");
-			Animator.registerAll(".onas2-header-line", "animate-width-grow");
+			// Animator.registerAll(".onas1-header-line", "animate-width-grow");
+			// Animator.registerAll(".onas2-header-line", "animate-width-grow");
+			Animator.registerAll(".onas-header-line", "animate-width-grow");
 			Animator.registerAll(".ref-onas3-header-line", "animate-width-grow");
 			Animator.register("#idCertificateBtn", "animate-double-shake");
 			onas2_initModal();

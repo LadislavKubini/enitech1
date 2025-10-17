@@ -21,6 +21,12 @@
     	box-sizing: border-box;
     }
 
+	.ref-tooltip-container.twice {
+		grid-column: span 2;
+		max-width: 420px;
+		aspect-ratio: 345 / 91;
+	}
+
     .ref-tooltip-text {
     	visibility: hidden;
     	opacity: 0;

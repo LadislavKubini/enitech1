@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="onas2.css">
+	<!-- <link rel="stylesheet" href="onas2.css"> -->
+	<link rel="stylesheet" href="onas.css">
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -27,11 +28,11 @@
 
 <body>
 	<div id="Onas2-div-src">
-		<div class="onas2-body">
-			<div class="onas2-header-line"></div>
+		<div class="onas-body">
+			<div class="onas-header-line"></div>
 
-			<div class="onas2-flex-container ">
-				<div class="onas2-left">
+			<div class="onas-flex-container ">
+				<div class="onas-text-wrapper">
 					<p><strong lang-code="00211">Naša vízia:</strong><br>
 						<span lang-code="00212">Stať sa významným poskytovateľom inžinierskych služieb v strednej Európe a uznávaným partnerom na globálnom trhu.</span>
 					</p>
@@ -40,30 +41,30 @@
 							čo nám umožňuje poskytovať vynikajúce riešenia pre našich partnerov.</span>
 					</p>
 					<!-- nový flex kontajner pre posledný odstavec + obrázok -->
-					<div class="onas2-left-last">
+					<div class="onas-text-wrapper-last">
 						<p><span lang-code="00215">.V práci používame systém manažérstva bezpečnosti informácií</span>
 							<strong><span style="white-space: nowrap;">ISO/IEC 27001:2022</span></strong>
 						</p>
-						<img src="media/CertificatedPQM.png" alt="Certificate PQM" class="onas2-official-stamp" id="idCertificateBtn">
+						<img src="media/CertificatedPQM.png" alt="Certificate PQM" class="onas-official-stamp" id="idCertificateBtn">
 					</div>
-					<!-- <p class="onas2-official-stamp-info" lang-code="00216">Certifikát</p> -->
+					<!-- <p class="onas-official-stamp-info" lang-code="00216">Certifikát</p> -->
 				</div>
 
-				<div class="onas2-right">
-					<div class="onas2-img-wrapper">
-						<div class="onas2-img">
+				<div class="onas-img-wrapper">
+					<div class="onas-img-wrapper-inner">
+						<div class="onas-img">
 							<img src="media/Globus-Lock-modraSiet.avif" alt="Obrazok 2" />
 						</div>
 					</div>
 				</div>
 			</div>
 <!-- Certifikat - modalne okno -->
-			<div class="onas2-certif-modal-overlay" id="id_onas2_modalOverlay"></div> <!-- zvysok html sa zakryje polopriehladnym overlay -->
-			<div class="onas2-certif-wrapper" id="id_onas2_wrapper">
-				<div class="onas2-certif-header">
+			<div class="onas-certif-modal-overlay" id="id_onas2_modalOverlay"></div> <!-- zvysok html sa zakryje polopriehladnym overlay -->
+			<div class="onas-certif-wrapper" id="id_onas2_wrapper">
+				<div class="onas-certif-header">
 					<button style="color: red;" id="id_onas2_btnClose">✖</button>
 				</div>
-				<div class="onas2-certif">
+				<div class="onas-certif">
 					<img src="media/ISO_27001_Enitech_certificate_EN.avif" alt="Certifikát">
 				</div>
 			</div>
@@ -82,7 +83,7 @@
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.registerAll(".onas2-header-line", "animate-width-grow");
+			Animator.registerAll(".onas-header-line", "animate-width-grow");
 			onas2_initModal();
 			document.body.style.visibility = "visible";
 		});
