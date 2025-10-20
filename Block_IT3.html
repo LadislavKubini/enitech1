@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="it3.css">
+	<link rel="stylesheet" href="it.css">
 
 	<script src="Language.js" defer></script>
 	<script src="animator.js" defer></script>
@@ -17,45 +17,45 @@
 
 <body>
 	<div id="IT3-div-src">
-		<div class="it3-body" id="id-IT3-nearshoring" style="scroll-margin-top: 80px;"> <!-- aby menu nezakryvalo vrch stranky po doskoku -->
-			<div class="it3-line"></div>
-			<div class="it3-heading-back-row">
+		<div class="it-body color-variant-it3" id="id-IT3-nearshoring" style="scroll-margin-top: 80px;"> <!-- aby menu nezakryvalo vrch stranky po doskoku -->
+			<div class="it-line"></div>
+			<div class="it-heading-back-row">
 				<!-- <h3>NEARSHORING</h3> -->
 				<h1 lang-code="02031">.Výhody IT Nearshoring</h1>
 				<a href="#id-IT2-nearshoring-back" style="color: #148;" lang-code="02060">Späť k menu</a>
 			</div>
-			<div class="it3-grid">
-				<div class="it3-grid-item-pic p1">
+			<div class="it-grid">
+				<div class="it-grid-item-pic p1">
 					<img src="media/Krasavec-s-ucesom.avif" alt="Obrázok P1" />
 				</div>
-				<div class="it3-grid-item-txt t1">
+				<div class="it-grid-item-txt t1">
 					<h2 lang-code="02032">.Na blízkosti záleží</h2>
-					<div class="it3-grid-item-line"></div>
+					<div class="it-grid-item-line"></div>
 					<p lang-code="02033">.Zistite, prečo mať blízkeho partnera v Rakúsku a Nemecku prináša prevádzkové výhody. A prečo podniky môžu zarábať na vysokokvalifikovanej pracovnej sile v
 						Rakúsku a Nemecku, podporovať inovácie a vysokokvalitnú realizáciu projektov. Toto strategické partnerstvo tiež zaisťuje, že kritické obchodné operácie bežia hladko 24 hodín
 						denne, 7 dní v týždni, vďaka synchronizácii časových pásiem.</p>
 				</div>
-				<div class="it3-grid-item-txt t2">
+				<div class="it-grid-item-txt t2">
 					<h2 lang-code="02034">.Kultúrna kompatibilita</h2>
-					<div class="it3-grid-item-line"></div>
+					<div class="it-grid-item-line"></div>
 					<p lang-code="02035">.Preskúmajte, ako kultúrna príbuznosť nášho tímu so západnou Európou zaisťuje bezproblémovú komunikáciu a pochopenie vašich obchodných potrieb. Zdieľaná
 						kultúrna príbuznosť medzi našim tímom a západnou Európou podporuje nielen efektívnu komunikáciu, ale aj porozumenie špecifikácií miestneho trhu, čo umožňuje aby sme naše služby
 						prispôsobili vašim konkrétnym požiadavkám.</p>
 				</div>
-				<div class="it3-grid-item-pic p2">
+				<div class="it-grid-item-pic p2">
 					<img src="media/PatSpojenychRuk.avif" alt="Obrázok P2" />
 				</div>
-				<div class="it3-grid-item-pic p3">
+				<div class="it-grid-item-pic p3">
 					<img src="media/Gestikulacia-s-Fixkou.avif" alt="Obrázok P3" />
 				</div>
-				<div class="it3-grid-item-txt t3">
+				<div class="it-grid-item-txt t3">
 					<h2 lang-code="02036">.Nákladová efektívnosť</h2>
-					<div class="it3-grid-item-line"></div>
+					<div class="it-grid-item-line"></div>
 					<p lang-code="02037">.Zistite, ako môže nearshoring znížiť náklady na vývoj IT pri zachovaní štandardov vysokej kvality. Využitím výhod nearshoringu môžu spoločnosti dosiahnuť
 						značné úspory a zároveň zabezpečiť dodávku špičkových softvérových riešení.</p>
 				</div>
 			</div>
-			<div class="it3-more-info-container">
+			<div class="it-more-info-container">
 				<a href="indexKontakt.html#id-kontakt-Kracala,id-kontakt-Ivaska" class="animate-text-underline" lang-code="02039">Viac informácií</a>
 			</div>
 		</div>
@@ -73,8 +73,8 @@
 			await loadAllTranslations();
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.registerAll(".it3-line", "animate-width-grow");
-			Animator.registerAll(".it3-grid-item-line", "animate-width-grow");
+			Animator.registerAll(".it-line", "animate-width-grow");
+			Animator.registerAll(".it-grid-item-line", "animate-width-grow");
 			document.body.style.visibility = "visible";
 		});
 	</script>

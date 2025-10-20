@@ -1,0 +1,181 @@
+    .color-variant-it3 {
+		--bg: #ECF6FF;
+		--text: black;
+		--line: #999;
+		--background: var(--bg);
+ 		--blend: normal;
+	}
+
+    .color-variant-it4 {
+		--bg: #3878C0;
+		--text: white;
+		--line: #999;
+
+		--background:
+			linear-gradient(to right,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.03) 100%),
+			var(--bg);
+		--blend: multiply;
+	}
+
+    .color-variant-it5 {
+		--bg: #1848A0;
+		--text: white;
+		--line: #999;
+
+		--background:
+			linear-gradient(to right,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.03) 100%),
+			var(--bg);
+		--blend: multiply;
+	}
+
+/**************************************************************************************************************/
+.it-body {
+   	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+   	font-weight: 300;
+   	/* background-color: #ECF6FF; */
+	font-size: clamp(16px, 1.6vw, 26px);
+   	color: var(--text);
+   	padding: 2vw 4vw;
+   	width: 100%;
+   	box-sizing: border-box;
+	background: var(--background, var(--bg));
+	background-blend-mode: var(--blend, normal);
+   }
+
+   .it-body h1 {
+   	/* font-size: 2.6vw; */
+	font-size: 2em;
+   	font-weight: 500;
+   	margin: 0 0 2vw 0;
+   	text-align: left;
+   }
+
+   .it-line {
+   	height: 1px;
+   	background-color: var(--line);
+   	width: 100%;
+   	margin: 0 0 1vw 0;
+   }
+
+   .it-heading-back-row {
+   	/* kvoli odkazu [back] */
+	font-size: 0.8em;
+   	display: flex;
+   	justify-content: space-between;
+   	align-items: baseline;
+   }
+
+   /*****************************************************************************************************************/
+   .it-grid {
+   	display: grid;
+   	grid-template-columns: 1fr 1fr;
+   	grid-template-areas:
+   		"p1 t1"
+   		"t2 p2"
+   		"p3 t3";
+   	width: 100%;
+   }
+
+   /* Grid items */
+   .it-grid-item-pic {
+   	aspect-ratio: 10 / 9;
+   	overflow: hidden;
+   	padding: 1vw;
+   	margin: 0;
+   	position: relative;
+   }
+
+   .it-grid-item-pic img {
+   	width: 100%;
+   	height: 100%;
+   	object-fit: cover;
+   	object-position: center;
+   	display: block;
+   }
+
+   .it-grid-item-txt {
+   	margin: 1vw;
+   	padding: 1vw;
+   	text-align: left;
+   }
+
+   .it-grid-item-txt h2 {
+   	/* font-size: 2vw; */
+	font-size: 1.2em;
+   	font-weight: 500;
+   	margin: 0 0 1vw 0;
+   }
+
+   .it-grid-item-line {
+   	height: 1px;
+   	background-color: #999;
+   	width: 0;
+   	/* bude sa animovat (rast do 100%) */
+   	margin: 0 0 1.5vw 0;
+   }
+
+   .it-grid-item-txt p {
+   	/* font-size: 1.5vw; */
+   	line-height: 1.65;
+   }
+
+   /*******************************************************************************************************/
+   .it-more-info-container {
+	font-size: 0.8em;
+   	text-align: right;
+   }
+
+   /* Grid area assignment */
+   .p1 {
+   	grid-area: p1;
+   }
+
+   .p2 {
+   	grid-area: p2;
+   }
+
+   .p3 {
+   	grid-area: p3;
+   }
+
+   .t1 {
+   	grid-area: t1;
+   }
+
+   .t2 {
+   	grid-area: t2;
+   }
+
+   .t3 {
+   	grid-area: t3;
+   }
+
+   /* Responsívny režim ******************************************************************************/
+   @media (max-width: 600px) {
+	.it-body h1 {
+		font-size: 6vw;
+	}
+
+	.it-grid {
+   		grid-template-columns: 1fr;
+   		grid-template-areas:
+   			"p1"
+   			"t1"
+   			"p2"
+   			"t2"
+   			"p3"
+   			"t3";
+   	}
+
+   	.it-grid-item-txt h2 {
+   		font-size: 5vw;
+   	}
+
+   	.it-grid-item-txt p {
+   		font-size: 3.5vw;
+   	}
+   }
