@@ -50,9 +50,9 @@
 || Wir haben unser Unternehmen im Bereich der Luftfahrtindustrie gegründet. Im Laufe der Jahre haben wir unsere Aktivitäten auch auf die Automobilindustrie und den allgemeinen Maschinenbau ausgeweitet.
 || We started our business in the aviation industry. Over the years, we have expanded our activities to include the automotive industry and general engineering.
 
-00204 || V oblasti IT poskytujeme komplexné IT služby pre zákazníkov z Nemecka, Rakúska a Českej republiky v oblastiach ako telekomunikácie, bankovníctva/poisťovníctva, verejnej správy a tiež v oblasti priemyslu.
-|| Im IT-Bereich bieten wir umfassende IT-Dienstleistungen für Kunden aus Deutschland, Österreich und der Tschechischen Republik in Bereichen wie Telekommunikation, Bankwesen/Versicherungswesen, öffentliche Verwaltung und Industrie.
-|| In the field of IT, we provide comprehensive IT services for customers from Germany, Austria, and the Czech Republic in areas such as telecommunications, banking/insurance, public administration, and industry.
+00204 || V oblasti IT poskytujeme komplexné IT služby, ako pre domácich tak aj pre zahraničných zákazníkov, v oblastiach telekomunikácie, bankovníctva/poisťovníctva, verejnej správy a tiež v oblasti priemyslu.
+|| Im IT-Bereich bieten wir umfassende IT-Dienstleistungen für in- und ausländische Kunden in den Bereichen Telekommunikation, Bankwesen/Versicherungen, öffentliche Verwaltung und Industrie.
+|| In the field of IT, we provide comprehensive IT services for both domestic and foreign customers in the areas of telecommunications, banking/insurance, public administration, and industry.
 
 // Block_Onas2.html
 00211 || Naša vízia: || Unsere Vision: || Our vision:
