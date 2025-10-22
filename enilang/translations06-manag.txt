@@ -1,0 +1,46 @@
+// Hero banner
+06001 || Riadenie projektov
+|| Projektleitung
+|| Project management
+
+06002 || Spoľahlivá a efektívna podpora v oblasti riadenia projektov doma aj v zahraničí.
+|| Zuverlässige und effiziente Unterstützung im Projektmanagement im In- und Ausland.
+|| Reliable and efficient project management support both in-house and abroad.
+
+06011 || Manažérske služby || Management-Dienstleistungen || Management sevices
+
+06012 || Riadenie projektov || Projektleitung || Project management
+
+06013 || Poskytujeme odborníkov pre riadenie a koordináciu projektov:
+|| Wir stellen Experten für Projektmanagement und Koordination zur Verfügung:
+|| We provide experts for project management and coordination:
+
+06014 || projektových manažérov 
+|| Projektmanager 
+|| Project Managers
+
+06015 || manažérov požiadaviek
+|| Anforderungsmanager
+|| Requirements Managers
+
+06016 || <strong>manažérov riadenia kvality</strong> (Quality Assurance/Q.Management) 
+|| <strong>Qualitätsmanagement-Manager</strong> (Qualitätssicherung/Q.Management) 
+|| <strong>Quality Managers</strong> (Quality Assurance/Q.Management)
+
+06017 || <strong>Scrum Master</strong> špecialistov 
+|| <strong>Scrum Master</strong> Spezialisten 
+|| <strong>Scrum Master</strong> specialists
+
+06018 || špecialistov na <strong>dátový manažment</strong> 
+|| Spezialisten für <strong>Datenmanagement</strong>
+|| Specialists in <strong>Data Management</strong>
+
+06019 || Procesní manažéri/audítori
+|| Prozessmanager/Auditoren
+|| Process Managers/Auditors
+
+06020 || Interní audítori
+|| Interne Revisoren
+|| Internal Auditors
+
+06029 || Viac informácií || Mehr Informationen || More information

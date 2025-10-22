@@ -1,0 +1,72 @@
+08001 || Budujte kariéru s nami 
+|| Machen Sie Karriere bei uns
+|| Build your career with us
+
+08002 || Staňte sa členom tímu špecialistov, ktorí denne spolupracujú na riešeniach pre svetoznáme značky.
+|| Werden Sie Teil eines Teams von Spezialisten, die jeden Tag zusammenarbeiten, um Lösungen für weltbekannte Marken zu entwickeln.
+|| Become part of a team of specialists who collaborate daily on solutions for world-renowned brands.
+
+08003 || Načítavam ponuky... 
+|| Ich lade die Angebote auf...
+|| Loading offers...
+
+08011 || Otvorené projekty
+|| Offene Projekte
+|| Open projects
+
+08012 || Informačné technológie
+|| Informationstechnologien
+|| Information Technologies
+
+08013 || Inžiniering
+|| Engineering
+|| Engineering
+
+08014 || Nenašli ste vhodnú pozíciu pre Vás...
+|| Sie haben keine passende Stelle gefunden...
+|| You have not found a suitable position for you...
+
+08015 || Zobraziť viac
+|| Siehe mehr
+|| See more
+
+08016 || Ďalšie
+|| Nächste
+|| Next
+
+// Formular CV **************************************************************
+08018 || Zaujala vás uvedená pracovná ponuka? || Sind Sie an diesem Stellenangebot interessiert? || Are you interested in this job offer?
+
+08019 || Pošlite nám viac informácií o vás spolu so štrukturovaným životopisom.
+|| Senden Sie uns weitere Informationen über sich zusammen mit einem strukturierten Lebenslauf.
+|| Send us more information about yourself along with a structured resume.
+
+08021 || Krstné meno * || Vorname * || First name *
+08022 || Priezvisko * || Nachname * || Last name *
+08023 || Telefónne číslo * || Telefonnummer * || Phone number *
+08024 || Email * || E-Mail * || Email *
+08025 || Vaša správa || Ihr Bericht || Your report
+08026 || Vybrať súbor || Datei auswählen || Select a file
+
+08030 || Maximálna veľkosť prílohy je 8 MB. Môžete priložiť najviac 4 súbory. Podporované typy súborov: .pdf, .doc, .docx, .odt, .jpg a .png.
+|| Die maximale Größe des Anhangs beträgt 8 MB. Sie können maximal 4 Dateien anhängen. Unterstützte Dateitypen: .pdf, .doc, .docx, .odt, .jpg und .png.
+|| The maximum attachment size is 8 MB. You can attach up to 4 files. Supported file types: .pdf, .doc, .docx, .odt, .jpg, and .png.
+
+08031 || Súhlasím so spracovaním osobných údajov za účelom výberu vhodného kandidáta na obsadzované pracovné pozície.
+|| Ich stimme der Verarbeitung personenbezogener Daten zum Zweck der Auswahl geeigneter Bewerber für offene Stellen zu.
+|| I agree to the processing of my personal data for the purpose of selecting a suitable candidate for the vacant position.
+
+08032 || Nie som robot || Ich bin kein Roboter || I am not a robot
+08033 || POSLAŤ SPRÁVU || NACHRICHT SENDEN || SEND MESSAGE
+
+08036 || Maximálny počet príloh je 4 
+|| Die maximale Anzahl der Anhänge beträgt 4. 
+|| The maximum number of attachments is 4.
+
+08037 || Celková veľkosť príloh nesmie prekročiť 8 MB.
+|| Die Gesamtgröße der Anhänge darf 8 MB nicht überschreiten.
+|| The total size of attachments must not exceed 8 MB.
+
+08038 || Maximálna veľkosť jednej prílohy je 2 MB.
+|| Die maximale Größe eines Anhangs beträgt 2 MB.
+|| The maximum size of a single attachment is 2 MB.

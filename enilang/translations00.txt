@@ -1,1 +1,79 @@
-test
+// Block_Menu.html
+00101 || O nás || Über uns || About us
+00102 || Inžiniering || Maschinenbau || Engineering
+00103 || IT služby || IT Dienste || IT Services
+00104 || Manažérske služby || Managerdienste || Management sevices
+00105 || Referencie || Referenzen || References
+00106 || Kariéra || Karriere || Career
+00107 || Kontakt || Kontakt || Contact
+
+00110 || Váš spoľahlivý  partner pre služby v oblasti inžinieringu a IT 
+|| Ihr zuverlässiger Partner für Engineering- und IT-Dienstleistungen
+|| Your reliable partner for engineering and IT services
+
+00111 || Inžinierske a IT riešenia postavené na skúsenostiach a inováciách. 
+|| Ingenieur- und IT-Lösungen, die auf Erfahrung und Innovation basieren. 
+|| Engineering and IT solutions based on experience and innovation.
+
+// Block_Uvod1.html
+00121 || Hľadáte skúseného, spoľahlivého a flexibilného partnera?
+|| Suchen Sie einen erfahrenen, zuverlässigen und flexiblen Partner?
+|| Are you looking for an experienced, reliable, and flexible partner?
+
+00122 || Naše IT a inžinierske služby zvyšujú efektivitu a prinášajú inovácie v organizáciách naprieč Európou.
+|| Unsere IT- und Ingenieursdienstleistungen steigern die Effizienz und bringen Innovationen in Unternehmen in ganz Europa.
+|| Our IT and engineering services increase efficiency and bring innovation to organizations across Europe.
+
+00123 || Dohodnite si s nami nezáväznú konzultáciu a zistite, aké riešenia vieme pripraviť pre vás.
+|| Vereinbaren Sie einen unverbindlichen Beratungstermin mit uns und erfahren Sie, welche Lösungen wir für Sie vorbereiten können.
+|| Arrange a non-binding consultation with us and find out what solutions we can prepare for you.
+
+00124 || Napíšte nám ešte dnes. || Schreiben Sie uns noch heute an. || Write us today..
+
+00125 || Radi preskúmame možnosti spolupráce priamo pre vašu firmu. 
+|| Wir prüfen gerne die Möglichkeiten einer Zusammenarbeit speziell für Ihr Unternehmen.
+|| We will be happy to explore cooperation opportunities tailored specifically to your company.
+
+00128 || Napíšte nám || Schreiben Sie uns || Write to us
+00129 || Zavolajte || Rufen Sie an || Call us
+
+// Block_Onas1.html
+00201 ||<strong>Spoločnosť ENITECH bola založená v roku 2010</strong> a od svojho vzniku podniká v oblasti <strong>konštrukcie a IT služieb</strong>.
+|| <strong>Das Unternehmen ENITECH wurde 2010 gegründet</strong> und ist seit seiner Gründung im Bereich <strong>Konstruktion und IT-Dienstleistungen</strong> tätig.
+|| <strong>ENITECH was founded in 2010</strong> and has been operating in the field of <strong>Mechanical Engineering and IT services</strong> since its inception.
+
+00202 || Patríme medzi najväčšie inžinierske kancelárie na Slovensku s viac ako 80 špecialistami
+|| Wir gehören zu den größten Ingenieurbüros in der Slowakei mit mehr als 80 Spezialisten.
+|| We are one of the largest engineering houses/companies in Slovakia with more than 80 specialists.
+
+00203 || Naše podnikanie sme začali v oblasti leteckého priemyslu. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a všeobecné strojárstvo.
+|| Wir haben unser Unternehmen im Bereich der Luftfahrtindustrie gegründet. Im Laufe der Jahre haben wir unsere Aktivitäten auch auf die Automobilindustrie und den allgemeinen Maschinenbau ausgeweitet.
+|| We started our business in the aviation industry. Over the years, we have expanded our activities to include the automotive industry and general engineering.
+
+00204 || V oblasti IT poskytujeme komplexné IT služby, ako pre domácich tak aj pre zahraničných zákazníkov, v oblastiach telekomunikácie, bankovníctva/poisťovníctva, verejnej správy a tiež v oblasti priemyslu.
+|| Im IT-Bereich bieten wir umfassende IT-Dienstleistungen für in- und ausländische Kunden in den Bereichen Telekommunikation, Bankwesen/Versicherungen, öffentliche Verwaltung und Industrie.
+|| In the field of IT, we provide comprehensive IT services for both domestic and foreign customers in the areas of telecommunications, banking/insurance, public administration, and industry.
+
+// Block_Onas2.html
+00211 || Naša vízia: || Unsere Vision: || Our vision:
+
+00212 || Stať sa významným poskytovateľom inžinierskych služieb v strednej Európe a uznávaným partnerom na globálnom trhu.
+|| Ein bedeutender Anbieter von Ingenieurdienstleistungen in Mitteleuropa und ein anerkannter Partner auf dem globalen Markt zu werden.
+|| To become a major provider of engineering services in Central Europe and a recognized partner in the global market.
+
+00213 || Naša výhoda || Unser Vorteil || Our advantage
+
+00214 || spočíva v dlhodobej odbornosti a schopnosti flexibilne reagovať na dynamiku požiadaviek trhu, čo nám umožňuje poskytovať vynikajúce riešenia pre našich partnerov.
+|| liegt in unserer langjährigen Fachkompetenz und unserer Fähigkeit, flexibel auf die Dynamik der Marktanforderungen zu reagieren, wodurch wir unseren Partnern hervorragende Lösungen anbieten können.
+|| lies in our long-term expertise and ability to respond flexibly to the dynamics of market demands, enabling us to provide excellent solutions for our partners.
+
+00215 || V práci používame systém manažérstva bezpečnosti informácií
+|| Bei unserer Arbeit verwenden wir das Informationssicherheits-Managementsystem
+|| At work, we use the information security management system
+
+00216 || Certifikát || Zertifikat || Certificate
+
+// Block_Klienti.html
+00301 || SPOLUPRÁCA || ZUSAMMENARBEIT || COOPERATION
+00302 || Vybraní zákazníci || Ausgewählte Kunden || Selected customers
+
