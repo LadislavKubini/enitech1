@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
-	<link rel="stylesheet" href="root.css">
+	<link rel="stylesheet" href="enicss/root.css">
 	<style>
 		body,
 		html {
@@ -27,15 +27,15 @@
 			visibility: hidden;
 		}
 	</style>
-	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="menu.css">
-	<link rel="stylesheet" href="UvodHero.css">
-	<link rel="stylesheet" href="manage.css">
-	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/menu.css">
+	<link rel="stylesheet" href="enicss/UvodHero.css">
+	<link rel="stylesheet" href="enicss/manage.css">
+	<link rel="stylesheet" href="enicss/footer.css">
 
-	<script src="menu.js" defer></script>
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/menu.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 </head>
 
 <body>
@@ -58,10 +58,10 @@
 	<div id="Footer-div-dst">
 	</div>
 
-	<script src="ImportBlock.js" type="text/javascript"></script> 
-	<script src="scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
-	<script src="animator.js" defer></script> 
-	<script src="menu.js" defer></script> 
+	<script src="enijs/ImportBlock.js" type="text/javascript"></script> 
+	<script src="enijs/scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
+	<script src="enijs/animator.js" defer></script> 
+	<script src="enijs/menu.js" defer></script> 
 
 	<script>
 		async function loadDivBlocks() {
@@ -71,9 +71,9 @@
 			await Promise.all([p1, p2, p3]);
 		}
 		async function loadAllTranslations() {
-			const p1 = LoadTranslations('translations00.txt');
-			const p2 = LoadTranslations('translations06-manag.txt');
-			const p3 = LoadTranslations('translations09-foot.txt');
+			const p1 = LoadTranslations('enilang/translations00.txt');
+			const p2 = LoadTranslations('enilang/translations06-manag.txt');
+			const p3 = LoadTranslations('enilang/translations09-foot.txt');
 			await Promise.all([p1, p2, p3]);
 		}
 	</script>

@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Block_IT1.html</title>
 	<link rel="icon" href="favicona-enitech.png">
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<style>
@@ -17,12 +16,11 @@
 			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
 		}
 	</style>
-	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="it1.css">
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/it1.css">
 
-	<!-- Nasledovne scripty s defer sa spracuju az po nacitani celeho body tesne pred udalosou DOMConentLoaded-->
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 </head>
 
 <body>
@@ -45,7 +43,7 @@
 
 	<script>
 		async function loadAllTranslations() {
-			const p2 = await LoadTranslations('translations02-it.txt');
+			const p2 = await LoadTranslations('enilang/translations02-it.txt');
 			await Promise.all([p2]);
 		}
 	</script>

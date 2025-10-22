@@ -18,12 +18,12 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 
-	<link rel="stylesheet" href="root.css">
-	<link rel="stylesheet" href="ref.css">
-	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="enicss/root.css">
+	<link rel="stylesheet" href="enicss/ref.css">
+	<link rel="stylesheet" href="enicss/animator.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 </head>
 
 <body>
@@ -102,7 +102,7 @@
 	</div>
 	<script>
 		document.addEventListener("DOMContentLoaded", async () => {
-			await LoadTranslations('translations07-ref.txt');
+			await LoadTranslations('enilang/translations07-ref.txt');
 			await UpdateTexts();
 			Animator.register("#id-ref-onas3-animate", "animate-rotateFlipIn");
 			Animator.registerAll(".ref-onas3-header-line", "animate-width-grow");

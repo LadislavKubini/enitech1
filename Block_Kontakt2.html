@@ -10,12 +10,12 @@
 	<link rel="stylesheet" href="fonts-open-sans.css">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-	<link rel="stylesheet" href="root.css">
-	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="kontakt2.css">
+	<link rel="stylesheet" href="enicss/root.css">
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/kontakt2.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 </head>
 
 <body>
@@ -35,26 +35,28 @@
 					<div class="kontakt2-grid" id="kontakt2-grid"></div>
 				</div>
 			</div>
+		</div>
+	</div>
 
-			<!-- Leaflet JS -->
-			<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-			<script src="kontakt2_leaflet.js" type="text/javascript" defer></script>
+	<!-- Leaflet JS -->
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="enijs/kontakt2_leaflet.js" type="text/javascript" defer></script>
 
-			<script src="scrolly_save.js" type="text/javascript" defer></script>
-			<script>
-				document.addEventListener("DOMContentLoaded", async () => {
-					await new Promise(requestAnimationFrame);
-					await LoadTranslations('translations05-kontakt.txt');
-					await UpdateTexts();
-					await new Promise(requestAnimationFrame);
-					await kontakt2_leaflet_init_map_pobocky();
-					await new Promise(requestAnimationFrame);
-					restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
-					Animator.registerAll(".kontakt2-line", "animate-width-grow");
-					Animator.register("#id-kontakt2-animate-content", "animate-rotateFlipIn");
-					document.body.style.visibility = "visible";
-				});
-			</script>
+	<script src="enijs/scrolly_save.js" type="text/javascript" defer></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await new Promise(requestAnimationFrame);
+			await LoadTranslations('enilang/translations05-kontakt.txt');
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			await kontakt2_leaflet_init_map_pobocky();
+			await new Promise(requestAnimationFrame);
+			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
+			Animator.registerAll(".kontakt2-line", "animate-width-grow");
+			Animator.register("#id-kontakt2-animate-content", "animate-rotateFlipIn");
+			document.body.style.visibility = "visible";
+		});
+	</script>
 </body>
 
 </html>

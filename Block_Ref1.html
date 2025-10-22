@@ -21,14 +21,13 @@
 		}
 	</style>
 
-	<link rel="stylesheet" href="root.css">
-	<link rel="stylesheet" href="animator.css">
-	<!-- <link rel="stylesheet" href="ref1.css"> -->
-	<link rel="stylesheet" href="ref-flex.css">
-	<link rel="stylesheet" href="ref-tooltip.css">
+	<link rel="stylesheet" href="enicss/root.css">
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/ref-flex.css">
+	<link rel="stylesheet" href="enicss/ref-tooltip.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 </head>
 
 <body>
@@ -56,8 +55,8 @@
 					
 					<div class="ref-tooltip-grid">
 
-						<div class="ref-tooltip-container twice">
-							<img src="media/klienti/Garrett-twice-logo.png" alt="Garrett logo" class="ref-tooltip-image" />
+						<div class="ref-tooltip-container">
+							<img src="media/klienti/Garrett-logo.png" alt="Garrett logo" class="ref-tooltip-image" style="padding: 0.4vw;"/>
 							<div class="ref-tooltip-text" style="width: 70%;">
 								<p><strong lang-code="07005">Realizované služby:</strong></p>
 								<p>konštrukcia turbodúchadiel</p>
@@ -240,9 +239,9 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", async () => {
-			await LoadTranslations('translations07-ref.txt');
+			await LoadTranslations('enilang/translations07-ref.txt');
 			await UpdateTexts();
-			Animator.registerAll(".ref3-animate-line", "animate-width-grow");
+			Animator.registerAll(".ref-flex-animate-line", "animate-width-grow");
 		});
 	</script>
 

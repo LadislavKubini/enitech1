@@ -9,13 +9,13 @@
 
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
-	<link rel="stylesheet" href="animator.css">
-	<!-- <link rel="stylesheet" href="onas2.css"> -->
-	<link rel="stylesheet" href="onas.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
-	<script src="onas2.js" defer></script>
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/onas.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<script src="enijs/onas2.js" defer></script>
 	<style>
 		body {
 			visibility: hidden;
@@ -74,7 +74,7 @@
 
 	<script>
 		async function loadAllTranslations() {
-			const p1 = await LoadTranslations('translations00.txt');
+			const p1 = await LoadTranslations('enilang/translations00.txt');
 			await Promise.all([p1]);
 		}
 	</script>

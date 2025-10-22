@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 
-	<link rel="stylesheet" href="root.css">
-	<link rel="stylesheet" href="kontakt3.css">
-	<link rel="stylesheet" href="animator.css">
+	<link rel="stylesheet" href="enicss/root.css">
+	<link rel="stylesheet" href="enicss/kontakt3.css">
+	<link rel="stylesheet" href="enicss/animator.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 
 </head>
 
@@ -91,10 +91,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="scrolly_save.js" type="text/javascript" defer></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
+	<script src="enijs/scrolly_save.js" type="text/javascript" defer></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
 	<script>
 		document.addEventListener("DOMContentLoaded", async () => {
-			await LoadTranslations('translations05-kontakt.txt');
+			await LoadTranslations('enilang/translations05-kontakt.txt');
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
 			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5

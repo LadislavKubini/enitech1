@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="fonts-poppins.css" />
   <link rel="stylesheet" href="fonts-open-sans.css">
 
-  <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="manage.css">
+  <link rel="stylesheet" href="enicss/animator.css">
+  <link rel="stylesheet" href="enicss/manage.css">
 
-  <script src="Language.js" defer></script>
-  <script src="animator.js" defer></script>
+  <script src="enijs/Language.js" defer></script>
+  <script src="enijs/animator.js" defer></script>
   
 </head>
 <body>
@@ -49,7 +49,7 @@
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
-      await LoadTranslations('translations06-manag.txt');
+      await LoadTranslations('enilang/translations06-manag.txt');
       await UpdateTexts();
       Animator.register("#id-Manag_animate-line", "animate-width-grow"); // doprava rastuce ciary
     })

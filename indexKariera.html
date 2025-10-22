@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
 
-	<link rel="stylesheet" href="root.css">
+	<link rel="stylesheet" href="enicss/root.css">
 	<style>
 		body {
 			visibility: hidden;
@@ -20,19 +20,18 @@
 		/*visibility sa vrati az po nacitani*/
 	</style>
 
-	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="menu.css">
-	<link rel="stylesheet" href="UvodHero.css">
-	<link rel="stylesheet" href="kariera.css">
-	<link rel="stylesheet" href="formular.css">
-	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/menu.css">
+	<link rel="stylesheet" href="enicss/UvodHero.css">
+	<link rel="stylesheet" href="enicss/kariera.css">
+	<link rel="stylesheet" href="enicss/formular.css">
+	<link rel="stylesheet" href="enicss/footer.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
-	<script src="menu.js" defer></script>
-	<!-- <script src="wordpress_footer.js" defer></script>  -->
-	<script src="kariera.js" defer></script>
-	<script src="karieracv.js" type="text/javascript"></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<script src="enijs/menu.js" defer></script>
+	<script src="enijs/kariera.js" defer></script>
+	<script src="enijs/karieracv.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -55,8 +54,8 @@
 	<div id="Footer-div-dst">
 	</div>
 
-	<script src="ImportBlock.js" type="text/javascript"></script>
-	<script src="scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
+	<script src="enijs/ImportBlock.js" type="text/javascript"></script>
+	<script src="enijs/scrolly_save.js" type="text/javascript"></script> <!-- zapamata aktualnu poziciu, aby to po F5 neskocilo na zaciatok -->
 
 	<script>
 		async function loadDivBlocks() {
@@ -81,9 +80,9 @@
 			await new Promise(requestAnimationFrame);
 			await openProjects_fetchPosts();
 			// await Footer_fill_ponuky();
-			await LoadTranslations('translations00.txt');
-			await LoadTranslations('translations08-kar.txt');
-			await LoadTranslations('translations09-foot.txt');
+			await LoadTranslations('enilang/translations00.txt');
+			await LoadTranslations('enilang/translations08-kar.txt');
+			await LoadTranslations('enilang/translations09-foot.txt');
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
 			Animator.register("#kariera_animate-id", "animate-slide-in-bounce");

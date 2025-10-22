@@ -14,14 +14,14 @@
       font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
     }
   </style>
-  <link rel="stylesheet" href="root.css">
-  <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="UvodHero.css">
+  <link rel="stylesheet" href="enicss/root.css">
+  <link rel="stylesheet" href="enicss/animator.css">
+  <link rel="stylesheet" href="enicss/menu.css">
+  <link rel="stylesheet" href="enicss/UvodHero.css">
 
-  <script src="menu.js" defer></script>
-  <script src="Language.js" defer></script>
-  <script src="animator.js" defer></script>
+  <script src="enijs/menu.js" defer></script>
+  <script src="enijs/Language.js" defer></script>
+  <script src="enijs/animator.js" defer></script>
 </head>
 <body>
   <div id="Menu-div-src">
@@ -100,7 +100,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       // Načítanie prekladov po načítaní DOM
-      await LoadTranslations('translations00.txt');
+      await LoadTranslations('enilang/translations00.txt');
       await UpdateTexts();
       await new Promise(requestAnimationFrame); // Môžeš počkať na ďalší repaint, ak chceš jemnejší prechod (voliteľné)
       // Spustenie animácie

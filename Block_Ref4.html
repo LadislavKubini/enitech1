@@ -21,14 +21,13 @@
 		}
 	</style>
 
-	<link rel="stylesheet" href="root.css">
-	<link rel="stylesheet" href="animator.css">
-	<!-- <link rel="stylesheet" href="ref4.css"> -->
-	<link rel="stylesheet" href="ref-flex.css">
-	<link rel="stylesheet" href="ref-tooltip.css">
+	<link rel="stylesheet" href="enicss/root.css">
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/ref-flex.css">
+	<link rel="stylesheet" href="enicss/ref-tooltip.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 </head>
 
 <body>
@@ -178,7 +177,7 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", async () => {
-			await LoadTranslations('translations07-ref.txt');
+			await LoadTranslations('enilang/translations07-ref.txt');
 			await UpdateTexts();
 			Animator.registerAll(".ref-flex-animate-line", "animate-width-grow");
 		});

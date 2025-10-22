@@ -16,12 +16,12 @@
 		}
 	</style>
 
-	<link rel="stylesheet" href="root.css">
-	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="enicss/root.css">
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/footer.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 	<!-- <script src="wordpress_footer.js" defer></script> --> <!-- Nacitanie a spracovanie ponuk od WordPressu-->
 </head>
 
@@ -96,20 +96,18 @@
 				<a href="#" class="footer-back-to-top">^</a>
 			</div>
 		</footer>
-		<script>
-		</script>
 	</div>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", async () => {
 			// await Footer_fill_ponuky();
-			await LoadTranslations('translations00.txt');
-			await LoadTranslations('translations01.txt');
-			await LoadTranslations('translations09-foot.txt');
+			await LoadTranslations('enilang/translations00.txt');
+			await LoadTranslations('enilang/translations01-engin.txt');
+			await LoadTranslations('enilang/translations09-foot.txt');
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
-			Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
-			Animator.registerAll(".footer-line", "animate-width-grow");
+			// Animator.register("#id-footer-hero-content", "animate-rotateFlipIn");
+			// Animator.registerAll(".footer-line", "animate-width-grow");
 			document.body.style.visibility = "visible"; // zobraz stránku až teraz    
 		});
 	</script>

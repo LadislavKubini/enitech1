@@ -8,11 +8,12 @@
 	<link rel="icon" href="favicona-enitech.png" />
 	<link rel="stylesheet" href="fonts-poppins.css" />
 	<link rel="stylesheet" href="fonts-open-sans.css">
-	<link rel="stylesheet" href="animator.css">
-	<link rel="stylesheet" href="it.css">
 
-	<script src="Language.js" defer></script>
-	<script src="animator.js" defer></script>
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/it.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
 
 	<script>
 		async function loadAllTranslations() {
-			const p1 = await LoadTranslations('translations02-it.txt');
+			const p1 = await LoadTranslations('enilang/translations02-it.txt');
 			await Promise.all([p1]);
 		}
 	</script>
