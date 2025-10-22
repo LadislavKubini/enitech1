@@ -1,0 +1,143 @@
+    .uvod-topbar {
+      box-sizing: border-box;
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #1b2c5a, #2A4184 50%, #5a6bb0);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      /* gap: 10px; */
+      height: var(--menu-height);
+      z-index: 1001;
+    }
+
+    .uvod-topbar-logo {
+      display: flex;
+      align-items: center;
+      /* gap: 10px; */
+    }
+
+    .uvod-topbar-logo img {
+      height: 30px;
+    }
+
+    .uvod-topbar-langs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: min(24px, 2vw);    /* medzera od loga */
+      margin-right: auto;             /* posunie zvyšok (menu) doprava */
+    }
+
+    .uvod-lang {
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .uvod-lang img {
+      height: 12px;
+      width: 16px;
+      object-fit: cover;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 2px; /* voliteľné – zaoblenie rohov ako emoji */
+    }
+
+    .uvod-menu {
+      display: flex;
+      align-items: center;
+      font-size: clamp(1rem, 1.2vw, 2rem);
+      gap: 0;
+    }
+
+    .uvod-menu a {
+      color: white;
+      margin: 0 clamp(0.55rem, 0.8vw, 1.25rem);
+      /* margin: 0 clamp(0.625rem, 0.8vw, 1.25rem); */
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .uvod-hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .uvod-hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .uvod-side-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      display: none;
+      z-index: 1000;
+      /* border: 1px dashed blue; */
+    }
+
+    .uvod-side-menu {
+      position: fixed;
+      top: 0;
+      right: -150px;
+      width: 150px;
+      height: 100vh;
+      background-color: white;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s ease;
+      z-index: 1001;
+      /* border: 1px dashed red; */
+    }
+
+    .uvod-side-menu a {
+      padding: 15px;
+      color: #2a098f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .uvod-side-menu.open {
+      right: 0;
+    }
+
+    .uvod-side-menu-overlay.active {
+      display: block;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    @media (max-width: 1250px) {
+      .uvod-topbar-logo img {
+        height: 25px;
+      }
+      /* .uvod-lang img {
+        height: 15px;
+      } */
+      .uvod-menu {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 1050px) {
+      .uvod-menu a:not(.uvod-lang), .uvod-menu span:not(.uvod-lang) {
+        display: none;
+      }
+      .uvod-hamburger {
+        display: flex;
+      }
+    }

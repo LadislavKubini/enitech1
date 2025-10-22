@@ -1,0 +1,219 @@
+	button {
+		font: inherit;
+	}
+
+	/* prebitie systemoveho fontu (u input, textarea, select treba font nechat tak, rozhadzuje to formulare) */
+
+	.formular-wrapper {
+		max-width: 600px;
+		max-height: 100%;
+		min-width: 400px;
+		background-color: #4466BBC0;
+		color: white;
+		padding: 2vw;
+		margin: 2vw;
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+		text-align: left;
+	}
+
+	.formular-animate-line {
+		height: 1px;
+		background-color: white;
+		width: 0;
+		/* bude sa animovat (rast do 100%) */
+		margin: 0 0 2vw 0;
+	}
+
+	.formular-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2vw;
+		row-gap: 1rem;
+		font-size: 1rem;
+		padding: 1vw;
+	}
+
+	.formular-group {
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+	}
+
+	.formular-group.span2 {
+		grid-column: span 2;
+	}
+
+	.formular label {
+		margin-bottom: 0.5vw;
+	}
+
+	.formular-wrapper input,
+	.formular-wrapper textarea {
+		background-color: white !important;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		box-sizing: border-box;
+		font-size: 1.1rem;
+		color: black;
+		width: 100%;
+		height: 1.5rem;
+		padding: 0.5rem;
+	}
+
+	.formular-wrapper textarea {
+		height: 6rem;
+		resize: vertical;
+	}
+
+	.formular-wrapper a {
+		color: white;
+		text-decoration: underline;
+	}
+
+	.formular-text-underline {
+		color: white;
+		text-decoration: underline;
+	}
+
+	.formular-checkbox {
+		display: flex;
+		box-sizing: border-box;
+		align-items: flex-start;
+		gap: 0.5vw;
+		font-size: 1rem;
+		width: 100%;
+		padding: 1vw;
+	}
+
+	.formular-checkbox input[type="checkbox"] {
+		flex: 1;
+	}
+
+	.formular-checkbox label {
+		flex: 10;
+		line-height: 1.4;
+	}
+
+	.formular-submit-btn {
+		margin-top: 1.5vw;
+		background-color: #0a2a4e;
+		color: white;
+		border: none;
+		padding: 1rem 2rem;
+		font-size: 1rem;
+		font-weight: bold;
+		border-radius: 9999px;
+		cursor: pointer;
+		grid-column: span 2;
+		width: fit-content;
+		margin-left: auto;
+	}
+
+	/* spinner for captcha */
+	.formular-spinner {
+		display: none;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #ccc;
+		border-top: 2px solid black;
+		border-radius: 50%;
+		animation: form-spin 1s linear infinite;
+	}
+
+	.formular-captcha:hover {
+		cursor: pointer;
+	}
+
+	@keyframes form-spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	input[type="checkbox"]:disabled {
+		/* for captcha */
+		cursor: not-allowed;
+	}
+
+	@media (max-width: 500px) {
+		.formular-wrapper {
+			min-width: 290px;
+		}
+
+		.formular-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.formular-group.span2 {
+			grid-column: span 1;
+		}
+	}
+
+	/* Dialogove okno ********************************************************************************************/
+	.formular-dialog-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: none;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+	}
+
+	.formular-dialog {
+		background: #BBEEFF;
+		padding: 2rem;
+		border-radius: 8px;
+		text-align: center;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+		color: darkblue;
+	}
+
+	.formular-dialog button {
+		margin-top: 1rem;
+		padding: 0.5rem 1.5rem;
+		font-size: 1rem;
+		border: none;
+		background-color: black;
+		color: white;
+		border-radius: 999px;
+		cursor: pointer;
+	}
+
+	/* Attachments ********************************************************************************************/
+	.formular-attachments-wrapper {
+		margin-top: 10px;
+	}
+
+	.formular-attachment {
+		display: none;
+		margin: 5px 0;
+		padding: 5px;
+		background: #f5f5f5;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		font-size: 14px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.formular-attachment span:not(.formular-remove-btn) {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		max-width: 250px;
+		display: inline-block;
+		border: 1px dashed red;
+		color: darkblue;
+		/* min-width: 30px; */
+	}
+
+	.formular-remove-btn {
+		color: red;
+		cursor: pointer;
+		margin-left: 10px;
+	}
