@@ -1,0 +1,27 @@
+.table-container {
+	/* max-height: 200px; */
+	/* výška viditeľnej časti */
+	overflow-y: auto;
+	/* vertikálny scrollbar */
+	border: 1px solid #ccc;
+}
+
+.table-container table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table-container th,
+.table-container td {
+	padding: 5px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	border: 1px solid #ccc;
+}
+
+.table-container thead th {
+	position: sticky;
+	top: 0;
+	background: #eee;
+	z-index: 2;
+}

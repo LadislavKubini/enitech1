@@ -1,13 +1,13 @@
     .kontakt3-body {
     	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
     	padding: 1vw 2vw;
-    	font-size: clamp(0.7rem, 1.6vw, 3rem);
+    	font-size: clamp(0.65rem, 1.5vw, 2.8rem);
     	width: 100%;
     	box-sizing: border-box;
     }
 
     .kontakt3-body h1 {
-    	font-size: clamp(1.2rem, 3vw, 3rem);
+    	font-size: clamp(1.2rem, 2.8w, 2.8rem);
     	font-weight: 500;
     	margin: 0 0 1.5vw 0;
     	text-align: left;
@@ -26,7 +26,7 @@
 
     .kontakt3-grid {
     	display: grid;
-		font-size: clamp(0.7rem, 1.6vw, 2rem);
+		font-size: clamp(0.65rem, 1.5vw, 1.9rem);
     	grid-template-columns: repeat(4, 12.5em); /* repeat(4, 200px); */
     	max-width: 53.125em; /* 850px; */
     	/* padding: 0.625em; */ /* 10px */
@@ -35,7 +35,7 @@
 
     .kontakt3-grid-img {
     	display: grid;
-		font-size: clamp(0.7rem, 1.6vw, 2rem);
+		font-size: clamp(0.65rem, 1.5vw, 1.9rem);
     	grid-template-columns: repeat(4, 12.5em); /* repeat(4, 200px); */
     	max-width: 53.125em; /* 850px; */
     	padding: 0.625em; /* 10px */
