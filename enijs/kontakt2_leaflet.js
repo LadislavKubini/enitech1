@@ -245,8 +245,8 @@ async function kontakt2_leaflet_init_map_pobocky() {
 			let homepageHTML = "";
 			if (p.homepage && p.homepage.trim() !== "") {
 				const url  = p.homepage;
-				// const url = p.homepage.startsWith("http") ? p.homepage : `https://${p.homepage}`;
-				homepageHTML = `<br><strong><a href="${url}" target="_blank" style="text-decoration: none; color: blue;">${url}</a></strong>`;
+				const url_href = p.homepage.startsWith("http") ? p.homepage : `https://${p.homepage}`;
+				homepageHTML = `<br><strong><a href="${url_href}" target="_blank" style="text-decoration: none; color: blue;">${url}</a></strong>`;
 			}
 
 			cell.innerHTML = `
