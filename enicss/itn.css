@@ -1,4 +1,4 @@
-    /* .color-variant-itn1 {
+    .color-variant-itn1 {
 		--bg: #F8FCFF;
 		--text: black;
 		--line: #00C;
@@ -6,7 +6,7 @@
  		--blend: normal;
 	}
 
-    .color-variant-itn2 {
+    /* .color-variant-itn2 {
 		--bg: #ECF6FF;
 		--text: black;
 		--line: #00C;
@@ -26,7 +26,7 @@
 			var(--bg);
 		--blend: multiply;
 	}
-
+*/
     .color-variant-itn4 {
 		--bg: #ECF6FF;
 		--text: black;
@@ -38,7 +38,7 @@
 			rgba(0, 0, 0, 0.05) 100%),
 			var(--bg);
 		--blend: multiply;
-	} */
+	}
 
     .color-variant-itn3 {
 		--bg: #b0a0ff;
