@@ -67,7 +67,7 @@
 || Produktmanagement und Koordination komplexer Projekte
 || Product management and coordination of complex projects
 
-03027 || Developeri vaetkých úrovní seniority || Entwickler aller Senioritätsstufen || Developers of all seniority levels
+03027 || Developeri všetkých úrovní seniority || Entwickler aller Senioritätsstufen || Developers of all seniority levels
 03028 || Od juniorov po seniorov s rozsiahlymi skúsenosťami
 || Von Junioren bis zu Senioren mit umfangreicher Erfahrung
 || From juniors to seniors with extensive experience
