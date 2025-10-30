@@ -1,0 +1,495 @@
+    /* .color-variant-itn1 {
+		--bg: #F8FCFF;
+		--text: black;
+		--line: #00C;
+		--background: var(--bg);
+ 		--blend: normal;
+	}
+
+    .color-variant-itn2 {
+		--bg: #ECF6FF;
+		--text: black;
+		--line: #00C;
+		--background: var(--bg);
+ 		--blend: normal;
+	}
+
+    .color-variant-itn3 {
+		--bg: #ECF6FF;
+		--text: black;
+		--line: #00C;
+
+		--background:
+			linear-gradient(to right,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.015) 100%),
+			var(--bg);
+		--blend: multiply;
+	}
+
+    .color-variant-itn4 {
+		--bg: #ECF6FF;
+		--text: black;
+		--line: #00C;
+
+		--background:
+			linear-gradient(to right,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.05) 100%),
+			var(--bg);
+		--blend: multiply;
+	} */
+
+    .color-variant-itn3 {
+		--bg: #b0a0ff;
+		--text: black;
+		--line: #64a;
+
+		--background:
+			linear-gradient(to right,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.1) 100%),
+			var(--bg);
+		--blend: multiply;
+	}
+
+    .color-variant-itn5 {
+		--bg: #b0a0ff;
+		--text: black;
+		--line: #64a;
+
+		--background:
+			linear-gradient(to left,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.1) 100%),
+			var(--bg);
+		--blend: multiply;
+	}
+
+    /* .color-variant-itn6 {
+		--bg: #3878C0;
+		--text: white;
+		--line: #999;
+
+		--background:
+			linear-gradient(to right,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.55) 100%),
+			var(--bg);
+		--blend: multiply;
+	} */
+
+    .color-variant-itn7 {
+		--bg: #1848A0;
+		--text: white;
+		--line: #999;
+
+    	--background:
+    		linear-gradient(to bottom, #1848A0 0%, #040411 100%),
+    		linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+		--blend: multiply;
+	}
+
+    /**************************************************************************/
+    /**************************************************************************/
+	.itn-body {
+    	/* background-color: var(--bg); */
+    	color: var(--text);
+    	height: auto;
+    	min-height: 100%;
+    	/* font-size: clamp(16px, 1.3vw, 26px); */
+    	/* font-size: clamp(16px, 1.4vw, 26px); */
+    	font-size: clamp(16px, 1.3vw, 26px);
+		font-weight: 300;
+    	padding: 1vw 2vw;
+    	box-sizing: border-box;
+		background: var(--background, var(--bg));
+		background-blend-mode: var(--blend, normal);
+		/* margin-bottom: 1vw; */
+    }
+
+    .itn-header-line {
+    	width: 100%;
+    	height: 1px;
+    	background-color: var(--line);
+    }
+
+	.itn-header-text {
+		padding: 2vw 2vw 0.5vw 2vw;
+	}
+
+	.itn-header-text h1 {
+		font-weight: 600;
+		font-size: 2.1em;
+		margin: 0;
+	}
+
+	.itn-footer-line {
+    	width: 100%;
+    	height: 3px;
+    	background-color: var(--line);
+    }
+
+	/*******************************/
+	.itn-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5vw;
+		margin-top: 2vw;
+	}
+
+	.itn-buttons.flex-start {
+		justify-content: flex-start;
+		gap: 1vw;
+	}
+
+	.itn-button {
+		color: skyblue;
+		padding: 1vw 1vw;
+		font-size: calc(0.8rem + 0.8vw);
+		border: none;
+		border-radius: 0.3em;
+		cursor: pointer;
+
+		background-color: #2A4184;
+		background-image: linear-gradient(to right, #1b2c5a, #2A4184 50%, #5a6bb0);
+		transition: background-color 0.3s, color 0.3s, border 0.3s;
+	}
+
+	.itn-button:hover {
+		background-image: none;
+		background-color: #0A1A50;
+		border: 2px;
+	}
+
+	/**************************************************************************/
+	/**************************************************************************/
+    .itn-content-flex {
+    	display: flex;
+    	flex-direction: row;
+    	width: auto;
+    	box-sizing: border-box;
+    	padding: 1vw;
+    	gap: 1vw;
+    }
+
+    /**************************************************************************/
+    .itn-text-wrapper {
+    	flex: 5;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: top;
+    	padding: 1vw;
+    	box-sizing: border-box;
+    }
+
+	.itn-text-wrapper.center {
+		padding-top: 20vw;
+	}
+
+    .itn-line-with-img {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: flex-end;
+		padding-bottom: 1vw; 
+    	box-sizing: border-box;
+	}
+
+    .itn-line-with-img h2 {
+		font-weight: 600;
+    	margin: 0;
+    }
+
+    .itn-line-with-img h3 {
+    	margin: 0;
+    }
+
+    .itn-line-with-img img {
+    	height: 5vw;
+    	width: auto;
+    }
+
+    .itn-line-with-img .img-invert {
+    	filter: invert(1) brightness(0.8);
+	}
+
+    .itn-text-wrapper strong {
+    	font-weight: bold;
+    }
+
+	.itn-text-wrapper .weight-200 {
+		font-weight: 200;
+	}
+
+	.itn-text-wrapper h2 {
+		margin: 0;
+	}
+
+	.itn-text-wrapper strong-700 {
+		font-weight: 700;
+		display: inline;
+	}
+
+	.itn-text-wrapper p {
+		line-height: none;
+	}
+
+	.itn-text-wrapper p .itn-big {
+    	font-size: 105%;
+    }
+
+	.itn-text-wrapper p.margin-small {
+    	margin-top: 0.5em;
+    	margin-bottom: 0.4em;
+	}
+    /****************************************/
+    .itn-custom-list {
+    	list-style: none;
+    	padding: 0;
+    	margin: 0;
+    }
+
+    .itn-custom-list li {
+    	margin: 0;
+    	padding: 0;
+    	line-height: 1.4;
+    	position: relative;
+    }
+
+    .itn-custom-list li::before {
+    	content: "●";
+    	display: inline-block;
+    	width: 1em;
+    	margin-right: 2ch;
+    	font-size: 0.9em;
+    	line-height: 1;
+    	vertical-align: middle;
+    	color: currentColor;
+    }
+
+    /****************************************/
+    .itn-more-info-container {
+    	text-align: right;
+		font-size: 0.7em;
+    }
+
+	/**************************************************************************/
+    .itn-img-wrapper {
+    	flex: 5;
+    	overflow: hidden;
+    	padding: 1vw;
+    	box-sizing: border-box;
+    }
+	/* ked treba 2 obrazky pod sebou */
+	.itn-img-wrapper-grid21 {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr;
+		gap: 1vw;
+		width: 100%;
+		height: 100%;
+	}
+
+	.itn-img-wrapper-inner {
+		/* na vycentrovanie obrazka v oboch smeroch pouzijeme grid */
+		display: grid;
+		place-items: center;
+    	width: 100%;
+    	height: 100%;
+    	overflow: hidden;
+	}
+
+    .itn-img-wrapper img {
+    	max-width: 100%;
+    	max-height: 100%;
+    	object-fit: contain;
+		border-radius: 0.6vw;
+    }
+
+ 	/**************************************************************************/
+    /*** Nadpisy buniek O1, O2,... pod tym farebna ciara a pod nou text *******/
+	.itn-O-wrapper {
+		margin: 1vw 0;
+	}
+
+	.itn-O-wrapper h3 {
+		font-size: 1.2em;
+		margin: 0.5vw 0;
+	}
+	.itn-O-wrapper p {
+		margin: 0.5vw 0;
+	}
+
+	.itn-O-wrapper .itn-O-line {
+		width: 100%;
+    	height: 2px;
+		background: linear-gradient(to right, #28f, lightskyblue);
+		margin-bottom: 1vw;
+	}
+
+	/**************************************************************************/
+    /*** Vnutorny flex, vlavo ikona, vpravo text ******************************/
+	.itn-innerflex-container {
+		display: flex;
+		gap: 1vw;
+	}
+
+	.itn-innerflex-img img {
+		width: 4em;
+		min-width: 3em;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.itn-innerflex-img img.itn-innerflex-imgformat8 {
+		width: 5vw;
+		transform: translateY(-1vw);
+	}
+
+	/**************************/
+	.itn-innerflex-text {
+		flex: 1;
+		padding: 0.5rem 1rem;
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+
+	.itn-innerflex-text h3 {
+		font-size: 1.4em;
+		margin-bottom: 0.5em;
+		font-weight: 600;
+	}
+
+	.itn-innerflex-text p {
+		font-size: 1em;
+		margin: 0;
+	}
+
+	/** Block_ITN4.html ********/
+	.itn-fullstack-flex {
+		display: flex;
+		align-items: stretch;
+		gap: 2vw;
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	.itn-fullstack-image {
+		flex: 1;
+		min-width: 130px;
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		background-color: skyblue;
+	}
+
+	.itn-fullstack-image img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	.itn-fullstack-texts {
+		flex: 4;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; /* rovnomerne rozdelí 3 bloky */
+	}
+
+    /**************************************************************************/
+    /*** Grid 2x2, cell: kruhova ikona hore vlavo, dole text ******************/
+	.itn-grid2x2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: auto;
+		gap: 1vw;
+		padding: 1vw;
+	}
+
+	.itn-grid2x2-cell {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border: 1px solid skyblue;
+		border-radius: 0.5vw;
+		padding: 1vw;
+		color: white;
+	}
+
+	.itn-grid2x2-cell.nopadding {
+		padding: 0;
+	}
+
+	.itn-grid2x2-logo {
+		width: 3em;
+		height: 3em;
+		min-width: 3em;
+		min-height: 3em;
+		border-radius: 50%;           /* kruh */
+		background-color: #add8e6;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		margin-bottom: 0.5vw;
+	}
+
+	.itn-grid2x2-logo img {
+		width: 50%;
+		height: 50%;
+		object-fit: contain;
+		filter: brightness(0) invert(0);
+	}
+
+	.itn-grid2x2-cell h3 {
+		margin: 0.5rem 0;
+	}
+
+	.itn-grid2x2-cell p {
+		margin: 0;
+	}
+
+	/* ITN6 ***********************/
+	.itn-grid2x2-top-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid skyblue;
+		padding: 0.5em 0;
+		width: 100%;
+	}
+
+	.itn-grid2x2-top-box img {
+		width: 2em;
+		height: auto;
+	}
+
+	.itn-grid2x2-cell-text {
+		padding: 1vw;
+	}
+
+    /**************************************************************************/
+    /**************************************************************************/
+    @media (max-width: 762px) {
+    	.itn-content-flex {
+    		flex-direction: column;
+    		height: auto;
+    	}
+
+		.itn-content-flex.column-reverse{
+    		flex-direction: column-reverse;
+    	}
+
+		.itn-text-wrapper.center {
+			padding-top: 1vw;
+		}
+
+    	.itn-line-with-img img {
+    		height: 7vw;
+    	}
+		/********************************/
+		.itn-grid2x2 {
+			grid-template-columns: 1fr;
+		}
+    }
