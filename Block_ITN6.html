@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_ITN6.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/itn.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<style>
+	</style>
+</head>
+
+<body>
+	<div id="ITN6-div-src">
+		<div class="itn-body color-variant-itn7">
+			<div class="itn-header-line"></div>
+			<div class="itn-header-text">
+				<h1 lang-code="03061">Priemyselná automatizácia a robotika</h1>
+				<p lang-code="03062">
+					Dokážeme podporiť vaše potreby v oblasti priemyselnej automatizácie komplexnými riešeniami 
+					pre programovanie automatizovaných liniek, systémova robotických pracovísk. Naši špecialisti 
+					majú rozsiahle skúsenosti s implementáciou a optimalizáciou výrobných procesov.
+				</p>
+			</div>
+
+			<div class="itn-grid2x2">
+				<div class="itn-grid2x2-cell nopadding">
+					<div class="itn-grid2x2-top-box">
+						<img src="media/KD_vodotlac-joystick.svg" alt="Logo 1">
+					</div>
+					<div class="itn-grid2x2-cell-text">
+						<h3 lang-code="03063">PLC systémy</h3>
+						<p lang-code="03064">Naši PLC špecialisti pracujú s poprednými platformami:</p>
+						<ul class="itn-custom-list">
+							<li><strong>SIEMENS</strong> - <span lang-code="03065">kompletné programovanie a optimalizácia</span></li>
+							<li><strong>ROCKWELL (Allen-Bradley)</strong> - <span lang-code="03066"pokročilé riešenia</span></li>
+							<li><strong>B&R, Beckhoff, OMRON, Schneider</strong> - <span lang-code="03067">široká podpora</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="itn-grid2x2-cell nopadding">
+					<div class="itn-grid2x2-top-box">
+						<img src="media/KD_vodotlac-placacky.svg" alt="Logo 2">
+					</div>
+					<div class="itn-grid2x2-cell-text">
+						<h3 lang-code="03068">Robotické riešenia</h3>
+						<p lang-code="03069">Skúsenosti s poprednými výrobcami robotov:</p>
+						<ul class="itn-custom-list">
+							<li><strong>ABB</strong> - <span lang-code="03561">programovanie a integrácia</span></li>
+							<li><strong>KUKA</strong> - <span lang-code="03562">komplexná implementácia</span></li>
+							<li><strong>FANUC</strong> - <span lang-code="03563">pokročilé aplikácie</span></li>
+							<li><strong>STÄUBLI, YASKAWA</strong> - <span lang-code="03564">špecializované riešenia</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('enilang/translations01-engin.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".itn-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>

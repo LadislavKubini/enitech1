@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_ITN4.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/itn.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<style>
+	</style>
+</head>
+
+<body>
+	<div id="ITN4-div-src">
+		<div class="itn-body color-variant-itn7">
+			<div class="itn-header-line"></div>
+			<div class="itn-content-flex">
+				<div class="itn-text-wrapper">
+					<h1 lang-code="03041">Fullstack vývojové schopnosti</h1>
+					<div class="itn-fullstack-flex">
+						<div class="itn-fullstack-image">
+							<img src="media/KD_TriSipkyPodSebou-transp.png" alt="Tri šípky pod sebou">
+						</div>
+
+						<div class="itn-fullstack-texts">
+							<div class="itn-innerflex-container">
+								<div class="itn-innerflex-text">
+									<h3>FrontEnd</h3>
+									<p class="margin-small" lang-code="03042">
+										Moderné užívateľské rozhrania a responzívne webové aplikácie s
+										najnovšími technológiami.
+									</p>
+								</div>
+							</div>
+							<div class="itn-innerflex-container">
+								<div class="itn-innerflex-text">
+									<h3>BackEnd</h3>
+									<p class="margin-small" lang-code="03043">
+										Robustné serverové aplikácie, API a databázové riešenia pre náročné
+										systémy.
+									</p>
+								</div>
+							</div>
+							<div class="itn-innerflex-container">
+								<div class="itn-innerflex-text">
+									<h3>FullStack</h3>
+									<p class="margin-small" lang-code="03044">
+										Kompletné end-to-end riešenia pokrývajúce všetky vrstvy aplikácie.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>
+						<span lang-code="03045">Máme rozsiahle skúsenosti s modernými technológiami a frameworkami, vrátane</span>
+						<strong>JAVA, Python, JavaScript, Angular, Vue.js</strong> 
+						<span lang-code="03046">a mnohých ďalších. Naši vývojári sledujú
+						najnovšie trendy a osvedčené postupy v odbore, aby vašim projektom zaistili
+						maximálnu kvalitu a udržateľnosť.</span>
+					</p>
+				</div>
+
+				<div class="itn-img-wrapper" style="flex: 3.5;">
+					<div class="itn-img-wrapper-inner">
+						<img src="media/KD_DisplayZvislo.avif" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('enilang/translations01-engin.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".itn-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>

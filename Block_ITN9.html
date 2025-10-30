@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_ITN9.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/itn.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<style>
+	</style>
+</head>
+
+<body>
+	<div id="ITN9-div-src">
+		<div class="itn-body color-variant-itn7">
+			<div class="itn-header-line"></div>
+			<div class="itn-header-text">
+				<h1 lang-code="03091">Začnite s nami spolupracovať</h1>
+			</div>
+			<div class="itn-content-flex">
+
+				<div class="itn-text-wrapper">
+					<h3 lang-code="03092">Poďme spoločne realizovať vaše projekty</h3>
+					<p class="margin-small" lang-code="03093">
+						Či už potrebujete posilniť svoj IT tím, hľadáte partnera pre nearshoring,
+						alebo riešite komplexnú automatizáciu, sme tu pre vás. Kontaktujte nás
+						a spoločne nájdeme optimálne riešenie pre vaše potreby.
+					</p>
+					<p class="margin-small"  lang-code="03094">
+						Naši špecialisti sú pripravení stretnúť sa s vami, prediskutovať vaše
+						požiadavky a navrhnúť riešenie šité na mieru vášmu biznisu. Tešíme sa
+						na spoluprácu s vami.
+					</p>
+					<div class="itn-buttons flex-start">
+						<button class="itn-button" lang-code="03095"
+							onclick="location.href='indexKontakt.html'">Napíšte nám</button>
+						<button class="itn-button" lang-code="03096" 
+							onclick="location.href='indexKontakt.html#id-kontakt-Kracala,id-kontakt-Ivaska'">Zavolajte nám</button>
+					</div>
+				</div>
+
+				<div class="itn-img-wrapper">
+					<div class="itn-img-wrapper-inner">
+						<img src="media/KD_handshaking.avif" />
+					</div>
+				</div>
+
+			</div>
+			<div class="itn-header-text" style="margin-top: 0;">
+				<div class="itn-footer-line"></div>
+				<p>
+					<strong>ENITECH s.r.o.</strong> - <span lang-code="03097">Váš partner pre komplexné IT riešenia a priemyselnú automatizáciu</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('enilang/translations01-engin.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".itn-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>

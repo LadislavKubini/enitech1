@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_ITN7.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/itn.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<style>
+	</style>
+</head>
+
+<body>
+	<div id="ITN7-div-src">
+		<div class="itn-body color-variant-itn7">
+			<div class="itn-header-line"></div>
+			<div class="itn-header-text">
+				<h1 lang-code="03071">Elektroprojekcia a návrh elektroniky</h1>
+			</div>
+			<div class="itn-content-flex">
+
+				<div class="itn-text-wrapper">
+					<h3 lang-code="03072">Komplexné služby v oblasti elektro</h3>
+					<p class="margin-small" lang-code="03073">
+						V oblasti elektrotechniky vás dokážeme podporiť profesionálnou
+						elektroprojektovou činnosťou a návrhom elektronických zariadení. Naši
+						špecialisti kombinujú teoretické znalosti s praktickými skúsenosťami z
+						realizácie projektov.
+					</p>
+
+					<div class="itn-grid2x2-cell" style="margin-bottom: 1vw;">
+						<h3 lang-code="03074">EPLAN P8 projekcia</h3>
+						<p lang-code="03075">	
+							Profesionálna elektroprojekcia v systéme EPLAN P8 a ďalších CAD
+							systémoch pre komplexnú dokumentáciu.
+						</p>
+					</div>
+
+					<div class="itn-grid2x2-cell">
+						<h3 lang-code="03076">PCB Design</h3>
+						<p lang-code="03077">
+							Návrh a optimalizácia dosiek plošných spojov (PCB) s dôrazom na
+							funkčnosť, výrobu a náklady.
+						</p>
+					</div>
+
+					<p class="margin-small" lang-code="03078">
+						Zabezpečujeme kompletnú podporu od koncepčného návrhu cez detailnú
+						projektovú dokumentáciu až po optimalizáciu vašich elektronických zariadení.
+						Naším cieľom je maximálna spoľahlivosť, efektivita a súlad s normami.					
+					</p>
+				</div>
+
+				<div class="itn-img-wrapper" style="flex: 4.5;">
+					<div class="itn-img-wrapper-grid21">
+						<div class="itn-img-wrapper-inner">
+							<img src="media/PlosnySpojA.avif" />
+						</div>
+						<div class="itn-img-wrapper-inner">
+							<img src="media/PlosnySpojB.avif" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('enilang/translations01-engin.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".itn-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>

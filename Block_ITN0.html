@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_ITN0.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/itn.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<style>
+	</style>
+</head>
+
+<body>
+	<div id="ITN0-div-src">
+		<div class="itn-body color-variant-itn7">
+			<div class="itn-header-line"></div>
+			<div class="itn-content-flex">
+
+				<div class="itn-text-wrapper center">
+					<h1>ENITECH s.r.o.</h1>
+					<p class="margin-small" lang-code="03001">
+						Komplexné IT riešenia pre telekomunikácie, bankovníctvo, verejnú správu a priemysel
+					</p>
+					<div class="itn-buttons flex-start">
+						<button class="itn-button" lang-code="03002"
+							onclick="location.href='indexKontakt.html'">Kontaktujte nás</button>
+						<button class="itn-button" lang-code="03003"
+							onclick="location.href='indexKontakt.html#id-kontakt-Kracala,id-kontakt-Ivaska'">Naše služby</button>
+					</div>
+				</div>
+
+				<div class="itn-img-wrapper">
+					<div class="itn-img-wrapper-inner">
+						<img src="media/KD_WorldPanel.avif" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('enilang/translations01-engin.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".itn-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>

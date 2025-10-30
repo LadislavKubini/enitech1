@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_ITN1.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/itn.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<style>
+	</style>
+</head>
+
+<body>
+	<div id="ITN1-div-src">
+		<div class="itn-body color-variant-itn7">
+			<div class="itn-header-line"></div>
+			<div class="itn-header-text">
+				<h1 lang-code="03011">Profesionálne IT služby pre domáce aj zahraničné trhy</h1>
+			</div>
+			<div class="itn-content-flex">
+
+				<div class="itn-text-wrapper">
+					<p class="margin-small" lang-code="03012">
+						Spoločnosť ENITECH s.r.o. je vaším spoľahlivým partnerom v oblasti
+						komplexných IT služieb. Špecializujeme sa na poskytovanie vysoko
+						kvalifikovaných IT špecialistov a riešení pre náročné sektory vrátane
+						telekomunikácií, bankovníctva a poisťovníctva, verejnej správy a
+						priemyselnej automatizácie.
+					</p>
+					<p class="margin-small" lang-code="03013">
+						Naše služby sú navrhnuté tak, aby flexibilne pokryli vaše potreby v
+						akejkoľvek fáze vývoja projektu. Či už potrebujete posilniť svoj tím o
+						jednotlivých expertov alebo hľadáte komplexné outsourcingové riešenie,
+						sme tu pre vás s odbornými znalosťami a skúsenosťami z
+						medzinárodných projektov.
+					</p>
+				</div>
+
+				<div class="itn-img-wrapper">
+					<div class="itn-img-wrapper-inner">
+						<img src="media/KD_piatiOkoloStola.avif" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('enilang/translations01-engin.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".itn-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>
