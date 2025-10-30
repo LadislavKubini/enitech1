@@ -72,7 +72,7 @@
 || Von Junioren bis zu Senioren mit umfangreicher Erfahrung
 || From juniors to seniors with extensive experience
 
-03029 || Testeri a QA apecialisti || Tester und QA-Spezialisten || Testers and QA specialists
+03029 || Testeri a QA špecialisti || Tester und QA-Spezialisten || Testers and QA specialists
 03530 || Zabezpečenie kvality a bezchybného fungovania systémov
 || Sicherstellung der Qualität und des fehlerfreien Betriebs der Systeme
 || Ensuring quality and flawless functioning of systems
@@ -157,7 +157,7 @@
 03552 || Agilné metodiky a facilitácia tímov || Agile Methoden und Teambegleitung || Agile methodologies and team facilitation
 
 03553 || Dátový manažment || Datenmanagement || Data management
-03554 || Správa a správa firemných dát || Verwaltung und Management von Unternehmensdaten || Management and administration of company data
+03554 || Manažment a správa firemných dát || Management und Verwaltung von Unternehmensdaten || Management and administration of company data
 
 //Block_ITN6.html
 03061 || Priemyselná automatizácia a robotika || Industrielle Automatisierung und Robotik || Industrial automation and robotics
