@@ -29,14 +29,12 @@
 	<link rel="stylesheet" href="enicss/menu.css">
 	<link rel="stylesheet" href="enicss/UvodHero.css">
 	<link rel="stylesheet" href="enicss/it1.css">
-	<!-- <link rel="stylesheet" href="enicss/it2.css"> -->
 	<link rel="stylesheet" href="enicss/itn.css">
 	<link rel="stylesheet" href="enicss/footer.css">
 
 	<script src="enijs/Language.js" defer></script>
 	<script src="enijs/animator.js" defer></script>
 	<script src="enijs/menu.js" defer></script>
-	<!-- <script src="wordpress_footer.js" defer></script>  -->
 </head>
 
 <body>
@@ -45,9 +43,6 @@
 	</div>
 
 	<div id="IT-div-dst">
-	</div>
-
-	<div id="ITN0-div-dst">
 	</div>
 
 	<div id="ITN1-div-dst">
@@ -65,15 +60,6 @@
 	<div id="ITN5-div-dst">
 	</div>
 
-	<div id="ITN6-div-dst">
-	</div>
-
-	<div id="ITN7-div-dst">
-	</div>
-
-	<div id="ITN8-div-dst">
-	</div>
-
 	<div id="ITN9-div-dst">
 	</div>
 
@@ -87,19 +73,14 @@
 		async function loadDivBlocks() {
 			const pm = ImportDiv("Block_Menu.html", "Menu-div-src", "Menu-div-dst");
 			const pi = ImportDiv("Block_IT.html", "IT-div-src", "IT-div-dst");
-			// const p0 = ImportDiv("Block_ITN0.html", "ITN0-div-src", "ITN0-div-dst");
 			const p1 = ImportDiv("Block_ITN1.html", "ITN1-div-src", "ITN1-div-dst");
 			const p2 = ImportDiv("Block_ITN2.html", "ITN2-div-src", "ITN2-div-dst");
 			const p3 = ImportDiv("Block_ITN3.html", "ITN3-div-src", "ITN3-div-dst");
 			const p4 = ImportDiv("Block_ITN4.html", "ITN4-div-src", "ITN4-div-dst");
 			const p5 = ImportDiv("Block_ITN5.html", "ITN5-div-src", "ITN5-div-dst");
-			// const p6 = ImportDiv("Block_ITN6.html", "ITN6-div-src", "ITN6-div-dst");
-			// const p7 = ImportDiv("Block_ITN7.html", "ITN7-div-src", "ITN7-div-dst");
-			// const p8 = ImportDiv("Block_ITN8.html", "ITN8-div-src", "ITN8-div-dst");
 			const p9 = ImportDiv("Block_ITN9.html", "ITN9-div-src", "ITN9-div-dst");
 			const pf = ImportDiv("Block_Footer.html", "Footer-div-src", "Footer-div-dst");
 			await Promise.all([pm, pi, p1, p2, p3, p4, p5, p9, pf]);
-			// await Promise.all([pm, pi, p0, p1, p2, p3, p4, p5, p6, p8, p9, pf]);
 		}
 		async function loadAllTranslations() {
 			const p1 = LoadTranslations('enilang/translations00.txt');
@@ -118,11 +99,7 @@
 			await UpdateTexts();
 			await new Promise(requestAnimationFrame);
 			Animator.register("#IT_animate-id", "animate-slide-in-bounce");
-			// Animator.registerAll(".it1-line", "animate-width-grow");
-			// Animator.registerAll(".it2-line", "animate-width-grow");
-			// Animator.registerAll(".it-line", "animate-width-grow");
 			Animator.registerAll(".itn-header-line", "animate-width-grow");
-			// Animator.registerAll(".it-grid-item-line", "animate-width-grow");
 			Animator.registerAll(".itn-O-line", "animate-width-grow");
 			restoreScrollYPosition(); // navrat na poziciu, na ktorej bolo stlacene F5
 			document.body.style.visibility = "visible"; // zobraz stránku až teraz    
