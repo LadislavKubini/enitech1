@@ -1,0 +1,285 @@
+// Block_ITN0.html
+03001 || Komplexné IT riešenia pre telekomunikácie, bankovníctvo, verejnú správu a priemysel
+|| Komplexe IT-Lösungen für Telekommunikation, Bankwesen, öffentliche Verwaltung und Industrie
+|| Comprehensive IT solutions for telecommunications, banking, public administration, and industry
+
+03002 || Kontaktujte nás || Kontaktieren Sie uns || Contact us
+03003 || Naše služby || Unsere Dienstleistungen || Our services
+
+//Block_ITN1.html
+03011 || Profesionálne IT služby pre domáce aj zahraničné trhy
+|| Professionelle IT-Dienstleistungen für den heimischen und ausländischen Markt
+|| Professional IT services for domestic and foreign markets
+
+03012 || Spoločnosť ENITECH s.r.o. je vaším spoľahlivým partnerom v oblasti
+	komplexných IT služieb. Špecializujeme sa na poskytovanie vysoko
+	kvalifikovaných IT špecialistov a riešení pre náročné sektory vrátane
+	telekomunikácií, bankovníctva a poisťovníctva, verejnej správy a
+	priemyselnej automatizácie.
+|| Die Firma ENITECH s.r.o. ist Ihr zuverlässiger Partner im Bereich
+	umfassender IT-Dienstleistungen. Wir sind spezialisiert auf die Bereitstellung von hochqualifizierten
+	IT-Spezialisten und Lösungen für anspruchsvolle Branchen, darunter
+	Telekommunikation, Bank- und Versicherungswesen, öffentliche Verwaltung und
+	Industrieautomation.
+|| ENITECH s.r.o. is your reliable partner in the field of
+	comprehensive IT services. We specialize in providing highly
+	qualified IT specialists and solutions for demanding sectors, including
+	telecommunications, banking and insurance, public administration, and
+	industrial automation.
+
+03013 ||  Naše služby sú navrhnuté tak, aby flexibilne pokryli vaše potreby v
+	akejkoľvek fáze vývoja projektu. Či už potrebujete posilniť svoj tím o
+	jednotlivých expertov alebo hľadáte komplexné outsourcingové riešenie,
+	sme tu pre vás s odbornými znalosťami a skúsenosťami z
+	medzinárodných projektov.
+|| Unsere Dienstleistungen sind so konzipiert, dass sie Ihre Bedürfnisse in
+    jeder Phase der Projektentwicklung flexibel abdecken. Ganz gleich, ob Sie Ihr Team durch
+    einzelne Experten verstärken möchten oder eine komplexe Outsourcing-Lösung suchen,
+    wir stehen Ihnen mit unserem Fachwissen und unserer Erfahrung aus
+    internationalen Projekten zur Seite.
+|| Our services are designed to flexibly cover your needs at
+    any stage of project development. Whether you need to strengthen your team with
+    individual experts or are looking for a comprehensive outsourcing solution,
+    we are here for you with our expertise and experience from
+    international projects.
+
+//Block_ITN2.html
+03021 || Komplexné pokrytie všetkých fáz vašich projektov
+|| Umfassende Abdeckung aller Phasen Ihrer Projekte
+|| Comprehensive coverage of all phases of your projects
+
+03022 || Naši IT špecialisti sa dokážu zapojiť do projektov vo všetkých fázach vývoja 
+	softvéru alebo hardvéru. Ponúkame flexibilné riešenia, ktoré presne
+	zodpovedajú vašim aktuálnym potrebám a dlhodobým cieľom.
+|| Unsere IT-Spezialisten können sich in alle Phasen der Software- oder Hardwareentwicklung einbringen.
+	Wir bieten flexible Lösungen, die genau
+	auf Ihre aktuellen Bedürfnisse und langfristigen Ziele zugeschnitten sind.
+|| Our IT specialists can get involved in projects at all stages of software or hardware development. 
+    We offer flexible solutions that precisely match your current needs and long-term goals.
+    
+03023 || Architekti a dizajnéri || Architekten und Designer || Architects and designers
+03024 || Navrhovanie robustných IT architektúr a systémových riešení
+|| Entwurf robuster IT-Architekturen und Systemlösungen
+|| Designing robust IT architectures and system solutions
+
+03025 || Product Owneri a PM || Produktverantwortliche und PM || Product Owners and PMs
+03026 || Riadenie produktov a koordinácia komplexných projektov
+|| Produktmanagement und Koordination komplexer Projekte
+|| Product management and coordination of complex projects
+
+03027 || Developeri vaetkých úrovní seniority || Entwickler aller Senioritätsstufen || Developers of all seniority levels
+03028 || Od juniorov po seniorov s rozsiahlymi skúsenosťami
+|| Von Junioren bis zu Senioren mit umfangreicher Erfahrung
+|| From juniors to seniors with extensive experience
+
+03029 || Testeri a QA apecialisti || Tester und QA-Spezialisten || Testers and QA specialists
+03530 || Zabezpečenie kvality a bezchybného fungovania systémov
+|| Sicherstellung der Qualität und des fehlerfreien Betriebs der Systeme
+|| Ensuring quality and flawless functioning of systems
+
+//Block_ITN3.html
+03031 || IT Nearshoring a Outsourcing na mieru 
+|| IT-Nearshoring und maßgeschneidertes Outsourcing 
+|| IT Nearshoring and Customized Outsourcing
+
+03032 || Flexibilné zvýšenie vašich kapacít || Flexible Erweiterung Ihrer Kapazitäten || Flexible increase in your capacity
+03033 || Formou IT nearshoringu a outsourcingu dokážeme flexibilne zvýšiť vaše kapacity v
+	kľúčových oblastiach. Poskytujeme vysoko kvalifikovaných špecialistov, ktorí sa rýchlo
+	integrujú do vašich tímov a procesov.					
+|| Durch IT-Nearshoring und Outsourcing können wir Ihre Kapazitäten in
+    Schlüsselbereichen flexibel erhöhen. Wir stellen Ihnen hochqualifizierte Spezialisten zur Verfügung, die sich schnell
+    in Ihre Teams und Prozesse integrieren.
+|| Through IT nearshoring and outsourcing, we can flexibly increase your capacity in
+	key areas. We provide highly qualified specialists who quickly
+	integrate into your teams and processes.
+
+03034 || Naše služby pokrývajú široké spektrum expertíz: 
+|| Unsere Dienstleistungen decken ein breites Spektrum an Fachgebieten ab: 
+|| Our services cover a wide range of expertise:
+
+03035 || Vývojári HW/SW a aplikácií s preukázanými skúsenosťami 
+|| HW/SW- und Anwendungsentwickler mit nachweisbarer Erfahrung 
+|| HW/SW and application developers with proven experience
+
+03036 || Programátori databáz a dátových štruktúr || Datenbank- und Datenstrukturprogrammierer || Database and data structure programmers
+03037 || SAP špecialisti pre podnikové systémy || SAP-Spezialisten für Unternehmenssysteme || SAP specialists for enterprise systems
+03038 || CRM špecialisti pre riadenie vzťahov so zákazníkmi || CRM-Spezialisten für Kundenbeziehungsmanagement || CRM specialists for customer relationship management
+03039 || Experti na kybernetickú bezpečnosť a ochranu dát || Experten für Cybersicherheit und Datenschutz || Cybersecurity and data protection experts
+
+//Block_ITN4.html
+03041 || Fullstack vývojové schopnosti || Fullstack-Entwicklungsfähigkeiten || Full-stack development skills
+03042 || Moderné užívateľské rozhrania a responzívne webové aplikácie s najnovšími technológiami. 
+|| Moderne Benutzeroberflächen und responsive Webanwendungen mit den neuesten Technologien. 
+|| Modern user interfaces and responsive web applications with the latest technologies. 
+
+03043 || Robustné serverové aplikácie, API a databázové riešenia pre náročné systémy. 
+|| Robuste Serveranwendungen, APIs und Datenbanklösungen für anspruchsvolle Systeme. 
+|| Robust server applications, APIs, and database solutions for demanding systems. 
+
+03044 || Kompletné end-to-end riešenia pokrývajúce všetky vrstvy aplikácie. 
+|| Komplette End-to-End-Lösungen, die alle Anwendungsschichten abdecken. 
+|| Complete end-to-end solutions covering all layers of the application. 
+
+03045 || Máme rozsiahle skúsenosti s modernými technológiami a frameworkami, vrátane
+|| Wir verfügen über umfangreiche Erfahrungen mit modernen Technologien und Frameworks, darunter
+|| We have extensive experience with modern technologies and frameworks, including
+
+03046 || a mnohých ďalších. Naši vývojári sledujú najnovšie trendy a osvedčené postupy v odbore, aby vašim projektom zaistili maximálnu kvalitu a udržateľnosť. 
+|| und viele andere. Unsere Entwickler verfolgen die neuesten Trends und bewährten Verfahren in der Branche, um maximale Qualität und Nachhaltigkeit für Ihre Projekte zu gewährleisten. 
+|| and many others. Our developers follow the latest trends and best practices in the field to ensure maximum quality and sustainability for your projects.
+
+//Block_ITN5.html
+03051 || Riadenie a koordinácia IT projektov || Management und Koordination von IT-Projekten || IT project management and coordination
+03052 || Expertný projektový manažment || Fachkundiges Projektmanagement || Expert project management
+03053 || Poskytujeme vysoko kvalifikovaných špecialistov na riadenie a
+	koordináciu IT projektov na všetkých úrovniach. Naši projektoví
+	manažéri a koordinátori majú preukázané skúsenosti s vedením
+	komplexných medzinárodných projektov.
+|| Wir bieten hochqualifizierte Spezialisten für das Management und die
+    Koordination von IT-Projekten auf allen Ebenen. Unsere Projektmanager
+    und Koordinatoren verfügen über nachgewiesene Erfahrung in der Leitung
+    komplexer internationaler Projekte.
+|| We provide highly qualified specialists for the management and
+    coordination of IT projects at all levels. Our project
+    managers and coordinators have proven experience in leading
+    complex international projects.
+
+03054 || Projektoví manažéri || Projektmanager || Project Managers
+03055 || Celkové riadenie projektov a koordinácia tímov || Gesamtleitung der Projekte und Koordination der Teams || Overall project management and team coordination
+
+03056 || Manažéri požiadaviek || Anforderungsmanager || Requirements Managers
+03057 || Analýza a správa biznis požiadaviek  || Analyse und Verwaltung von Geschäftsanforderungen  || Business requirements analysis and management 
+
+03058 || Manažéri zabezpečenia kvality (Quality Assurance) || Qualitätssicherungsmanager (Quality Assurance) || Quality Assurance Managers
+03059 || Riadenie kvality a testovacích procesov || Qualitätsmanagement und Testprozesse || Quality management and testing processes 
+
+03551 || Scrum Master špecialisti || Scrum Master Spezialisten || Scrum Master specialists
+03552 || Agilné metodiky a facilitácia tímov || Agile Methoden und Teambegleitung || Agile methodologies and team facilitation
+
+03553 || Dátový manažment || Datenmanagement || Data management
+03554 || Správa a správa firemných dát || Verwaltung und Management von Unternehmensdaten || Management and administration of company data
+
+//Block_ITN6.html
+03061 || Priemyselná automatizácia a robotika || Industrielle Automatisierung und Robotik || Industrial automation and robotics
+03062 || Dokážeme podporiť vaše potreby v oblasti priemyselnej automatizácie komplexnými riešeniami 
+	pre programovanie automatizovaných liniek, systémova robotických pracovísk. Naši špecialisti 
+	majú rozsiahle skúsenosti s implementáciou a optimalizáciou výrobných procesov.
+|| Wir können Ihre Anforderungen im Bereich der industriellen Automatisierung mit komplexen Lösungen 
+    für die Programmierung automatisierter Linien und robotergestützter Arbeitsplätze unterstützen. Unsere Spezialisten 
+    verfügen über umfangreiche Erfahrung in der Implementierung und Optimierung von Produktionsprozessen.
+|| We can support your industrial automation needs with comprehensive solutions 
+    for programming automated lines and robotic workstation systems. Our specialists 
+    have extensive experience in implementing and optimizing production processes.
+
+03063 || PLC systémy || PLC-Systeme || PLC systems
+03064 || Naši PLC špecialisti pracujú s poprednými platformami: || Unsere PLC-Spezialisten arbeiten mit führenden Plattformen: || Our PLC specialists work with leading platforms:
+03065 || kompletné programovanie a optimalizácia || Komplette Programmierung und Optimierung || complete programming and optimization
+03066 || pokročilé riešenia || fortschrittliche Lösungen || advanced solutions
+03067 || široká podpora || breite Unterstützung || broad support
+
+03068 || Robotické riešenia || Roboterlösungen || Robotic solutions
+03069 || Skúsenosti s poprednými výrobcami robotov: || Erfahrung mit führenden Roboterherstellern: || Experience with leading robot manufacturers:
+03561 || programovanie a integrácia || Programmierung und Integration || programming and integration
+03562 || komplexná implementácia || umfassende Umsetzung || full implementation
+03563 || pokročilé aplikácie || fortgeschrittene Anwendungen || advanced applications
+03564 || špecializované riešenia || Spezialisierte Lösungen || specialized solutions
+
+//Block_ITN7.html
+03071 || Elektroprojekcia a návrh elektroniky || Elektroprojektion und Elektronikdesign || Electrical design and electronics design
+03072 || Komplexné služby v oblasti elektro || Komplexe Dienstleistungen im Bereich Elektrotechnik || Comprehensive services in the field of electrical engineering
+03073 || V oblasti elektrotechniky vás dokážeme podporiť profesionálnou
+	elektroprojektovou činnosťou a návrhom elektronických zariadení. Naši
+	špecialisti kombinujú teoretické znalosti s praktickými skúsenosťami z
+	realizácie projektov.
+|| Im Bereich Elektrotechnik können wir Sie mit professionellen
+    Elektroprojekten und Entwürfen für elektronische Geräte unterstützen. Unsere
+    Spezialisten verbinden theoretisches Wissen mit praktischer Erfahrung aus der
+    Umsetzung von Projekten.
+|| In the field of electrical engineering, we can support you with professional
+	electrical design services and electronic device design. Our
+	specialists combine theoretical knowledge with practical experience from
+	project implementation.
+
+03074 || EPLAN P8 projekcia || EPLAN P8 Projektierung || EPLAN P8 design
+03075 || Profesionálna elektroprojekcia v systéme EPLAN P8 a ďalších CAD
+	systémoch pre komplexnú dokumentáciu.  
+|| Professionelle Elektroprojektierung im System EPLAN P8 und weiteren CAD-Systemen
+	für komplexe Dokumentation.  
+|| Professional electrical design in the EPLAN P8 system and other CAD
+	systems for comprehensive documentation.  
+
+03076 || PCB Design || PCB-Design || PCB Design
+03077 || Návrh a optimalizácia dosiek plošných spojov (PCB) s dôrazom na
+	funkčnosť, výrobu a náklady.
+|| Entwurf und Optimierung von Leiterplatten (PCB) mit Schwerpunkt auf
+    Funktionalität, Herstellung und Kosten.
+|| Design and optimization of printed circuit boards (PCBs) with an emphasis on
+    functionality, manufacturing, and cost.
+
+03078 || Zabezpečujeme kompletnú podporu od koncepčného návrhu cez detailnú
+	projektovú dokumentáciu až po optimalizáciu vašich elektronických zariadení.
+	Naším cieľom je maximálna spoľahlivosť, efektivita a súlad s normami.
+|| Wir bieten Ihnen umfassende Unterstützung vom konzeptionellen Entwurf über die detaillierte
+    Projektdokumentation bis hin zur Optimierung Ihrer elektronischen Geräte.
+    Unser Ziel ist maximale Zuverlässigkeit, Effizienz und Normkonformität.
+|| We provide comprehensive support from conceptual design through detailed
+	project documentation to optimization of your electronic devices.
+	Our goal is maximum reliability, efficiency, and compliance with standards.
+
+//Block_ITN8.html
+03081 || Prečo si zvoliť ENITECH? || Warum ENITECH wählen? || Why choose ENITECH?
+03082 || Overené skúsenosti || Bewährte Erfahrungen || Proven experience
+03083 || Zrealizovali sme desiatky projektov pre telekomunikácie, bankovníctvo, verejnú správu aj priemysel. Naše referencie hovoria za nás. 
+|| Wir haben Dutzende von Projekten für Telekommunikation, Bankwesen, öffentliche Verwaltung und Industrie realisiert. Unsere Referenzen sprechen für uns. 
+|| We have implemented dozens of projects for telecommunications, banking, public administration, and industry. Our references speak for themselves. 
+
+03084 || Flexibilný prístup || Flexibler Ansatz || Flexible approach
+03085 || Rýchlo sa adaptujeme na vaše potreby, či už ide o krátkodobé posilnenie tímu alebo dlhodobú spoluprácu. 
+|| Wir passen uns schnell an Ihre Bedürfnisse an, egal ob es sich um eine kurzfristige Verstärkung Ihres Teams oder eine langfristige Zusammenarbeit handelt. 
+|| We quickly adapt to your needs, whether it's short-term team reinforcement or long-term cooperation. 
+
+03086 || Zaručená kvalita || Garantierte Qualität || Guaranteed quality
+03087 || Všetci naši špecialisti prechádzajú dôkladným výberovým konaním a majú preukázané odborné znalosti. 
+|| Alle unsere Spezialisten durchlaufen ein gründliches Auswahlverfahren und verfügen über nachgewiesene Fachkenntnisse. 
+|| All our specialists undergo a thorough selection process and have proven expertise. 
+
+03088 || Medzinárodný dosah || Internationale Reichweite || International reach
+03089 || Pracujeme s domácimi aj zahraničnými klientmi, máme skúsenosti s multikultúrnymi projektmi. 
+|| Wir arbeiten mit inländischen und ausländischen Kunden zusammen und haben Erfahrung mit multikulturellen Projekten. 
+|| We work with domestic and foreign clients and have experience with multicultural projects. 
+
+03581 || Moderné technológie || Moderne Technologien || Modern technologies
+03582 || Držíme krok s najnovšími trendmi a technológiami v IT aj priemyselnej automatizácii. 
+|| Wir halten Schritt mit den neuesten Trends und Technologien in der IT und der industriellen Automatisierung. 
+|| We keep pace with the latest trends and technologies in IT and industrial automation. 
+
+03583 || Partnerský prístup || Partneransatz || Partnership approach
+03584 || Nie sme len dodávateľ služieb - sme váš partner pre dlhodobý úspech a rast. 
+|| Wir sind nicht nur ein Dienstleister – wir sind Ihr Partner für langfristigen Erfolg und Wachstum. 
+|| We are not just a service provider – we are your partner for long-term success and growth. 
+
+//Block_ITN9.html
+03091 || Začnite s nami spolupracovať || Beginnen Sie eine Zusammenarbeit mit uns || Start working with us
+03092 || Poďme spoločne realizovať vaše projekty || Lassen Sie uns gemeinsam Ihre Projekte realisieren || Let's implement your projects together
+
+03093 || Či už potrebujete posilniť svoj IT tím, hľadáte partnera pre nearshoring,
+	alebo riešite komplexnú automatizáciu, sme tu pre vás. Kontaktujte nás
+	a spoločne nájdeme optimálne riešenie pre vaše potreby.
+|| Ob Sie Ihr IT-Team verstärken möchten, einen Partner für Nearshoring suchen
+	oder eine komplexe Automatisierung lösen möchten, wir sind für Sie da. Kontaktieren Sie uns
+	und gemeinsam finden wir die optimale Lösung für Ihre Bedürfnisse.
+|| Whether you need to strengthen your IT team, are looking for a nearshoring partner,
+	or are dealing with complex automation, we are here for you. Contact us
+	and together we will find the optimal solution for your needs.
+
+03094 || Naši špecialisti sú pripravení stretnúť sa s vami, prediskutovať vaše
+	požiadavky a navrhnúť riešenie šité na mieru vášmu biznisu. Tešíme sa
+	na spoluprácu s vami.
+|| Unsere Spezialisten stehen bereit, um sich mit Ihnen zu treffen, Ihre
+	Anforderungen zu besprechen und eine auf Ihr Unternehmen zugeschnittene Lösung vorzuschlagen. Wir freuen uns
+	auf die Zusammenarbeit mit Ihnen.
+|| Our specialists are ready to meet with you, discuss your
+	requirements, and propose a solution tailored to your business. We look forward
+	to working with you.
+03095 || Napíšte nám || Schreiben Sie uns || Write to us
+03096 || Zavolajte nám || Rufen Sie uns an || Call us

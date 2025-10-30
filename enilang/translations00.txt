@@ -6,6 +6,7 @@
 00105 || Referencie || Referenzen || References
 00106 || Kariéra || Karriere || Career
 00107 || Kontakt || Kontakt || Contact
+00108 || IT stará verzia || IT alte Version || IT old version
 
 00110 || Váš spoľahlivý  partner pre služby v oblasti inžinieringu a IT 
 || Ihr zuverlässiger Partner für Engineering- und IT-Dienstleistungen
