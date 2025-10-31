@@ -76,7 +76,7 @@
     	min-height: 100%;
     	/* font-size: clamp(16px, 1.3vw, 26px); */
     	/* font-size: clamp(16px, 1.4vw, 26px); */
-    	font-size: clamp(16px, 1.3vw, 26px);
+    	font-size: clamp(15px, 1.3vw, 26px);
 		font-weight: 300;
     	padding: 1vw 2vw;
     	box-sizing: border-box;
@@ -254,7 +254,7 @@
 
 	/**************************************************************************/
     .itn-img-wrapper {
-    	flex: 5;
+    	flex: 3.5;
     	overflow: hidden;
     	padding: 1vw;
     	box-sizing: border-box;
@@ -333,6 +333,10 @@
 		line-height: 1.5em;
 	}
 
+	.itn-innerflex-text.padding-0 {
+		padding: 0;
+	}
+
 	.itn-innerflex-text h3 {
 		font-size: 1.4em;
 		margin-bottom: 0.5em;
@@ -348,8 +352,8 @@
 	.itn-fullstack-flex {
 		display: flex;
 		align-items: stretch;
-		gap: 2vw;
-		max-width: 1000px;
+		gap: 1.6vw;
+		/* max-width: 1000px; */
 		margin: auto;
 	}
 
@@ -359,20 +363,22 @@
 		display: flex;
 		justify-content: center;
 		align-items: stretch;
-		/* background-color: skyblue; */
+		/* border: 1px dashed red; */
 	}
 
 	.itn-fullstack-image img {
 		width: 100%;
 		height: auto;
-		object-fit: cover;
+		object-fit: contain;
+		/* object-fit: fill; */
 	}
 
 	.itn-fullstack-texts {
-		flex: 4;
+		flex: 3.5;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between; /* rovnomerne rozdelí 3 bloky */
+		/* border: 1px dashed red; */
 	}
 
     /**************************************************************************/
@@ -457,10 +463,13 @@
     		flex-direction: column;
     		height: auto;
 		}
-		.itn-content-flex.fullstack-flex .itn-img-wrapper {
-			width: 50%;
+		.itn-content-flex.fullstack-flex .itn-img-wrapper .itn-img-wrapper-inner {
+			width: 60%;
 			height: auto;
 		}
+		/* .itn-fullstack-texts {
+			flex: 3;
+		} */
 	}
 
     @media (max-width: 762px) {
@@ -477,11 +486,20 @@
 			padding-top: 1vw;
 		}
 
+		.itn-img-wrapper > .itn-img-wrapper-inner {
+			width: 60%;
+			height: auto;
+		}
+
     	.itn-line-with-img img {
     		height: 7vw;
     	}
 		/********************************/
 		.itn-grid2x2 {
 			grid-template-columns: 1fr;
+		}
+		.itn-img-wrapper-grid21 {
+			grid-template-rows: 1fr;
+			grid-template-columns: 1fr 1fr;
 		}
     }
