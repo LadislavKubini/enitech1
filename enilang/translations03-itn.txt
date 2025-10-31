@@ -97,28 +97,65 @@
 || Unsere Dienstleistungen decken ein breites Spektrum an Fachgebieten ab: 
 || Our services cover a wide range of expertise:
 
-03035 || Vývojári HW/SW a aplikácií s preukázanými skúsenosťami 
-|| HW/SW- und Anwendungsentwickler mit nachweisbarer Erfahrung 
-|| HW/SW and application developers with proven experience
+03035 || Vývojári <strong>HW/SW</strong> a aplikácií s preukázanými skúsenosťami 
+|| <strong>HW/SW</strong>- und Anwendungsentwickler</strong> mit nachweisbarer Erfahrung 
+|| <strong>HW/SW</strong> and application developers with proven experience
 
-03036 || Programátori databáz a dátových štruktúr || Datenbank- und Datenstrukturprogrammierer || Database and data structure programmers
-03037 || SAP špecialisti pre podnikové systémy || SAP-Spezialisten für Unternehmenssysteme || SAP specialists for enterprise systems
-03038 || CRM špecialisti pre riadenie vzťahov so zákazníkmi || CRM-Spezialisten für Kundenbeziehungsmanagement || CRM specialists for customer relationship management
-03039 || Experti na kybernetickú bezpečnosť a ochranu dát || Experten für Cybersicherheit und Datenschutz || Cybersecurity and data protection experts
+03036 || <strong>Programátori databáz</strong> a dátových štruktúr (na báze SQL: Oracle, MySQL, PostgreSQL alebo NoSQL: MongoDB)
+|| <strong>Datenbank</strong>- und Datenstrukturprogrammierer (auf Basis von SQL: Oracle, MySQL, PostgreSQL oder NoSQL: MongoDB)
+|| <strong>Database</strong> and data structure programmers (SQL-based: Oracle, MySQL, PostgreSQL or NoSQL: MongoDB)
+
+03037 || <strong>SAP špecialisti</strong> pre podnikové systémy (S/4HANA špecialisti, ABAP developeri a konzultanti riešení) 
+|| <strong>SAP-Spezialisten</strong> für Unternehmenssysteme (S/4HANA-Spezialisten, ABAP-Entwickler und Lösungsberater) 
+|| <strong>SAP specialists</strong> for enterprise systems (S/4HANA specialists, ABAP developers, and solution consultants)
+
+03038 || <strong>CRM špecialisti</strong> pre riadenie vzťahov so zákazníkmi 
+|| <strong>CRM-Spezialisten</strong> für Kundenbeziehungsmanagement 
+|| <strong>CRM specialists</strong> for customer relationship management
+
+03039 || Experti na <strong>kybernetickú bezpečnosť</strong> a ochranu dát 
+|| Experten für <strong>Cybersicherheit</strong> und Datenschutz 
+|| <strong>Cybersecurity</strong> and data protection experts
+
+03531 || <strong>Testeri</strong> (špecialisti na manuálne, automatizované, performačné alebo záťažové testy)
+|| <strong>Tester</strong> (Spezialisten für manuelle, automatisierte, Leistungs- oder Belastungstests)
+|| <strong>Testers</strong> (specialists in manual, automated, performance, or load testing)
+
+03532 || <strong>Embedded C vývojári</strong> pre vývoj Vašich embedovaných zariadení (operačné systémy do vozidiel
+	a lietadiel, ADAC systémy, dotykové panely, komunikačné zariadenia a iné.)
+|| <strong>Embedded-C-Entwickler</strong> für die Entwicklung Ihrer eingebetteten Geräte (Betriebssysteme für Fahrzeuge
+	und Flugzeuge, ADAC-Systeme, Touchpanels, Kommunikationsgeräte und andere).
+|| <strong>Embedded C developers</strong> for the development of your embedded devices (operating systems for vehicles
+	and aircraft, ADAC systems, touch panels, communication devices, and more).
 
 //Block_ITN4.html
 03041 || Fullstack vývojové schopnosti || Fullstack-Entwicklungsfähigkeiten || Full-stack development skills
-03042 || Moderné užívateľské rozhrania a responzívne webové aplikácie s najnovšími technológiami. 
-|| Moderne Benutzeroberflächen und responsive Webanwendungen mit den neuesten Technologien. 
-|| Modern user interfaces and responsive web applications with the latest technologies. 
+03042 || Moderné užívateľské rozhrania a responzívne webové aplikácie s
+	najnovšími technológiami (Angular, JavaScript, REACT, VUE.js, HTML, CSS a iné). 
+|| Moderne Benutzeroberflächen und responsive Webanwendungen mit
+den neuesten Technologien (Angular, JavaScript, REACT, VUE.js, HTML, CSS und andere). 
+|| Modern user interfaces and responsive web applications with
+the latest technologies (Angular, JavaScript, REACT, VUE.js, HTML, CSS, and others). 
 
-03043 || Robustné serverové aplikácie, API a databázové riešenia pre náročné systémy. 
-|| Robuste Serveranwendungen, APIs und Datenbanklösungen für anspruchsvolle Systeme. 
-|| Robust server applications, APIs, and database solutions for demanding systems. 
+03043 || Robustné serverové aplikácie, API a databázové riešenia pre náročné systémy (Java, Python, C#/.NET, ASP.NET, NODEjs, PHP a ďalšie). 
+|| Robuste Serveranwendungen, APIs und Datenbanklösungen für anspruchsvolle Systeme (Java, Python, C#/.NET, ASP.NET, NODEjs, PHP und andere). 
+|| Robust server applications, APIs, and database solutions for demanding systems (Java, Python, C#/.NET, ASP.NET, NODEjs, PHP, and others). 
 
-03044 || Kompletné end-to-end riešenia pokrývajúce všetky vrstvy aplikácie. 
-|| Komplette End-to-End-Lösungen, die alle Anwendungsschichten abdecken. 
-|| Complete end-to-end solutions covering all layers of the application. 
+03044 || Zahŕňa širokú škálu technológií pre front-end (používateľské rozhranie) aj back-end (logika na strane servera), 
+ako aj databázy a ďalšie nástroje. Medzi kľúčové front-endové technológie patrí HTML, CSS a JavaScript spolu
+s frameworkami ako React, Angular alebo Vue.js. Back-endové technológie zahŕňajú jazyky ako Node.js, Python, Java 
+a frameworky ako Express.js, Django alebo Spring Boot. Databázy, ako napríklad MySQL, PostgreSQL alebo MongoDB, 
+sa používajú na ukladanie údajov, zatiaľ čo nástroje ako Git a Docker sú nevyhnutné pre správu verzií a nasadzovanie. 
+|| Es umfasst eine breite Palette von Technologien für Frontend (Benutzeroberfläche) und Backend (serverseitige Logik) 
+sowie Datenbanken und andere Tools. Zu den wichtigsten Frontend-Technologien gehören HTML, CSS und JavaScript zusammen
+mit Frameworks wie React, Angular oder Vue.js. Backend-Technologien umfassen Sprachen wie Node.js, Python, Java 
+und Frameworks wie Express.js, Django oder Spring Boot. Datenbanken wie MySQL, PostgreSQL oder MongoDB 
+werden zur Datenspeicherung verwendet, während Tools wie Git und Docker für die Versionsverwaltung und Bereitstellung unerlässlich sind. 
+|| It includes a wide range of technologies for both front-end (user interface) and back-end (server-side logic), 
+as well as databases and other tools. Key front-end technologies include HTML, CSS, and JavaScript, along with
+frameworks such as React, Angular, or Vue.js. Back-end technologies include languages such as Node.js, Python, Java, 
+and frameworks such as Express.js, Django, or Spring Boot. Databases such as MySQL, PostgreSQL, or MongoDB 
+are used to store data, while tools such as Git and Docker are essential for version control and deployment. 
 
 03045 || Máme rozsiahle skúsenosti s modernými technológiami a frameworkami, vrátane
 || Wir verfügen über umfangreiche Erfahrungen mit modernen Technologien und Frameworks, darunter
