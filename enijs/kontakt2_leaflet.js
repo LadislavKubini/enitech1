@@ -71,7 +71,14 @@ async function kontakt2_leaflet_init_map_pobocky() {
 	}
 	// } else {
 
-		const initialZoom = window.innerWidth > 1300 ? 8 : 7;
+		// const initialZoom = window.innerWidth > 1300 ? 8 : 7;
+		const w = window.innerWidth;
+		const initialZoom =
+			w > 1600 ? 9 :
+			w > 1200 ? 8 :
+			w > 500  ? 7 :
+						6;
+		console.log(`window.innerWidth: "${w}", initialZoom: "${initialZoom}"`);
 		const kontakt2_map = L.map('id-kontakt2-map', {
 			zoomControl: true,
 			dragging: false,        // mapa sa nedá posúvať pred klikom
