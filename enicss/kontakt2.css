@@ -1,5 +1,6 @@
     .kontakt2-body {
     	font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		font-size: clamp(13px, 1.6vw, 16px);
     	font-weight: 200;
    		background-color: #ECF6FF;
 	   	color: black;
@@ -60,15 +61,22 @@
 		background-color: #fff;
     	box-sizing: border-box;
 		border: 1px solid #ccc;
+		scrollbar-width: auto; /* Firefox */
+	}
+
+	/* Chrome, Edge, Safari */ 
+	.kontakt2-grid-wrapper::-webkit-scrollbar { 
+		height: 14px; 
 	}
 
 	.kontakt2-grid {
 		display: grid;
 		grid-auto-flow: column;
-		grid-auto-columns: 200px; /* clamp(200px, 20vw, 300px); */
+		/* grid-auto-columns: clamp(133px, 20vw, 200px); */
+		grid-auto-columns: 12.5em;
 		overflow-x: auto;
-		column-gap: clamp(10px, 1vw, 15px);
-		padding: clamp(10px, 1vw, 15px);
+		column-gap: 1em; /* clamp(10px, 1vw, 15px); */
+		padding: 1em; /* clamp(10px, 1vw, 15px); */
 		padding-left: 0;
 		width: max-content;
 	}
@@ -83,14 +91,14 @@
     	font-size: smaller;
 		border: 1px solid #ccc;
     	border-radius: 6px;
-    	padding: 5px;
-    	margin: 5px;
+    	padding: 0.4em;
+    	margin: 0.4em;
     	box-sizing: border-box;
     }
 
     .kontakt2-cell img {
     	width: 100%;
-    	height: 120px;
+		height: auto;
     	object-fit: cover;
     	border-radius: 4px;
     }
@@ -100,6 +108,7 @@
     	background: #ffe6cc;
     }
 
+	/***************************************/
     .leaflet-marker-icon.selected {
     	filter: hue-rotate(180deg) saturate(3);
     }

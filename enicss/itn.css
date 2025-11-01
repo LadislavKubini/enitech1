@@ -110,13 +110,13 @@
 	/*******************************/
 	.itn-buttons {
 		display: flex;
-		justify-content: center;
+		/* justify-content: center; */
 		align-items: center;
-		gap: 5vw;
+		/* gap: 5vw; */
 		margin-top: 2vw;
 	}
 
-	.itn-buttons.flex-start {
+	.itn-buttons.flex-justify {
 		justify-content: flex-start;
 		gap: 1vw;
 	}
@@ -464,12 +464,14 @@
     		height: auto;
 		}
 		.itn-content-flex.fullstack-flex .itn-img-wrapper .itn-img-wrapper-inner {
-			width: 60%;
+			width: 40%;
 			height: auto;
 		}
-		/* .itn-fullstack-texts {
-			flex: 3;
-		} */
+
+		.itn-content-flex.fullstack-flex .itn-img-wrapper {
+			display: flex;
+			justify-content: center; /* vycentruje horizontálne */
+		}
 	}
 
     @media (max-width: 762px) {
@@ -486,9 +488,19 @@
 			padding-top: 1vw;
 		}
 
+		.itn-img-wrapper {
+			display: flex;
+			justify-content: center; /* vycentruje horizontálne */
+		}
+
 		.itn-img-wrapper > .itn-img-wrapper-inner {
 			width: 60%;
 			height: auto;
+		}
+
+		.itn-content-flex.fullstack-flex .itn-img-wrapper .itn-img-wrapper-inner {
+			width: 60%;
+			/* height: auto; */
 		}
 
     	.itn-line-with-img img {
@@ -502,4 +514,11 @@
 			grid-template-rows: 1fr;
 			grid-template-columns: 1fr 1fr;
 		}
+
+		.itn-buttons.flex-justify {
+			justify-content: center;
+			gap: 5vw;
+		}
+
+
     }
