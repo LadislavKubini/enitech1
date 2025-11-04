@@ -74,8 +74,8 @@ async function kontakt2_leaflet_init_map_pobocky() {
 		// const initialZoom = window.innerWidth > 1300 ? 8 : 7;
 		const w = window.innerWidth;
 		const initialZoom =
-			w > 1600 ? 9 :
-			w > 1200 ? 8 :
+			// w > 1800 ? 9 :
+			w > 1400 ? 8 :
 			w > 500  ? 7 :
 						6;
 		console.log(`window.innerWidth: "${w}", initialZoom: "${initialZoom}"`);
