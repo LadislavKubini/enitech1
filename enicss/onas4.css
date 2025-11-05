@@ -1,0 +1,88 @@
+    .color-variant-onas4 {
+		--bg: #d7ebfc;
+		--text: black;
+		--line: #00C;
+		--background: var(--bg);
+ 		--blend: normal;
+	}
+
+/**************************************************************************/
+	.onas4-body {
+    	color: var(--text);
+    	height: auto;
+    	min-height: 100%;
+    	font-size: clamp(16px, 1.6vw, 26px);
+    	padding: 1vw 2vw;
+    	box-sizing: border-box;
+		background: var(--background, var(--bg));
+		background-blend-mode: var(--blend, normal);
+    }
+
+    .onas4-header-line {
+    	width: 100%;
+    	height: 1px;
+    	background-color: var(--line);
+    }
+
+	.onas4-header-text {
+		padding: 2vw 2vw 0.5vw 2vw;
+	}
+
+	.onas4-header-text h1 {
+		font-weight: 600;
+		font-size: 2.1em;
+		margin: 0;
+	}
+
+	/*******************************/
+	.onas4-grid2x2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: auto;
+		gap: 1vw;
+		padding: 1vw;
+	}
+
+    /*** Vnutorny flex, vlavo ikona, vpravo text ******************************/
+	.onas4-innerflex-container {
+		display: flex;
+		gap: 1vw;
+	}
+
+	.onas4-innerflex-img img {
+		width: 4em;
+		min-width: 3em;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.onas4-innerflex-img img.onas4-innerflex-imgformat8 {
+		width: 5vw;
+		transform: translateY(-1vw);
+	}
+
+	/**************************/
+	.onas4-innerflex-text {
+		flex: 1;
+		padding: 0.5rem 1rem;
+		font-size: 1em;
+		/* line-height: 1.5em; */
+		line-height: 1.2;
+	}
+
+	.onas4-innerflex-text h3 {
+		font-size: 1.4em;
+		margin-bottom: 0.5em;
+		font-weight: 600;
+	}
+
+	.onas4-innerflex-text p {
+		font-size: 1em;
+		margin: 0;
+	}
+    @media (max-width: 762px) {
+	/********************************/
+		.onas4-grid2x2 {
+			grid-template-columns: 1fr;
+		}
+	}

@@ -7,7 +7,6 @@
 	}
 
     .color-variant-itn2 {
-		/* --bg: #ECF6FF; */
 		--bg: #d7ebfc;
 		--text: black;
 		--line: #00C;
@@ -42,7 +41,6 @@
 	}
 
 	.color-variant-itn5 {
-		/* --bg: #1848A0; */
 		--bg: #1c447d;
 		--text: white;
 		--line: #999;
@@ -56,7 +54,6 @@
 	}
 
     .color-variant-itn9 {
-		/* --bg: #1848A0; */
 		--bg: #10316f;
 		--text: white;
 		--line: #999;
@@ -70,19 +67,14 @@
     /**************************************************************************/
     /**************************************************************************/
 	.itn-body {
-    	/* background-color: var(--bg); */
     	color: var(--text);
     	height: auto;
     	min-height: 100%;
-    	/* font-size: clamp(16px, 1.3vw, 26px); */
-    	/* font-size: clamp(16px, 1.4vw, 26px); */
-    	font-size: clamp(15px, 1.3vw, 26px);
-		font-weight: 300;
+    	font-size: clamp(16px, 1.6vw, 26px);
     	padding: 1vw 2vw;
     	box-sizing: border-box;
 		background: var(--background, var(--bg));
 		background-blend-mode: var(--blend, normal);
-		/* margin-bottom: 1vw; */
     }
 
     .itn-header-line {
@@ -101,32 +93,24 @@
 		margin: 0;
 	}
 
-	.itn-footer-line {
-    	width: 100%;
-    	height: 3px;
-    	background-color: var(--line);
-    }
-
 	/*******************************/
 	.itn-buttons {
 		display: flex;
-		/* justify-content: center; */
 		align-items: center;
-		/* gap: 5vw; */
 		margin-top: 2vw;
 	}
 
 	.itn-buttons.flex-justify {
-		justify-content: flex-start;
+		justify-content: center;
 		gap: 1vw;
 	}
 
 	.itn-button {
 		color: skyblue;
-		padding: 1vw 1vw;
+		padding: 1vw 2vw;
 		font-size: calc(0.8rem + 0.8vw);
 		border: none;
-		border-radius: 0.3em;
+		border-radius: 9999px;
 		cursor: pointer;
 
 		background-color: #2A4184;
@@ -195,12 +179,12 @@
     	font-weight: bold;
     }
 
-	.itn-text-wrapper .weight-200 {
-		font-weight: 200;
-	}
-
 	.itn-text-wrapper h2 {
 		margin: 0;
+	}
+
+	.itn-text-wrapper h3 {
+		margin-bottom: 0;
 	}
 
 	.itn-text-wrapper strong-700 {
@@ -219,6 +203,14 @@
 	.itn-text-wrapper p.margin-small {
     	margin-top: 0.5em;
     	margin-bottom: 0.4em;
+	}
+	/****************************************/
+	.itn-text-itn2 {
+		padding: 0;
+		margin: 0;
+	}
+	.itn-text-itn2 p {
+		margin-top: 0;
 	}
     /****************************************/
     .itn-custom-list {
@@ -282,31 +274,8 @@
     	max-width: 100%;
     	max-height: 100%;
     	object-fit: contain;
-		/* border-radius: 0.6vw; */
     }
 
- 	/**************************************************************************/
-    /*** Nadpisy buniek O1, O2,... pod tym farebna ciara a pod nou text *******/
-	.itn-O-wrapper {
-		margin: 1vw 0;
-	}
-
-	.itn-O-wrapper h3 {
-		font-size: 1.2em;
-		margin: 0.5vw 0;
-	}
-	.itn-O-wrapper p {
-		margin: 0.5vw 0;
-	}
-
-	.itn-O-wrapper .itn-O-line {
-		width: 100%;
-    	height: 2px;
-		background: linear-gradient(to right, #28f, lightskyblue);
-		margin-bottom: 1vw;
-	}
-
-	/**************************************************************************/
     /*** Vnutorny flex, vlavo ikona, vpravo text ******************************/
 	.itn-innerflex-container {
 		display: flex;
@@ -348,39 +317,6 @@
 		margin: 0;
 	}
 
-	/** Block_ITN4.html ********/
-	.itn-fullstack-flex {
-		display: flex;
-		align-items: stretch;
-		gap: 1.6vw;
-		/* max-width: 1000px; */
-		margin: auto;
-	}
-
-	.itn-fullstack-image {
-		flex: 1;
-		min-width: 130px;
-		display: flex;
-		justify-content: center;
-		align-items: stretch;
-		/* border: 1px dashed red; */
-	}
-
-	.itn-fullstack-image img {
-		width: 100%;
-		height: auto;
-		object-fit: contain;
-		/* object-fit: fill; */
-	}
-
-	.itn-fullstack-texts {
-		flex: 3.5;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between; /* rovnomerne rozdelí 3 bloky */
-		/* border: 1px dashed red; */
-	}
-
     /**************************************************************************/
     /*** Grid 2x2, cell: kruhova ikona hore vlavo, dole text ******************/
 	.itn-grid2x2 {
@@ -396,7 +332,6 @@
 		flex-direction: column;
 		align-items: flex-start;
 		background-color: #0d285a;
-		/* border: 1px solid skyblue; */
 		border-radius: 1vw;
 		padding: 1vw;
 		color: white;
@@ -412,8 +347,6 @@
 		min-width: 3em;
 		min-height: 3em;
 		border-radius: 50%;           /* kruh */
-		/* background-color: #add8e6; */
-		/* background-color: var(--bg); */
 		background-color: skyblue;
 		display: flex;
 		justify-content: center;
@@ -457,23 +390,6 @@
 	}
 
     /**************************************************************************/
-    /**************************************************************************/
-	@media (max-width: 1000px) {
-		.itn-content-flex.fullstack-flex {
-    		flex-direction: column;
-    		height: auto;
-		}
-		.itn-content-flex.fullstack-flex .itn-img-wrapper .itn-img-wrapper-inner {
-			width: 40%;
-			height: auto;
-		}
-
-		.itn-content-flex.fullstack-flex .itn-img-wrapper {
-			display: flex;
-			justify-content: center; /* vycentruje horizontálne */
-		}
-	}
-
     @media (max-width: 762px) {
     	.itn-content-flex {
     		flex-direction: column;
@@ -490,17 +406,12 @@
 
 		.itn-img-wrapper {
 			display: flex;
-			justify-content: center; /* vycentruje horizontálne */
+			justify-content: center;
 		}
 
 		.itn-img-wrapper > .itn-img-wrapper-inner {
 			width: 60%;
 			height: auto;
-		}
-
-		.itn-content-flex.fullstack-flex .itn-img-wrapper .itn-img-wrapper-inner {
-			width: 60%;
-			/* height: auto; */
 		}
 
     	.itn-line-with-img img {
