@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Block_Onas4.html</title>
+	<link rel="icon" href="favicona-enitech.png" />
+
+	<link rel="stylesheet" href="fonts-poppins.css" />
+	<link rel="stylesheet" href="fonts-open-sans.css">
+
+	<link rel="stylesheet" href="enicss/animator.css">
+	<link rel="stylesheet" href="enicss/onas4.css">
+
+	<script src="enijs/Language.js" defer></script>
+	<script src="enijs/animator.js" defer></script>
+	<style>
+		body {
+			visibility: hidden;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			font-family: "Poppins", "Open sans", Arial, Tahoma, sans-serif;
+		}
+	</style>
+	<style>
+	</style>
+</head>
+
+<body>
+	<div id="Onas4-div-src">
+		<div class="onas4-body color-variant-onas4">
+			<div class="onas4-header-line"></div>
+			<div class="onas4-header-text">
+				<h1 lang-code="00081">Prečo si zvoliť ENITECH?</h1>
+			</div>
+			<div class="onas4-grid2x2">
+
+				<div class="onas4-innerflex-container">
+					<div class="onas4-innerflex-img">
+						<img src="media/KD_portret-icon.svg" class="onas4-innerflex-imgformat8">
+					</div>
+					<div class="onas4-innerflex-text">
+						<h3 lang-code="00082">Overené skúsenosti</h3>
+						<p class="margin-small" lang-code="00083">
+							Zrealizovali sme desiatky projektov pre telekomunikácie,
+							bankovníctvo, verejnú správu aj priemysel. Naše referencie
+							hovoria za nás.
+						</p>
+					</div>
+				</div>
+				<div class="onas4-innerflex-container">
+					<div class="onas4-innerflex-img">
+						<img src="media/KD_gymnasta-icon.svg" class="onas4-innerflex-imgformat8">
+					</div>
+					<div class="onas4-innerflex-text">
+						<h3 lang-code="00084">Flexibilný prístup</h3>
+						<p class="margin-small" lang-code="00085">
+							Rýchlo sa adaptujeme na vaše potreby, či už ide o krátkodobé
+							posilnenie tímu alebo dlhodobú spoluprácu.
+						</p>
+					</div>
+				</div>
+
+				<div class="onas4-innerflex-container">
+					<div class="onas4-innerflex-img">
+						<img src="media/KD_certifikat-icon.svg" class="onas4-innerflex-imgformat8">
+					</div>
+					<div class="onas4-innerflex-text">
+						<h3 lang-code="00086">Zaručená kvalita</h3>
+						<p class="margin-small" lang-code="00087">
+							Všetci naši špecialisti prechádzajú dôkladným výberovým
+							konaním a majú preukázané odborné znalosti.
+						</p>
+					</div>
+				</div>
+				<div class="onas4-innerflex-container">
+					<div class="onas4-innerflex-img">
+						<img src="media/KD_globus-icon.svg" class="onas4-innerflex-imgformat8">
+					</div>
+					<div class="onas4-innerflex-text">
+						<h3 lang-code="00088">Medzinárodný dosah</h3>
+						<p class="margin-small" lang-code="00089">
+							Pracujeme s domácimi aj zahraničnými klientmi, máme
+							skúsenosti s multikultúrnymi projektmi.
+						</p>
+					</div>
+				</div>
+
+				<div class="onas4-innerflex-container">
+					<div class="onas4-innerflex-img">
+						<img src="media/KD_dollar-icon.svg" class="onas4-innerflex-imgformat8">
+					</div>
+					<div class="onas4-innerflex-text">
+						<h3 lang-code="00581">Moderné technológie</h3>
+						<p lang-code="00582">
+							Držíme krok s najnovšími trendmi a technológiami v IT aj
+							priemyselnej automatizácii.
+						</p>
+					</div>
+				</div>
+				<div class="onas4-innerflex-container">
+					<div class="onas4-innerflex-img">
+						<img src="media/KD_handshake-icon.svg" class="onas4-innerflex-imgformat8">
+					</div>
+					<div class="onas4-innerflex-text">
+						<h3 lang-code="00583">Partnerský prístup</h3>
+						<p lang-code="00584">
+							Nie sme len dodávateľ služieb - sme váš partner pre dlhodobý
+							úspech a rast.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		async function loadAllTranslations() {
+			const p1 = await LoadTranslations('enilang/translation00.txt');
+			await Promise.all([p1]);
+		}
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async () => {
+			await loadAllTranslations();
+			await UpdateTexts();
+			await new Promise(requestAnimationFrame);
+			Animator.registerAll(".onas4-header-line", "animate-width-grow");
+			document.body.style.visibility = "visible";
+		});
+	</script>
+</body>
+
+</html>
