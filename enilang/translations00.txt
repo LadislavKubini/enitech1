@@ -78,3 +78,35 @@
 00301 || SPOLUPRÁCA || ZUSAMMENARBEIT || COOPERATION
 00302 || Vybraní zákazníci || Ausgewählte Kunden || Selected customers
 
+//Block_Onas4.html
+00081 || Prečo si zvoliť ENITECH? || Warum ENITECH wählen? || Why choose ENITECH?
+00082 || Overené skúsenosti || Bewährte Erfahrungen || Proven experience
+00083 || Zrealizovali sme desiatky projektov pre telekomunikácie, bankovníctvo, verejnú správu aj priemysel. Naše referencie hovoria za nás. 
+|| Wir haben Dutzende von Projekten für Telekommunikation, Bankwesen, öffentliche Verwaltung und Industrie realisiert. Unsere Referenzen sprechen für uns. 
+|| We have implemented dozens of projects for telecommunications, banking, public administration, and industry. Our references speak for themselves. 
+
+00084 || Flexibilný prístup || Flexibler Ansatz || Flexible approach
+00085 || Rýchlo sa adaptujeme na vaše potreby, či už ide o krátkodobé posilnenie tímu alebo dlhodobú spoluprácu. 
+|| Wir passen uns schnell an Ihre Bedürfnisse an, egal ob es sich um eine kurzfristige Verstärkung Ihres Teams oder eine langfristige Zusammenarbeit handelt. 
+|| We quickly adapt to your needs, whether it's short-term team reinforcement or long-term cooperation. 
+
+00086 || Zaručená kvalita || Garantierte Qualität || Guaranteed quality
+00087 || Všetci naši špecialisti prechádzajú dôkladným výberovým konaním a majú preukázané odborné znalosti. 
+|| Alle unsere Spezialisten durchlaufen ein gründliches Auswahlverfahren und verfügen über nachgewiesene Fachkenntnisse. 
+|| All our specialists undergo a thorough selection process and have proven expertise. 
+
+00088 || Medzinárodný dosah || Internationale Reichweite || International reach
+00089 || Pracujeme s domácimi aj zahraničnými klientmi, máme skúsenosti s multikultúrnymi projektmi. 
+|| Wir arbeiten mit inländischen und ausländischen Kunden zusammen und haben Erfahrung mit multikulturellen Projekten. 
+|| We work with domestic and foreign clients and have experience with multicultural projects. 
+
+00581 || Moderné technológie || Moderne Technologien || Modern technologies
+00582 || Držíme krok s najnovšími trendmi a technológiami v IT aj priemyselnej automatizácii. 
+|| Wir halten Schritt mit den neuesten Trends und Technologien in der IT und der industriellen Automatisierung. 
+|| We keep pace with the latest trends and technologies in IT and industrial automation. 
+
+00583 || Partnerský prístup || Partneransatz || Partnership approach
+00584 || Nie sme len dodávateľ služieb - sme váš partner pre dlhodobý úspech a rast. 
+|| Wir sind nicht nur ein Dienstleister – wir sind Ihr Partner für langfristigen Erfolg und Wachstum. 
+|| We are not just a service provider – we are your partner for long-term success and growth. 
+
