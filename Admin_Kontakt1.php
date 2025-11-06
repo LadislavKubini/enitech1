@@ -41,6 +41,9 @@
 			font-family: 'Poppins', 'Open Sans', Arial, Tahoma, sans-serif;
 			background-color: #F8FCFF;
 		}
+		thead th {
+  			font-size: smaller;
+		}
 	</style>
 
 	<link rel="stylesheet" href="enicss/admin-kontakt.css">
@@ -51,49 +54,119 @@
 <?php if (empty($messages)): ?>
     <p>Žiadne správy zatiaľ neprišli.</p>
 <?php else: ?>
-	<div class="table-container" id="id-tableCont">
-		<table>
-			<thead>
-				<tr>
-					<th>Čas</th>
-					<th>Meno</th>
-					<th>Priezvisko</th>
-					<th>Telefón</th>
-					<th>Email</th>
-					<th>Predmet</th>
-					<th>Správa</th>
-					<th>Súhlas</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php foreach ($messages as $msg): ?>
-					<?php
-						$dt = new DateTime($msg['cas']);
-						$datum = $dt->format('Y-m-d');
-						$cas = $dt->format('H:i:s');
-					?>
-					<tr>
-						<td><?= htmlspecialchars($datum) ?>
-							<small><?= htmlspecialchars($cas) ?></small>
-						</td>
-						<td><?= htmlspecialchars($msg['meno']) ?></td>
-						<td><?= htmlspecialchars($msg['priezvisko']) ?></td>
-						<td><?= htmlspecialchars($msg['telefon']) ?></td>
-						<td><?= htmlspecialchars($msg['email']) ?></td>
-						<td><?= htmlspecialchars($msg['predmet']) ?></td>
-						<td><?= nl2br(htmlspecialchars($msg['sprava'])) ?></td>
-						<td><?= $msg['suhlas'] ? 'áno' : 'nie' ?></td>
-					</tr>
-				<?php endforeach; ?>
-			</tbody>
-		</table>
-	</div>
+<div class="table-container" id="id-tableCont">
+  <table>
+    <colgroup>
+      <col class="col-1">
+      <col class="col-2">
+      <col class="col-3">
+      <col class="col-4">
+      <col class="col-5">
+      <col class="col-6">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>Čas</th>
+        <th>Meno<br>Priezvisko</th>
+        <th>Telefón<br>Email</th>
+        <th>Predmet</th>
+        <th>Správa</th>
+        <th>Súhlas</th>
+      </tr>
+    </thead>
+
+	<tbody>
+      <?php foreach ($messages as $msg): ?>
+        <?php
+          $dt = new DateTime($msg['cas']);
+          $datum = $dt->format('Y-m-d');
+          $cas = $dt->format('H:i:s');
+        ?>
+        <tr>
+          <td><?= htmlspecialchars($datum) ?><br><small><?= htmlspecialchars($cas) ?></small></td>
+          <td><strong><?= htmlspecialchars($msg['meno']) ?><br><?= htmlspecialchars($msg['priezvisko']) ?></strong></td>
+          <td><?= htmlspecialchars($msg['telefon']) ?><br><?= htmlspecialchars($msg['email']) ?></td>
+          <td><?= htmlspecialchars($msg['predmet']) ?></td>
+          <td><?= nl2br(htmlspecialchars($msg['sprava'])) ?></td>
+          <td><?= $msg['suhlas'] ? 'áno' : 'nie' ?></td>
+        </tr>
+      <?php endforeach; ?>
+    </tbody>
+  </table>
+</div>
 <?php endif; ?>
+	<!-- 🔹 MODÁLNE OKNO -->
+	<div id="modal" class="modal">
+	<div class="modal-content">
+		<span class="modal-close">&times;</span>
+
+		<h2>Detail správy</h2>
+		<div id="modal-body"></div>
+
+		<div class="modal-footer">
+		<button id="btn-close">Close</button>
+		<button id="btn-delete">Delete</button>
+		</div>
+	</div>
+	</div>
+
 	<script>
 		window.addEventListener('load', function() {
 			const tableCont = document.getElementById('id-tableCont');
 			tableCont.scrollTop = tableCont.scrollHeight;
 		});
 	</script>
+	<!-- modalny dialog -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+		const rows = document.querySelectorAll('.table-container tbody tr');
+		const modal = document.getElementById('modal');
+		const modalBody = document.getElementById('modal-body');
+		const closeBtn = document.getElementById('btn-close');
+		const closeX = document.querySelector('.modal-close');
+		const deleteBtn = document.getElementById('btn-delete');
+
+		let selectedRow = null;
+
+		// 🔹 Zvýraznenie pri hover (CSS zvláda) + doubleclick -> modal
+		rows.forEach((row, index) => {
+			row.addEventListener('dblclick', () => {
+			selectedRow = row;
+			const cells = Array.from(row.querySelectorAll('td')).map(td => td.innerHTML);
+			modalBody.innerHTML = `
+				<p><strong>Čas:</strong><br>${cells[0]}</p>
+				<p><strong>Meno a priezvisko:</strong><br>${cells[1]}</p>
+				<p><strong>Telefón / Email:</strong><br>${cells[2]}</p>
+				<p><strong>Predmet:</strong><br>${cells[3]}</p>
+				<p><strong>Správa:</strong><br>${cells[4]}</p>
+				<p><strong>Súhlas:</strong> ${cells[5]}</p>
+			`;
+			modal.classList.add('show');
+			});
+		});
+
+		// 🔹 Zatváranie
+		function closeModal() {
+			modal.classList.remove('show');
+		}
+		closeBtn.addEventListener('click', closeModal);
+		closeX.addEventListener('click', closeModal);
+		window.addEventListener('click', (e) => {
+			if (e.target === modal) closeModal();
+		});
+
+		// 🔹 Delete – v realite by si volal AJAX, tu iba simulácia
+		deleteBtn.addEventListener('click', () => {
+			if (confirm('Naozaj zmazať túto správu?')) {
+			const next = selectedRow.nextElementSibling;
+			selectedRow.remove();
+			closeModal();
+			if (next) next.scrollIntoView({ behavior: 'smooth', block: 'center' });
+			// tu by si doplnil fetch('/delete.php', {method: 'POST', body: JSON.stringify({...})})
+			}
+		});
+		});
+	</script>	
 </body>
 </html>

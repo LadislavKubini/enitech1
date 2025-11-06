@@ -23,6 +23,7 @@ if ((!$meno) || (!$priezvisko)  || (!$telefon) || (!$email) || (!$predmet) || (!
 }
 // Zostavenie objektu
 $data = [
+	'msg-id'     => date('YmdHisv') . '-' . bin2hex(random_bytes(3)),
     "meno"       => $meno,
     "priezvisko" => $priezvisko,
     "telefon"    => $telefon,
