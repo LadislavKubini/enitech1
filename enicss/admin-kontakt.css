@@ -1,27 +1,149 @@
 .table-container {
-	/* max-height: 200px; */
-	/* výška viditeľnej časti */
-	overflow-y: auto;
-	/* vertikálny scrollbar */
-	border: 1px solid #ccc;
+  overflow-x: auto;
+  border: 1px solid #ccc;
 }
 
+/* kľúčové: auto layout + plná šírka */
 .table-container table {
-	border-collapse: collapse;
-	width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
 }
 
+/* základné štýly buniek */
 .table-container th,
 .table-container td {
-	padding: 5px;
-	text-align: left;
-	border-bottom: 1px solid #ddd;
-	border: 1px solid #ccc;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.1;
 }
 
+/* stĺpce – percentá ako minimum, zvyšok dostane Správa */
+.table-container col.col-1 { width: 7%;  min-width: 11ch; }   /* Čas */
+.table-container col.col-2 { width: 8%; min-width: 10ch; }  /* Meno */
+.table-container col.col-3 { width: 16%; min-width: 26ch; }  /* Telefón+Email */
+.table-container col.col-4 { width: 12%; min-width: 12ch; }  /* Predmet */
+.table-container col.col-5 { width: auto; min-width: 60ch; }  /* Správa */
+.table-container col.col-6 { width: 4%;  min-width: 5ch; }   /* Súhlas */
+
+/* fixovanie hlavičky */
 .table-container thead th {
-	position: sticky;
-	top: 0;
-	background: #eee;
-	z-index: 2;
+  position: sticky;
+  top: 0;
+  background: #eee;
+  z-index: 2;
+  font-size: smaller;
+}
+.table-container td small {
+  color: #555;
+  font-size: 0.9em;
+}
+/************************************************************************************/
+.table-container a {
+	display: inline-block; 
+	margin-bottom: 0.5rem;	
+}
+
+.table-container .subory {
+  counter-reset: subory;
+}
+
+.table-container .subory a {
+  display: block;
+  line-height: 1.2;
+}
+
+.table-container .subory a::before {
+  counter-increment: subory;
+  content: counter(subory) ". ";
+}
+
+.table-container .subory a:nth-child(even) {
+  background-color: #fee;
+}
+
+.table-container .subory a:nth-child(odd) {
+  background-color: unset;
+}
+
+/* Detail - modalny dialog *************************************************************/
+/* Hover zvýraznenie */
+.table-container tbody tr:hover {
+  background-color: #eef7ff;
+  /* cursor: pointer; */
+}
+
+/* 🔹 MODÁL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.7em;
+  font-size: 1.5em;
+  color: #888;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.modal-footer button {
+  padding: 0.4em 1em;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+#btn-close {
+  background-color: #f2f2f2;
+}
+
+#btn-delete {
+  background-color: #ffdddd;
+}
+
+#btn-delete:hover {
+  background-color: #ffcccc;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }

@@ -34,6 +34,11 @@
 		margin: 0;
 	}
 
+	.onas4-header-text h2 {
+		font-weight: bold;
+		margin: 0;
+	}
+ 
 	/*******************************/
 	.onas4-grid2x2 {
 		display: grid;
@@ -74,6 +79,11 @@
 		font-size: 1.4em;
 		margin-bottom: 0.5em;
 		font-weight: 600;
+	}
+
+	.onas4-innerflex-text .header {
+		padding-bottom: 1vw;
+		font-weight: bold;
 	}
 
 	.onas4-innerflex-text p {
