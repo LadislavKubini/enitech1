@@ -74,14 +74,14 @@
 			await loadDivBlocks()
 
 			await new Promise(requestAnimationFrame);
+			await kontakt1_addEventListeners();
+			await new Promise(requestAnimationFrame);
+			await kontakt2_leaflet_init_map_pobocky();
+			await new Promise(requestAnimationFrame);
 			await LoadTranslations('enilang/translations00.txt');
 			await LoadTranslations('enilang/translations05-kontakt.txt');
 			await LoadTranslations('enilang/translations09-foot.txt');
 			await UpdateTexts();
-			await new Promise(requestAnimationFrame);
-			await kontakt1_addEventListeners();
-			await new Promise(requestAnimationFrame);
-			await kontakt2_leaflet_init_map_pobocky();
 			await new Promise(requestAnimationFrame);
 			Animator.register("#id-kontakt1-animate-content", "animate-slide-in-bounce");
 			Animator.registerAll(".kontakt2-line", "animate-width-grow");
