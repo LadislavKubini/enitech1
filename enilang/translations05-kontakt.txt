@@ -1,26 +1,26 @@
 // Block_Kontakt1.html
-05001 || Kontaktujte nás || Kontaktieren Sie uns || Contact us
+05001 || Kontaktujte nás || Kontaktieren Sie uns || Get in touch with us
 
 05002 || NAPÍŠTE NÁM V PRÍPADE OTÁZOK ALEBO NÁM DAJTE SPÄTNÚ VÄZBU NA NAŠE SLUŽBY. 
          VYPLŇTE FORMULÁR A MY VÁM ODPOVIEME ČO NAJSKÔR.
 || SCHREIBEN SIE UNS BEI FRAGEN ODER GEBEN SIE UNS FEEDBACK ZU UNSEREN DIENSTLEISTUNGEN. 
    FÜLLEN SIE DAS FORMULAR AUS UND WIR WERDEN IHNEN SO SCHNELL WIE MÖGLICH ANTWORTEN.
-|| WRITE TO US IF YOU HAVE ANY QUESTIONS OR GIVE US FEEDBACK ON OUR SERVICES. 
-   FILL OUT THE FORM AND WE WILL RESPOND AS SOON AS POSSIBLE.
+|| WRITE TO US IF YOU HAVE ANY QUESTIONS OR WOULD LIKE TO GIVE FEEDBACK ON OUR SERVICES. 
+   FILL OUT THE FORM AND WE WILL GET BACK TO YOU AS SOON AS POSSIBLE.
 
 05011 || Krstné meno * || Vorname * || First name *
 05012 || Priezvisko * || Nachname * || Last name *
 05013 || Telefónne číslo * || Telefonnummer * || Phone number *
 05014 || Email * || E-Mail * || Email *
-05015 || Predmet správy || Gegenstand der Mitteilung || Subject of the report
-05016 || Správa || Bericht || Report
+05015 || Predmet správy || Gegenstand der Mitteilung || Subject of the message
+05016 || Správa || Bericht || Message
 
 05017 || Súhlasím so spracovaním mojich osobných údajov za účelom spätnej väzby na moju správu.
 || Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zweck der Rückmeldung zu meiner Nachricht zu.
-|| I agree to the processing of my personal data for the purpose of feedback on my message.
+|| I agree to the processing of my personal data for the purpose of responding to my message.
 
 05018 || Nie som robot || Ich bin kein Roboter || I am not a robot
-05019 || POSLAŤ SPRÁVU || NACHRICHT SENDEN || SEND MESSAGE
+05019 || POSLAŤ SPRÁVU || NACHRICHT SENDEN || SEND
 
 05020 || Správa by bola úspešne odoslaná 
 || Die Nachricht wäre erfolgreich versendet worden.
@@ -30,7 +30,7 @@
 
 // Block_Kontakt2.html
 05041 || Kontaktujte nás || Kontaktieren Sie uns || Contact us
-05042 || Kde nás nájdete || Wo Sie uns finden || Where you will find us
+05042 || Kde nás nájdete || Wo Sie uns finden || Where to find us
 05044 || Kancelária Komárno || Büro Komárno || Office Komárno
 05045 || Kancelária Martin || Büro Martin || Office Martin
 05046 || Kancelária Buzica || Büro Buzica || Office Buzica
@@ -47,7 +47,7 @@
 05056 || Personálne oddelenie: || Personalabteilung: || Human Resources Department:
 
 // Fakturacne udaje
-05061 || Fakturačné údaje || Rechnungsdaten || Billing information
+05061 || Fakturačné údaje || Rechnungsdaten || Billing details
 05062 || IČO: || ID-Nr.:|| Company ID No.:
 05063 || IČ DPH: || Umsatzsteuer-Identifikationsnummer: || VAT ID: 
 05064 || Bankové spojenie: || Bankverbindung: || Bank details:
@@ -57,4 +57,4 @@
 
 05068 || Zapísaný v Obchodnom registri Okresného súdu v Trenčíne, oddiel: Sro, vložka 22788/R
 || Eingetragen im Handelsregister des Bezirksgerichts in Trenčín, Abteilung: Sro, Einlage 22788/R
-|| Registered in the Commercial Register of the District Court in Trenčín, section: Sro, file 22788/R
+|| Registered in the Commercial Register of the District Court Trenčín, Section: Sro, File No. 22788/R

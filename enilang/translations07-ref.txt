@@ -1,14 +1,14 @@
-07001 || Referencie || Referenzen || References
+07001 || Referencie || Referenzen || Our References
 
-07002 || Referencie hovoria za nás || Referenzen sprechen für uns|| References speak for us
+07002 || Referencie hovoria za nás || Referenzen sprechen für uns|| References speak for themselves
 
 07003 || Od vzniku sa nám podarilo nadviazať dlhodobú spoluprácu s viac ako 30 zákazníkmi z rôznych krajín sveta. 
 || Seit unserer Gründung ist es uns gelungen, eine langfristige Zusammenarbeit mit mehr als 30 Kunden aus verschiedenen Ländern der Welt aufzubauen.
-|| Since inception, we have managed to establish long-term cooperation with more than 30 customers from different countries around the world.
+|| Since our inception, we have established long-term partnerships with more than 30 customers from various countries around the world.
 
 07004 || Nahliadnite na jednotlivé realizované služby pre našich klientov. 
 || Werfen Sie einen Blick auf die einzelnen Dienstleistungen, die wir für unsere Kunden umgesetzt haben.
-|| Take a look at the individual services implemented for our clients.
+|| Take a look at the individual projects we have implemented for our clients.
 
 07005 || Realizované služby: || Durchgeführte Dienste: || Services provided:
 
@@ -17,25 +17,25 @@
 
 07012 || Vývoj a integrácia systémov pre letecký priemysel 
 || Systementwicklung und -integration für die Luft- und Raumfahrtindustrie
-|| Systems Development and Integration for Aerospace
+|| System development and integration for the aerospace industry
 
 07013 || Automobilový priemysel || Autoindustrie || Automotive
 
 07014 || Plne automatizované bunky a linky pre automobilový priemysel
 || Vollautomatische Zellen und Linien für die Automobilindustrie 
-|| Fully automated production lines and cells for Automotive
+|| Fully automated production lines and cells for the automotive industry
 
 07015 || IT oblasť || IT-Bereich || IT
 
 07016 || Vývoj HW, SW a aplikácií, testovanie, DB programovanie, atď. 
 || Entwicklung von HW, SW und Anwendungen, Testen, DB-Programmierung usw. 
-|| HW & SW Development, Applications Development, Testing, DB/ERP, etc.
+|| HW & SW Development, Application Development, Testing, DB/ERP, etc.
 
 07017 || Všeobecné strojárstvo || Allgemeines Ingenieurwesen || General Engineering
 
 07018 || Jednoúčelové zariadenia a technologické celky na mieru 
 || Einzweckanlagen und maßgeschneiderte technologische Einheiten
-|| Single-purpose devices/equipment and tailor-made technological units
+|| Single-purpose equipment and tailor-made technological units
 
 07019 || Elektro || Elektro || Electrical
 
@@ -44,7 +44,7 @@
 || Automation, Robotics, Simulations, Electrical design
 
 07021 || Viac || Mehr lesen || See more
-07022 || Hore k menu || Nach oben zum Menü || Up to menu
+07022 || Hore k menu || Nach oben zum Menü || Back to menu
 
 // Block_Onas3Ref.html - zrusene a presunute
 07304 || Referencie: || Referenzen: || References:

@@ -29,7 +29,7 @@
 || Vereinbaren Sie einen unverbindlichen Beratungstermin mit uns und erfahren Sie, welche Lösungen wir für Sie vorbereiten können.
 || Arrange a non-binding consultation with us and find out what solutions we can prepare for you.
 
-00124 || Napíšte nám ešte dnes. || Schreiben Sie uns noch heute an. || Write us today..
+00124 || Napíšte nám ešte dnes. || Schreiben Sie uns noch heute an. || Write to us today..
 
 00125 || Radi preskúmame možnosti spolupráce priamo pre vašu firmu. 
 || Wir prüfen gerne die Möglichkeiten einer Zusammenarbeit speziell für Ihr Unternehmen.
@@ -43,9 +43,9 @@
 || <strong>Das Unternehmen ENITECH wurde 2010 gegründet</strong> und ist seit seiner Gründung im Bereich <strong>Konstruktion und IT-Dienstleistungen</strong> tätig.
 || <strong>ENITECH was founded in 2010</strong> and has been operating in the field of <strong>Mechanical Engineering and IT services</strong> since its inception.
 
-00202 || Patríme medzi najväčšie inžinierske kancelárie na Slovensku s viac ako 80 špecialistami
+00202 || Patríme medzi najväčšie inžinierske kancelárie na Slovensku s viac ako 80 špecialistami.
 || Wir gehören zu den größten Ingenieurbüros in der Slowakei mit mehr als 80 Spezialisten.
-|| We are one of the largest engineering houses/companies in Slovakia with more than 80 specialists.
+|| We are one of the largest engineering companies in Slovakia with more than 80 specialists.
 
 00203 || Naše podnikanie sme začali v oblasti leteckého priemyslu. V priebehu rokov sme rozšírili svoje aktivity aj na automobilový priemysel a všeobecné strojárstvo.
 || Wir haben unser Unternehmen im Bereich der Luftfahrtindustrie gegründet. Im Laufe der Jahre haben wir unsere Aktivitäten auch auf die Automobilindustrie und den allgemeinen Maschinenbau ausgeweitet.

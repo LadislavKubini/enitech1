@@ -37,7 +37,7 @@
     einzelne Experten verstärken möchten oder eine komplexe Outsourcing-Lösung suchen,
     wir stehen Ihnen mit unserem Fachwissen und unserer Erfahrung aus
     internationalen Projekten zur Seite.
-|| Our services are designed to flexibly cover your needs at
+|| Our services are designed to flexibly meet your needs at
     any stage of project development. Whether you need to strengthen your team with
     individual experts or are looking for a comprehensive outsourcing solution,
     we are here for you with our expertise and experience from
@@ -75,14 +75,14 @@
 03029 || Testeri a QA špecialisti || Tester und QA-Spezialisten || Testers and QA specialists
 03530 || Zabezpečenie kvality a bezchybného fungovania systémov
 || Sicherstellung der Qualität und des fehlerfreien Betriebs der Systeme
-|| Ensuring quality and flawless functioning of systems
+|| Ensuring system quality and flawless operation
 
 //Block_ITN3.html
 03031 || IT Nearshoring a Outsourcing na mieru 
 || IT-Nearshoring und maßgeschneidertes Outsourcing 
 || IT Nearshoring and Customized Outsourcing
 
-03032 || Flexibilné zvýšenie vašich kapacít || Flexible Erweiterung Ihrer Kapazitäten || Flexible increase in your capacity
+03032 || Flexibilné zvýšenie vašich kapacít || Flexible Erweiterung Ihrer Kapazitäten || Flexible capacity expansion
 03033 || Formou IT nearshoringu a outsourcingu dokážeme flexibilne zvýšiť vaše kapacity v
 	kľúčových oblastiach. Poskytujeme vysoko kvalifikovaných špecialistov, ktorí sa rýchlo
 	integrujú do vašich tímov a procesov.					
@@ -119,7 +119,7 @@
 
 03532 || <strong>Vývojári softvéru v jazyku C pre vstavané zariadenia</strong>
 || <strong>Embedded-C-Entwickler für die Entwicklung Ihrer eingebetteten Geräte</strong>
-|| <strong>Embedded C developers for the development of your embedded devices</strong>
+|| <strong>Embedded C developers for your embedded systems development</strong>
 
 //Block_ITN4.html
 03041 || Fullstack vývojové schopnosti || Fullstack-Entwicklungsfähigkeiten || Full-stack development skills
@@ -247,7 +247,7 @@
 
 //Block_ITN9.html
 03091 || Začnite s nami spolupracovať || Beginnen Sie eine Zusammenarbeit mit uns || Start working with us
-03092 || Poďme spoločne realizovať vaše projekty || Lassen Sie uns gemeinsam Ihre Projekte realisieren || Let's implement your projects together
+03092 || Poďme spoločne realizovať vaše projekty || Lassen Sie uns gemeinsam Ihre Projekte realisieren || Let’s bring your projects to life together
 
 03093 || Či už potrebujete posilniť svoj IT tím, hľadáte partnera pre nearshoring,
 	alebo riešite komplexnú automatizáciu, sme tu pre vás. Kontaktujte nás
