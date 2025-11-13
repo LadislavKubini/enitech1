@@ -232,7 +232,10 @@ async function kontakt2_leaflet_init_map_pobocky() {
 					marker.closePopup();
 				}
 			});
-
+			// preklad po otvorení popupu, pretoze 
+			marker.on('popupopen', () => {
+				UpdateTexts();
+			});
 			markerRefs.push(marker);
 
 //*** dolny grid pobociek **************************************************************************** */			
