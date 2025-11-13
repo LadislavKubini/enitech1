@@ -1,6 +1,6 @@
 // Block_Engin.html ***************************************************************************
 01001 || Komplexné inžinierske riešenia 
-|| Komplexe technische Lösungen 
+|| Komplexe Ingenieurlösungen 
 || Comprehensive engineering solutions
 
 01002 || Flexibilné a inovatívne riešenia od konceptu po realizáciu.
@@ -44,7 +44,7 @@
 || creation of 3D parts according to customer requirements
 
 01205 || tvorba zostáv z vymodelovaných dielov, metódou skeletonu
-|| Erstellung von Baugruppen aus modellierten Teilen nach der Skelettmethode
+|| Erstellung von Baugruppen aus modellierten Teilen unter Verwendung der Skelettmethode
 || creation of assemblies from modeled parts using the skeleton method
 
 01206 || vyplňovanie atribútov dielov a zostáv 

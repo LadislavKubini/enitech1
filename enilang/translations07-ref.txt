@@ -28,13 +28,13 @@
 07015 || IT oblasť || IT-Bereich || IT
 
 07016 || Vývoj HW, SW a aplikácií, testovanie, DB programovanie, atď. 
-|| Entwicklung von HW, SW und Anwendungen, Testen, DB-Programmierung usw. 
+|| Entwicklung von Hard- und Software sowie Anwendungen, Testing und Datenbankprogrammierung 
 || HW & SW Development, Application Development, Testing, DB/ERP, etc.
 
-07017 || Všeobecné strojárstvo || Allgemeines Ingenieurwesen || General Engineering
+07017 || Všeobecné strojárstvo || Allgemeiner Maschinenbau || General Engineering
 
 07018 || Jednoúčelové zariadenia a technologické celky na mieru 
-|| Einzweckanlagen und maßgeschneiderte technologische Einheiten
+|| Sondermaschinen und maßgeschneiderte technologische Anlagen
 || Single-purpose equipment and tailor-made technological units
 
 07019 || Elektro || Elektro || Electrical

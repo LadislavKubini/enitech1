@@ -16,9 +16,8 @@
 	kvalifikovaných IT špecialistov a riešení pre náročné sektory vrátane
 	telekomunikácií, bankovníctva a poisťovníctva, verejnej správy a
 	priemyselnej automatizácie.
-|| Die Firma ENITECH s.r.o. ist Ihr zuverlässiger Partner im Bereich
-	umfassender IT-Dienstleistungen. Wir sind spezialisiert auf die Bereitstellung von hochqualifizierten
-	IT-Spezialisten und Lösungen für anspruchsvolle Branchen, darunter
+|| Die Firma ENITECH s.r.o. ist Ihr zuverlässiger Partner für die Bereitstellung 
+	hochqualifizierter IT-Spezialisten und Lösungen für anspruchsvolle Branchen, darunter
 	Telekommunikation, Bank- und Versicherungswesen, öffentliche Verwaltung und
 	Industrieautomation.
 || ENITECH s.r.o. is your reliable partner in the field of
@@ -118,7 +117,7 @@
 || <strong>Cybersecurity</strong> and data protection experts
 
 03532 || <strong>Vývojári softvéru v jazyku C pre vstavané zariadenia</strong>
-|| <strong>Embedded-C-Entwickler für die Entwicklung Ihrer eingebetteten Geräte</strong>
+|| <strong>Embedded-C-Entwickler für Ihre Embedded-Geräte</strong>
 || <strong>Embedded C developers for your embedded systems development</strong>
 
 //Block_ITN4.html

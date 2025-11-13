@@ -12,8 +12,8 @@
 05012 || Priezvisko * || Nachname * || Last name *
 05013 || Telefónne číslo * || Telefonnummer * || Phone number *
 05014 || Email * || E-Mail * || Email *
-05015 || Predmet správy || Gegenstand der Mitteilung || Subject of the message
-05016 || Správa || Bericht || Message
+05015 || Predmet správy || Betreff || Subject of the message
+05016 || Správa || Nachricht || Message
 
 05017 || Súhlasím so spracovaním mojich osobných údajov za účelom spätnej väzby na moju správu.
 || Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zweck der Rückmeldung zu meiner Nachricht zu.
@@ -31,9 +31,9 @@
 // Block_Kontakt2.html
 05041 || Kontaktujte nás || Kontaktieren Sie uns || Contact us
 05042 || Kde nás nájdete || Wo Sie uns finden || Where to find us
-05044 || Kancelária Komárno || Büro Komárno || Office Komárno
-05045 || Kancelária Martin || Büro Martin || Office Martin
-05046 || Kancelária Buzica || Büro Buzica || Office Buzica
+05044 || Kancelária Komárno || Niederlassung Komárno || Office Komárno
+05045 || Kancelária Martin || Niederlassung Martin || Office Martin
+05046 || Kancelária Buzica || Niederlassung Buzica || Office Buzica
 
 // Block_Kontakt3.html
 05051 || Kontakt || Kontakt || Contact

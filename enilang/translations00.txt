@@ -29,7 +29,7 @@
 || Vereinbaren Sie einen unverbindlichen Beratungstermin mit uns und erfahren Sie, welche Lösungen wir für Sie vorbereiten können.
 || Arrange a non-binding consultation with us and find out what solutions we can prepare for you.
 
-00124 || Napíšte nám ešte dnes. || Schreiben Sie uns noch heute an. || Write to us today..
+00124 || Napíšte nám ešte dnes. || Schreiben Sie uns noch heute. || Write to us today..
 
 00125 || Radi preskúmame možnosti spolupráce priamo pre vašu firmu. 
 || Wir prüfen gerne die Möglichkeiten einer Zusammenarbeit speziell für Ihr Unternehmen.
@@ -59,7 +59,7 @@
 00211 || Naša vízia: || Unsere Vision: || Our vision:
 
 00212 || Stať sa významným poskytovateľom inžinierskych služieb v strednej Európe a uznávaným partnerom na globálnom trhu.
-|| Ein bedeutender Anbieter von Ingenieurdienstleistungen in Mitteleuropa und ein anerkannter Partner auf dem globalen Markt zu werden.
+|| Unsere Vision ist es, ein bedeutender Anbieter von Ingenieurdienstleistungen in Mitteleuropa und ein anerkannter Partner auf dem globalen Markt zu werden.
 || To become a major provider of engineering services in Central Europe and a recognized partner in the global market.
 
 00213 || Naša výhoda || Unser Vorteil || Our advantage
@@ -80,7 +80,7 @@
 
 //Block_Onas4.html
 00081 || Prečo si zvoliť ENITECH? || Warum ENITECH wählen? || Why choose ENITECH?
-00082 || Overené skúsenosti || Bewährte Erfahrungen || Proven experience
+00082 || Overené skúsenosti || Langjährige Erfahrung || Proven experience
 00083 || Zrealizovali sme desiatky projektov pre telekomunikácie, bankovníctvo, verejnú správu aj priemysel. Naše referencie hovoria za nás. 
 || Wir haben Dutzende von Projekten für Telekommunikation, Bankwesen, öffentliche Verwaltung und Industrie realisiert. Unsere Referenzen sprechen für uns. 
 || We have implemented dozens of projects for telecommunications, banking, public administration, and industry. Our references speak for themselves. 
@@ -105,7 +105,7 @@
 || Wir halten Schritt mit den neuesten Trends und Technologien in der IT und der industriellen Automatisierung. 
 || We keep pace with the latest trends and technologies in IT and industrial automation. 
 
-00583 || Partnerský prístup || Partneransatz || Partnership approach
+00583 || Partnerský prístup || Partnerschaftliche Zusammenarbeit || Partnership approach
 00584 || Nie sme len dodávateľ služieb - sme váš partner pre dlhodobý úspech a rast. 
 || Wir sind nicht nur ein Dienstleister – wir sind Ihr Partner für langfristigen Erfolg und Wachstum. 
 || We are not just a service provider – we are your partner for long-term success and growth. 
